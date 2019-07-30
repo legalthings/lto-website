@@ -1,54 +1,13 @@
-{% set title = 'Index | Next Web Starter' %}
-{% set description = 'Next Web Starter index' %}
+{% set title = 'Home 1.1' %}
+{% set description = 'Homepage 1.1' %}
 
 {% extends "base.njk" %}
 
+
+
 {% block content %}
 
-<section class="nws-featured-section hero is-medium">
-  <div class="nws-hero-part-bg"></div>
-  <div class="nws-hero-part-a"></div>
-  <div class="nws-hero-part-b"></div>
-  <div class="nws-hero-part-c"></div>
-  <div class="nws-hero-part-d"></div>
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 has-text-weight-bold">Next Web Starter</h1>
-      <h2 class="subtitle">Optimized for Lighthouse and PSI</h2>
-      <a href="#" class="button is-primary is-medium">Get started</a>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/optimized.svg" width="96" alt="Optimized"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Optimized</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Tries to deliver the fastest web experience</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Blazingly fast on mobile and desktop</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Optimized for Google Pagespeed Insights</li>
-        </ul>
-      </div>
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/responsive.svg" width="96" alt="Responsive"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Responsive</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Fully responsive by default</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Mobile-first</li>
-        </ul>
-      </div>
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/modular.svg" width="96" alt="Modular"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Modular</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Extendable</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Interchangeable framework</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{% include "../templates/partials/join-ecosystem-block.njk" %}
+
 
 {% endblock %}
