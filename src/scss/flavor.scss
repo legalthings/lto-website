@@ -176,18 +176,11 @@ nav {
 
 // Style for main page content
 
-#first-title {
-  margin-bottom: 10px;
-}
-
-.title {
-  h1 {
+.main-title{
       color: #260a76;
       font-size: 3rem;
       font-family: sans-serif;
       font-weight: normal;
-      // margin: 1rem;
-    }
 }
 
 .subtitle {
@@ -208,4 +201,14 @@ nav {
 
 .color-set-purple {
   color: #804bc9;
+}
+
+.title.promo-numbers {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-numbers.heading {
+  display: flex;
+  justify-content: center;
 }
