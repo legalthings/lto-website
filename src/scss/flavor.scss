@@ -174,7 +174,7 @@ nav {
   margin-right: 10px;
 }
 
-// Style for main page content
+// General style for main page content
 
 .main-title{
       color: #260a76;
@@ -203,12 +203,59 @@ nav {
   color: #804bc9;
 }
 
+
+// Style for join-ecosystem-block
 .title.promo-numbers {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 .promo-numbers.heading {
   display: flex;
   justify-content: center;
+}
+
+.level-item.empty {
+  width: 324px;
+}
+
+
+// Style for index
+.rock-icon-container {
+  display: flex;
+}
+
+// .rock-icon-child {
+//   display: flex;
+//   align-items: center;
+// }
+
+
+.rock-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rock-icon-img-level {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.rock-icon-filler {
+  min-width: 75px;
+  max-width: 100px;
+}
+
+.text-rock-icon-level {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 400px;
+}
+
+
+.read-more {
+  font-weight: bold;
 }
