@@ -210,12 +210,26 @@ section:nth-of-type(2n+1) {
 
 
 // Style for join-ecosystem-block
-.background {
+.background-hero-ecosystem {
   background-image: url("../assets/polygons - 1.png");
   background-size: cover;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
+
+}
+
+.promo-numbers-section {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-numbers-container {
+  transform: rotate(4deg) skew(-45deg, 0deg);
+  // background-color: red;
+  width: max-width;
+  margin: 0;
+}
+
+.promo-numbers-level {
+  transform: skew(45deg, 0deg) rotate(-4deg);
 }
 
 .title.promo-numbers {
@@ -229,6 +243,12 @@ section:nth-of-type(2n+1) {
   justify-content: center;
 }
 
+.promo-numbers-line {
+  width: 1px;
+  height: 40px;
+  background-image: linear-gradient(to bottom, #7cb7ff, #ba6df6);
+}
+
 .level-item.empty {
   width: 324px;
 }
@@ -238,11 +258,6 @@ section:nth-of-type(2n+1) {
 .rock-icon-container {
   display: flex;
 }
-
-// .rock-icon-child {
-//   display: flex;
-//   align-items: center;
-// }
 
 
 .rock-icon-container {
