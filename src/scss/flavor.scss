@@ -194,6 +194,7 @@ section:nth-of-type(2n+1) {
 
 .main-button {
     box-shadow: 0 16px 16px -8px #00000045;
+    margin: auto;
 }
 
 .button {
@@ -259,6 +260,41 @@ section:nth-of-type(2n+1) {
 // Style for companies block
 .background-companies {
   z-index: 5;
+  margin-top: 50px;
+}
+
+
+.companies-title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // margin-left: 0px;
+  // margin-right: 0px;
+}
+
+.companies {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.company-title {
+  display: flex;
+  justify-content: center;
+}
+
+.companies-ico-container {
+  max-width: 100%;
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.company-icon-link {
+  margin: 50px;
 }
 
 // Style for index
@@ -303,10 +339,10 @@ section:nth-of-type(2n+1) {
 
 .skewed-bottom-left {
   background-color: inherit;
-  height: 150px;
+  height: 141px;
   width: 200vw;
   position: relative;
-  left: -15vw;
-  top: 2vh;
-  transform: skewX(65deg) rotate(-4deg);
+  left: -22vw;
+  top: 7vh;
+  transform: skewX(75deg) rotate(-4deg);
 }
