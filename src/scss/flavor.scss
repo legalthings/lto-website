@@ -45,9 +45,6 @@ section:nth-of-type(2n+1) {
 .navbar {
   position: fixed;
   width: 100%;
-  // background: none;
-//   background-image: url("../assets/polygons - 1.png");
-//   background-size: cover;
 }
 
 .navbar-logo {
@@ -268,8 +265,6 @@ section:nth-of-type(2n+1) {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // margin-left: 0px;
-  // margin-right: 0px;
 }
 
 .companies.hero-body {
@@ -289,13 +284,28 @@ section:nth-of-type(2n+1) {
 .companies-ico-container {
   max-width: 100%;
   display: flex;
-  // flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
 
 .company-icon-link {
   margin: 50px;
+}
+
+
+// Style for insights&updates
+
+.insights {
+  background-color: #e5ecf4;
+}
+
+.insights-tiles {
+  display: flex;
+  justify-content: center;
+}
+
+.insights-tile {
+  max-width: 200px;
 }
 
 // Style for index
