@@ -217,25 +217,29 @@ section:nth-of-type(2n+1) {
 }
 
 .promo-numbers-section {
-  display: flex;
-  justify-content: center;
+    transform: rotate(4deg) skew(-75deg, 0deg);
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px 0 #00000033;
 }
 
 .promo-numbers-container {
-  transform: rotate(4deg) skew(-45deg, 0deg);
-  // background-color: red;
+  // background-color: black;
   width: max-width;
   margin: 0;
 }
 
 .promo-numbers-level {
-  transform: skew(45deg, 0deg) rotate(-4deg);
+  transform: skew(75deg, 0deg) rotate(-4deg);
 }
 
 .title.promo-numbers {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  font-size: 1.3333rem;
 }
 
 .promo-numbers.heading {
