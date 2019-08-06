@@ -209,6 +209,7 @@ section:nth-of-type(2n+1) {
   background-image: url("../assets/polygons - 1.png");
   background-size: cover;
   z-index: 0;
+  margin-bottom: 90px;
 
 }
 
@@ -220,6 +221,8 @@ section:nth-of-type(2n+1) {
     align-items: center;
     box-shadow: 0 0 30px 0 #00000033;
     z-index: 30;
+    position: relative;
+    top: 5vw;
 }
 
 .promo-numbers-container {
@@ -299,13 +302,18 @@ section:nth-of-type(2n+1) {
   background-color: #e5ecf4;
 }
 
-.insights-tiles {
+.insights-ancestor-tile {
   display: flex;
   justify-content: center;
 }
 
-.insights-tile {
-  max-width: 200px;
+.insights-parent-tile {
+  justify-content: center;
+}
+
+.insights-child-tile {
+  max-width: 400px;
+  margin: 20px !important;
 }
 
 // Style for index
