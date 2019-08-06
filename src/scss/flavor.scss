@@ -431,6 +431,7 @@ section:nth-of-type(2n+1) {
   left: -22vw;
   top: 7vh;
   transform: skewX(75deg) rotate(-4deg);
+  box-shadow: -30px 30px 30px -30px #00000014;
 }
 
 .skewed-bottom-right {
@@ -441,4 +442,5 @@ section:nth-of-type(2n+1) {
   left: -84vw;
   top: 0vh;
   transform: skewX(-75deg) rotate(4deg);
+  box-shadow: -30px 30px 30px -30px #00000014;
 }
