@@ -345,10 +345,17 @@ section:nth-of-type(2n+1) {
   border-top-right-radius: 24px;
 }
 
-
 .insights-date {
   color: #8d98a4;
   font-size: 0.8rem;
+}
+
+.insights-block-content {
+  margin-left: 33px;
+}
+
+.insights-block-info {
+  margin-top: 29px;
 }
 
 .insights-title {
@@ -356,13 +363,17 @@ section:nth-of-type(2n+1) {
 }
 
 .insights-short-text {
+  margin-top: 24px;
   font-size: 1rem;
   color: #75828f;
 }
 
 .insights-read-more {
-  display: flex;
-  align-self: flex-end;
+  margin-top: auto;
+}
+
+.insights-button {
+  margin-top: 87px;
 }
 
 
