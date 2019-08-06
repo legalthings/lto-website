@@ -352,24 +352,32 @@ section:nth-of-type(2n+1) {
 
 .insights-block-content {
   margin-left: 33px;
+  display: flex;
+  flex-direction: column;
+  height: 359px;
 }
 
-.insights-block-info {
+.insights-block-title {
   margin-top: 29px;
+  width: 349px;
+  font-size: 1.6rem;
 }
 
 .insights-title {
-  font-size: 1.6rem;
 }
 
 .insights-short-text {
   margin-top: 24px;
+  width: 340px;
   font-size: 1rem;
   color: #75828f;
 }
 
 .insights-read-more {
-  margin-top: auto;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  font-weight: bold;
 }
 
 .insights-button {
