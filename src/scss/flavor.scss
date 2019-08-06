@@ -119,13 +119,15 @@ section:nth-of-type(2n+1) {
 
 // Style for the footer
 .footer {
-  padding-top: 87px;
-  padding-bottom: 212px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 #footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  top: -97px;
 }
 
 
@@ -443,4 +445,15 @@ section:nth-of-type(2n+1) {
   top: 0vh;
   transform: skewX(-75deg) rotate(4deg);
   box-shadow: -30px 30px 30px -30px #00000014;
+}
+
+.skewed-top-left {
+  background-color: inherit;
+  height: 141px;
+  width: 200vw;
+  position: relative;
+  left: -43vw;
+  top: -2vh;
+  transform: skewX(-83deg) rotate(2deg);
+  box-shadow: -30px -30px 30px -30px #00000014;
 }
