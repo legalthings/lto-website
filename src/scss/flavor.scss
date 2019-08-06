@@ -203,6 +203,10 @@ section:nth-of-type(2n+1) {
   color: #804bc9;
 }
 
+.color-set-dark-indigo {
+  color: #17054b;
+}
+
 
 // Style for join-ecosystem-block
 .background-hero-ecosystem {
@@ -276,12 +280,17 @@ section:nth-of-type(2n+1) {
   padding-bottom: 0px !important;
   display: flex;
   flex-direction: column;
-
 }
 
 .company-title {
   display: flex;
   justify-content: center;
+}
+
+.company-sub-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
 }
 
 .companies-ico-container {
@@ -298,23 +307,64 @@ section:nth-of-type(2n+1) {
 
 // Style for insights&updates
 
+.background-insights {
+}
+
 .insights {
   background-color: #e5ecf4;
-}
-
-.insights-ancestor-tile {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.insights-parent-tile {
-  justify-content: center;
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  padding: 17px;
 }
 
-.insights-child-tile {
-  max-width: 400px;
-  margin: 20px !important;
+.insights-blocks-container {
+  display: flex;
 }
+
+.insights-block {
+  margin: 24px;
+  width: 397px;
+  height: 570px;
+  border-radius: 24px;
+  box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+  background-color: white;
+}
+
+.insights-tile-image {
+  height: 180px;
+  width: inherit;
+  background-image: url("/assets/polygons - 1.png");
+  background-size: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+
+.insights-date {
+  color: #8d98a4;
+  font-size: 0.8rem;
+}
+
+.insights-title {
+  font-size: 1.6rem;
+}
+
+.insights-short-text {
+  font-size: 1rem;
+  color: #75828f;
+}
+
+.insights-read-more {
+  display: flex;
+  align-self: flex-end;
+}
+
 
 // Style for index
 .index-section {
