@@ -45,6 +45,7 @@ section:nth-of-type(2n+1) {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar-logo {
@@ -244,23 +245,51 @@ section:nth-of-type(2n+1) {
 
 // Style for join-ecosystem-block
 .background-hero-ecosystem {
-  background-image: url("../assets/polygons - 1.png");
+  background-image: url("/assets/polygons - 1.png");
   background-size: cover;
   z-index: 0;
   margin-bottom: 90px;
 
 }
 
+.slider-control {
+  width: 405px;
+  height: 240px;
+  background-image: url("/assets/slider_control_white_shade.svg");
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.slider-control-arrows-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-control-arrow {
+  margin: 8px;
+}
+
+.slider-control-counter {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
 .promo-numbers-section {
-    transform: rotate(4deg) skew(-75deg, 0deg);
-    height: 175px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 30px 0 #00000033;
-    z-index: 30;
-    position: relative;
-    top: 5vw;
+  transform: rotate(4deg) skew(-75deg, 0deg);
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px 0 #00000033;
+  z-index: 30;
+  position: relative;
+  top: -13vw;
 }
 
 .promo-numbers-container {
