@@ -306,9 +306,13 @@ section:nth-of-type(2n+1) {
   width: 100%;
 }
 
-.promo-numbers-container {
+.promo-numbers-div {
   position: relative;
   margin-top: -8vw;
+  width: 100%;
+  // height: 200px;
+  background: url("/assets/badges_section_bg.svg");
+  background-size: 100% 100%;
 }
 
 
@@ -324,32 +328,32 @@ section:nth-of-type(2n+1) {
 //   top: -13vw;
 // }
 //
-// .promo-numbers-container {
-//   width: max-width;
-//   margin: 0;
-// }
+.promo-numbers-container {
+  padding: 100px;
+
+}
 //
 // .promo-numbers-level {
 //   transform: skew(75deg, 0deg) rotate(-4deg);
 // }
-//
-// .title.promo-numbers {
-//   display: flex;
-//   justify-content: center;
-//   font-weight: bold;
-//   font-size: 1.3333rem;
-// }
-//
-// .promo-numbers.heading {
-//   display: flex;
-//   justify-content: center;
-// }
-//
-// .promo-numbers-line {
-//   width: 1px;
-//   height: 40px;
-//   background-image: linear-gradient(to bottom, #7cb7ff, #ba6df6);
-// }
+
+.title.promo-numbers {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3333rem;
+}
+
+.promo-numbers.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-numbers-line {
+  width: 1px;
+  height: 40px;
+  background-image: linear-gradient(to bottom, #7cb7ff, #ba6df6);
+}
 
 .level-item.empty {
   width: 324px;
