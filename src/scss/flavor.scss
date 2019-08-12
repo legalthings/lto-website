@@ -128,6 +128,11 @@ section.focus {
 
 
 // Style for the footer
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #footer-container {
   display: flex;
   flex-direction: row;
@@ -217,9 +222,14 @@ section.focus {
   color: #75828f;
 }
 
-
-.bottom-triangle {
+.edge-triangle {
   width: 100%;
+  position: relative;
+}
+
+.stacked-triangle {
+  position: absolute;
+  bottom: 0;
 }
 
 .skewed-bottom-left {
@@ -471,6 +481,7 @@ section.focus {
 
 .insights-button {
   margin-top: 87px;
+  margin-bottom: 87px;
 }
 
 // Style for three-areas
@@ -484,6 +495,7 @@ section.focus {
 
 .three-areas-blocks-container {
   display: flex;
+  padding-bottom: 200px;
 }
 
 .three-areas-block {
