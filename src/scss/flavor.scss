@@ -219,6 +219,10 @@ section.focus {
   color: #17054b;
 }
 
+.steel {
+  color: #75828f;
+}
+
 .skewed-bottom-left {
   background-color: inherit;
   height: 141px;
@@ -550,34 +554,32 @@ section.focus {
   padding-bottom: 0px;
 }
 
-.rock-icon-container {
-  display: flex;
-}
-
-
-.rock-icon-container {
-  display: flex;
-  justify-content: center;
-}
-
-.rock-icon-img-level {
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.rock-icon-filler {
-  min-width: 75px;
-  max-width: 100px;
-}
-
-.text-rock-icon-level {
+.index-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 400px;
 }
 
+.columns.rock-icons {
+  width: 66.6666%;
+  align-self: center;
+}
+
+.rock-icon-text {
+  display: flex;
+  // align-items: center;
+}
+
+.text-rock-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-information-text {
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  line-height: 1.56;
+}
 
 .read-more {
   font-weight: bold;
