@@ -128,16 +128,10 @@ section.focus {
 
 
 // Style for the footer
-.footer {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 #footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  top: -97px;
 }
 
 
@@ -221,6 +215,11 @@ section.focus {
 
 .steel {
   color: #75828f;
+}
+
+
+.bottom-triangle {
+  width: 100%;
 }
 
 .skewed-bottom-left {
@@ -370,7 +369,7 @@ section.focus {
   flex-direction: column;
 }
 
-.companies.hero-body {
+.companies {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px !important;
