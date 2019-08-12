@@ -15,9 +15,18 @@ section:nth-of-type(2n+1) {
 }
 
 
-  .container {
-    transform: skewY(0deg);
-  }
+section {
+  background-color: white;
+  padding: 0px!important;
+}
+
+section.alt {
+  background-color: #f4f7fb;
+}
+
+section.focus {
+  background-color: #e5ecf4;
+}
 
 .nws-fa-list {
   li {
