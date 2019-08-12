@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="206" viewBox="0 0 1440 206">
+  <defs>
+    <polygon id="path-1" points="0 57.749 1246.185 0 1720 84.887 1703.699 933.224 551 1041.724 35 849.518"/>
+    <filter id="filter-2" width="105.2%" height="108.6%" x="-2.6%" y="-4.3%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0"/>
+    </filter>
+    <polygon id="path-3" points="0 25 1088.778 72.832 1533 0 1533 1274.953 421.985 1391 0 1274.953"/>
+    <filter id="filter-4" width="105.9%" height="106.5%" x="-2.9%" y="-3.2%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="design">
+    <g class="design__lto---desk---1-1-1-homepage-copy" transform="translate(0 -1997)">
+      <g class="design__lto---desk---1-1-1-homepage-copy__use-cases" transform="translate(-133 1783)">
+        <g class="design__lto---desk---1-1-1-homepage-copy__use-cases__rectangle" transform="matrix(-1 0 0 1 1720 0)">
+          <use fill="#000" filter="url(#filter-2)" xlink:href="#path-1"/>
+          <use fill="#F4F7FB" xlink:href="#path-1"/>
+        </g>
+      </g>
+      <g class="design__lto---desk---1-1-1-homepage-copy__usps" transform="translate(-34 737)">
+        <g class="design__lto---desk---1-1-1-homepage-copy__usps__path-2">
+          <use fill="#000" filter="url(#filter-4)" xlink:href="#path-3"/>
+          <use fill="#FFF" xlink:href="#path-3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
