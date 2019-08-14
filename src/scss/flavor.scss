@@ -84,9 +84,8 @@ section.focus {
   align-items: center;
 }
 
-.navbar-start {
+.navbar-end {
   display: flex;
-  margin: unset;
   align-items: center;
 }
 
@@ -414,6 +413,7 @@ section.focus {
   flex-direction: column;
   align-items: center;
 }
+
 
 .insights-content-container {
   display: flex;

@@ -3,51 +3,49 @@
 <nav class="navbar is-transparent">
   <div id="navbar-container" class="container">
     <div class="navbar-brand">
-      <a class="logo-navbar" href="/">
+      <a class="manvlogo-navbar" href="/">
         <span class="title">
           <img class="navbar-logo" src="/assets/v-logos-new/Gradient/png/logo-full-dark-gradient--l.png" alt="LTO Logo" />
         </span>
       </a>
-      <div class="navbar-burger burger" data-target="main-navigation">
+      <div class="navbar-burger burger" id="navbar-toggle" data-target="navbar-menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
 
-    <div id="main-navigation" class="navbar-menu">
+    <div id="navbar-menu" class="navbar-menu">
+      {# <div class="navbar-start">
+      </div> #}
       <div class="navbar-end">
-            <a class="navbar-item dark-indigo" href="#">
-        <div class=use-cases>
-        Use cases
-        </div>
         <a class="navbar-item dark-indigo" href="#">
-          <div class=hybrid-blockchain>
-          Hybrid blockchain
-        </div>
-        <a class="navbar-item dark-indigo" href="#">
-          <div class=ecosystem-v>
-          Ecosystem V
-        </div>
-        <a class="navbar-item dark-indigo" href="#">
-          <div class=about>
-          About
-        </div>
-        <a class="navbar-item dark-indigo" href="#">
-          <div class=community>
-          Community
-        </div>
-        <a class="navbar-item dark-indigo" href="#">
-          <div class=marketplace>
-          Marketplace
-        </div>
-        <a class="navbar-item dark-indigo" href="#">
-          <div class=dev-area>
-                Dev Area
-          </div>
+          Use cases
         </a>
+        <a class="navbar-item dark-indigo" href="#">
+          Hybrid blockchain
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          Ecosystem V
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          About
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          Community
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          Marketplace
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          <div class="dev-area">
+            Dev Area
+        </div>
+      </a>
     </div>
   </div>
+
+
 </nav>
 
 {% endblock %}
