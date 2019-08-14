@@ -21,11 +21,14 @@ function buildStyles(barWidth) {
     document.styleSheets[0].insertRule(
         `.slider-control-upper-bar {
           background-color: #17054b;
+          height: 8px;
+          position: relative;
+          top: -5px;
       }`,
         0
     )
     document.styleSheets[0].insertRule(
-        `.slider-control-lower-bar { 
+        `.slider-control-lower-bar {
           width: ${barWidth};
           height: 3px;
           background-color: #d2c8da;
