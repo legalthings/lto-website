@@ -290,6 +290,7 @@ section.focus {
 .slider-control-arrows-div {
   display: flex;
   justify-content: flex-end;
+  z-index: 5;
 }
 
 .slider-control-arrow {
@@ -305,8 +306,8 @@ section.focus {
 
 .slider-control-bar {
   display: flex;
-  // justify-content: center;
-  flex-direction: column;
+  //justify-content: center;
+  flex-direction: row;
   align-items: flex-end;
   margin-right: 5px;
   width: 56%;
@@ -314,18 +315,14 @@ section.focus {
 }
 
 .slider-control-upper-bar {
-  height: 6px;
-  width: 25%;
   background-color: #17054b;
-  align-self: flex-start;
-  position: relative;
-  top: 3px;
 }
 
 .slider-control-lower-bar {
   height: 3px;
   background-color: #d2c8da;
-  width: 100%;
+  align-self: flex-start;
+  position: relative;
 }
 
 .promo-numbers-div {
