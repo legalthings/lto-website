@@ -277,7 +277,7 @@ section.focus {
 .slider-control {
   width: 405px;
   height: 240px;
-  background-image: url("/assets/slider_control_white_shade.svg");
+  background-image: url("/assets/slider_control_grey_shade.svg");
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -438,13 +438,73 @@ section.focus {
   background-color: white;
 }
 
-.insights-tile-image {
+div.insights-tile-image {
   height: 180px;
   width: inherit;
-  background-image: url("/assets/polygons - 1.png");
-  background-size: cover;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+}
+
+div.insights-tile-image.left {
+  position: relative;
+  top: -80px;
+}
+
+img.insights-tile-image {
+  border-radius: inherit;
+}
+
+.insights-tile-image.left::before {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 80px;
+  width: 397px;
+  position: relative;
+  top: 239px;
+  transform: skewY(7deg);
+  z-index: 5;
+}
+
+.insights-tile-image.left::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 40px;
+  width: 397px;
+  position: relative;
+  top: 0px;
+  transform: skewY(-12deg);
+  z-index: 5;
+}
+
+div.insights-tile-image.right {
+  position: relative;
+  top: -100px;
+}
+
+.insights-tile-image.right::before {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 100px;
+  width: 397px;
+  position: relative;
+  top: 290px;
+  transform: skewY(21deg);
+  z-index: 5;
+}
+
+.insights-tile-image.right::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 100px;
+  width: 397px;
+  position: relative;
+  top: -32px;
+  transform: skewY(6deg);
+  z-index: 5;
 }
 
 .insights-date {
@@ -453,6 +513,8 @@ section.focus {
 }
 
 .insights-block-content {
+  position: relative;
+  z-index: 100;
   margin-left: 33px;
   display: flex;
   flex-direction: column;
@@ -469,7 +531,6 @@ section.focus {
   margin-top: 24px;
   width: 340px;
   font-size: 1rem;
-  color: #75828f;
 }
 
 .insights-read-more {
@@ -523,7 +584,6 @@ section.focus {
 }
 
 .three-areas-column-content {
-  // margin-left: 33px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -531,14 +591,12 @@ section.focus {
 
 
 .three-areas-column-title {
-  // margin-top: 29px;
   width: 270px;
   font-size: 1.6rem;
   text-align: center;
 }
 
 .three-areas-short-text {
-  // margin-top: 24px;
   width: 320px;
   font-size: 1rem;
   text-align: center;
