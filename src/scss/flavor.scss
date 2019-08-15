@@ -299,7 +299,7 @@ section.focus {
 // Style for join-ecosystem-block
 .background-hero-ecosystem {
   background-image: url("/assets/slider-image@3x.png");
-  background-size: 100% 100%;
+  background-size: cover;
   z-index: 0;
 }
 
@@ -359,9 +359,12 @@ section.focus {
   position: relative;
   margin-top: -8vw;
   width: 100%;
-  // height: 200px;
+  height: calc(100vw/5.3);
   background: url("/assets/badges_section_bg.svg");
-  background-size: 100% 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
 }
 
 
@@ -579,7 +582,7 @@ div.insights-image.right {
 // Style for three-areas
 .three-areas {
   background-image: url("/assets/bot-image@3x.png");
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
