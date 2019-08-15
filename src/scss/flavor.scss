@@ -651,6 +651,40 @@ div.insights-image.right {
   align-self: center;
 }
 
+.column.rock-icon {
+  display: flex;
+  align-items: flex-start;
+}
+
+.small-rock-1 {
+  position: relative;
+  left: 10px;
+}
+
+.small-rock-2 {
+  position: relative;
+  top: 110px;
+}
+
+.small-rock-3 {
+  width: 89px;
+  position: relative;
+  left: -31px;
+  top: -75px;
+}
+
+.small-rock-4 {
+  display: flex;
+  align-self: center;
+  position: relative;
+  left: -100px;
+}
+
+.small-rock-5 {
+  display: flex;
+  align-self: flex-end;
+}
+
 .rock-icon-text {
   display: flex;
 }
