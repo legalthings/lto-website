@@ -130,12 +130,40 @@ section.focus {
 .footer {
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  // background-image: url("/assets/background-footer-bottom.svg"), url("background-footer-top.svg");
+  background: rgba(256, 256, 256, 0);
+  position: relative;
+  top: -115px;
 }
 
-#footer-container {
+.footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer-edge-triangle::before {
+  content: "";
+  display: block;
+  background: rgba(256, 256, 256, 0);
+  background-image: url("/assets/background-footer-bottom.svg");
+  height: 176px;
+  width: 100%;
+  background-size: cover;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  background: rgba(256, 256, 256, 0);
+  background-image: url("/assets/background-footer-top.svg");
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  top: -309px;
 }
 
 .footer-columns {
@@ -185,6 +213,7 @@ section.focus {
 .social-media-icon {
   margin-left: 10px;
   margin-right: 10px;
+  width: 21px;
 }
 
 // General style for main page content
@@ -559,7 +588,7 @@ div.insights-image.right {
 
 .three-areas-columns {
   padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
 }
 
 .three-areas-column {
