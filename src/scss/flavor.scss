@@ -608,8 +608,6 @@ div.insights-image.right {
   justify-content: center;
   height: 185px;
   width: 100%;
-  // margin-top: 37px;
-  // margin-bottom: 28px;
 }
 
 .three-areas-icon-img {
@@ -647,13 +645,17 @@ div.insights-image.right {
 }
 
 .columns.rock-icons {
-  width: 66.6666%;
   align-self: center;
 }
 
 .column.rock-icon {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.column.rock-icon.community {
+  justify-content: flex-start;
 }
 
 .small-rock-1 {
@@ -688,11 +690,19 @@ div.insights-image.right {
   display: flex;
 }
 
+.rock-icon-text.community {
+  justify-content: flex-end;
+}
+
 .text-rock-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 66.666%
 }
+
+// .text-rock-icon.community {
+// }
 
 .index-information-text {
   font-weight: 300;
