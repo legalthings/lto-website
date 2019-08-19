@@ -434,12 +434,6 @@ section.focus {
 
 
 // Style for companies block
-.background-companies {
-  z-index: 5;
-  margin-top: 50px;
-}
-
-
 .companies-title-container {
   display: flex;
   justify-content: center;
@@ -466,11 +460,117 @@ section.focus {
 }
 
 .companies-ico-container {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: 1500px;
+  height: 400px;
+  position: relative;
 }
+
+.company-rocks {
+  position: absolute;
+}
+
+.generali {
+  top: 0px;
+  left: 40px;
+}
+
+.indaver {
+  top: 133px;
+  left: 110px;
+}
+
+.rijksoverheid {
+  top: 0px;
+  left: 280px;
+}
+
+.signrequest {
+  top: 160px;
+  left: 430px;
+}
+
+.dekra {
+  top: 40px;
+  left: 560px;
+}
+
+.stena {
+  top: 200px;
+  left: 760px;
+}
+
+.capptions {
+  top: 20px;
+  left: 960px;
+}
+
+.firm-24 {
+  top: 200px;
+  left: 1120px;
+}
+
+
+#companies-small-rock-1 {
+  width: 26px;
+  top: 237px;
+  left: 60px;
+}
+
+#companies-small-rock-2 {
+  width: 26px;
+  top: 50px;
+  left: 210px;
+}
+
+#companies-small-rock-3 {
+  width: 78px;
+  top: 220px;
+  left: 320px;
+}
+
+#companies-small-rock-4 {
+  width: 36px;
+  top: 30px;
+  left: 460px;
+}
+
+#companies-small-rock-5 {
+  width: 26px;
+  top: 160px;
+  left: 650px;
+}
+
+#companies-small-rock-6 {
+  width: 78px;
+  top: 240px;
+  left: 610px;
+}
+
+#companies-small-rock-7 {
+  width: 91px;
+  top: 50px;
+  left: 760px;
+}
+
+#companies-small-rock-8 {
+  width: 28px;
+  top: 85px;
+  left: 850px;
+}
+
+#companies-small-rock-9 {
+  width: 78px;
+  top: 210px;
+  left: 930px;
+}
+
+#companies-small-rock-10 {
+  width: 28px;
+  top: 160px;
+  left: 1130px;
+}
+
+
 
 .company-icon-link {
   margin: 50px;
