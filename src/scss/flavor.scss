@@ -572,10 +572,6 @@ section.focus {
 
 
 
-.company-icon-link {
-  margin: 50px;
-}
-
 .use-cases.button {
   padding-left: 32px !important;
   padding-right: 32px !important;
@@ -722,9 +718,12 @@ div.insights-image.right {
 }
 
 // Style for three-areas
-.three-areas {
+.three-areas-section {
   background-image: url("/assets/bot-image@3x.png");
   background-size: cover;
+}
+
+.three-areas {
   display: flex;
   flex-direction: column;
   align-items: center;
