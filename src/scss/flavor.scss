@@ -256,6 +256,14 @@ section.focus {
   color: #75828f;
 }
 
+.bluey-grey {
+  color: #95a7bf;
+}
+
+.deep-lavender {
+  color: #804bc9;
+}
+
 .edge-triangle {
   width: 100%;
   position: relative;
@@ -743,4 +751,38 @@ div.insights-image.right {
 
 .read-more {
   font-weight: bold;
+}
+
+
+// Style for use-cases page
+.background-hero.use-cases {
+  background-image: url("/assets/slider-image-car@3x.png");
+  // width: 1440px;
+  height: 672px;
+  object-fit: contain;
+}
+
+
+div.supply-chain {
+  // opacity: 0.5;
+  background-color: rgba(222, 232, 242, 0.5);
+  border-radius: 18px;
+  width: 118px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.supply-chain {
+  width: 89px;
+  height: 15px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
 }
