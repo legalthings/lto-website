@@ -50,6 +50,10 @@ section.focus {
 }
 
 
+.button {
+  height: 50px !important;
+}
+
 // Style for the header
 .navbar {
   position: fixed;
@@ -462,6 +466,11 @@ section.focus {
 
 .company-icon-link {
   margin: 50px;
+}
+
+.use-cases.button {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
 }
 
 
