@@ -1085,15 +1085,115 @@ div.business-challenges-image.right {
   font-size: 28px;
 }
 
+.solution-overview-text {
+  font-weight: 300;
+}
+
 img.solution-overview-image {
   height: 150px;
   width: auto;
 }
 
 .button.book-demo {
-  // font-weight: 600 !important;
   font-weight: 600;
   padding-left: 41px;
   padding-right: 41px;
 
+}
+
+
+// Style for advantages LTO Network
+.advantages-title-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.advantages-div {
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column.advantages.left-side {
+  align-items: flex-end;
+  position: relative;
+}
+
+.column.advantages.right-side {
+  align-items: flex-start;
+}
+
+img.rock-tree {
+  width: 170px;
+  height: auto;
+}
+
+img.rock-rocket {
+  width: 169px;
+  height: auto;
+}
+
+img.rock-thumbs-up {
+  width: 172px;
+  height: auto;
+}
+
+#advantages-small-rock-1 {
+  width: 31px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 280px;
+}
+
+#advantages-small-rock-2 {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  left: 410px;
+}
+
+#advantages-small-rock-3 {
+  width: 47px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 265px;
+}
+
+#advantages-small-rock-4 {
+  width: 26px;
+  height: auto;
+  position: absolute;
+  top: 135px;
+  left: 440px;
+}
+
+#advantages-small-rock-5 {
+  width: 31px;
+  height: auto;
+  position: absolute;
+  top: 175px;
+  left: 305px;
+}
+
+.advantages-text-container {
+  align-items: flex-start;
+  width: 60%;
+}
+
+.advantages.title {
+  font-size: 1.5555rem;
+  font-weight: normal;
+}
+
+.advantages-text {
+  font-weight: 300;
 }
