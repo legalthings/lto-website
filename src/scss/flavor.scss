@@ -24,7 +24,6 @@ section {
 section.alt {
   background-color: #f4f7fb;
 }
-
 section.focus {
   background-color: #e5ecf4;
 }
@@ -792,7 +791,7 @@ p.supply-chain {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .business-challenges-column {
@@ -903,7 +902,6 @@ div.business-challenges-image.right {
   z-index: 5;
 }
 
-
 .business-challenges-block-content {
   position: relative;
   z-index: 100;
@@ -935,4 +933,68 @@ div.business-challenges-image.right {
 .business-challenges-button {
   margin-top: 87px;
   margin-bottom: 87px;
+}
+
+// Style for solution overview
+.solution-overview-div {
+  margin-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-overview-title-container {
+  margin-bottom: 85px;
+}
+
+.solution-overview-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.column.solution-overview {
+  display: flex;
+  align-items: center;
+}
+
+.column.solution-overview.left-side {
+  justify-content: flex-end;
+}
+
+.column.solution-overview.right-side {
+  justify-content: flex-start;
+}
+
+.solution-overview-text-container {
+  width: 66.666%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.solution-overview-text-container.left-side {
+  text-align: right;
+}
+
+.solution-overview-text-container.right-side {
+  text-align: left;
+}
+
+.solution-overview.title {
+  font-size: 28px;
+}
+
+img.solution-overview-image {
+  height: 150px;
+  width: auto;
+}
+
+.button.book-demo {
+  // font-weight: 600 !important;
+  font-weight: 600;
+  padding-left: 41px;
+  padding-right: 41px;
+
 }
