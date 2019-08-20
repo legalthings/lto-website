@@ -1147,11 +1147,17 @@ img.solution-overview-image {
 
 .column.advantages.left-side {
   align-items: flex-end;
-  position: relative;
 }
 
 .column.advantages.right-side {
   align-items: flex-start;
+}
+
+.advantages.column-subdiv {
+  position: relative;
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 img.rock-tree {
@@ -1173,40 +1179,40 @@ img.rock-thumbs-up {
   width: 31px;
   height: auto;
   position: absolute;
-  top: 20px;
-  left: 280px;
+  top: 0px;
+  left: 50px;
 }
 
 #advantages-small-rock-2 {
   width: 20px;
   height: auto;
   position: absolute;
-  top: -15px;
-  left: 410px;
+  top: -35px;
+  left: 180px;
 }
 
 #advantages-small-rock-3 {
   width: 47px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 265px;
+  top: -15px;
+  left: 35px;
 }
 
 #advantages-small-rock-4 {
   width: 26px;
   height: auto;
   position: absolute;
-  top: 135px;
-  left: 440px;
+  top: 115px;
+  left: 210px;
 }
 
 #advantages-small-rock-5 {
   width: 31px;
   height: auto;
   position: absolute;
-  top: 175px;
-  left: 305px;
+  top: 155px;
+  left: 75px;
 }
 
 .advantages-text-container {
