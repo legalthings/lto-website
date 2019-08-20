@@ -65,6 +65,14 @@ section.focus {
   font-size: 28px;
 }
 
+.small-subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  padding-bottom: 80px;
+}
+
+
 // Style for the header
 .navbar {
   position: fixed;
@@ -457,13 +465,6 @@ section.focus {
   padding-bottom: 0px !important;
   display: flex;
   flex-direction: column;
-}
-
-.company-sub-title {
-  display: flex;
-  justify-content: center;
-  font-size: 19px;
-  padding-bottom: 80px;
 }
 
 .companies-ico-container {
