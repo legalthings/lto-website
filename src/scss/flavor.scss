@@ -2,8 +2,14 @@
 @import 'partials/typeface';
 @import 'partials/mixins/_media-queries';
 
-body, html {
+html {
   font-size: 18px;
+}
+
+body {
+  font-size: 18px;
+  max-width: 3000px;
+  margin: 0 auto;
 }
 
 // section:nth-of-type(2n) {
@@ -1234,6 +1240,7 @@ table tbody tr th {
   line-height: 1.5;
   letter-spacing: 0.8px;
   padding-top: 40px !important;
+  min-width: 160px !important;
 }
 
 table tbody tr td {
@@ -1248,7 +1255,7 @@ table tbody tr td {
 }
 
 table tbody tr td:nth-child(odd) {
-  width: 400px;
+  width: 37%;
   padding-right: 57px;
 }
 
