@@ -34,6 +34,11 @@ section.focus {
   background-color: #e5ecf4;
 }
 
+section.different {
+  background-color: #dee8f2;
+}
+
+
 .nws-fa-list {
   li {
     align-content: center;
@@ -1300,7 +1305,7 @@ table tbody tr td:nth-child(even) {
 
 // Style for Business Case
 .business-case-div {
-  padding-bottom: 200px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1364,4 +1369,44 @@ p.business-case-block-text {
 
 .columns.business-case.dark-indigo {
   margin-top: 37px;
+}
+
+// Style for Download Case Study block
+.download-case-study-div {
+  padding-top: 135px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-case-study-content-container {
+  display: flex;
+}
+
+.image-case-study {
+  width: 675px;
+  height: 900px;
+}
+
+.download-case-study.selection-circles {
+  margin-top: 64px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.selected.selection-circle {
+  background-color: #17054b;
+}
+
+.unselected.selection-circle {
+  background-color: #95a7bf;
 }
