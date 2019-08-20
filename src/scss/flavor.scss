@@ -468,6 +468,22 @@ section.focus {
 
 
 // Style for companies block
+.background-companies::after {
+    content: '';
+    width: 100vw;
+    display: block;
+    position: absolute;
+    left: 0px;
+    background-size: 100% 100%;
+    background-image: url("/assets/section_companies_bottom.svg");
+    height: 200px;
+    z-index: 1;
+}
+
+.companies.section-body {
+  padding-top: 200px;
+}
+
 .companies-title-container {
   display: flex;
   justify-content: center;
@@ -603,6 +619,7 @@ section.focus {
 
 // Style for insights&updates
 .insights {
+  padding-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -802,6 +819,18 @@ div.insights-image.right {
   padding-bottom: 0px;
 }
 
+.index-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section_main_content_bottom.svg");
+  height: 200px;
+  z-index: 1;
+}
+
 .index-container {
   display: flex;
   flex-direction: column;
@@ -915,6 +944,18 @@ p.supply-chain {
 
 
 // Style for business challenges
+.business-challenges-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section_main_content_bottom.svg");
+  height: 200px;
+  z-index: 1;
+}
+
 .business-challenges-content-container {
   display: flex;
   align-items: center;
@@ -1065,6 +1106,7 @@ div.business-challenges-image.right {
 
 // Style for solution overview
 .solution-overview-div {
+  padding-top: 200px;
   margin-bottom: 250px;
   display: flex;
   flex-direction: column;
@@ -1132,6 +1174,18 @@ img.solution-overview-image {
 
 
 // Style for advantages LTO Network
+.advantages-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section_main_content_bottom.svg");
+  height: 200px;
+  z-index: 1;
+}
+
 .advantages-title-container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1306,8 +1360,20 @@ table tbody tr td:nth-child(even) {
 }
 
 // Style for Business Case
+.business-case-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section_companies_bottom.svg");
+  height: 200px;
+  z-index: 1;
+}
 .business-case-div {
-  padding-bottom: 60px;
+  padding-top: 200px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1375,7 +1441,7 @@ p.business-case-block-text {
 
 // Style for Download Case Study block
 .download-case-study-div {
-  padding-top: 135px;
+  padding-top: 300px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
