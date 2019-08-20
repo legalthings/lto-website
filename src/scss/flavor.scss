@@ -54,6 +54,17 @@ section.focus {
   height: 50px !important;
 }
 
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.subsection-title {
+  font-size: 28px;
+}
+
 // Style for the header
 .navbar {
   position: fixed;
@@ -448,14 +459,10 @@ section.focus {
   flex-direction: column;
 }
 
-.section-title {
-  display: flex;
-  justify-content: center;
-}
-
 .company-sub-title {
   display: flex;
   justify-content: center;
+  font-size: 19px;
   padding-bottom: 80px;
 }
 
