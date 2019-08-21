@@ -865,26 +865,77 @@ div.insights-image.right {
   padding-bottom: 12rem;
 }
 
-.three-areas-column {
-  background-color: white;
-  margin: 24px;
-  height: 470px;
-  border-radius: 24px;
-  box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
-  display: flex;
-  flex-direction: column;
+// three areas blocks for non-mobile view
+@media (min-width: 769px) {
+  .three-areas-column {
+    background-color: white;
+    margin: 24px;
+    height: 470px;
+    border-radius: 24px;
+    box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .three-areas.main-content-block {
+    height: 358px;
+  }
+
+  .three-areas-icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
 }
 
-.three-areas-icon-div {
-  display: flex;
-  justify-content: center;
-  height: 185px;
-  width: 100%;
+// three-areas blocks for mobile view
+@media (max-width: 769px) {
+  .three-areas-column {
+    background-color: white;
+    margin: 24px;
+    width: 327px;
+    border-radius: 24px;
+    box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .three-areas-icon-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .three-areas.rock-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .three-areas-column-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .three-areas.main-content-block {
+    margin-bottom: 23px;
+  }
 }
 
+.three-areas.button {
+  margin-bottom: 20px;
+}
 .three-areas-icon-img {
   object-fit: contain;
 }
+
 
 .three-areas-column-content {
   display: flex;
@@ -900,15 +951,15 @@ div.insights-image.right {
 }
 
 .three-areas-short-text {
-  width: 320px;
+  max-width: 320px;
   font-size: 1rem;
   text-align: center;
   font-weight: 300;
-   font-style: normal;
-   font-stretch: normal;
-   line-height: 1.56;
-   letter-spacing: 0.6px;
-   text-align: center;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  text-align: center;
 }
 
 
