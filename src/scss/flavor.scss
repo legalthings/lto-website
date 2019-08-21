@@ -1809,6 +1809,22 @@ p.solutions.category {
 }
 
 // Style for hero-hybrid-blockchain
+.hybrid-blockchain-section {
+  padding-bottom: 0px;
+}
+
+.hybrid-blockchain-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section_main_content_bottom.svg");
+  height: 200px;
+  z-index: 1;
+}
+
 .background-hero.hybrid-blockchain {
   background-image: url("/assets/slider-image-hybrid-blockchain@3x.png");
 }
@@ -1829,5 +1845,31 @@ p.solutions.category {
   font-stretch: normal;
   line-height: 1.47;
   letter-spacing: normal;
+  text-align: center;
+}
+
+.section-title.hybrid-blockchain {
+  margin-bottom: 50px;
+}
+
+
+.hybrid-blockchain.buttons-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.button.hybrid-blockchain {
+  margin: 10px;
+}
+
+p.button.hybrid-blockchain {
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
   text-align: center;
 }
