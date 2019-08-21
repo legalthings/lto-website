@@ -807,6 +807,12 @@ div.insights-image.right {
   width: 320px;
   font-size: 1rem;
   text-align: center;
+  font-weight: 300;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.56;
+   letter-spacing: 0.6px;
+   text-align: center;
 }
 
 
@@ -1943,4 +1949,59 @@ div.why-lto.company-names {
   display: flex;
   justify-content: space-around;
   margin-bottom: 22px;
+}
+
+// Style for ecosystem-v-block
+.ecosystem-v-block-section::after {
+  content: "";
+  display: block;
+  background-image: url("/assets/section_footer_top_01.svg");
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  position: relative;
+  top: 16px;
+}
+
+.ecosystem-v-block-div {
+  padding-top: 200px;
+}
+
+.ecosystem-v-block.column.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecosystem-v-block.column-content {
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecosystem-v-block.title {
+  margin-bottom: 41px;
+}
+
+.ecosystem-v-block.text {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+}
+
+.ecosystem-v-block.button {
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
