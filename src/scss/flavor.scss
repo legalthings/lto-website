@@ -20,12 +20,12 @@ body {
   // background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,250,251,1) 100%);
 // }
 
-
 section {
   background-color: white;
-  padding: 0px!important;
+  padding: 0px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
-
 
 section.alt {
   background-color: #f4f7fb;
@@ -58,14 +58,13 @@ section.focus {
 
 
 .button {
-  height: 50px !important;
+  font-weight: 500 !important;
+  padding: 1.5em 2em !important;
 }
 
 
 .section-title {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
+  z-index: 2;
 }
 
 .subsection-title {
@@ -110,8 +109,7 @@ section.focus {
 }
 
 .title {
-  display: flex;
-  align-items: center;
+  line-height: 1.25;
 }
 
 .navbar-end {
@@ -122,8 +120,7 @@ section.focus {
 .navbar-item {
   display: flex;
   height: 50px;
-  // font-family: IBMPlexSans;
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans";
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
@@ -202,7 +199,7 @@ section.focus {
 .footer-item {
   width: 172px;
   height: 128px;
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -213,7 +210,7 @@ section.focus {
   color: #8d98a4;
 }
 .footer-title {
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -249,12 +246,12 @@ section.focus {
 
 .main-title{
       font-size: 56px;
-      font-family: sans-serif;
+      font-family: "IBM Plex Sans";
       font-weight: normal;
 }
 
 .subtitle {
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans";
   font-weight: normal;
 
   font-size: 3rem;
@@ -345,7 +342,20 @@ section.focus {
 
 
 .background-hero.ecosystem {
+  position: relative;
   background-image: url("/assets/slider-image@3x.png");
+  max-height: 750px;
+
+  >.hero-body {
+    padding: 4em;
+  }
+
+  .promo-numbers-div {
+    position: absolute;
+    left: 0px;
+    bottom: -150px;
+    z-index: 10;
+  }
 }
 
 .background-hero.infrastructure {
@@ -370,56 +380,58 @@ section.focus {
 }
 
 // Style for slider control
-.slider-control {
-  width: 405px;
-  height: 240px;
-  background-image: url("/assets/slider_control_grey_shade.svg");
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+.slider-control-container {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 
-.slider-control-arrows-div {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 5;
-}
+  .slider-control {
+    position: relative;
+    width: 405px;
+    height: 240px;
+    background-image: url("/assets/slider_control_grey_shade.svg");
 
-.slider-control-arrow {
-  margin: 8px;
-}
+    >div {
+      position: absolute;
+    }
 
-.slider-control-counter {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  font-size: 15px;
-}
+    .slider-control-arrows-div {
+      z-index: 5;
+      right: 8px;
+      top: 64px;
+    }
 
-.slider-control-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-top: 5px;
-  margin-right: 5px;
-  width: 56%;
-  height: auto;
-}
+    .slider-control-arrow {
+      margin: 8px;
+    }
 
-.slider-control-upper-bar {
-  background-color: #17054b;
-  height: 10px;
-}
+    .slider-control-counter {
+      font-size: 15px;
+      left: 215px;
+      top: 95px;
+    }
 
-.slider-control-lower-bar {
-  height: 3px;
-  background-color: #d2c8da;
-  align-self: flex-start;
-  position: relative;
+    .slider-control-bar {
+      left: 215px;
+      top: 125px;
+      margin-top: 5px;
+      margin-right: 5px;
+      width: 56%;
+      height: auto;
+    }
+
+    .slider-control-upper-bar {
+      background-color: #17054b;
+      height: 10px;
+    }
+
+    .slider-control-lower-bar {
+      height: 3px;
+      background-color: #d2c8da;
+      align-self: flex-start;
+      position: relative;
+    }
+  }
 }
 
 // Promo-numbers-div on laptop/desktop
@@ -428,9 +440,9 @@ section.focus {
     position: relative;
     margin-top: -8vw;
     width: 100%;
-    height: calc(100vw/5.3);
+    height: 273px;
     background: url("/assets/badges_section_bg.svg");
-    background-size: cover;
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
 
@@ -438,7 +450,7 @@ section.focus {
 
 
   .promo-numbers-container {
-    padding: 100px;
+    padding: 32px;
 
   }
 
@@ -470,12 +482,11 @@ section.focus {
 @media (max-width: 769px) {
   .promo-numbers-div {
     position: absolute;
-    margin-top: -28vw;
-    left: -50vw;
-    width: 200%;
-    height: fit-content;
+    left: 0px;
+    width: 100%;
+    height: 500px;
     background: url("/assets/badges_section_bg.svg");
-    background-size: cover;
+    background-size: 100% 200%;
     display: flex;
     align-items: center;
   }
@@ -489,8 +500,7 @@ section.focus {
   }
 
   .promo-numbers-container {
-    padding: 100px;
-
+    padding: 16px;
   }
 
   .promo-numbers-level {
@@ -559,6 +569,10 @@ section.focus {
 
 }
 
+.background-companies {
+  padding-top: 210px;
+}
+
 // Style for companies block
 .background-companies::after {
     content: '';
@@ -573,7 +587,6 @@ section.focus {
 }
 
 .companies.section-body {
-  padding-top: 200px;
 }
 
 .companies-title-container {
@@ -591,7 +604,7 @@ section.focus {
 }
 
 .companies-ico-container {
-  width: 1500px;
+  width: 100%;
   height: 400px;
   position: relative;
 }
@@ -709,9 +722,38 @@ section.focus {
 }
 
 
+.insights-section {
+  padding-top: 215px;
+  position: relative;
+}
+
+.insights-bg {
+  width: 100%;
+  height: 227px;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+
+  &.before {
+    background-image: url('/assets/section_insights_top_01.svg');
+    top: 400px;
+  }
+
+  &.between {
+    background: white;
+    top: 625px;
+    height: 565px;
+  }
+
+  &.after {
+    background-image: url('/assets/section_insights_bottom_01.svg');
+    bottom: -70px;
+  }
+}
+
 // Style for insights&updates
 .insights {
-  padding-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -721,6 +763,10 @@ section.focus {
 .insights-content-container {
   display: flex;
   align-items: center;
+
+  @include responsive(phone) {
+    display: block;
+  }
 }
 
 .arrow-icon {
@@ -739,6 +785,12 @@ section.focus {
   border-radius: 24px;
   box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
   background-color: white;
+  z-index: 1;
+
+  @include responsive(phone) {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 div.insights-image {
@@ -746,11 +798,11 @@ div.insights-image {
   width: inherit;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  position: relative;
 }
 
-div.insights-image.left {
+.insights-image-container {
   position: relative;
-  top: -80px;
 }
 
 img.insights-image {
@@ -762,9 +814,9 @@ img.insights-image {
   display: block;
   background-color: white;
   height: 80px;
-  width: 397px;
-  position: relative;
-  top: 239px;
+  width: 100%;
+  position: absolute;
+  bottom: -45px;
   transform: skewY(7deg);
   z-index: 5;
 }
@@ -774,16 +826,11 @@ img.insights-image {
   display: block;
   background-color: white;
   height: 40px;
-  width: 397px;
-  position: relative;
-  top: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: -35px;
   transform: skewY(-12deg);
   z-index: 5;
-}
-
-div.insights-image.right {
-  position: relative;
-  top: -100px;
 }
 
 .insights-image.right::before {
@@ -791,9 +838,9 @@ div.insights-image.right {
   display: block;
   background-color: white;
   height: 100px;
-  width: 397px;
-  position: relative;
-  top: 290px;
+  width: 100%;
+  position: absolute;
+  bottom: -70px;
   transform: skewY(21deg);
   z-index: 5;
 }
@@ -803,9 +850,9 @@ div.insights-image.right {
   display: block;
   background-color: white;
   height: 100px;
-  width: 397px;
-  position: relative;
-  top: -32px;
+  width: 100%;
+  position: absolute;
+  bottom: -62px;
   transform: skewY(6deg);
   z-index: 5;
 }
@@ -826,13 +873,11 @@ div.insights-image.right {
 
 .insights-block-title {
   margin-top: 29px;
-  width: 349px;
   font-size: 1.6rem;
 }
 
 .insights-short-text {
   margin-top: 24px;
-  width: 340px;
   font-size: 1rem;
 }
 
@@ -852,6 +897,7 @@ div.insights-image.right {
 .three-areas-section {
   background-image: url("/assets/bot-image@3x.png");
   background-size: cover;
+  background-position-y: -250px;
 }
 
 .three-areas {
@@ -951,7 +997,6 @@ div.insights-image.right {
 }
 
 .three-areas-short-text {
-  max-width: 320px;
   font-size: 1rem;
   text-align: center;
   font-weight: 300;
@@ -960,12 +1005,19 @@ div.insights-image.right {
   line-height: 1.56;
   letter-spacing: 0.6px;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 
 // Style for index
 .index-section {
+  padding-top: 215px;
   padding-bottom: 0px;
+
+  h2 {
+    margin-bottom: 86px !important;
+  }
 }
 
 .index-section::after {
@@ -983,6 +1035,14 @@ div.insights-image.right {
 .index-container {
   display: flex;
   flex-direction: column;
+
+  .columns {
+    margin-bottom: 32px !important;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .columns.rock-icons {
@@ -1133,7 +1193,7 @@ div.supply-chain {
 p.supply-chain {
   width: 89px;
   height: 15px;
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans";
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -1307,7 +1367,6 @@ div.business-challenges-image.right {
 
 // Style for solution overview
 .solution-overview-div {
-  padding-top: 200px;
   margin-bottom: 250px;
   display: flex;
   flex-direction: column;
@@ -2182,4 +2241,10 @@ div.why-lto.company-names {
   letter-spacing: 0.9px;
   padding-left: 48px;
   padding-right: 48px;
+}
+
+.hero {
+  .btn-container {
+    margin-top: 32px;
+  }
 }

@@ -7,20 +7,15 @@
 
 {% block content %}
 
-{% include "../templates/partials/slider-1-ecosystem.njk" %}
-{# {% include "../templates/partials/slider-2-infrastructure.njk" %} #}
+{% include "partials/slider-1-ecosystem.njk" %}
+{# {% include "partials/slider-2-infrastructure.njk" %} #}
 
 <section class="index-section section">
   <div class="index-container container">
-    <div class="level">
-      <div class="title level-item has-text-centered">
-        <h2 class="section-title title deep-lavender">Fueling adoption in the EU <br>
-          blockchain ecosystem</h2>
-      </div>
-    </div>
+    <h2 class="title is-2 deep-lavender has-text-centered section-title">Fueling adoption in the EU<br>
+      blockchain ecosystem</h2>
 
     <div class="rock-icons columns">
-
         <div id="index-column-technology-rock" class="rock-icon column left-side">
           <div class="rock-icon container left-side">
             <img class="small-rock-2" src="/assets/small-rock-2.svg">
@@ -89,10 +84,10 @@
   </div>
 </section>
 
-{% include "../templates/partials/companies.njk" %}
+{% include "partials/companies.njk" %}
 
-{% include "../templates/partials/insights-updates.njk" %}
+{% include "partials/insights-updates.njk" %}
 
-{% include "../templates/partials/three-areas.njk" %}
+{% include "partials/three-areas.njk" %}
 
 {% endblock %}
