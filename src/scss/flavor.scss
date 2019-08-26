@@ -1071,9 +1071,6 @@ img.insights-image {
   display: flex;
 }
 
-
-
-
 .small-rock-1 {
   position: relative;
   height: 100%;
@@ -1221,6 +1218,67 @@ p.supply-chain {
   text-align: center;
 }
 
+
+// Style for marketplace
+.background-hero.marketplace {
+  background-image: url("/assets/polygons - 1.png");
+  object-fit: contain;
+}
+
+.marketplace.coming-soon {
+  width: 118px;
+  height: 32px;
+  border-radius: 18px;
+  background-color: rgba(222, 232, 242, 0.5);
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketplace.main-text {
+  font-family: "IBM Plex Sans";
+  max-width: 481px;
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+.marketplace.first-paragraph {
+  font-weight: 300;
+}
+
+.button.marketplace {
+  height: 50px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
+  text-align: center;
+}
+
+p.marketplace.promo-bar {
+  display: flex;
+  align-items: center;
+}
+
+.marketplace.promo-bar.checkmark {
+  margin-right: 10px;
+  
+}
 
 // Style for business challenges
 .business-challenges-section::after {
@@ -1938,6 +1996,9 @@ p.products.category {
   padding-left: 40px;
   padding-right: 40px;
   width: 70%;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 50px;
 }
 
 .products.button-text {
@@ -1945,7 +2006,7 @@ p.products.category {
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.78;
+  // line-height: 2.78;
   letter-spacing: 0.9px;
   text-align: center;
 }
