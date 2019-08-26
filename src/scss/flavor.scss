@@ -1812,6 +1812,16 @@ p.business-case-block-text {
   margin-bottom: 104px;
 }
 
+.products.section-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
 .products.small-subtitle {
   font-weight: normal;
   font-style: normal;
@@ -1941,6 +1951,16 @@ p.products.category {
 }
 
 // Style for solutions block
+.solutions.section-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
 .solutions.small-subtitle {
   font-weight: normal;
   font-style: normal;
@@ -2207,6 +2227,12 @@ div.why-lto.company-names {
 }
 
 // Style for ecosystem-v-block
+.ecosystem-v-block-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
 .ecosystem-v-block-section::after {
   content: "";
   display: block;
@@ -2215,11 +2241,13 @@ div.why-lto.company-names {
   width: 100%;
   height: 220px;
   position: relative;
-  top: 16px;
+  top: 90px;
 }
 
 .ecosystem-v-block-div {
   padding-top: 200px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .ecosystem-v-block.column.text {
