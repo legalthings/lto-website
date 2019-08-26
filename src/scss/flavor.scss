@@ -1221,8 +1221,10 @@ p.supply-chain {
 
 // Style for marketplace
 .background-hero.marketplace {
-  background-image: url("/assets/polygons - 1.png");
+  background-image: url("/assets/slider-image-marketplace.svg");
   object-fit: contain;
+  padding-top: 80px;
+  padding-bottom: 200px;
 }
 
 .coming-soon {
