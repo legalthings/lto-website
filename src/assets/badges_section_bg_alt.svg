@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="317" viewBox="0 0 1440 317">
+  <defs>
+    <polygon id="badges_section_bg_alt-b" points="0 61.011 1106.185 0 1440 74.887 1440 258.5 2.505 258.5"/>
+    <filter id="badges_section_bg_alt-a" width="106.2%" height="134.8%" x="-3.1%" y="-17.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
+    </filter>
+    <polygon id="badges_section_bg_alt-d" points="884.813 177.363 1443 177.363 724.01 258.5 390.813 177"/>
+    <filter id="badges_section_bg_alt-c" width="108.6%" height="210.4%" x="-4.3%" y="-55.2%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 29)">
+    <g transform="matrix(-1 0 0 1 1440 0)">
+      <use fill="#000" filter="url(#badges_section_bg_alt-a)" xlink:href="#badges_section_bg_alt-b"/>
+      <use fill="#F4F7FB" xlink:href="#badges_section_bg_alt-b"/>
+    </g>
+    <g transform="rotate(180 916.907 217.75)">
+      <use fill="#000" filter="url(#badges_section_bg_alt-c)" xlink:href="#badges_section_bg_alt-d"/>
+      <use fill="#E5ECF4" xlink:href="#badges_section_bg_alt-d"/>
+    </g>
+  </g>
+</svg>

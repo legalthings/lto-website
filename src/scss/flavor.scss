@@ -443,6 +443,7 @@ section.focus {
 }
 
 // Promo-numbers-div on laptop/desktop
+
 @media (min-width: 769px) {
   .promo-numbers-div {
     position: relative;
@@ -451,6 +452,18 @@ section.focus {
     height: 273px;
     background: url("/assets/badges_section_bg.svg");
     background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .promo-numbers-div.alt {
+    background-image: url("/assets/badges_section_bg_alt.svg") !important;
+    position: relative;
+    margin-top: -8vw;
+    width: 100%;
+    height: 273px;
+    background-size: cover;
     display: flex;
     align-items: center;
 
@@ -488,6 +501,7 @@ section.focus {
 
 // Promo-numbers-div for phones
 @media (max-width: 769px) {
+
   .promo-numbers-div {
     position: absolute;
     left: 0px;
