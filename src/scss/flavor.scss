@@ -364,7 +364,7 @@ section.focus {
   .promo-numbers-div {
     position: absolute;
     left: 0px;
-    bottom: -150px;
+    bottom: -170px;
     z-index: 10;
     font-family: "IBM Plex Sans";
   }
@@ -462,8 +462,8 @@ section.focus {
     position: relative;
     margin-top: -8vw;
     width: 100%;
-    height: 273px;
-    background: url("/assets/badges_section_bg.svg");
+    height: 300px;
+    background: url("/assets/promo-numbers-background.svg");
     background-size: 100% 100%;
     display: flex;
     align-items: center;
@@ -482,9 +482,10 @@ section.focus {
 
   }
 
-
   .promo-numbers-container {
     padding: 32px;
+    position: relative;
+    top: -20px;
 
   }
 
@@ -608,17 +609,20 @@ section.focus {
 
 }
 
-.background-companies {
-  padding-top: 210px;
-}
 
 // Style for companies block
+.background-companies {
+  padding-top: 210px;
+  position: relative;
+}
+
 .background-companies::after {
     content: '';
     width: 100vw;
     display: block;
     position: absolute;
     left: 0px;
+    bottom: -180px;
     background-size: 100% 100%;
     background-image: url("/assets/section_companies_bottom.svg");
     height: 200px;
@@ -1067,12 +1071,28 @@ img.insights-image {
 
 // Style for index
 .index-section {
-  padding-top: 215px;
+  padding-top: 0px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 
   h2 {
     margin-bottom: 86px !important;
   }
+}
+
+
+.index-section::before {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: relative;
+  left: 0px;
+  top: 30px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 310px;
+  z-index: 1;
 }
 
 .index-section::after {
@@ -1553,8 +1573,11 @@ div.business-challenges-image.right {
 }
 
 // Style for solution overview
+.solution-overview-section {
+  // padding-bottom: 0px !important;
+}
+
 .solution-overview-div {
-  margin-bottom: 250px;
   display: flex;
   flex-direction: column;
 }
@@ -1623,6 +1646,26 @@ img.solution-overview-image {
 
 
 // Style for advantages LTO Network
+.advantages-section {
+  position: relative;
+  padding-top: 0px !important;
+}
+
+.advantages-section::before {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -150px;
+  background-size: 100% 100%;
+  background-image: url('/assets/section_insights_top_01.svg');
+  height: 200px;
+  z-index: 1;
+}
+
+
+
 .advantages-section::after {
   content: '';
   width: 100vw;
@@ -1813,20 +1856,25 @@ table tbody tr td:nth-child(even) {
 }
 
 // Style for Business Case
+.business-case-section {
+  position: relative;
+  padding-top: 30px !important;
+  padding-bottom: 90px !important;
+}
+
 .business-case-section::after {
   content: '';
   width: 100vw;
   display: block;
   position: absolute;
   left: 0px;
+  bottom: -180px;
   background-size: 100% 100%;
   background-image: url("/assets/section_companies_bottom.svg");
   height: 200px;
   z-index: 1;
 }
 .business-case-div {
-  padding-top: 200px;
-  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1895,8 +1943,24 @@ p.business-case-block-text {
 }
 
 // Style for Download Case Study block
+.download-case-study-section {
+  display: relative;
+}
+
+.download-case-study-section::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  background-size: 100%;
+  background-image: url("/assets/1.1.2-3.svg");
+  height: 200px;
+  z-index: 1;
+}
+
 .download-case-study-div {
-  padding-top: 300px;
+  padding-top: 135px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -2281,7 +2345,20 @@ p.solutions.category {
 
 // Style for hero-hybrid-blockchain
 .hybrid-blockchain-section {
-  padding-bottom: 0px;
+  padding: 0px;
+}
+
+.promo-numbers-div.hybrid-blockchain::before {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 110px;
+  background-size: 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 310px;
+  z-index: 1;
 }
 
 .hybrid-blockchain-section::after {
@@ -2348,12 +2425,20 @@ p.button.hybrid-blockchain {
 
 
 // Style for why-lto section
+.why-lto-section {
+  position: relative;
+  padding-bottom: 0px !important;
+}
+
+
+
 .why-lto-section::after {
   content: '';
   width: 100vw;
   display: block;
   position: absolute;
   left: 0px;
+  bottom: -180px;
   background-size: 100% 100%;
   background-image: url("/assets/section_companies_bottom.svg");
   height: 200px;
@@ -2423,6 +2508,7 @@ div.why-lto.company-names {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
+  position: relative;
 }
 
 .ecosystem-v-block-section::after {
@@ -2432,14 +2518,16 @@ div.why-lto.company-names {
   background-size: cover;
   width: 100%;
   height: 220px;
-  position: relative;
-  top: 90px;
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
 }
 
 .ecosystem-v-block-div {
   padding-top: 200px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-bottom: 160px;
 }
 
 .ecosystem-v-block.column.text {
@@ -2485,7 +2573,21 @@ div.why-lto.company-names {
 .join-our-team-section {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  padding-bottom: 0px !important  ;
+  padding-bottom: 0px !important;
+  position: relative;
+}
+
+.join-our-team-section::before {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -160px;
+  background-size: 100% 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 310px;
+  z-index: 1;
 }
 
 .join-our-team-section::after {
@@ -2495,8 +2597,8 @@ div.why-lto.company-names {
   background-size: cover;
   width: 100%;
   height: 270px;
-  position: relative;
-  top: 240px;
+  position: absolute;
+  bottom: -240px;
 }
 
 .join-our-team.content-container {

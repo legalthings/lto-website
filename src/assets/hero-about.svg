@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="258" viewBox="0 0 1440 258">
+  <defs>
+    <polygon id="hero-about-b" points="0 88.703 780.984 28.957 1704 68.594 1707 703.5 548.5 703.5 19 619.794"/>
+    <filter id="hero-about-a" width="105.3%" height="113.3%" x="-2.6%" y="-6.7%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 1704 0)">
+    <use fill="#000" filter="url(#hero-about-a)" xlink:href="#hero-about-b"/>
+    <use fill="#F4F7FB" xlink:href="#hero-about-b"/>
+  </g>
+</svg>
