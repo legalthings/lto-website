@@ -374,6 +374,8 @@ section.focus {
   background-image: url("/assets/slider-image-factory@3x.png");
 }
 
+
+
 .button.ecosystem {
   font-family: "IBM Plex Sans";
   font-size: 1rem;
@@ -388,7 +390,7 @@ section.focus {
 
 .second-button.ecosystem {
   background-color: transparent !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   border-color: #17054b;
 }
 
@@ -1321,7 +1323,8 @@ p.supply-chain {
   height: 50px;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  font-weight: 600;
+  font-family: "IBM Plex Sans";
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.78;
@@ -1363,7 +1366,7 @@ p.marketplace.promo-bar {
   height: 50px;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.78;
@@ -1406,6 +1409,118 @@ p.marketplace.promo-bar {
   line-height: 1.56;
   letter-spacing: 0.6px;
 }
+
+// Style for community
+.background-hero-community {
+  background-image: url("/assets/slider-image-polygons-2@2x.png");
+  object-fit: cover;
+  display: relative;
+}
+
+.community.announcement {
+  background-color: white;
+  border-radius: 18px;
+  width: 118px;
+  height: 32px;
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.community.button {
+  margin-top: 46px;
+  font-weight: 600 !important;
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
+  text-align: center;
+  height: 50px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.community.button.second-button {
+  background-color: transparent !important;
+  border-color: #17054b;
+  margin-left: 18px;
+}
+
+.promo-numbers-div.community::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 110px;
+  background-size: 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 310px;
+  z-index: 1;
+}
+
+.community.section {
+  position: relative;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.community.section::after {
+  content: "";
+  display: block;
+  background-image: url("/assets/section_insights_bottom_01.svg");
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  bottom: -240px;
+  z-index: 5;
+}
+
+
+.community.column.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.community-column-title {
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+}
+
+.community-column-text {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  max-width: 400px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.community-read-more {
+  font-family: "IBM Plex Sans";
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
 
 // Style for business challenges
 .business-challenges-section::after {
@@ -1638,7 +1753,8 @@ img.solution-overview-image {
 }
 
 .button.book-demo {
-  font-weight: 600;
+  font-family: "IBM Plex Sans";
+  font-weight: 600 !important;
   padding-left: 41px;
   padding-right: 41px;
 
@@ -2040,7 +2156,8 @@ p.business-case-block-text {
 }
 
 .button-text.more-info {
-  font-weight: 600;
+  font-family: "IBM Plex Sans";
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.78;
@@ -2071,6 +2188,12 @@ p.business-case-block-text {
   line-height: 1.47;
   letter-spacing: normal;
   text-align: center;
+}
+
+.products.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .products-column {
@@ -2191,7 +2314,7 @@ p.products.category {
 .products.button-text {
   font-family: "IBM Plex Sans";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   // line-height: 2.78;
@@ -2335,7 +2458,7 @@ p.solutions.category {
 .solutions.button-text {
   font-family: "IBM Plex Sans";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.78;
@@ -2348,7 +2471,7 @@ p.solutions.category {
   padding: 0px;
 }
 
-.promo-numbers-div.hybrid-blockchain::before {
+.promo-numbers-div.hybrid-blockchain::after {
   content: '';
   width: 100vw;
   display: block;
@@ -2378,7 +2501,8 @@ p.solutions.category {
 }
 
 .hybrid-blockchain.main-button {
-  font-weight: 600;
+  font-family: "IBM Plex Sans";
+  font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.78;
@@ -2792,4 +2916,49 @@ img.join-our-team.image {
   line-height: 1.56;
   letter-spacing: 0.6px;
   text-align: center;
+}
+
+
+// Style for token-metrics
+.token-metrics.section {
+  position: relative;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 30px !important;
+  z-index: 0;
+}
+
+.token-metrics.section::after {
+  content: "";
+  display: block;
+  background-image: url("/assets/section_insights_bottom_02.svg");
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  bottom: -240px;
+  z-index: 5;
+}
+
+.token-metrics.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.token-metrics.section-title {
+  font-family: "IBM Plex Sans";
+  font-size: 40px;
+}
+
+.heading-token-metrics.promo-numbers {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
 }
