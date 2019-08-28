@@ -3425,3 +3425,67 @@ img.join-our-team.image {
   letter-spacing: 0.53px;
   text-align: center;
 }
+
+// Style for join-our-team-about block
+.join-our-team-about-section {
+  padding-bottom: 0px !important;
+}
+
+.join-our-team-about.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.join-our-team-about.section-title {
+  font-family: "IBM Plex Sans";
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.join-our-team-about.column {
+  border-radius: 24px;
+  box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+  background-color: white;
+  max-width: 397px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 34px;
+  padding-right: 36px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+}
+
+.join-our-team-about-filler.column {
+  width: 397px;
+  margin-left: 24px;
+}
+
+.join-our-team-about.column-title {
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.join-our-team-about.column-text {
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
