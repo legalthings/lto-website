@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="844px" viewBox="0 0 1440 844" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 130.273462 1795 1.94297703e-12 2472 544.079296 2472 727.971041 680.461048 786 0 727.971041"></polygon>
+        <filter x="-1.8%" y="-5.7%" width="103.6%" height="111.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="483 74.3495788 1570.23828 5.7373082e-12 2016 151.933353 2016 645.704079 903.197143 757 483 645.704079"></polygon>
+        <filter x="-2.9%" y="-5.9%" width="105.9%" height="111.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LTO---DESK---1.1.1-homepage" transform="translate(0.000000, -3271.000000)">
+            <g id="insights-&amp;-updates" transform="translate(-498.000000, 2968.000000)">
+                <g id="Group-9" transform="translate(0.000000, 332.000000)">
+                    <g id="Path-2" transform="translate(1236.000000, 393.000000) scale(1, -1) translate(-1236.000000, -393.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F4F7FB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Path-2" transform="translate(1249.500000, 378.500000) scale(-1, -1) translate(-1249.500000, -378.500000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

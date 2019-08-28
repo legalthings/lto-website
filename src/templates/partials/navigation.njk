@@ -1,70 +1,49 @@
 {% block navigation %}
 
 <nav class="navbar is-transparent">
-  <div class="container">
+  <div id="navbar-container" class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <span class="title">NWS</span>
+      <a class="manvlogo-navbar" href="/">
+        <img class="navbar-logo" src="/assets/v-logos-new/Gradient/png/logo-full-dark-gradient--l.png" alt="LTO Logo" />
       </a>
-      <div class="navbar-burger burger" data-target="main-navigation">
+      <div class="navbar-burger burger" id="navbar-toggle" data-target="navbar-menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
 
-    <div id="main-navigation" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
-            Products
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="#">
-              Product A
-            </a>
-            <a class="navbar-item" href="#">
-              Product B
-            </a>
-            <a class="navbar-item" href="#">
-              Product C
-            </a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
-            Services
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="#">
-              Service A
-            </a>
-            <a class="navbar-item" href="#">
-              Service B
-            </a>
-          </div>
-        </div>
-      </div>
+    <div id="navbar-menu" class="navbar-menu">
+      {# <div class="navbar-start">
+      </div> #}
       <div class="navbar-end">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
-            About us
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="#">
-              Our story
-            </a>
-            <a class="navbar-item" href="#">
-              Contact
-            </a>
-          </div>
+        <a class="navbar-item dark-indigo" href="#">
+          USE CASES
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          HYBRID CHAIN
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          ECOSYSTEM V
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          ABOUT
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          COMMUNITY
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          MARKETPLACE
+        </a>
+        <a class="navbar-item dark-indigo" href="#">
+          <div class="dev-area">
+            DEV AREA
         </div>
-      </div>
-      <a class="navbar-item" href="#">
-        Log in
       </a>
     </div>
   </div>
+
+
 </nav>
 
 {% endblock %}

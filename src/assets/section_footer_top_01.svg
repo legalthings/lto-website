@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="200" viewBox="0 0 1440 200">
+  <defs>
+    <polygon id="path-1" points="0 150.273 1795 20 2472 564.079 2472 667.971 727.845 736 0 667.971"/>
+    <filter id="filter-2" width="103.6%" height="112.6%" x="-1.8%" y="-6.3%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="design">
+    <g class="design__lto---desk---1-1-1-homepage-copy" transform="translate(0 -4850)">
+      <g class="design__lto---desk---1-1-1-homepage-copy__footer" transform="translate(-463 4903)">
+        <g class="design__lto---desk---1-1-1-homepage-copy__footer__path-2" transform="matrix(1 0 0 -1 0 756)">
+          <use fill="#000" filter="url(#filter-2)" xlink:href="#path-1"/>
+          <use fill="#F4F7FB" xlink:href="#path-1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

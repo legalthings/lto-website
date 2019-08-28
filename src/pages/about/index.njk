@@ -1,0 +1,75 @@
+{% set title = 'About 1.5' %}
+{% set description = 'About 1.6' %}
+
+{% extends "base.njk" %}
+
+
+
+{% block content %}
+
+<section class="background-hero jobs-talent about hero section">
+  <div class="jobs-talent-hero hero-body">
+    <div class="jobs-talent columns">
+      <div class="jobs-talent container column">
+        <h1 class="main-title">About LTO Network</h1>
+        <p class="dark-indigo jobs-talent quote">"The most devoted and tech savvy bunch of whizzkids I have ever met"</p>
+        <p class="dark-indigo jobs-talent end-quote">- Mike van der Bilt (TechStarter)</p>
+        <div class="buttons-container about">
+          <a href="#" class="main-button button is-warning is-rounded is-medium dark-indigo about"><p class="dark-indigo">Join the movement</p></a>
+          <a href="#" class="button is-outlined is-medium is-rounded dark-indigo second-button about">Learn more</a>
+        </div>
+      </div>
+
+      <div class="jobs-talent column video">
+        <img src="https://via.placeholder.com/656x523">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="about promo-numbers-div">
+  <div class="about promo-numbers-container container">
+    <div class="promo-numbers-level level">
+      <div class="promo-bar level-item marketplace">
+        <div>
+          <p class="promo-bar marketplace dark-indigo"><img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg"> 82,394 Github stars</p>
+        </div>
+      </div>
+
+      <div class="promo-bar-line">
+      </div>
+
+      <div class="promo-bar level-item marketplace">
+        <div>
+          <p class="promo-bar marketplace dark-indigo"><img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg"> 30K+ transactions per day</p>
+        </div>
+      </div>
+
+      <div class="promo-bar-line">
+      </div>
+
+      <div class="promo-bar level-item marketplace">
+        <div>
+          <p class="promo-bar marketplace dark-indigo"><img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg"> 100+ nodes</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% include "partials/mission-statement.njk" %}
+
+{% include "partials/meet-the-team.njk" %}
+
+{#  Un-comment to see style with triangles #}
+{# {% include "partials/ecosystem-v-block.njk" %} #}
+
+{% include "partials/join-our-team-about.njk" %}
+
+{% include "partials/love-what-we-do.njk" %}
+
+{% include "partials/three-areas.njk" %}
+
+{% endblock %}

@@ -1,54 +1,93 @@
-{% set title = 'Index | Next Web Starter' %}
-{% set description = 'Next Web Starter index' %}
+{% set title = 'Home 1.1' %}
+{% set description = 'Homepage 1.1' %}
 
 {% extends "base.njk" %}
 
+
+
 {% block content %}
 
-<section class="nws-featured-section hero is-medium">
-  <div class="nws-hero-part-bg"></div>
-  <div class="nws-hero-part-a"></div>
-  <div class="nws-hero-part-b"></div>
-  <div class="nws-hero-part-c"></div>
-  <div class="nws-hero-part-d"></div>
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 has-text-weight-bold">Next Web Starter</h1>
-      <h2 class="subtitle">Optimized for Lighthouse and PSI</h2>
-      <a href="#" class="button is-primary is-medium">Get started</a>
+{% include "partials/slider-1-ecosystem.njk" %}
+{# {% include "partials/slider-2-infrastructure.njk" %} #}
+
+<section class="index-section section">
+  <div class="index-container container">
+    <h2 class="title is-2 deep-lavender has-text-centered section-title">Fueling adoption in the EU<br>
+      blockchain ecosystem</h2>
+
+    <div class="rock-icons columns">
+        <div id="index-column-technology-rock" class="rock-icon column left-side">
+          <div class="rock-icon container left-side">
+            <img class="small-rock-2" src="/assets/small-rock-2.svg">
+            <img class="small-rock-1" src="/assets/small-rock-1.svg">
+            <img src="/assets/rock-technology.png" srcset="/assets/rock-technology@2x.png 2x, assets/rock-technology@3x.png 3x" class="rock-technology">
+          </div>
+        </div>
+
+        <div id="index-column-technology-text" class="rock-icon-text column right-side">
+          <div class="text-rock-icon right-side">
+            <h3 class="title dark-indigo subsection-title">Technology</h3>
+            <p class="index-information-text steel">LTO Network is the easiest blockchain to integrate. Our technology complies with GDPR regulation and is in the top 3 most used non-financial blockchains in the world.</p>
+            <a class="read-more-link "href="#" >
+              <p class="read-more deep-lavender"><br>Read more →</p>
+            </a>
+          </div>
+        </div>
+
     </div>
+
+
+    <div class="community rock-icons columns">
+
+      <div id="index-column-community-text" class="rock-icon-text column left-side">
+        <div class="text-rock-icon left-side">
+          <h3 class="title dark-indigo subsection-title">Community</h3>
+          <p class="index-information-text steel">LTO Network is known for its amazing community. Learn more about the distributed workforce to see how you can help with your talents.</p>
+          <a class="read-more-link "href="#" >
+            <p class="read-more deep-lavender"><br>Read more →</p>
+          </a>
+        </div>
+      </div>
+
+      <div id="index-column-community-rock" class="column rock-icon right-side">
+        <div class="rock-icon container right-side">
+          <img src="/assets/rock-community.png" srcset="/assets/rock-community@2x.png 2x, /assets/rock-community@3x.png 3x" class="rock-community">
+
+          <img class="small-rock-3" src="/assets/small-rock-3.svg">
+          <img class="small-rock-4" src="/assets/small-rock-4.svg">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="rock-icons columns">
+
+        <div id="index-column-ecosystem-rock" class="rock-icon column left-side">
+          <div class="rock-icon container left-side">
+            <img class="small-rock-5" src="/assets/small-rock-5.svg">
+
+            <img src="/assets/rock-ecossystem.png" srcset="/assets/rock-ecossystem@2x.png 2x, /assets/rock-ecossystem@3x.png 3x" class="rock-ecossystem">
+          </div>
+        </div>
+
+        <div id="index-column-ecosystem-text" class="rock-icon-text column right-side">
+          <div class="text-rock-icon right-side">
+            <h3 class="title dark-indigo subsection-title">Ecosystem</h3>
+            <p class="index-information-text steel">Blockchain has been around for 10 years, without significant adoption. LTO Network breaks with this narrative through our ecosystem V.</p>
+            <a class="read-more-link "href="#" >
+              <p class="read-more deep-lavender"><br>Read more → </p>
+            </a>
+          </div>
+        </div>
+    </div>
+
   </div>
 </section>
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/optimized.svg" width="96" alt="Optimized"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Optimized</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Tries to deliver the fastest web experience</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Blazingly fast on mobile and desktop</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/></i> Optimized for Google Pagespeed Insights</li>
-        </ul>
-      </div>
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/responsive.svg" width="96" alt="Responsive"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Responsive</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Fully responsive by default</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Mobile-first</li>
-        </ul>
-      </div>
-      <div class="column nws-image-column">
-        <img class="lazy" data-src="/assets/modular.svg" width="96" alt="Modular"/>
-        <h2 class="title is-5 has-margin-top-15 has-text-centered">Modular</h2>
-        <ul class="nws-fa-list">
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Extendable</li>
-          <li><img class="lazy" data-src="/assets/check.svg" width="24" alt="check"/> Interchangeable framework</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+
+{% include "partials/companies.njk" %}
+
+{% include "partials/insights-updates.njk" %}
+
+{% include "partials/three-areas.njk" %}
 
 {% endblock %}
