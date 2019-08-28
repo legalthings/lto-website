@@ -1472,8 +1472,9 @@ p.marketplace.promo-bar {
 
 .community.section {
   position: relative;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
 }
 
 .community.section::after {
@@ -2961,4 +2962,46 @@ img.join-our-team.image {
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0.8px;
+}
+
+// Style for overview-of-market
+.overview-of-markets.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview-of-markets.section-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.overview-of-markets.column {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+.overview-of-markets.button {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 50px;
+  font-family: "IBM Plex Sans";
+  font-weight: 600 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
+  text-align: center;
+  margin-top: 50px;
 }
