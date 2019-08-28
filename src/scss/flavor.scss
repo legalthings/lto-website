@@ -1249,8 +1249,12 @@ img.insights-image {
 // Style for use-case-detail page
 .background-hero.use-case-detail {
   background-image: url("/assets/slider-image-car@3x.png");
-  height: 672px;
+  height: 972px;
   object-fit: contain;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 200px;
+  position: relative;
 }
 
 
@@ -1262,6 +1266,7 @@ div.supply-chain {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 18px;
 }
 
 p.supply-chain {
@@ -1275,6 +1280,64 @@ p.supply-chain {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+}
+
+
+.involved-parties-div {
+  background-image: url("/assets/promo-numbers-background.svg");
+  background-size: cover;
+  width: 100%;
+  height: 330px;
+  position: absolute;
+  bottom: -120px;
+  padding-left: 15vw;
+  padding-top: 120px;
+  display: flex;
+}
+
+.involved-parties-div::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 160px;
+  background-size: 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 260px;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+.involved-parties-title {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+
+.involved-parties.text {
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  max-width: 396px;
+  margin-top: 24px;
+}
+
+.involved-parties-line {
+  width: 2px;
+  height: 120px;
+  background-image: linear-gradient(to bottom, #7cb7ff, #ba6df6);
+  margin-top: 7px;
+  margin-left: 31px;
+  margin-right: 48px;
 }
 
 
