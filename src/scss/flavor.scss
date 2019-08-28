@@ -1494,7 +1494,7 @@ p.marketplace.promo-bar {
 
 // Style for Jobs & Talent
 .jobs-talent.background-hero {
-  background-image: url("/assets/slider-image-jobs-talent.svg");
+  background-image: url("/assets/slider-image-grey.svg");
   object-fit: contain;
   height: 672px;
 }
@@ -3224,4 +3224,204 @@ img.join-our-team.image {
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: normal;
+}
+
+// Style for About page
+.about.buttons-container {
+  padding-top: 48px;
+}
+
+.about.button {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 50px;
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: 600 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.78;
+  letter-spacing: 0.9px;
+  text-align: center;
+}
+
+.about.main-button {
+  margin-right: 16px;
+}
+
+.about.second-button {
+  background-color: transparent;
+  border-color: #17054b;
+}
+
+.about.promo-numbers-div {
+  transform: scaleX(-1);
+  position: relative;
+  align-items: center;
+  // flex-direction: column;
+}
+
+.about.promo-numbers-container {
+  transform: scaleX(-1);
+}
+
+.about.promo-numbers-div::after {
+  content: '';
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  background-size: 100%;
+  background-image: url("/assets/section-main-content-top.svg");
+  height: 210px;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+
+// Style for mission-statement block
+.mission-statement-section {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  position: relative;
+}
+
+.mission-statement-section::after {
+  content: "";
+  display: block;
+  background-image: url("/assets/section_insights_bottom_01.svg");
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  bottom: -240px;
+  z-index: 5;
+}
+
+.mission-statement.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission-statement.small-subtitle {
+  padding-bottom: 0px !important;
+  margin-bottom: 13px;
+}
+
+.mission-statement.section-title {
+  font-family: "IBM Plex Sans";
+   font-size: 40px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   margin-bottom: 52px;
+}
+
+.mission-statement.columns {
+  width: 60%;
+}
+
+.mission-statment.column-text {
+  font-family: 'IBM Plex Sans';
+   font-size: 18px;
+   font-weight: 300;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.56;
+   letter-spacing: 0.6px;
+   max-width: 394px;
+}
+
+// Style for meet-the-team-block
+.meet-the-team-section {
+  position: relative;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important
+}
+
+.meet-the-team-section::after {
+  content: "";
+  display: block;
+  background-image: url("/assets/section_insights_bottom_02.svg");
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  bottom: -240px;
+  z-index: 5;
+}
+.meet-the-team.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.meet-the-team.section-title {
+  font-family: "IBM Plex Sans";
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.meet-the-team.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.meet-the-team.headshot {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.meet-the-team.name {
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.meet-the-team.position {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: 0.53px;
+  text-align: center;
+}
+
+.meet-the-team.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.meet-the-team.socials-link {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: 0.53px;
+  text-align: center;
 }
