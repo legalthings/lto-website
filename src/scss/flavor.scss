@@ -1356,6 +1356,13 @@ p.marketplace.promo-bar {
   padding-bottom: 200px;
 }
 
+.lto-labs.column.image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100% !important;
+}
+
 .lto-labs.main-text {
   max-width: 481px;
   font-family: "IBM Plex Sans";
@@ -1365,6 +1372,7 @@ p.marketplace.promo-bar {
   line-height: 1.56;
   letter-spacing: 0.6px;
   margin-bottom: 46px;
+  margin-top: 18px;
 }
 
 .lto-labs.button {
