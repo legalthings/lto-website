@@ -1302,8 +1302,12 @@ p.supply-chain {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
+.marketplace.promo-numbers-container {
+  top: 0px !important;
+}
 .marketplace.main-text {
   font-family: "IBM Plex Sans";
   max-width: 481px;
@@ -1314,6 +1318,7 @@ p.supply-chain {
   letter-spacing: 0.6px;
   font-weight: 200;
   margin-bottom: 60px;
+  margin-top: 18px;
 }
 .marketplace.first-paragraph {
   font-weight: 300;
