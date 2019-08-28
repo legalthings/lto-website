@@ -351,12 +351,23 @@ section.focus {
   z-index: 0;
 }
 
+@media (min-width: 769px) {
+  .background-hero.ecosystem {
+    position: relative;
+    background-image: url("/assets/slider-image@3x.png");
+    max-height: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-hero.ecosystem {
+    position: relative;
+    background-image: url("/assets/slider-image-polygons-mobile.png");
+    // max-height: 750px;
+  }
+}
 
 .background-hero.ecosystem {
-  position: relative;
-  background-image: url("/assets/slider-image@3x.png");
-  max-height: 750px;
-
   >.hero-body {
     padding: 4em;
   }
@@ -996,6 +1007,26 @@ img.insights-image {
     width: 100%;
   }
 
+  .three-areas-column-title {
+    width: 270px;
+    font-family: "IBM Plex Sans";
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .three-areas-short-text {
+    font-family: "IBM Plex Sans";
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 // three-areas blocks for mobile view
@@ -1014,13 +1045,13 @@ img.insights-image {
 
   .three-areas-icon-div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
   }
 
   .three-areas.rock-image {
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 85px;
   }
 
   .three-areas-column-title {
@@ -1031,6 +1062,26 @@ img.insights-image {
 
   .three-areas.main-content-block {
     margin-bottom: 23px;
+  }
+
+  .three-areas-column-title {
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .three-areas-short-text {
+    font-family: "IBM Plex Sans";
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.53;
+    letter-spacing: 0.57px;
   }
 }
 
@@ -1049,26 +1100,8 @@ img.insights-image {
 }
 
 
-.three-areas-column-title {
-  width: 270px;
-  font-family: "IBM Plex Sans";
-  font-size: 1.6rem;
-  text-align: center;
-}
 
-.three-areas-short-text {
-  font-family: "IBM Plex Sans";
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 0.6px;
-  text-align: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+
 
 
 // Style for index
@@ -1240,12 +1273,21 @@ img.insights-image {
 
 
 // Style for use-case-overview page
-.background-hero.use-case-overview {
-  background-image: url("/assets/polygons - 1.png");
-  height: 672px;
-  object-fit: contain;
+@media (min-width: 769px) {
+  .background-hero.use-case-overview {
+    background-image: url("/assets/polygons - 1.png");
+    height: 672px;
+    object-fit: contain;
+  }
 }
 
+@media (max-width: 768px) {
+  .background-hero.use-case-overview {
+    background-image: url("/assets/slider-image-polygons-mobile.png");
+    // height: 672px;
+    object-fit: contain;
+  }
+}
 // Style for use-case-detail page
 .background-hero.use-case-detail {
   background-image: url("/assets/slider-image-car@3x.png");
@@ -2244,7 +2286,6 @@ p.business-case-block-text {
 
 // Style for products block
 .products.container {
-  margin-bottom: 104px;
 }
 
 .products.section-title {
@@ -2359,7 +2400,6 @@ p.products.category {
 }
 
 .products-block-title {
-  margin-top: 29px;
   width: 349px;
   font-family: "IBM Plex Sans";
   font-size: 1.6rem;
@@ -2394,12 +2434,15 @@ p.products.category {
   font-weight: 600 !important;
   font-style: normal;
   font-stretch: normal;
-  // line-height: 2.78;
   letter-spacing: 0.9px;
   text-align: center;
 }
 
 // Style for solutions block
+.solutions-section {
+  padding-top: 0px !important;
+}
+
 .solutions.section-title {
   font-family: "IBM Plex Sans";
   font-size: 40px;
