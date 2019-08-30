@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="1708px" viewBox="0 0 1440 1708" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>Rectangle</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0 0 1440 0 1449 1548.31612 974.59375 1649 0 1561.70626"></polygon>
-        <filter x="-3.1%" y="-2.7%" width="106.2%" height="105.5%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="LTO---DESK---1.2.1-use-case---detail" transform="translate(0.000000, -5862.000000)">
-            <g id="image-gallery" transform="translate(0.000000, 5892.000000)">
-                <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#DEE8F2" fill-rule="evenodd" xlink:href="#path-1"></use>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="400" viewBox="0 0 1440 400">
+  <defs>
+    <polygon id="1.1.2-3-bottom-b" points="0 0 1440 0 1449 1548.316 974.594 1649 0 1561.706"/>
+    <filter id="1.1.2-3-bottom-a" width="106.2%" height="105.5%" x="-3.1%" y="-2.7%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(-5 -1347)">
+    <use fill="#000" filter="url(#1.1.2-3-bottom-a)" xlink:href="#1.1.2-3-bottom-b"/>
+    <use fill="#DEE8F2" xlink:href="#1.1.2-3-bottom-b"/>
+  </g>
 </svg>
