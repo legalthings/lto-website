@@ -3,91 +3,224 @@
 
 {% extends "base.njk" %}
 
-
-
 {% block content %}
 
-{% include "partials/slider-1-ecosystem.njk" %}
-{# {% include "partials/slider-2-infrastructure.njk" %} #}
-
-<section class="index-section section">
-  <div class="index-container container">
-    <h2 class="title is-2 deep-lavender has-text-centered section-title">Fueling adoption in the EU<br>
-      blockchain ecosystem</h2>
-
-    <div class="rock-icons columns">
-        <div id="index-column-technology-rock" class="rock-icon column left-side">
-          <div class="rock-icon container left-side">
-            <img class="small-rock-2" src="/assets/small-rock-2.svg">
-            <img class="small-rock-1" src="/assets/small-rock-1.svg">
-            <img src="/assets/rocks/rock-1.svg" class="rock-technology">
-          </div>
-        </div>
-
-        <div id="index-column-technology-text" class="rock-icon-text column right-side">
-          <div class="text-rock-icon right-side">
-            <h3 class="title dark-indigo subsection-title">Technology</h3>
-            <p class="index-information-text steel">LTO Network is the easiest blockchain to integrate. The node modifies to your existing (legacy) systems instead of changing your software to be compatible with blockchain technology.</p>
-            <a class="read-more-link "href="#" >
-              <p class="read-more deep-lavender"><br>Read more →</p>
-            </a>
-          </div>
-        </div>
-
+<section class="hero is-medium" style="background-image: url('/assets/slider-image@3x.png')">
+  <div class="hero-body">
+    <div class="container">
+      <h1>Automate- and trust processes<br>that run between multiple organizations</h1>
+      <h2>A simple route to blockchain adoption in business and enterprise</h2>
+      <div class="btn-container">
+        <a href="#" class="button is-warning"><p class="dark-indigo">Join ecosystem</p></a>
+        <a href="#" class="button">Learn more</a>
+      </div>
     </div>
+  </div>
 
+  <div class="promo-numbers">
+    <div class="container">
+      <div class="item">
+        <p class="promo-head">1M+</p>
+        <p class="promo-desc"> Trusted by 1M+ users</p>
+      </div>
+      <div class="item">
+        <p class="promo-head">Top 20</p>
+        <p class="promo-desc"> blockchains worldwide</p>
+      </div>
+      <div class="item">
+        <p class="promo-head">30k+</p>
+        <p class="promo-desc"> transactions per day</p>
+      </div>
+      <div class="item">
+        <p class="promo-head">100+</p>
+        <p class="promo-desc"> nodes</p>
+      </div>
+      <div class="item">
+        <p class="promo-head">100+</p>
+        <p class="promo-desc"> ecosystem partners</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="community rock-icons columns">
-
-      <div id="index-column-community-text" class="rock-icon-text column left-side">
-        <div class="text-rock-icon left-side">
-          <h3 class="title dark-indigo subsection-title">Community</h3>
-          <p class="index-information-text steel">LTO Network is known for its amazing community. Learn more about the distributed workforce to see how you can help with your talents.</p>
+<section class="section">
+  <div class="container medium">
+    <h2 class="has-text-centered section-title">Fueling adoption in the EU<br>blockchain ecosystem</h2>
+    <div class="columns">
+        <div class="icon-container column" style="left:48px;width:250px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+          <img style="position:absolute;width:26px;top:90px;left:-40px" src="/assets/small-rock-2.svg">
+          <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
+        </div>
+        <div class="column">
+          <h3 class="title subsection-title">Technology</h3>
+          <p>LTO Network is the easiest blockchain to integrate. The node modifies to your existing (legacy) systems instead of changing your software to be compatible with blockchain technology.</p>
           <a class="read-more-link "href="#" >
             <p class="read-more deep-lavender"><br>Read more →</p>
           </a>
         </div>
-      </div>
-
-      <div id="index-column-community-rock" class="column rock-icon right-side">
-        <div class="rock-icon container right-side">
-          <img src="/assets/rocks/rock-2.svg" class="rock-community">
-
-          <img class="small-rock-3" src="/assets/small-rock-3.svg">
-          <img class="small-rock-4" src="/assets/small-rock-4.svg">
-        </div>
-      </div>
     </div>
 
-
-    <div class="rock-icons columns">
-
-        <div id="index-column-ecosystem-rock" class="rock-icon column left-side">
-          <div class="rock-icon container left-side">
-            <img class="small-rock-5" src="/assets/small-rock-5.svg">
-
-            <img src="/assets/rocks/rock-3.svg" class="rock-ecossystem">
-          </div>
+    <div class="columns">
+        <div class="column">
+          <h3 class="title subsection-title">Community</h3>
+          <p>LTO Network is known for its amazing community. Learn more about the distributed workforce to see how you can help with your talents.</p>
+          <a class="read-more-link "href="#" >
+            <p class="read-more deep-lavender"><br>Read more →</p>
+          </a>
         </div>
-
-        <div id="index-column-ecosystem-text" class="rock-icon-text column right-side">
-          <div class="text-rock-icon right-side">
-            <h3 class="title dark-indigo subsection-title">Ecosystem</h3>
-            <p class="index-information-text steel">Blockchain has been around for 10 years, without significant adoption. LTO Network breaks with this narrative through our ecosystem V.</p>
-            <a class="read-more-link "href="#" >
-              <p class="read-more deep-lavender"><br>Read more → </p>
-            </a>
-          </div>
+        <div class="icon-container column" style="left:48px;width:250px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+          <img style="position:absolute;width:26px;top:90px;left:-40px" src="/assets/small-rock-2.svg">
+          <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
         </div>
     </div>
 
+    <div class="columns">
+        <div class="icon-container column" style="left:48px;width:250px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+          <img style="position:absolute;width:26px;top:90px;left:-40px" src="/assets/small-rock-2.svg">
+          <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
+        </div>
+        <div class="column">
+          <h3 class="title subsection-title">Ecosystem</h3>
+          <p>Blockchain has been around for 10 years, without significant adoption. LTO Network breaks with this narrative through our ecosystem V.</p>
+          <a class="read-more-link "href="#" >
+            <p class="read-more deep-lavender"><br>Read more →</p>
+          </a>
+        </div>
+    </div>
   </div>
 </section>
 
-{% include "partials/companies.njk" %}
+<section class="section alt">
+  <div class="companies section-body">
+    <div class="companies-title-container container">
+      <h2 class="deep-lavender section-title title has-text-centered is-2">
+        You're in good company
+      </h2>
+      <h3 class="small-subtitle">
+        A selection of organizations already part of Ecosystem V
+      </h3>
+    </div>
 
-{% include "partials/insights-updates.njk" %}
+    <div class="companies-ico-container container">
+      <img class="company-rocks generali" src="/assets/floating-rock-generali.png" srcset="/assets/floating-rock-generali@2x.png 2x, /assets/floating-rock-generali@3x.png 3x">
+      <img class="company-rocks" src="/assets/small-rock-5.svg">
+      <img class="company-rocks" src="/assets/small-rock-5.svg">
+      <img class="company-rocks indaver" src="/assets/floating-rock-indaver.png" srcset="/assets/floating-rock-indaver@2x.png 2x, /assets/floating-rock-indaver@3x.png 3x">
+      <img class="company-rocks rijksoverheid" src="/assets/floating-rock-rijksoverheid.png" srcset="/assets/floating-rock-rijksoverheid@2x.png 2x, /assets/floating-rock-rijksoverheid@3x.png 3x">
+      <img class="company-rocks" src="/assets/small-rock-3.svg">
+      <img class="company-rocks" src="/assets/small-rock-2.svg">
+      <img class="company-rocks signrequest" src="/assets/floating-rock-signrequest.png" srcset="/assets/floating-rock-signrequest@2x.png 2x, /assets/floating-rock-signrequest@3x.png 3x">
+      <img class="company-rocks dekra" src="/assets/floating-rock-dekra.png" srcset="/assets/floating-rock-dekra@2x.png 2x, /assets/floating-rock-dekra@3x.png 3x">
+      <img class="company-rocks" src="/assets/small-rock-5.svg">
+      <img class="company-rocks" src="/assets/small-rock-3.svg">
+      <img class="company-rocks" src="/assets/small-rock-1.svg">
+      <img class="company-rocks" src="/assets/small-rock-5.svg">
+      <img class="company-rocks stena" src="/assets/floating-rock-stena.png" srcset="/assets/floating-rock-stena@2x.png 2x, /assets/floating-rock-stena@3x.png 3x">
+      <img class="company-rocks capptions" src="/assets/floating-rock-capptions.png" srcset="/assets/floating-rock-capptions@2x.png 2x, /assets/floating-rock-capptions@3x.png 3x">
+      <img class="company-rocks" src="/assets/small-rock-3.svg">
+      <img class="company-rocks" src="/assets/small-rock-5.svg">
+      <img class="company-rocks firm-24" src="/assets/floating-rock-firm-24.png" srcset="/assets/floating-rock-firm-24@2x.png 2x, /assets/floating-rock-firm-24@3x.png 3x">
+    </div>
 
-{% include "partials/three-areas.njk" %}
+    <a href="#" class="button is-rounded is-primary main-button use-cases">
+      Explore use cases
+    </a>
+  </div>
+</section>
+
+
+<section class="section">
+  {# <div class="insights-bg before"></div>
+  <div class="insights-bg between"></div>
+  <div class="insights-bg after"></div> #}
+  <div class="container">
+    <h2 class="section-title has-text-centered">
+      Insights & updates
+    </h2>
+    <h3 class="small-subtitle">
+      Stay up to date on what’s happening around LTO Network
+    </h3>
+      <div class="columns is-centered">
+        <div class="card column is-one-third">
+          <img src="/assets/polygons - 1.png">
+          <div class="card-content">
+            <p>April 12, 2019</p>
+            <h3>You. Are. Awesome ❤️ Community management and rewards + update.</h3>
+            <div class="card-description">
+              <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-action">
+              <p class="dark-indigo">Read more →</p>
+            </div>
+          </div>
+        </div>
+        <div class="card column is-one-third">
+          <img src="/assets/polygons - 1.png">
+          <div class="card-content">
+            <p>April 12, 2019</p>
+            <h3>You. Are. Awesome ❤️ Community management and rewards + update.</h3>
+            <div class="card-description">
+              <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-action">
+              <p class="dark-indigo">Read more →</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+  <div class="container">
+    <div class="columns">
+      <div class="column card">
+        <img src="/assets/rocks/card-rock-1.svg">
+        <div class="card-content">
+          <h3 class="has-text-centered">Developer area</h3>
+          <div class="card-description">
+            <p>Get to know the tech, set up a node and learn how to build your first product or integration on LTO network.</p>
+          </div>
+          <div class="card-action centered">
+            <a href="#" class="button is-primary">
+              Learn more
+            </a>
+            </div>
+        </div>
+      </div>
+
+      <div class="column card">
+        <img src="/assets/rocks/card-rock-1.svg">
+        <div class="card-content">
+          <h3 class="has-text-centered">Community area</h3>
+          <div class="card-description">
+            <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
+          </div>
+          <div class="card-action centered">
+            <a href="#" class="button is-primary">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column card">
+        <img src="/assets/rocks/card-rock-1.svg">
+        <div class="card-content">
+          <h3 class="has-text-centered">Contact us</h3>
+          <div class="card-description">
+            <p>Got a question on implementing blockchain in your (clients) organization? The LTO Network team is here to help you out!</p>
+          </div>
+          <div class="card-action centered">
+            <a href="#" class="button is-primary">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {% endblock %}
