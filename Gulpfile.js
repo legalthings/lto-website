@@ -85,7 +85,9 @@ gulp.task("compile-sass", () => {
         'is-fixed-top',
         'visible',
         'modal-backdrop',
-        'inverted-mobile'
+        'inverted-mobile',
+        'cutout-bottom',
+        'cutout-top'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))
