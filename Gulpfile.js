@@ -84,7 +84,9 @@ gulp.task("compile-sass", () => {
       whitelist: [
         'is-fixed-top',
         'visible',
-        'modal-backdrop'
+        'modal-backdrop',
+        'cutout-bottom',
+        'cutout-top'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))
