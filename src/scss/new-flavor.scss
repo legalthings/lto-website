@@ -35,34 +35,6 @@ p {
   }
 }
 
-.section-container.cutout-bottom {
-  margin-bottom: -50px;
-
-  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.04));
-
-  section {
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 50px), 75% 100%, 0% calc(100% - 50px));
-  }
-}
-
-.section-container.cutout-top {
-  margin-top: -50px;
-  filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.04));
-
-  section {
-    clip-path: polygon(0% 0%, 75% 50px, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
-
-.section-container.cutout-bottom.cutout-top {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
-
-  section {
-    clip-path: polygon(0% 0%, 75% 50px, 100% 0%, 100% calc(100% - 50px), 75% 100%, 0% calc(100% - 50px));
-  }
-}
-
-
 .hero {
   position: relative;
   background-size: cover;
