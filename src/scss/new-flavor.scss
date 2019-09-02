@@ -4,10 +4,13 @@
 
 h1 {
   font-size: 2.3rem !important;
-  line-height: 2.3;
 
   @include responsive(phone) {
     font-size: 2rem !important;
+  }
+
+  &.with-lh {
+    line-height: 2.3;
   }
 }
 
@@ -355,7 +358,7 @@ p {
   &.between {
       background: white;
       top: 625px;
-      height: 385px;
+      height: 415px;
       z-index: 2;
   }
   &.after {
@@ -381,7 +384,7 @@ p {
 
   @include responsive(phone) {
     &.between {
-      height: 1000px;
+      height: 1020px;
     }
   }
 }
