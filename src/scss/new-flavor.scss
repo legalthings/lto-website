@@ -72,6 +72,8 @@ p {
 }
 
 .section-container {
+  position: relative;
+
   &.cutout-top {
     .section {
       padding-top: 25px;
