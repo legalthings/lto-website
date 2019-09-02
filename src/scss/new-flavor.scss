@@ -4,6 +4,7 @@
 
 h1 {
   font-size: 2.3rem !important;
+  line-height: 2.3;
 
   @include responsive(phone) {
     font-size: 2rem !important;
@@ -21,6 +22,11 @@ h2 {
 
 p {
   font-size: 1rem;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 
   @include responsive(phone) {
     font-size: 0.9rem;
@@ -105,6 +111,10 @@ p {
       padding: 32px;
     }
   }
+
+  .hero-content {
+    max-width: 550px;
+  }
 }
 
 .promo-numbers {
@@ -124,7 +134,7 @@ p {
     .item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-direction: row;
       text-align: center;
       margin: 8px;
@@ -258,7 +268,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 16px;
   padding: 0px;
 
@@ -382,4 +392,18 @@ p {
 
 .z-index-4 {
   z-index: 4;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.footer {
+  .footer-container {
+    z-index: 5;
+  }
+
+  .footer-edge-triangle {
+    z-index: 3;
+  }
 }
