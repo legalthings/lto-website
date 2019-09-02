@@ -82,12 +82,21 @@ gulp.task("compile-sass", () => {
     .pipe(gulpPurgecss({
       content: nunjucksFiles,
       whitelist: [
+        'primary',
+        'secondary',
+        'tertiary',
         'is-fixed-top',
         'visible',
         'modal-backdrop',
         'inverted-mobile',
         'cutout-bottom',
-        'cutout-top'
+        'cutout-bottom-alt',
+        'cutout-top',
+        'cutout-top-alt',
+        'cutin-bottom',
+        'cutin-bottom-alt',
+        'cutin-top',
+        'cutin-top-alt'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))
