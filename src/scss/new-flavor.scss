@@ -5,9 +5,13 @@
 h1 {
     font-size: 3.5rem !important;
 
-    @include responsive(phone) {
-        font-size: 2rem !important;
-    }
+  @include responsive(phone) {
+    font-size: 2rem !important;
+  }
+
+  &.with-lh {
+    line-height: 2.3;
+  }
 }
 
 h2 {
@@ -20,7 +24,12 @@ h2 {
 }
 
 p {
-    font-size: 1rem;
+  font-size: 1rem;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 
     @include responsive(phone) {
         font-size: 0.9rem;
@@ -116,7 +125,10 @@ p {
         @include responsive(phone) {
             padding: 32px;
         }
-    }
+  } 
+  .hero-content {
+    max-width: 550px;
+  }
 }
 
 .promo-numbers {
@@ -277,15 +289,15 @@ p {
 }
 
 .card {
-    background-color: white;
-    border-radius: 24px;
-    box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 16px;
-    padding: 0px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 16px;
+  padding: 0px;
 
     .card-image {
         border-top-left-radius: 25px;
@@ -356,52 +368,47 @@ p {
 }
 
 .insights-bg {
-    width: 100%;
-    height: 227px;
-    background-size: 100% 100%;
-    position: absolute;
-    z-index: 0;
-    left: 0;
+  width: 100%;
+  height: 227px;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  &.before {
+      background-image: url('/assets/section_insights_top_01.svg');
+      top: 400px;
+      z-index: 2;
+  }
+  &.between {
+      background: white;
+      top: 625px;
+      height: 415px;
+      z-index: 2;
+  }
+  &.after {
+      background-image: url('/assets/section_insights_bottom_01.svg');
+      bottom: -130px;
+      z-index: 2;
+  }
 
-    &.before {
-        background-image: url('/assets/section_insights_top_01.svg');
-        top: 400px;
-        z-index: 2;
-    }
+  &.before2 {
+    filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 5px);
+    clip-path: polygon(0px 50px, 25% 0px, 100% 50px, 100% 100%, 0px 100%);
+    top: 445px;
+    background: #f4f7fb;
+    z-index: 1;
+  }
+  &.after2 {
+    filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 5px);
+    clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 150px), 90% 100%, 0px calc(100% - 100px));
+    bottom: -95px;
+    background: #f4f7fb;
+    z-index: 1;
+  }
 
+  @include responsive(phone) {
     &.between {
-        background: white;
-        top: 625px;
-        height: 385px;
-        z-index: 2;
-    }
-
-    &.after {
-        background-image: url('/assets/section_insights_bottom_01.svg');
-        bottom: -130px;
-        z-index: 2;
-    }
-
-    &.before2 {
-        filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 5px);
-        clip-path: polygon(0px 50px, 25% 0px, 100% 50px, 100% 100%, 0px 100%);
-        top: 445px;
-        background: #f4f7fb;
-        z-index: 1;
-    }
-
-    &.after2 {
-        filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 5px);
-        clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 150px), 90% 100%, 0px calc(100% - 100px));
-        bottom: -95px;
-        background: #f4f7fb;
-        z-index: 1;
-    }
-
-    @include responsive(phone) {
-        &.between {
-            height: 1000px;
-        }
+      height: 1020px;
     }
 }
 
@@ -418,4 +425,18 @@ p {
     background-size: 100% 100%;
 //    left: 0px;
 //    bottom: 0px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.footer {
+  .footer-container {
+    z-index: 5;
+  }
+
+  .footer-edge-triangle {
+    z-index: 3;
+  }
 }
