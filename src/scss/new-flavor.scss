@@ -149,6 +149,10 @@ p {
         justify-content: center;
         align-items: flex-end;
         background-size: cover;
+        
+        &.use-cases {
+            align-items: center; 
+        }
 
         .item {
             position: relative;
@@ -172,6 +176,15 @@ p {
               right: 0px;
               top: 24px;
               position: absolute;
+              
+              &.use-cases {
+                flex: 1 1 auto;
+                text-align: left;
+                align-items: flex-end;
+                &:last-child {
+                    align-items: flex-start;
+                }
+              }
             }
 
             &:last-child {
@@ -198,6 +211,10 @@ p {
             .promo-head {
                 font-size: 1rem;
                 font-weight: 600;
+                
+                &.use-cases {
+                    color: $dark-indigo;
+                }
             }
 
             .promo-head-alt {
@@ -213,6 +230,17 @@ p {
 
             .promo-desc {
                 font-size: 0.9rem;
+                
+                &.use-cases {
+                    font-size: 1rem;
+                }
+            }
+            .promo-client {
+                width: 240px;
+            }
+            .promo-parties {
+                color: $dark-indigo;
+                font-size: 1.1875rem;
             }
         }
     }
