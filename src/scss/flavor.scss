@@ -3373,6 +3373,12 @@ $network-circles: 12;
         border-radius: 24px;
     }
 }
+  @include responsive(phone) {
+      .video {
+          height: auto;
+          width: auto;
+      }
+}
 
 // style team section //
 #team {
