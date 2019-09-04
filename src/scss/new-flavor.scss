@@ -339,6 +339,14 @@ p {
 .icon-container {
     position: relative;
     background-repeat: no-repeat;
+    
+    &.solutions {
+        position: unset !important;
+        max-width: 150px;
+        max-height: 150px;
+        border: 1px solid $accent-color;
+        border-radius: 50%;
+    }
 }
 
 .container {
@@ -505,6 +513,9 @@ p {
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: left;
+    @include responsive(phone) {
+        background-image: none !important;
+    }
 }
 
 .invisible {
