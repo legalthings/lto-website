@@ -211,7 +211,6 @@ p {
             .promo-head {
                 font-size: 1rem;
                 font-weight: 600;
-
                 &.use-cases {
                     color: $dark-indigo;
                 }
@@ -230,7 +229,6 @@ p {
 
             .promo-desc {
                 font-size: 0.9rem;
-
                 &.use-cases {
                     font-size: 1rem;
                 }
@@ -339,7 +337,7 @@ p {
 .icon-container {
     position: relative;
     background-repeat: no-repeat;
-    
+
     &.solutions {
         position: unset !important;
         max-width: 150px;
