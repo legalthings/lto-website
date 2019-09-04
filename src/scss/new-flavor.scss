@@ -143,6 +143,10 @@ p {
     align-items: center;
     display: flex;
 
+    &.use-cases {
+      height: 200px;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
@@ -151,7 +155,7 @@ p {
         background-size: cover;
 
         &.use-cases {
-            align-items: center;
+          align-items: center;
         }
 
         .item {
@@ -167,6 +171,16 @@ p {
             width: 250px;
             height: 90px;
 
+            &.use-cases {
+              flex: 1 1 auto;
+              text-align: left;
+              align-items: flex-end;
+              justify-content: center;
+              &:last-child {
+                  align-items: flex-start;
+              }
+            }
+
 
             &:after {
               content: '';
@@ -176,15 +190,6 @@ p {
               right: 0px;
               top: 24px;
               position: absolute;
-
-              &.use-cases {
-                flex: 1 1 auto;
-                text-align: left;
-                align-items: flex-end;
-                &:last-child {
-                    align-items: flex-start;
-                }
-              }
             }
 
             &:last-child {
@@ -211,6 +216,7 @@ p {
             .promo-head {
                 font-size: 1rem;
                 font-weight: 600;
+
                 &.use-cases {
                     color: $dark-indigo;
                 }
@@ -229,6 +235,7 @@ p {
 
             .promo-desc {
                 font-size: 0.9rem;
+
                 &.use-cases {
                     font-size: 1rem;
                 }
