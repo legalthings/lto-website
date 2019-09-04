@@ -149,9 +149,9 @@ p {
         justify-content: center;
         align-items: flex-end;
         background-size: cover;
-        
+
         &.use-cases {
-            align-items: center; 
+            align-items: center;
         }
 
         .item {
@@ -176,7 +176,7 @@ p {
               right: 0px;
               top: 24px;
               position: absolute;
-              
+
               &.use-cases {
                 flex: 1 1 auto;
                 text-align: left;
@@ -211,7 +211,7 @@ p {
             .promo-head {
                 font-size: 1rem;
                 font-weight: 600;
-                
+
                 &.use-cases {
                     color: $dark-indigo;
                 }
@@ -230,7 +230,7 @@ p {
 
             .promo-desc {
                 font-size: 0.9rem;
-                
+
                 &.use-cases {
                     font-size: 1rem;
                 }
