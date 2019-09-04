@@ -1,21 +1,20 @@
 {% block navigation %}
 
-<nav class="navbar is-transparent" id="navbar">
-  <div id="navbar-container" class="container">
+<nav class="navbar is-fixed-top is-transparent" role="navigation" id="navbar">
+  <div class="navbar-container container">
     <div class="navbar-brand">
-      <a class="manvlogo-navbar" href="/">
-        <img class="navbar-logo" src="/assets/logo/logo-full-dark-gradient.svg" alt="LTO Network" />
+      <a class="logo" href="/">
+        <img width="184" src="/assets/logo/logo-full-dark-gradient.svg" alt="LTO Network" />
       </a>
-      <div class="navbar-burger burger" id="navbar-toggle" data-target="navbar-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mainNavigationMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <div id="navbar-menu" class="navbar-menu">
-      {# <div class="navbar-start">
-      </div> #}
+    <div id="mainNavigationMenu" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item dark-indigo" href="/use-cases/">
           USE CASES
@@ -36,14 +35,10 @@
           MARKETPLACE
         </a>
         <a class="navbar-item dark-indigo" href="#">
-          <div class="dev-area">
             DEV AREA
-        </div>
-      </a>
+        </a>
     </div>
   </div>
-
-
 </nav>
 
 {% endblock %}
