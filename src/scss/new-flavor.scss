@@ -799,3 +799,26 @@ p {
         border: 1px solid $accent-color;
         border-radius: 50%;
 }
+
+.jobs-description {
+    padding: 64px 0px 64px 36px;
+    @include responsive(phone) {
+        padding: 24px;
+    }
+}
+
+.job-type {
+    span{
+    color: #95a7bf;
+    background-color: rgba(222,232,242,.5);
+    font-family: 'IBM Plex Sans';
+    font-size: 12px !important;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 28px;
+    padding: 16px 24px 16px 24px;
+    }
+}

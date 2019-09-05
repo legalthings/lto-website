@@ -2476,10 +2476,16 @@ div.why-lto.company-names {
 
 .join-our-team.columns.text-left {
     padding-left: 48px;
+    @include responsive(phone) {
+        padding: 24px;
+    }
 }
 
 .join-our-team.columns.text-right {
     padding-right: 48px;
+    @include responsive(phone) {
+        padding: 24px;
+    }
 }
 
 .join-our-team.column.text-container {
@@ -3201,20 +3207,11 @@ $network-circles: 12;
 }
 
 .video {
-    height: 16rem;
-    width: 30rem;
     iframe {
-        height: 16rem;
-        width: 30rem;
         border-radius: 24px;
     }
 }
-  @include responsive(phone) {
-      .video {
-          height: auto;
-          width: auto;
-      }
-}
+
 
 // style team section //
 #team {
