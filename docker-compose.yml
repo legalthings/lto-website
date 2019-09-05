@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  lto:
+    container_name: lto
+    image: lto-site
+    ports:
+      - 3000:80
+    volumes:
+      - ./dist:/var/www/html
