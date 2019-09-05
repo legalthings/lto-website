@@ -1,0 +1,94 @@
+language: node_js
+
+node_js:
+  - '10.16.0'
+
+sudo: false
+
+services:
+  - mongodb
+  - docker
+
+env:
+  global:
+    - DOCKER_REPO=lto-site
+    - STAGING_AWS_ACCESS_KEY_ID=AKIAIWFAXQWNDAHESRAA
+    - PRODUCTION_AWS_ACCESS_KEY_ID=AKIAJQQQ7NJVV6B67VCA
+    - STAGING_DOCKER_ECR=930677074220.dkr.ecr.eu-west-1.amazonaws.com
+    - PRODUCTION_DOCKER_ECR=044051773080.dkr.ecr.eu-west-1.amazonaws.com
+    - secure: "aeton39+Dtu/TRWQmM8kV3l1H7aYQ94SgKgKSo1Ic776BQSmBod4ZXj2CDcjDVvAUzR+5JG1iNRQxSjL21Sd3xj7HvpoQzIX03DSlygorx4OHGCwgU37lVjOJqLtuCZkPHgUbk+PZtO+9YD+6oeCuBTJpDoTyDyBL/MQ8qmhYEpesGA/sweqEfhr3fK5+Eeiu3crfaLlaBfpusNGlzJsldARkXwJeQfhWpeEggc3q83hjoYicykIGJZFiJOcTnati7F4qfJJjAyjONJ3qMr9hujnGJ5RD63msp/kRymoJHIwDbiBOCzzaHEa46macxbnhVUyzCJR3OfnRQxRLwkXaqYPWKLbz44di4K39VJNypRtuUaCejLpd/3GZvXvg3w+pb/qUqy4MAGcjP+KPWMUfZt0yHIfesGTo+lumPhfP39HhGL6A6cRVzcBd44iSfWuOTLRoL3y21v1QWOidBWTbehbLgCqGRCAFtfJaLI7Q1KytNvuJxngxIAR24lzpMbajZSbZTKDZMzwvKq/UzskR5O54Rb7rVFwiHEmXKuS7e4aBNDwK6Fb5SVVp29xZOePoFYFJoBSPVURE91Bav/8daWsQcgECB9LgZGPTX7ZvVoWM50a+ds8ry88ReNzhPWuFY9OP6b3B8yGMu2FtTZjGggDod1hLjXAcPgNw5uExdA="
+    - secure: "faRXVdS3ThxNrChbYEmqM9m+ewP4D3SRG9wzibeRCusprPc3ZCkxKsAgbIIRRXckYYcw1bAytTLpphiBDjSON0rT99MhXh+twFb0C5SpyRynLaN0xtf0Yo6jNChey7OPWG6g0FDWDTTfFQP+k/JkSxf/EvqhZIBFGSnbFB/f2RY1dgqVT7r7ckmbDbsTXvQV8ywkTOAxOWyLD2GmntAbqPTfAjwVnihJFsgwJxWhe6AEW6TqXeVeQ62M70bnufsQEUFg6QC+chWoEMlxokCKoNg6SUCRSRYh0xWNtEpNiiBLsCYbeaqTWXnhP/ht/ccEzIkDseEmncpxP7XYmsEMCQ8RH5zFeXnApBkz5b7hjdiJGgChySfdUWf7YwFrrK9ad1cd7hcOenY6u2GwCsZuIKGXkpO93dzi3NgJTmaaHtWwJzBnMkplVewOBC2z+f/mD8XpzEgeYWkAwJg2hpvY3ZFP8GUWA+MDWQffI/89IXcXyDO4leqOuO0j4rN2xOLzNvQKFZ41TZNjcfgudwUWgbcI3f76BUs5bgfU7cxKK1xs/C/ZNf9eQiQyBmK1q6lvqZ9p2fx6QXtv3mV7Wg/5WFn4fWTWpzfTrFOCX5i7mpWPzq0cpgfp62wklB3W7QDRXFyizUDnFm1mcGhEwXxWRvLoMaL0uUMwFxBsvrzqQBw="
+
+# Add your branch here to have it tested and deployed
+branches:
+  only:
+    - master
+
+before_install:
+  # Configure Git
+  - git config --global user.email "travis-ci@legalthings.net"
+  - git config --global user.name "Travis CI"
+
+  # Get all tags of git repo
+  - git fetch origin 'refs/tags/*:refs/tags/*'
+
+script:
+  - test "$TRAVIS_PULL_REQUEST" == "false" || npm run build:prod:fast
+  - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || npm run build:prod
+
+after_success:
+  # Bump version
+  - npm install mversion -g
+  - pip install --user awscli
+  - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || test -n "$(git tag --contains)" || bin/bump-version
+  - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || docker build -t $DOCKER_REPO .
+
+before_deploy:
+  # Set environment variables for Elastic Beanstalk deploy
+  - export ELASTIC_BEANSTALK_ENV="lto-site-staging"
+  - export ELASTIC_BEANSTALK_LABEL=$(git tag --contains)
+  - export TAG=$(git tag --contains)
+  - test -n "$ELASTIC_BEANSTALK_LABEL" || export ELASTIC_BEANSTALK_LABEL="${TRAVIS_BRANCH}-${TRAVIS_COMMIT:0:7}"
+
+deploy:
+# Staging
+# Deploy docker image to ECR
+- provider: script
+  script: bin/deploy-staging
+  skip_cleanup: true
+  on:
+    branch: master
+
+- provider: elasticbeanstalk
+  access_key_id: AKIAIWFAXQWNDAHESRAA
+  secret_access_key:
+    secure: "j2dn4nJCaNSnWSJYszv7tOmiamsq9qdBrx0hINwmyoFUOCZ9DKfDjO3U7ama7pbo9jxmDe4EKNilsRloBt8Tu1aWEmnJzXDusGKUAPxH+N6jH9AyRKVOlfAqx8Bm2jHRIejxqOITRNS+Fhs7UR1QSGSRFQ6AE8p0NcbBHiDwLl3Mo0HNeq8y/fv9AC2e9py6ftKoC4LL4nRXdDRcLCAD4rZ3L6NPuNGY0ezzapxvLYZLva6Q50hlgfrvyKA3iUH1KMtmOrmASq7kpwdO0PHt0J/p55ETevXM57NMxJZmK3RdvgDexmJ/QqRISy8884QwzSsyZhLPHUwPVbM9d6X8CvxrcWb9AwUDTDHWREsjzKMyUiEJ0UpL04L/BSzNymCrChVH2vxGhb9DweTO1B3WaQeJd9sWHoZJFYWB6Rx3epik/KMcIW55irVab6/j1LzhgySILp4kam9VW4VCfEAORickSUfbTCb1UYLzJaSdTotKMRAsdqwWHGbturG35l4qYTDvxEor3PP14qhKfFKDh765CuyZK9RAsseCC/VX+Jlf9a+vQCBZAXjiFwkG3nqd/Z4PtuWFn3R+MO/phzJf4nC5QNAu8zLOxVb+Au1eugGUGh5qpuQCmPuktU92gHqxmU/GwaqQ8WU8jJSJGsEcJvS1712Pv1Nbrr1qTPUewJI="
+  region: eu-west-1
+  app: lto-site
+  zip_file: app.zip
+  bucket_name: elasticbeanstalk-eu-west-1-930677074220
+  skip_cleanup: true
+  bucket_path: lto-site
+  on:
+    branch: master
+
+  # Production deploy image
+- provider: script
+  script: bin/deploy-production
+  skip_cleanup: true
+  on:
+    branch: master
+
+- provider: elasticbeanstalk
+  access_key_id: AKIAJQQQ7NJVV6B67VCA
+  secret_access_key:
+    secure: "LeDmtEwI3GCHDY4QR5oyzYGTnn2Jx2WV8T8FF9zY2/6sl3fp3CNNk+ElrPiS7eIJGld+kWkLJmfSLDL+2H/waFZ5IiLjHoB+aE2110gSHcIpMXP/x043F8dFv2KIiawq+OA3ontCu5gT6oV3LsDuMnWdqtFRZDKqizJRi9v05oX0lCg7utfN/moTd3FVFZAR+0B+c0Oe6l3n5bPnqNmiyqKAU/5t4PSu45wVXEU6+bVorpZjW85NPDirAX+i2ZWflTkTL2DvSnAQJzS2kh/YzvrxX2hwLSsmMQkfU/xITb6FwnqU0jDMRrxYCgUbrR6CtB0W/2kdpfsApGAG3YcsHgNyNFhCSk/1lCloaQ0/zB4c4LI0FdcdZYigHrJ+m74jOnoUVD7drGc22RiPWHfldU4jG9jCspFGAHf4Ch8U9nW2/r5vlDtYiHeOZ2rcoFtmgQt5dvzNUle+OXAJiNnH89nTgJtfkGcYSCdlKhQgEIwLXVLdSTR9/DJmEEj0A2trlhcPnx0/htDFPfngtvAX9oFzbNRB5rsRDC2IsizSCdhfbcc5ctA/R/usu8igUMtnl2IfHmeJl3J3kf9NffI5y0II0CqVJXkw7ahQWaRZCiYMfU7+dPA+4IJdws766kDdttr5FghjX2WdAjJcP7JU9mJEqEklc1mvMPITN/lbO5I="
+  region: eu-west-1
+  app: lto-site
+  zip_file: app.zip
+  bucket_name: elasticbeanstalk-eu-west-1-044051773080
+  skip_cleanup: true
+  bucket_path: lto-site
+  only_create_app_version: true
+  on:
+    branch: master

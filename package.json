@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "build:fast": "gulp build-fast",
+    "build:prod:fast": "gulp build-prod-fast",
+    "build:prod": "gulp build-prod"
+  },
   "repository": {},
   "keywords": [],
   "author": "Sarfaraaz",
