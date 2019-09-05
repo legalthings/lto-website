@@ -82,9 +82,25 @@ gulp.task("compile-sass", () => {
     .pipe(gulpPurgecss({
       content: nunjucksFiles,
       whitelist: [
+        'primary',
+        'secondary',
+        'tertiary',
+        'is-active',
         'is-fixed-top',
+        'is-transparent',
         'visible',
-        'modal-backdrop'
+        'modal-backdrop',
+        'inverted-mobile',
+        'cutout-bottom',
+        'cutout-bottom-alt',
+        'cutout-top',
+        'cutout-top-alt',
+        'cutin-bottom',
+        'cutin-bottom-alt',
+        'cutin-top',
+        'cutin-top-alt',
+        'flex-row',
+        'flex-column'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))
@@ -164,6 +180,24 @@ gulp.task("optimize-images", () => {
     .pipe(gulpImagemin(imageminOptions))
     .pipe(gulp.dest(`${distDirectory}/assets`));
 });
+
+
+// -----------------------------------------------------------------------------
+// Copy images (only for developing on slower machines)
+// -----------------------------------------------------------------------------
+
+gulp.task("copy-images", () => {
+  return gulp
+      .src(imageDirectory)
+      .pipe(
+          gulpRename(function(path) {
+              path.dirname = path.dirname.toLowerCase()
+              path.basename = path.basename.toLowerCase()
+              path.extname = path.extname.toLowerCase()
+          })
+      )
+      .pipe(gulp.dest(`${distDirectory}/assets`))
+})
 
 
 // -----------------------------------------------------------------------------
@@ -287,7 +321,7 @@ gulp.task("critical", () => {
 // Task
 // -----------------------------------------------------------------------------
 
-gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "copy-resources"));
+gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-resources"));
 gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "compile-fonts", "copy-resources"));
 
 gulp.task("build-prod-fast", gulp.series("clean:dist", "build-fast", "critical"));

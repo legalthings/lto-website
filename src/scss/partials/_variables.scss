@@ -2,12 +2,16 @@ $font-family: 'Fira Sans', sans-serif;
 $font-color: #333;
 $font-size: 1.1rem;
 
-$regular-background-color: #ffffff;
-$alt-background-color: #f6f9fc;
-
-$alt-text-weight: normal;
-
-$alt-footer-background: #f4f7fb;
-
 $dark-indigo: #17054b;
 $golden-yellow: #ffce14;
+
+$primary-color: #17054b;
+$accent-color: #804bc9;
+
+$primary-text: $primary-color;
+$accent-text: $accent-color;
+$muted-text: #75828f;
+
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #f4f7fb;
+$tertiary-bg-color: #dee8f2;

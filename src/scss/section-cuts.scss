@@ -1,0 +1,71 @@
+$cut-size: 50px;
+
+$top-cuts: (
+        ".cutout-top": "0% #{$cut-size}, 25% 0%, 100% #{$cut-size}",
+        ".cutout-top-alt": "0% #{$cut-size}, 75% 0%, 100% #{$cut-size}",
+        ".cutin-top": "0% 0%, 25% #{$cut-size}, 100% 0%",
+        ".cutin-top-alt": "0% 0%, 75% #{$cut-size}, 100% 0%"
+);
+$bottom-cuts: (
+        ".cutout-bottom": "100% calc(100% - #{$cut-size}), 25% 100%, 0% calc(100% - #{$cut-size * 2})",
+        ".cutout-bottom-alt": "100% calc(100% - #{$cut-size * 2}), 75% 100%, 0% calc(100% - #{$cut-size})",
+        ".cutin-bottom": "100% 100%, 25% calc(100% - #{$cut-size}), 0% 100%",
+        ".cutin-bottom-alt": "100% 100%, 75% calc(100% - #{$cut-size}), 0% 100%"
+);
+
+
+@function to-string($list, $glue: '', $is-nested: false) {
+  $result: null;
+
+  @for $i from 1 through length($list) {
+    $e: nth($list, $i);
+
+    @if type-of($e) == list {
+      $result: $result#{to-string($e, $glue, true)};
+    } @else {
+      $result: if(
+        $i != length($list) or $is-nested,
+        $result#{$e}#{$glue},
+        $result#{$e}
+      );
+    }
+  }
+
+  @return $result;
+}
+
+.section-container {
+  @each $class, $pol in $top-cuts {
+    &#{$class} {
+      z-index: 1;
+      margin-top: -$cut-size;
+      filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.04));
+    }
+  }
+
+  @each $class, $pol in $bottom-cuts {
+    &#{$class} {
+      z-index: 2;
+      margin-bottom: -$cut-size;
+      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.04));
+    }
+  }
+
+  @each $selector in selector-unify(to-string(map-keys($top-cuts), ","), to-string(map-keys($bottom-cuts), ',')) {
+    &#{$selector} {
+      z-index: 3;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  @each $class-top, $top in map-merge($top-cuts, ("": "0% 0%, 100% 0%")) {
+    @each $class-bottom, $bottom in map-merge($bottom-cuts, ("": "100% 100%, 0% 100%")) {
+      @if $class-top != $class-bottom {
+        &#{$class-top}#{$class-bottom} section {
+          z-index: 4;
+          clip-path: polygon(#{$top}, #{$bottom});
+        }
+      }
+    }
+  }
+}
