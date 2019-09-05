@@ -183,6 +183,24 @@ gulp.task("optimize-images", () => {
 
 
 // -----------------------------------------------------------------------------
+// Copy images (only for developing on slower machines)
+// -----------------------------------------------------------------------------
+
+gulp.task("copy-images", () => {
+  return gulp
+      .src(imageDirectory)
+      .pipe(
+          gulpRename(function(path) {
+              path.dirname = path.dirname.toLowerCase()
+              path.basename = path.basename.toLowerCase()
+              path.extname = path.extname.toLowerCase()
+          })
+      )
+      .pipe(gulp.dest(`${distDirectory}/assets`))
+})
+
+
+// -----------------------------------------------------------------------------
 // Compile fonts
 // -----------------------------------------------------------------------------
 
@@ -303,7 +321,7 @@ gulp.task("critical", () => {
 // Task
 // -----------------------------------------------------------------------------
 
-gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "copy-resources"));
+gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-resources"));
 gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "compile-fonts", "copy-resources"));
 
 gulp.task("build-prod-fast", gulp.series("clean:dist", "build-fast", "critical"));
