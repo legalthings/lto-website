@@ -72,6 +72,15 @@ deploy:
   on:
     branch: master
 
+- provider: pages
+  local_dir: dist/
+  skip_cleanup: true
+  github_token:
+    secure: "OyMIshy5El6Z5fa6FmmT1H5WYQnbmyEAO44fuk3Upqh5qMaVZJmZ+TpyJsatj+9FtuJ4JkxMcdgGU0uT8KB0a5Q3rxMC2QE4DtJF3VC76SGQcIOLQFeb7zpsOLaCKVLfP15t5IphQdXxsDZ7A+6yJkRIdcjReDu47OmJYBorVen+uNDQw2WIObnvlrQktFMObvHQhpkBrwrr6s3JV+3o7dy8cxufsUmi4M46OYisx2OFWQaEnSE6lxOtWsOerqPTC4fWEvWw8kn2VbgLgqvPF837PZz/GEfFNBkhdn0hVceZUnM2Zdkt2v9u9o21mdGiU/La31Q2m1IX459d138nAgPXhm2f3bAP9O6QvxVwZOt+2Lf9SczZaBo28K3jhnx8PoLttd9obx73SxHsPZkvLwB/VXnzr8TMdM8T72XE+f/NZw8TilsPnC61DRVFW3+YSNqqJH+f/jZelOfHZtPKOaaczPEgCARq8loo2O2vflyWUEXxYW5jZg3biddXxQjiAo1oDZwAe7BCMfihO/ysdB76rUgH4cU7dvwoN+UiDi6pri2eewIdDmbazLtLjhWEi7K3jct0VfxzhueTGiQh0OH50AUVOpAAODNKD93IT4xleVfC3VgqskfjcVc2+SSxGDrizgca7JHwIsk5pniAXCnBfdnuJ+sDaYBaQvMvARE="
+  keep_history: true
+  on:
+    branch: master
+
   # Production deploy image
 - provider: script
   script: bin/deploy-production
