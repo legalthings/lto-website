@@ -822,3 +822,18 @@ p {
     padding: 16px 24px 16px 24px;
     }
 }
+
+.jobs-img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:nth-child(odd) {
+    clip-path: polygon(100% -150px,92% 75%,98% 100%,0 100%,0px 53%,0px 0px);
+  }
+
+  &:nth-child(even) {
+    clip-path: polygon(100% 0,100% 53%,100% 100%,6% 100%,0 35%,10% 0);
+  }
+}
