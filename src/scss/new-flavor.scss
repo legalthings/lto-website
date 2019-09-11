@@ -334,7 +334,7 @@ p {
 
 .section-title {
     color: $accent-text;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .subsection-title {
@@ -385,12 +385,17 @@ p {
     }
 
     .card-rock-image {
-        width: 177px;
-        height: 177px;
+        margin-top: 32px;
+        width: 194px;
+        height: 194px;
     }
 
     .card-content {
-        padding: 32px;
+        padding: 0px 32px 32px 32px;
+    }
+
+    .card-content-uc {
+        padding: 0px 24px 32px 24px;
     }
 
     .card-description {
@@ -798,4 +803,20 @@ p {
         max-height: 100px;
         border: 1px solid $accent-color;
         border-radius: 50%;
+}
+
+.public-chain {
+    background-image: url('/assets/public-chain.svg');
+    background-size: 100%;
+    @include responsive(phone) {
+        display: none !important;
+    }
+}
+
+.private-chain {
+    background-image: url('/assets/private-chain.svg');
+    background-size: 100%;
+    @include responsive(phone) {
+        display: none !important;
+    }
 }
