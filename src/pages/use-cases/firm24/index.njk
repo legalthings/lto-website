@@ -1,12 +1,14 @@
 {% set title = 'LTO Network - Use case - Firm24' %}
-{% set description = 'The one-stop-shop for entrepreneurs on Blockchainn' %}
+{% set description = 'The one-stop-shop for entrepreneurs on Blockchain' %}
 
 {% extends "base.njk" %}
+
+
 
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url(/assets/slider-image-car@3x.png);">
+  <section class="hero is-medium" style="background-image: url(/assets/hero/hero-uc-firm24.png);">
     <div class="hero-body">
       <div class="container">
           <div class=""><span class="tag is-rounded is-medium blue-grey"> INTEGRATOR </span></div>
@@ -19,7 +21,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-    <div class="promo-numbers c">
+    <div class="promo-numbers c use-cases">
       <div class="container use-cases">
         <div class="item use-cases">
             <img class="promo-client" src="/assets/use-cases/firm24@2x.png">
@@ -37,32 +39,28 @@
     <section class="section">
     <div class="container">
       <h2 class="has-text-centered section-title">Integrator overview</h2>
-      <div class="columns is-centered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-          <img style="position:absolute;width:26px;top:90px;left:-40px" src="/assets/small-rock-2.svg">
-          <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
-        </div>
-        <div class="column is-two-thirds">
+      <div class="columns is-centered has-margin-top-40 inverted-mobile">
+          <div class="column is-half">
           <h3 class="title subsection-title dark-indigo">The problem</h3>
           <p class="muted">Incorporation deeds and related documents for entrepreneurs are prone to mutation when running business-to-business operations. Fraud with these documents can result in enormous costs and (legal) headaches.</p>
+        </div>
+        <div class="icon-container solutions column is-centered" style="left:48px;width:280px;height:250px;background-image: url('https://via.placeholder.com/150x150?text=LivIcon')">
         </div>
       </div>
 
       <div class="columns is-centered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-          <img style="position:absolute;width:26px;top:90px;left:-40px" src="/assets/small-rock-2.svg">
-          <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Solution</h3>
+            <div class="icon-container solutions column is-centered" style="left:48px;width:280px;height:250px;background-image: url('https://via.placeholder.com/150x150?text=LivIcon')">
+            </div>
+          <div class="column is-half">
+        <h3 class="title subsection-title dark-indigo">Solution</h3>
           <p class="muted">On the Firm24 platform, all documents and deeds that are generated are instantly hashed on the LTO Network blockchain. Not only the final versions, but all the versions in the back-and-forth procedures between notaries and clients, but also contracting parties.</p>
         </div>
       </div>
         
     <div class="columns is-centered has-margin-top-40">
         <div class="column">
-    <table class="table advantages has-margin-top-40">
-      <thead>
+<table class="table advantages">
+<thead>
         <tr>
           <th class="table-icon"></td>
           <th class="dark-indigo" colspan="2">Theme</th>
@@ -105,14 +103,16 @@
       </tbody>
 
     </table>
+</div>
+</div>
 
-    <div class="btn-container has-text-centered">
+
+    <div class="btn-container has-text-centered has-margin-top-40">
     <a href="https://www.firm24.com/blog/contracten/ondertekenen-via-blockchain/" class="button is-primary" target="blank">
       Learn more
     </a>
 </div>
   </div>
-</div>
 </section>
 </div>
 
@@ -135,15 +135,13 @@
   <section class="section relative tertiary p-top-l neg-m-top-m ecosystem-v">
       <div class="section-body">
         <div class="ecosystem-v"></div>
-        <div class="columns is-mobile">
+        <div class="columns is-desktop">
         <div class="column is-4 is-offset-8">
             <h2 class="section-title">Ecosystem V</h2>
             <div class="content">
                 <p class="muted">We amplify growth by sharing incentives on the same principles behind blockchain. We leverage our connections and those of other Ecosystem V members who benefit from continuous support and development through our community of hundreds of developers and ecosystem participants. </p>
             </div>
-            <div class="btn-container">
-            <a href="#" class="button is-primary">Learn more</a>
-            </div>
+            <a href="#" class="button is-rounded is-primary main-button use-cases">Learn more</a>
         </div>
       </div>
     </div>
@@ -166,54 +164,7 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-    <div class="container">
-      <div class="columns">
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-1.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Developer area</h3>
-            <div class="card-description has-text-centered">
-              <p>Get to know the tech, set up a node and learn how to build your first product or integration on LTO network.</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-2.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Community area</h3>
-            <div class="card-description has-text-centered">
-              <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-3.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Contact us</h3>
-            <div class="card-description has-text-centered">
-              <p>Got a question on implementing blockchain in your (clients) organization? The LTO Network team is here to help you out!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
 
