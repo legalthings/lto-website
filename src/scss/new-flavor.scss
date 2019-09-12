@@ -7,6 +7,8 @@ h1 {
 
     @include responsive(phone) {
         font-size: 2rem !important;
+        line-height: 2.2rem;
+        margin-top: 14px;
     }
 
     &.with-lh {
@@ -818,5 +820,22 @@ p {
     background-size: 100%;
     @include responsive(phone) {
         display: none !important;
+    }
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 16px 8px 16px;
+    color: #95a7bf !important;
+}
+
+.hero-body h2 {
+    font-size: 1.65rem !important;
+
+    @include responsive(phone) {
+        color: $muted-text;
+        font-size: 1.2rem !important;
+        margin-top: 14px;
     }
 }
