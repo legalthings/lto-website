@@ -2805,10 +2805,19 @@ img.join-our-team.image {
     justify-content: center;
 }
 
-.resources.column-image {
-    width: 129px;
-    height: 129px;
+.resources.livicon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  height: 129px;
+  border: 3px solid #ba6df6;
+  border-radius: 70px;
+  padding-top: 10px;
+  padding-left: 2px;
 }
+
+
 
 .resources.column-title {
     font-family: 'IBM Plex Sans';
@@ -3216,6 +3225,19 @@ $network-circles: 12;
           height: auto;
           width: auto;
       }
+}
+
+.ecosystem.livicon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ba6df6;
+  border-radius: 50px;
+  height: 75px;
+  width: 75px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  
 }
 
 // style team section //

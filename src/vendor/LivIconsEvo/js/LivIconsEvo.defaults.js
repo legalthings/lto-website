@@ -26,7 +26,7 @@ function LivIconsEvoDefaults () {
 		size: '60px', //default size
 
 		strokeStyle: 'original', //'original', 'round' or 'square'
-		strokeWidth: 'original', //'original' or any value in pixels
+		strokeWidth: '2px', //'original' or any value in pixels
 
 		tryToSharpen: true, //apply or not micro shifts of SVG shapes to try to make them more sharp (crisp)
 
