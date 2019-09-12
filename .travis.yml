@@ -29,7 +29,7 @@ after_success:
 
 before_deploy:
   # Set environment variables for Elastic Beanstalk deploy
-  - echo 'staging.ltonetwork.com' > dist/CNAME
+  - echo 'origin.ltonetwork.com' > dist/CNAME
   - export ELASTIC_BEANSTALK_ENV="lto-site-staging"
   - export ELASTIC_BEANSTALK_LABEL=$(git tag --contains)
   - export TAG=$(git tag --contains)
