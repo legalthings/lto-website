@@ -40,6 +40,8 @@ const sassFiles = "src/scss/**/*.scss";
 const scriptFiles = "src/js/**/*.js";
 const fontFiles = "src/assets/fonts/**/*.+(ttf|otf)";
 
+const livIconsImages = "src/vendor/LivIconsEvo/svg/*.svg";
+
 const nunjucksPages = "src/pages/**/*.+(html|njk)";
 const nunjucksTemplates = "src/templates";
 const nunjucksFiles = [
@@ -133,7 +135,15 @@ gulp.task("compile-sass", () => {
 
 gulp.task("compile-vendor", () => {
   return gulp.src([
-      "./node_modules/vanilla-lazyload/dist/lazyload.min.js"
+    "./node_modules/vanilla-lazyload/dist/lazyload.min.js",
+    "src/vendor/LivIconsEvo/js/jquery-3.3.1.min.js",
+    "src/vendor/LivIconsEvo/js/tools/snap.svg-min.js",
+    "src/vendor/LivIconsEvo/js/tools/TweenMax.min.js",
+    "src/vendor/LivIconsEvo/js/tools/DrawSVGPlugin.min.js",
+    "src/vendor/LivIconsEvo/js/tools/MorphSVGPlugin.min.js",
+    "src/vendor/LivIconsEvo/js/tools/verge.min.js",
+    "src/vendor/LivIconsEvo/js/LivIconsEvo.defaults.js",
+    "src/vendor/LivIconsEvo/js/LivIconsEvo.min.js",
     ])
     .pipe(gulpConcat("vendor.js"))
     .pipe(browserSync.reload({ stream: true }))
@@ -197,6 +207,24 @@ gulp.task("copy-images", () => {
           })
       )
       .pipe(gulp.dest(`${distDirectory}/assets`))
+})
+
+
+// -----------------------------------------------------------------------------
+// Copy livicons assets
+// -----------------------------------------------------------------------------
+
+gulp.task("copy-livicons-assets", () => {
+  return gulp
+      .src(livIconsImages)
+      .pipe(
+          gulpRename(function(path) {
+              path.dirname = path.dirname.toLowerCase()
+              path.basename = path.basename.toLowerCase()
+              path.extname = path.extname.toLowerCase()
+          })
+      )
+      .pipe(gulp.dest(`${distDirectory}/assets/LivIconsEvo/svg/`))
 })
 
 
@@ -321,8 +349,8 @@ gulp.task("critical", () => {
 // Task
 // -----------------------------------------------------------------------------
 
-gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-resources"));
-gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "compile-fonts", "copy-resources"));
+gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-livicons-assets", "copy-resources"));
+gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "copy-livicons-assets", "compile-fonts", "copy-resources"));
 
 gulp.task("build-prod-fast", gulp.series("clean:dist", "build-fast", "critical"));
 gulp.task("build-prod", gulp.series("clean:dist", "build", "critical"));
