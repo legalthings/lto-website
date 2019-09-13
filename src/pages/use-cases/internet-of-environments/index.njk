@@ -1,16 +1,16 @@
 {% set title = 'LTO Network - Use case - Internet of Environments' %}
-{% set description = 'The internet of environment' %}
+{% set description = 'The Internet of Environments' %}
 
 {% extends "base.njk" %}
 
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url(/assets/slider-image-car@3x.png);">
+  <section class="hero is-medium" style="background-image: url(/assets/hero/hero-uc-ioe.png);">
     <div class="hero-body">
       <div class="container">
           <div class=""><span class="tag is-rounded is-medium blue-grey"> SOLUTION </span></div>
-        <h1 class="primary-text">The internet of environments</h1>
+        <h1 class="primary-text">The Internet of Environments</h1>
           <h2 class="dark-indigo">Digitisation is key to drive the sustainability transformation forward. Data insights, combined and mined creatively, help us better understand our true impact on the environment.</h2>
       </div>
     </div>
@@ -19,10 +19,9 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-    <div class="promo-numbers c">
+    <div class="promo-numbers c use-cases">
       <div class="container use-cases">
         <div class="item use-cases">
-            <p class="promo-head use-cases">Client</p>
             <img class="promo-client" src="/assets/use-cases/ibm@2x.png">
         </div>
         <div class="item use-cases">
@@ -211,7 +210,7 @@
 <div class="section-container cutout-bottom-alt">
   <section class="section alt p-top-l">
 <div class="container">
-    <h2 class="section-title has-text-centered">To prevent is better than to cure. Trust in data is required to have all stakeholders and other related parties.</h2>
+    <h2 class="section-title has-text-centered">To prevent is better than to cure. <br> Trust in data is required to have all stakeholders and other related parties.</h2>
         <div class="columns is-centered">
             <div class="column is-three-fifths has-text-centered video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5aq9DrHtbBk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -228,7 +227,7 @@
   <section class="section relative tertiary p-top-l neg-m-top-m ecosystem-v">
       <div class="section-body">
         <div class="ecosystem-v"></div>
-        <div class="columns">
+        <div class="columns is-desktop">
         <div class="column is-4 is-offset-8">
             <h2 class="section-title">Ecosystem V</h2>
             <div class="content">
@@ -246,7 +245,7 @@
   <div class="container">
     <div class="columns is-centered">
         <div class="column is-half">
-            <blockquote>Combining Blockchain, IoT and predictive analytics will be key to enabling circular economy value chains
+            <blockquote>Combining Blockchain, IoT and predictive analytics will be key to enabling circular economy value chains.
                 <div class="author">Monique van Maare, IBM - Social Business expert</div>
             </blockquote>
         </div>
@@ -257,54 +256,7 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-    <div class="container">
-      <div class="columns">
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-1.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Developer area</h3>
-            <div class="card-description has-text-centered">
-              <p>Get to know the tech, set up a node and learn how to build your first product or integration on LTO network.</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-2.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Community area</h3>
-            <div class="card-description has-text-centered">
-              <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-3.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Contact us</h3>
-            <div class="card-description has-text-centered">
-              <p>Got a question on implementing blockchain in your (clients) organization? The LTO Network team is here to help you out!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
 
