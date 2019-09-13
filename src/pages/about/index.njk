@@ -6,7 +6,7 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/slider-image@3x.png')">
+  <section class="hero is-medium" style="background-image: url('/assets/hero/hero-about.png')">
     <div class="hero-body">
       <div class="container">
           <div class="columns">
@@ -15,8 +15,8 @@
           <p class="dark-indigo jobs-talent quote">“The most devoted and tech savvy bunch of whizzkids I have ever met”</p>
           <p class="dark-indigo jobs-talent end-quote">- Mike van der Bilt (TechStarter)</p>
         <div class="buttons btn-container">
-            <a href="#" class="button is-warning">Join the movement</a>
-            <a href="#" class="button">Learn more</a>
+            <a href="#talents" class="button is-warning">Join the movement</a>
+            <a href="#mission" class="button">Learn more</a>
         </div>
               </div>
           <div class="column video">
@@ -56,7 +56,7 @@
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
+<div class="section-container cutin-top-alt cutout-bottom" id="mission">
   <section class="section">
     <div class="container">
         <h4 class="dark-indigo has-text-centered">MISSION STATEMENT</h4>
@@ -77,7 +77,7 @@
   </section>
 </div>
 
-<div class="section-container cutoff-top cutout-bottom">
+<div class="section-container cutoff-top cutout-bottom-alt">
   <section class="section alt relative neg-m-top-m p-top-l" id="team">
     <div class="container z-index-4">
       <h2 class="has-text-centered section-title">Meet the team</h2>
@@ -377,9 +377,54 @@
       </div>
   </section>
 </div>
-
+    
 <div class="section-container cutout-bottom z-index-1">
-<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talent">
+<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talents">
+    <div class="container">
+        <h2 class="has-text-centered section-title"> Timeline </h2>
+        <div class="timeline is-centered">
+  <header class="timeline-header">
+    <span class="tag is-medium is-primary">Start</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker is-primary"></div>
+    <div class="timeline-content">
+      <p class="heading">January 2016</p>
+      <p>Timeline content - Can include any HTML element</p>
+    </div>
+  </div>
+  <div class="timeline-item is-warning">
+    <div class="timeline-marker is-warning is-image is-32x32">
+      <img src="http://bulma.io/images/placeholders/32x32.png">
+    </div>
+    <div class="timeline-content">
+      <p class="heading">February 2016</p>
+      <p>Timeline content - Can include any HTML element</p>
+    </div>
+  </div>
+  <header class="timeline-header">
+    <span class="tag is-primary">2017</span>
+  </header>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker is-danger is-icon">
+      <i class="fa fa-flag"></i>
+    </div>
+    <div class="timeline-content">
+      <p class="heading">March 2017</p>
+      <p>Timeline content - Can include any HTML element</p>
+    </div>
+  </div>
+  <header class="timeline-header">
+    <span class="tag is-medium is-primary">End</span>
+  </header>
+</div>
+      
+    </div>
+</section>
+</div>
+
+<div class="section-container cutout-top-alt cutout-bottom-alt z-index-1">
+<section class="section alt relative neg-m-top-m p-top-l p-bottom-xxl" id="talents">
     <div class="container">
       <h2 class="has-text-centered section-title">We are looking for talents!</h2>
         <h3 class="dark-indigo has-text-centered">Our fast growing team is always looking for fresh and enthusiastic talent.</h3>
@@ -425,8 +470,28 @@
             </a>
           </div>
 
-          <div class="column join-our-team-about-filler">
+          <div class="column join-our-team-about-filler is-hidden-mobile">
           </div>
+        </div>
+        
+        <div class="columns is-centered has-text-centered has-margin-top-40">
+            <div class="column is-3">
+                <div class="icon-container"><img src="https://via.placeholder.com/150x150?text=LivIcon"></div>
+                <h2 class="dark-indigo">Love what we do</h2>
+                <p class="muted">Suspendisse sit amet arcu massa. Pellentesque habitant morbi tristique senectus</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container"><img src="https://via.placeholder.com/150x150?text=LivIcon"></div>
+                <h2 class="dark-indigo">Learn from the best</h2>
+                <p class="muted">Suspendisse sit amet arcu massa. Pellentesque habitant morbi tristique senectus</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container"><img src="https://via.placeholder.com/150x150?text=LivIcon"></div>
+                <h2 class="dark-indigo">Great rewards</h2>
+                <p class="muted">Suspendisse sit amet arcu massa. Pellentesque habitant morbi tristique senectus</p>
+            </div>
         </div>
     </div>
 </section>
@@ -434,54 +499,8 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-    <div class="container">
-      <div class="columns">
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-1.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Developer area</h3>
-            <div class="card-description has-text-centered">
-              <p>Get to know the tech, set up a node and learn how to build your first Live Contract in the developer area!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-2.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Community area</h3>
-            <div class="card-description has-text-centered">
-              <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-3.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Explore use cases</h3>
-            <div class="card-description has-text-centered">
-              <p>Many organizations are already reaping the benefits from blockchain technology. Learn all about it our extensive use case section.</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
+
 {% endblock %}
