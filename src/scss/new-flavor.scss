@@ -850,9 +850,9 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    height: 580px;
+    height: 600px;
     width: 660px;
-    left: 55vw;
+    right: 250px;
     top: -130px;
     @include responsive(phone) {
         display: none !important;
@@ -865,9 +865,9 @@ p {
     background-repeat: no-repeat;
     position: absolute;
     height: 600px;
-    width: 600px;
-    top: 300px;
-    right: 0px;
+    width: 700px;
+    top: 340px;
+    right: -70px;
     @include responsive(phone) {
         display: none !important;
     }

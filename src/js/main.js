@@ -39,6 +39,74 @@
     window.addEventListener('scroll', shouldStickyNav);
   }
 
+  function isInViewport(elemName) {
+    let elem = document.getElementById(elemName);
+    let bounding = elem.getBoundingClientRect();
+    const viewHeight = (window.innerHeight || document.documentElement.clientHeight)
+    return (
+        (bounding.top >= 0 && bounding.top <= viewHeight)
+        ||
+        (bounding.bottom <= viewHeight && bounding.bottom>= 0)
+    );
+  };
+
+
+  let scrollDown = 0;
+  let lastScrollTop = 0;
+  window.addEventListener("scroll", function(){
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop){
+    scrollDown = false;
+    } else {
+      scrollDown = true;
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
+
+  function doParallaxScrolling() {
+    const publicChain = document.getElementById('public-chain');
+    const privateChain = document.getElementById('private-chain');
+    const publicOriginalTop = publicChain.offsetTop;
+    const privateOriginalTop = privateChain.offsetTop;
+    let publicCurrentTop = publicOriginalTop;
+    let privateCurrentTop = privateOriginalTop;
+
+    function parallaxScroll () {
+      const inViewport = isInViewport('why-hybrid-blockchain-section');
+      const scrollUp = !scrollDown;
+      if (inViewport) {
+        if (scrollDown && publicCurrentTop > -690) {
+          ballsFlyAway();
+        }
+        else if (scrollUp && publicCurrentTop < publicOriginalTop){
+          ballsComeBack();
+        }
+      }
+    };
+
+    function ballsFlyAway () {
+      publicCurrentTop -= 10;
+      privateCurrentTop += 10;
+      publicChain.style.top = publicCurrentTop.toString() + "px";
+      privateChain.style.top = privateCurrentTop.toString() + "px";
+    };
+
+    function ballsComeBack () {
+      publicCurrentTop += 10;
+      privateCurrentTop -= 10;
+      publicChain.style.top = publicCurrentTop.toString() + "px";
+      privateChain.style.top = privateCurrentTop.toString() + "px";
+    };
+
+
+    window.addEventListener('scroll', parallaxScroll);
+  };
+
+  // window.addEventListener('scroll', function() {
+  //   console.log(isInViewport('why-hybrid-blockchain-section'))
+  // });
+
   executeInQueue(bindMenuEvents(), 10);
   executeInQueue(doTransparentHeaderScrolling(), 20);
+  executeInQueue(doParallaxScrolling(), 30);
 })()
