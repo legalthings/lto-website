@@ -6,7 +6,7 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url(/assets/slider-image-car@3x.png);">
+  <section class="hero is-medium" style="background-image: url(/assets/hero/hero-uc-cac.png);">
     <div class="hero-body">
       <div class="container">
           <div class=""><span class="tag is-rounded is-medium blue-grey"> SOLUTION </span></div>
@@ -212,8 +212,8 @@
 <div class="container">
     <h2 class="section-title has-text-centered">Combining LTO Network and Watson will drastically reduce the administrative burden of all parties involved in the process, aiming to ‘solve’ these criminal cases up to four times as fast. This eventually frees up knowledge and expertise for other important tasks that cannot be performed without human assistance (yet).</h2>
         <div class="columns is-centered">
-            <div class="column is-three-fifths has-text-centered video">
-                <img src="/assets/criminal-asap-cases.png">
+            <div class="column is-three-fifths has-text-centered">
+                <img width="75%;" src="/assets/criminal-asap-cases.png" class="video">
         </div>
     </div>
     <div class="btn-container has-text-centered has-margin-top-40">
@@ -227,7 +227,7 @@
   <section class="section relative tertiary p-top-l neg-m-top-m ecosystem-v">
       <div class="section-body">
         <div class="ecosystem-v"></div>
-        <div class="columns">
+        <div class="columns is-desktop">
         <div class="column is-4 is-offset-8">
             <h2 class="section-title">Ecosystem V</h2>
             <div class="content">
@@ -258,54 +258,7 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-    <div class="container">
-      <div class="columns">
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-1.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Developer area</h3>
-            <div class="card-description has-text-centered">
-              <p>Get to know the tech, set up a node and learn how to build your first product or integration on LTO network.</p>
-            </div>
-            <div class="btn-container card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-2.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Community area</h3>
-            <div class="card-description has-text-centered">
-              <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
-            </div>
-            <div class="btn-container card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-3.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Contact us</h3>
-            <div class="card-description has-text-centered">
-              <p>Got a question on implementing blockchain in your (clients) organization? The LTO Network team is here to help you out!</p>
-            </div>
-            <div class="btn-container card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
 
