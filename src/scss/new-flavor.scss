@@ -72,6 +72,10 @@ p {
     &.p-top-xl {
         padding-top: 6rem !important;
     }
+    
+    &.p-top-xxl {
+        padding-top: 8rem !important;
+    }
 
     &.p-bottom-l {
         padding-bottom: 190px;
@@ -79,6 +83,10 @@ p {
 
     &.p-bottom-xl {
         padding-bottom: 6rem !important;
+    }
+    
+    &.p-bottom-xxl {
+        padding-bottom: 8rem !important;
     }
 
     &.has-bg-img {
@@ -837,5 +845,23 @@ p {
         color: $muted-text;
         font-size: 1.2rem !important;
         margin-top: 14px;
+    }
+}
+
+.testimonial-eco {
+    padding: 60px 40px 60px 40px;
+    height: 100%;
+    justify-content: space-between;
+    
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .testimonial-logo {
+        img {
+            max-width: 280px;
+        }
     }
 }
