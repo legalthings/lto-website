@@ -1422,3 +1422,12 @@ blockquote .author {
     font-weight: 600;
   }
 }
+
+.columns-container {
+  display: flex;
+}
+
+.use-case-arrow {
+  display: flex;
+  align-items: center;
+}
