@@ -843,9 +843,17 @@ p {
         border-radius: 50%;
 }
 
+
+
 .public-chain {
     background-image: url('/assets/public-chain.svg');
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 580px;
+    width: 660px;
+    left: 55vw;
+    top: -130px;
     @include responsive(phone) {
         display: none !important;
     }
@@ -853,7 +861,13 @@ p {
 
 .private-chain {
     background-image: url('/assets/private-chain.svg');
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    top: 300px;
+    right: 0px;
     @include responsive(phone) {
         display: none !important;
     }

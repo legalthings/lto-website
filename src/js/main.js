@@ -29,9 +29,6 @@
 
     function shouldStickyNav() {
       const currentPos = window.scrollY;
-
-      console.log(currentPos);
-
       if (currentPos > 40) {
         mainMenu.classList.remove('is-transparent');
       } else {
