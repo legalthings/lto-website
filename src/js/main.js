@@ -75,7 +75,7 @@
       const inViewport = isInViewport('why-hybrid-blockchain-section');
       const scrollUp = !scrollDown;
       if (inViewport) {
-        if (scrollDown && publicCurrentTop > -690) {
+        if (scrollDown && publicCurrentTop > -400) {
           ballsFlyAway();
         }
         else if (scrollUp && publicCurrentTop < publicOriginalTop){
@@ -85,15 +85,15 @@
     };
 
     function ballsFlyAway () {
-      publicCurrentTop -= 10;
-      privateCurrentTop += 10;
+      publicCurrentTop -= 14;
+      privateCurrentTop += 14;
       publicChain.style.top = publicCurrentTop.toString() + "px";
       privateChain.style.top = privateCurrentTop.toString() + "px";
     };
 
     function ballsComeBack () {
-      publicCurrentTop += 10;
-      privateCurrentTop -= 10;
+      publicCurrentTop += 14;
+      privateCurrentTop -= 14;
       publicChain.style.top = publicCurrentTop.toString() + "px";
       privateChain.style.top = privateCurrentTop.toString() + "px";
     };

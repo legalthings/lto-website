@@ -852,9 +852,13 @@ p {
     position: absolute;
     height: 600px;
     width: 660px;
-    right: 250px;
-    top: -130px;
-    @include responsive(phone) {
+    right: 80px;
+    top: 0px;
+    @include responsive(desktop) {
+        right: 600px;
+        top: -60px;
+    }
+        @include responsive(phone) {
         display: none !important;
     }
 }
@@ -866,8 +870,11 @@ p {
     position: absolute;
     height: 600px;
     width: 700px;
-    top: 340px;
-    right: -70px;
+    top: 260px;
+    right: -20px;
+    @include responsive(desktop) {
+        right: 400px;
+    }
     @include responsive(phone) {
         display: none !important;
     }
