@@ -865,3 +865,67 @@ p {
         }
     }
 }
+
+.bgVideo {
+        margin-top: 20px;
+        width: 100%;
+        min-height: calc(80vh);
+        height: calc(80vh);
+        object-fit: cover;
+    }
+    .bgVideoImage {
+        img {
+            margin-top: 20px;
+            width: 100%;
+            min-height: calc(80vh);
+            height: calc(80vh);
+            object-fit: cover;
+        }
+    }
+
+.extra-margin {
+    margin-top: -105px !important;
+     @include responsive(phone) {
+         margin-top: 50px; 
+    }
+}
+
+.column.membercard {
+    padding: 50px 40px 50px 40px;
+    
+    .member-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 160px;
+        border: 3px solid #ba6df6;
+        border-radius: 50%;
+    }
+    
+    .column-title {
+        font-family: 'IBM Plex Sans';
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+}
+
+.column.resourcecard {
+    padding: 50px 40px 50px 40px;
+    
+    .resource-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 129px;
+        height: 129px;
+        border: 3px solid #ba6df6;
+        border-radius: 50%;
+    }
+    
+    .resource-title {
+        font-family: 'IBM Plex Sans';
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+}
