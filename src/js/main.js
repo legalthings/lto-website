@@ -107,7 +107,6 @@
     window.addEventListener('scroll', parallaxScroll);
   };
 
-
   window.addEventListener("scroll", function () {
     let st = window.pageYOffset || document.documentElement.scrollTop;
 

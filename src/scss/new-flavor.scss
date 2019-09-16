@@ -984,10 +984,6 @@ blockquote .author {
     position: relative;
 }
 
-.company-rocks {
-    position: absolute;
-}
-
 .signrequest {
     top: 0px;
     left: 0px;
@@ -2121,4 +2117,24 @@ blockquote .author {
     @include responsive(phone) {
         margin-top: 0px;
     }
+}
+
+.company-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 920px;
+  position: relative;
+
+  @include responsive(phone) {
+    flex-direction: column;
+    max-width: 100%;
+    overflow: hidden;
+
+    .company-rocks {
+      margin-left: 0px !important;
+    }
+  }
 }
