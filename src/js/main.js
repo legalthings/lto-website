@@ -1,4 +1,9 @@
 (() => {
+  // public variables
+  let lastScrollTop = window.pageYOffset || window.scrollTop;
+  let isScrollingDown = false;
+
+
   function executeInQueue(_func, timeout) {
     if (!timeout) timeout = 10;
 
@@ -39,72 +44,78 @@
     window.addEventListener('scroll', shouldStickyNav);
   }
 
-  function isInViewport(elemName) {
-    let elem = document.getElementById(elemName);
-    let bounding = elem.getBoundingClientRect();
-    const viewHeight = (window.innerHeight || document.documentElement.clientHeight)
-    return (
-        (bounding.top >= 0 && bounding.top <= viewHeight)
-        ||
-        (bounding.bottom <= viewHeight && bounding.bottom>= 0)
-    );
-  };
+  function isInViewport(elem) {
+    if (elem) {
+      const scroll = window.scrollY || window.pageYOffset
+      const boundsTop = elem.getBoundingClientRect().top + scroll
 
+      const viewport = {
+        top: scroll,
+        bottom: scroll + window.innerHeight,
+      }
 
-  let scrollDown = 0;
-  let lastScrollTop = 0;
-  window.addEventListener("scroll", function(){
-    let st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop){
-    scrollDown = false;
-    } else {
-      scrollDown = true;
+      const bounds = {
+        top: boundsTop,
+        bottom: boundsTop + elem.clientHeight,
+      }
+
+      return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom )
+        || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
     }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-    }, false);
+
+    return false;
+  }
 
   function doParallaxScrolling() {
+    const section = document.getElementById('why-hybrid-blockchain-section');
     const publicChain = document.getElementById('public-chain');
     const privateChain = document.getElementById('private-chain');
     const publicOriginalTop = publicChain.offsetTop;
     const privateOriginalTop = privateChain.offsetTop;
     let publicCurrentTop = publicOriginalTop;
     let privateCurrentTop = privateOriginalTop;
+    const ballVelocity = 1.5;
 
-    function parallaxScroll () {
-      const inViewport = isInViewport('why-hybrid-blockchain-section');
-      const scrollUp = !scrollDown;
-      if (inViewport) {
-        if (scrollDown && publicCurrentTop > -400) {
-          ballsFlyAway();
-        }
-        else if (scrollUp && publicCurrentTop < publicOriginalTop){
-          ballsComeBack();
-        }
+    function parallaxScroll() {
+      const inViewport = isInViewport(section);
+      const sectionBounds = section.getBoundingClientRect();
+      const isInMiddleOfScreen = (sectionBounds.top + sectionBounds.height) >= ((window.innerHeight / 2) + 55);
+
+      if (inViewport && isScrollingDown && publicCurrentTop < publicOriginalTop) {
+        ballsComeBack();
+      }
+      else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen){
+        ballsFlyAway()
       }
     };
 
     function ballsFlyAway () {
-      publicCurrentTop -= 14;
-      privateCurrentTop += 14;
+      publicCurrentTop -= ballVelocity;
+      privateCurrentTop += ballVelocity;
       publicChain.style.top = publicCurrentTop.toString() + "px";
       privateChain.style.top = privateCurrentTop.toString() + "px";
     };
 
     function ballsComeBack () {
-      publicCurrentTop += 14;
-      privateCurrentTop -= 14;
+      publicCurrentTop += ballVelocity;
+      privateCurrentTop -= ballVelocity;
       publicChain.style.top = publicCurrentTop.toString() + "px";
       privateChain.style.top = privateCurrentTop.toString() + "px";
     };
 
 
+    parallaxScroll();
     window.addEventListener('scroll', parallaxScroll);
   };
 
-  // window.addEventListener('scroll', function() {
-  //   console.log(isInViewport('why-hybrid-blockchain-section'))
-  // });
+
+  window.addEventListener("scroll", function() {
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (st > lastScrollTop) isScrollingDown = true;
+    else isScrollingDown = false;
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  }, false);
 
   executeInQueue(bindMenuEvents(), 10);
   executeInQueue(doTransparentHeaderScrolling(), 20);
