@@ -310,6 +310,16 @@ p {
                 margin: 8px;
                 border-right: none;
                 width: 280px;
+                height: 32px;
+                padding: 12px;
+                
+                &:after {
+              display: none;
+                }
+                
+                &:last-child {
+                margin-bottom: 18px;
+                }
 
                 .promo-head {
                     width: 65px;
