@@ -155,6 +155,7 @@ p {
 
     &.use-cases {
       height: 200px;
+      display: flex;
     }
 
     .container {
@@ -299,6 +300,11 @@ p {
         position: relative;
         background: transparent;
         display: block;
+        &.use-cases {
+            display: block;
+            height: 240px;
+            margin-top: 32px;
+        }
 
         .container {
             flex-direction: column;
@@ -313,23 +319,39 @@ p {
                 height: 32px;
                 padding: 12px;
 
+                &.use-cases {
+                  display: block;
+                }
+
                 &:after {
-              display: none;
+                  display: none;
                 }
 
                 &:last-child {
-                margin-bottom: 18px;
+                  justify-content: start;
+                  margin-bottom: 18px;
                 }
 
                 .promo-head {
                     width: 65px;
-                    text-align: right;
+                    text-align: end;
                     margin-right: 16px;
+                    &.use-cases {
+                        width: 100%;
+                        text-align: start;
+                        margin-right: 0px;
+                    }
                 }
 
                 .promo-desc {
                     font-size: 0.8rem;
                     text-align: left;
+                }
+
+                .promo-client {
+                    height: 40px;
+                    width: auto;
+                    padding-bottom: 8px;
                 }
             }
         }
@@ -976,5 +998,54 @@ p {
         font-family: 'IBM Plex Sans';
         font-size: 28px;
         margin-bottom: 7px;
+    }
+}
+
+.slider-control-container {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    .slider-control {
+        position: relative;
+        width: 405px;
+        height: 180px;
+        background-image: url('/assets/slider_control_grey_shade.svg');
+        > div {
+            position: absolute;
+        }
+        .slider-control-arrows-div {
+            z-index: 5;
+            right: 8px;
+            top: 64px;
+        }
+        .slider-control-arrow {
+            margin: 8px;
+        }
+        .slider-control-counter {
+            font-size: 15px;
+            left: 215px;
+            top: 95px;
+        }
+        .slider-control-bar {
+            left: 215px;
+            top: 125px;
+            margin-top: 5px;
+            margin-right: 5px;
+            width: 56%;
+            height: auto;
+        }
+        .slider-control-upper-bar {
+            background-color: #17054b;
+            height: 10px;
+        }
+        .slider-control-lower-bar {
+            height: 3px;
+            background-color: #d2c8da;
+            align-self: flex-start;
+            position: relative;
+        }
+    }
+    @include responsive(phone) {
+        display: none;
     }
 }
