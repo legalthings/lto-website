@@ -155,6 +155,7 @@ p {
 
     &.use-cases {
       height: 200px;
+      display: flex;
     }
 
     .container {
@@ -300,9 +301,9 @@ p {
         background: transparent;
         display: block;
         &.use-cases {
-            flex-direction: column;
+            display: block;
             height: 240px;
-            margin-top: 36px;
+            margin-top: 32px;
         }
 
         .container {
@@ -317,17 +318,18 @@ p {
                 width: 280px;
                 height: 32px;
                 padding: 12px;
+
                 &.use-cases {
-                    flex-direction: column;
-                    align-items: flex-start;
+                  display: block;
                 }
 
                 &:after {
-              display: none;
+                  display: none;
                 }
 
                 &:last-child {
-                margin-bottom: 18px;
+                  justify-content: start;
+                  margin-bottom: 18px;
                 }
 
                 .promo-head {
@@ -337,7 +339,6 @@ p {
                     &.use-cases {
                         width: 100%;
                         text-align: start;
-                        margin-top: 100px;
                         margin-right: 0px;
                     }
                 }
