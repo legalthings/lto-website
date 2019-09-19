@@ -889,18 +889,7 @@ blockquote .author {
 
 .public-chain {
     background-image: url('/assets/public-chain.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 600px;
-    width: 660px;
-    right: 80px;
-    top: 0px;
-
-    @include responsive(desktop) {
-        right: 600px;
-        top: -60px;
-    }
+    background-size: 100%;
 
     @include responsive(phone) {
         display: none !important;
@@ -1237,6 +1226,7 @@ blockquote .author {
         align-items: center;
         justify-content: flex-start;
     }
+
     .vcard-image {
         margin-top: 32px;
         width: 194px;
@@ -1254,31 +1244,37 @@ blockquote .author {
 
     .vcard-form {
         padding: 32px;
-    label {
-        display: block;
-        font-weight: 500;
-        font-size: 14px;
-    }
-    input,
-    textarea,
-    select {
-        padding: 13px;
-        color: rgba(0, 0, 0, .7);
-        border-radius: 3px;
-        font-size: 18px;
-        width: 100%;
-        border: 1px solid #d6dcf2;
-    }
-    select {
-        height: 48px !important;
-        line-height: 20px !important;
-    }
+
+        label {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 13px;
+            color: rgba(0, 0, 0, .7);
+            border-radius: 3px;
+            font-size: 18px;
+            width: 100%;
+            border: 1px solid #d6dcf2;
+        }
+
+        select {
+            height: 48px !important;
+            line-height: 20px !important;
+        }
+
         textarea {
-          height: 160px;
+            height: 160px;
+
             &:focus {
-            box-shadow: none !important;
+                box-shadow: none !important;
             }
         }
+
         button {
             display: flex;
             flex-direction: column;
@@ -1286,11 +1282,23 @@ blockquote .author {
     }
 }
 
+@include responsive(phone) {
+    .contact-form {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .vcard {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 .vcard:after {
     content: '';
-    background: -o-linear-gradient(top,#7cb7ff,#ba6df6);
-    background: -webkit-gradient(linear,left top,left bottom,from(#7cb7ff),to(#ba6df6));
-    background: linear-gradient(to bottom,#7cb7ff,#ba6df6);
+    background: -o-linear-gradient(top, #7cb7ff, #ba6df6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7cb7ff), to(#ba6df6));
+    background: linear-gradient(to bottom, #7cb7ff, #ba6df6);
     width: 1px;
     height: 80%;
     top: 10%;
