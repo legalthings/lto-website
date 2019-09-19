@@ -1233,6 +1233,38 @@ blockquote .author {
         height: 194px;
     }
 
+    .vcard-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 72px;
+            background-color: #95A7BF;
+            right: 6px;
+            top: -3px;
+            position: relative;
+        }
+
+        &:after {
+            content: '';
+            height: 1px;
+            width: 72px;
+            background-color: #95A7BF;
+            left: 6px;
+            top: -3px;
+            position: relative;
+        }
+
+        img {
+            width: 24px;
+            height: auto;
+        }
+    }
+
     .vcard-content {
         padding: 0px 32px 32px 32px;
     }
