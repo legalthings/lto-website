@@ -120,4 +120,5 @@
   executeInQueue(bindMenuEvents(), 10);
   executeInQueue(doTransparentHeaderScrolling(), 20);
   executeInQueue(doParallaxScrolling(), 30);
+  executeInQueue(bindLtoNodeEvents(), 30);
 })()
