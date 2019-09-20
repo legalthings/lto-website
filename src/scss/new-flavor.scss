@@ -1104,6 +1104,7 @@ blockquote .author {
         max-height: 360px;
         flex: 1 0 auto;
         padding: 8px !important;
+        z-index: 1;
 
         > .tile-group {
             display: flex;
@@ -1198,7 +1199,10 @@ blockquote .author {
         text-align: center;
     }
 
-    .tile-sidebar :after {
+    .tile-sidebar {
+      margin-left: 0px;
+
+      &:after {
         content: '';
         width: 1px;
         height: 30px;
@@ -1206,6 +1210,7 @@ blockquote .author {
         position: absolute;
         left: 50%;
         top: -31px;
+      }
     }
   }
 }
