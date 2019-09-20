@@ -1029,6 +1029,7 @@ blockquote .author {
         flex-direction: row;
         flex-direction: column;
         max-width: 650px;
+        max-height: 360px;
         flex: 1 0 auto;
         padding: 8px !important;
 
@@ -1085,8 +1086,9 @@ blockquote .author {
     > .tile-sidebar {
         display: flex;
         flex: 1 0 auto;
-        max-width: 425px;
+        max-width: 600px;
         max-height: 610px;
+        margin-left: 30px;
         position: relative;
         padding: 32px;
 
@@ -1108,7 +1110,7 @@ blockquote .author {
             //            border-right: 16px solid #fff;
             position: absolute;
             left: -88px;
-            top: 50%;
+            top: 180px;
         }
     }
 }

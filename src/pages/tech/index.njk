@@ -99,7 +99,7 @@
         <div class="tiles node-card">
           <div class="tile-group rest-api-layer-container">
             <span>Rest Api Layer</span>
-            <div class="tile">
+            <div class="tile lto-node" id="api-gateway-tile">
               <span class="title is-size-6 dark-indigo">Api Gateway</span>
             </div>
           </div>
@@ -107,10 +107,10 @@
           <div class="tile-group application-layer-container">
             <span>Application Layer</span>
             <div class="tile invisible is-hidden-mobile"></div>
-            <div class="tile">
+            <div class="tile lto-node" id="workflow-engine-tile">
               <span class="title is-size-6 dark-indigo">Workflow Engine</span>
             </div>
-            <div class="tile">
+            <div class="tile lto-node" id="event-chain-service-tile">
               <span class="title is-size-6 dark-indigo">Event Chain Service</span>
             </div>
             <div class="tile invisible is-hidden-mobile"></div>
@@ -118,13 +118,13 @@
 
           <div class="tile-group private-chain-layer-container">
             <span>Private Chain Layer</span>
-            <div class="tile">
+            <div class="tile lto-node" id="queuer-service-tile">
               <span class="title is-size-6 dark-indigo">Queuer Service</span>
             </div>
-            <div class="tile">
+            <div class="tile lto-node" id="message-queue-tile">
               <span class="title is-size-6 dark-indigo">Message Queue</span>
             </div>
-            <div class="tile">
+            <div class="tile lto-node" id="dispatcher-service-tile">
               <span class="title is-size-6 dark-indigo">Dispatcher Service</span>
             </div>
             <div class="tile invisible is-hidden-mobile"></div>
@@ -133,7 +133,7 @@
           <div class="tile-group global-chain-layer-container">
             <span>Global Chain Layer</span>
             <div class="tile invisible is-hidden-mobile"></div>
-            <div class="tile">
+            <div class="tile lto-node" id="proof-engine-tile">
               <span class="title is-size-6 dark-indigo">Proof Engine</span>
             </div>
           </div>
@@ -141,7 +141,7 @@
 
         <div class="tile-sidebar is-4 is-parent is-vertical node-card">
           <article class="tile inside-node">
-            <div class="content">
+            <div class="content" id="workflow-engine-content" style="display: block;">
               <p class="tile-title is-size-4 title dark-indigo">Workflow Engine</p>
               <div class="tile-content">
                <p class="muted">
@@ -152,6 +152,67 @@
                 </ul>
               </div>
             </div>
+
+            <div class="content" id="api-gateway-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">API Gateway</p>
+              <div class="tile-content">
+               <p class="muted">
+                 The API Gateway is an HTTP server which proxies all the requests to the right service within the node.</p>
+              </div>
+            </div>
+
+            <div class="content" id="event-chain-service-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">Event Chain Service</p>
+              <div class="tile-content">
+               <p class="muted">
+                   The Event Chain Service holds all ad hoc private blockchains an organization is involved in.</p>
+                <ul class="muted is-size-6">
+                  <li>One node holds many ad hoc blockchains. (similar to git repositories).</li>
+                  <li>Fully decoupled.</li>
+                  <li>Configurable allowing it to interact to any microservice added to the application layer.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content" id="queuer-service-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">Queuer Service</p>
+              <div class="tile-content">
+               <p class="muted">
+                   The Queuer Service provides a REST API to queue events on the Message Queue.</p>
+              </div>
+            </div>
+
+            <div class="content" id="message-queue-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">Message Queue</p>
+              <div class="tile-content">
+               <p class="muted">
+                 Message Queue is RabbitMQ message queue which uses shoveling to distribute events to other nodes.</p>
+              </div>
+            </div>
+
+            <div class="content" id="dispatcher-service-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">Dispatcher Service</p>
+              <div class="tile-content">
+               <p class="muted">
+                 The Dispatcher Service parses messages from the message queue and pushes them to right service within the node.</p>
+              </div>
+            </div>
+
+            <div class="content" id="proof-engine-content" style="display: none;">
+              <p class="tile-title is-size-4 title dark-indigo">Proof Engine</p>
+              <div class="tile-content">
+               <p class="muted">
+                 This node connects the LTO platform to the LTO Global Chain that is responsible for securing data and events through anchoring.
+                 The LTO Global Chain is a fork of NXT. We have stripped everything that has to do with assets and tokens and added / changed the following:</p>
+                <ul class="muted is-size-6">
+                  <li>Use industry standard hashing algorithm (SHA2).</li>
+                  <li>Replaced the custom Elliptic-curve with standard ED25519.</li>
+                  <li>Added the Bitcoin NG protocol Daily summary blocks reduce size on disk and speed up set-up time (not the same as ledger pruning).</li>
+                  <li>New transaction types: Anchoring, certificates, SSI (DID protocol).</li>
+                </ul>
+              </div>
+            </div>
+
           </article>
         </div>
       </div>
