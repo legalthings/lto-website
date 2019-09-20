@@ -1,5 +1,5 @@
-{% set title = 'LTO Network - Use case - SignRequest' %}
-{% set description = 'Signed Documents on Blockchain' %}
+{% set title = 'LTO Network - Digital signing with blockchain verification' %}
+{% set description = 'Immutability of important documents is guaranteed' %}
 
 {% extends "base.njk" %}
 
@@ -12,8 +12,8 @@
     <div class="hero-body">
       <div class="container">
           <div class=""><span class="tag is-rounded is-medium blue-grey"> INTEGRATOR </span></div>
-        <h1 class="primary-text">Signed Documents on Blockchain</h1>
-          <h2 class="dark-indigo">Providing assurance of document content and a provable point in time in which electronic documents were signed.</h2>
+        <h1 class="primary-text">Digital signing with blockchain verification</h1>
+          <h2 class="dark-indigo">Providing immutable evidence by publishing the timestamped evidence on digitally signed documents.</h2>
       </div>
     </div>
   </section>
@@ -43,9 +43,9 @@
         <div class="column card">
           <img class="card-image clip-a" src="/assets/polygons - 1.png">
           <div class="card-content">
-            <h3 class="accent-text">Data importance</h3>
+            <h3 class="accent-text">Evidence of date and time</h3>
             <div class="card-description">
-              <p>Environmental data is an important source of information for social domains such as policy, legislation, taxation and investments. After all, the data is used to identify trends, to uncover connections and to demonstrate patterns.</p>
+              <p>In case there ever is a dispute about when exactly the document has been signed you need to be able to verify the date and time of signing. </p>
             </div>
           </div>
         </div>
@@ -53,9 +53,9 @@
         <div class="column card">
           <img class="card-image clip-b" src="/assets/polygons - 1.png">
           <div class="card-content">
-            <h3 class="accent-text">Data vulnerability</h3>
+            <h3 class="accent-text">Document authenticity</h3>
             <div class="card-description">
-              <p>The important role of the data from these types of measurements makes them vulnerable to influence by parties with an interest in the developments within such a social domain.</p>
+              <p>In case there ever is a dispute between two signers that have a different version of the signed contract you need to be able to validate which one is the original one.</p>
             </div>
           </div>
         </div>
@@ -63,9 +63,9 @@
         <div class="column card">
           <img class="card-image clip-a" src="/assets/polygons - 1.png">
           <div class="card-content">
-            <h3 class="accent-text">Digitization</h3>
+            <h3 class="accent-text">Document verification</h3>
             <div class="card-description">
-              <p>Digitisation is key to drive the sustainability transformation forward. Data insights, combined and mined creatively, help us better understand our true impact, identify the most effective levers for change, and are also key to enabling circular solutions at scale.</p>
+              <p>Documents that are shared between parties need to trusted by all involved parties and independently verifiable. </p>
             </div>
           </div>
         </div>
@@ -77,11 +77,11 @@
 <div class="section-container">
   <section class="section secondary">
     <div class="container">
-<h2 class="has-text-centered section-title">Integrator overview</h2>
+      <h2 class="has-text-centered section-title">Solution overview</h2>
       <div class="columns is-centered has-margin-top-40 inverted-mobile">
           <div class="column is-half">
-          <h3 class="title subsection-title dark-indigo">The problem</h3>
-          <p class="muted">Disputes about (signed) documents are very common. In case there is a dispute about when exactly the document has been signed, you need to be able to verify the date and time of signing. In case two signers have a different version of the signed contract you also need to be able to validate which one is the original one.</p>
+          <h3 class="title subsection-title dark-indigo">Immutable PDF's</h3>
+          <p class="muted">The document can be represented as a digital fingerprint by 'hashing' it. The hash of this document is stored by all systems that are connected to the blockchain. Anyone with access to the data can verify the document by hashing it and comparing it against the blockchain version.</p>
         </div>
         <div class="icon-container solutions column is-centered" style="left:48px;width:280px;height:250px;background-image: url('https://via.placeholder.com/150x150?text=LivIcon')">
         </div>
@@ -91,8 +91,17 @@
             <div class="icon-container solutions column is-centered" style="left:48px;width:280px;height:250px;background-image: url('https://via.placeholder.com/150x150?text=LivIcon')">
             </div>
           <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Solution</h3>
-          <p class="muted">As an extra feature to their application, users of SignRequest can now add the hash code to the LTO Network Blockchain. This allows signers to validate if the hash code is valid and allows for an additional timestamp.</p>
+        <h3 class="title subsection-title dark-indigo">Verifiable timestamp </h3>
+          <p class="muted">Not only the hash (fingerpirnt) of the document is stored in the blockchain but also als. By making data verifiable and independently auditable, audits and reviews of data are streamlined. Integrate creates portable proof of your claims. This means blockchain-based verification can be shared among parties.</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-margin-top-40 inverted-mobile">
+        <div class="column is-half">
+          <h3 class="title subsection-title dark-indigo">Independently verifiable</h3>
+          <p class="muted">As LTO Network is based on open standards, any party can independently verify the authenticity of the document that has been timed</p>
+        </div>
+          <div class="icon-container solutions column is-centered" style="left:48px;width:280px;height:250px;background-image: url('https://via.placeholder.com/150x150?text=LivIcon')">
         </div>
       </div>
         <div class="btn-container has-text-centered has-margin-top-40">
@@ -101,6 +110,8 @@
     </div>
   </section>
 </div>
+
+
 
 <div class="section-container cutin-top-alt cutout-bottom">
     <section class="section">
@@ -112,8 +123,8 @@
           <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
         </div>
         <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Lorem ipsum</h3>
-          <p class="muted">LTO Network is a fully decentralized and highly efficient blockchain infrastructure that is easy to integrate in existing systems that brings efficiency and is production-ready. Blockchain ensures data integrity and immutability following from the devices.</p>
+          <h3 class="title subsection-title dark-indigo">Cost savings</h3>
+          <p class="muted">Administrative tasks such as manual entering data into your system that receive by letter, fax or email belongs to the past. With the blockchain technology of LTO Network all parties are able to receive structured data into the systems they use to execute and administrate these processes. This reduces the administrative overhead with more then 30%.</p>
         </div>
       </div>
 
@@ -123,8 +134,8 @@
           <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
         </div>
         <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Lorem ipsum</h3>
-          <p class="muted">Where LTO Network focuses on the underlying data security structures, V-ID is a practical platform, intended for direct application in daily work processes. Both companies, however, have the main objective of facilitating the widest possible application of blockchain techniques with the lowest possible threshold for adoption of this technology.</p>
+          <h3 class="title subsection-title dark-indigo">Automation</h3>
+          <p class="muted">With LTO Network you don't have to change your entire IT infrastructure. You can use your existing systems and application to administrate, record and communicate on business processes. The implementation of LTO Network is as simple as writing plain English. </p>
         </div>
       </div>
 
@@ -134,11 +145,11 @@
           <img style="position:absolute;width:70px;top:20px;left:-20px" src="/assets/small-rock-1.svg">
         </div>
         <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Lorem ipsum</h3>
-          <p class="muted">By creating the “internet of environment” (IoE) for rental properties, LTO Network and partners aim to support a letting agency to provide better services to their tenants and to make better, more sustainable decisions in managing their properties.</p>
+          <h3 class="title subsection-title dark-indigo">Compliance</h3>
+          <p class="muted">Demonstrating compliance is important in any industry. With LTO network you are able to record all data entries and steps in your business processes to safeguarding evidence and comply with regulation. Enabling one-click compliance reporting for both internal- as external communication on your business processes. </p>
         </div>
       </div>
-        
+
     <div class="columns is-centered has-margin-top-40">
         <div class="column">
 <table class="table advantages">
