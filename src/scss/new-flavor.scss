@@ -1049,3 +1049,69 @@ p {
         display: none;
     }
 }
+
+
+
+.ecosystem-circle-menu {
+  margin-top: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-90deg);
+
+  .ecosystem-circle-center {
+    position: relative;
+
+    .ecosystem-circle-button {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: pink;
+      line-height: 100px;
+      text-align: center;
+      cursor: pointer;
+      transform: rotate(90deg);
+
+
+      // display: flex;
+      // position: relative;
+      // padding-top: 32px;
+      // padding-bottom: 32px;
+      // padding-left: 34px;
+      // padding-right: 36px;
+    //   box-sizing: border-box;
+    //   $border: 5px;
+    //   background: #FFF;
+    //   background-clip: padding-box;
+    //   border: solid $border transparent;
+    //   border-radius: 65px;
+    //
+    //   &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0; right: 0; bottom: 0; left: 0;
+    //     z-index: -1;
+    //     margin: -$border;
+    //     border-radius: inherit;
+    //     background: linear-gradient(286deg, #7cb7ff, #ba6df6);
+    //     opacity: 0.5;
+    // }
+  }
+}
+
+
+  .ecosystem-circle-item {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .3s;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

@@ -53,19 +53,39 @@
   <div class="container">
     <h2 class="section-title deep-lavender has-text-centered">Ecosystem overview</h2>
     <h3 class="dark-indigo has-text-centered">Every stakeholder benefits from collective value creation through development of Ecosystem V</h3>
+    <div class="ecosystem-circle-menu">
+      <div class="ecosystem-circle-center">
+        <div class="ecosystem-circle-button" data-order="1">Marketplace</div>
+        <div class="ecosystem-circle-button" data-order="2">Venture Captial</div>
+        <div class="ecosystem-circle-button" data-order="3">Products</div>
+        <div class="ecosystem-circle-button" data-order="4">Research</div>
+        <div class="ecosystem-circle-button" data-order="5">Human Captial</div>
+      </div>
+    </div>
+
+
+    <div class="ecosystem-circle-content">
+      <div class="ecosystem-circle-item" data-content="1">1Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ecosystem-circle-item" data-content="2">2Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ecosystem-circle-item" data-content="3">3Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ecosystem-circle-item" data-content="4">4Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ecosystem-circle-item" data-content="5">5Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+  </div>
         <div class="columns is-vcentered">
-            <div class="column is-7">
-                <img src="/assets/radial-slider.svg">
-            </div>
-            <div class="column">
+          <div class="column is-7">
+              {# <img src="/assets/radial-slider.svg"> #}
+
+
+          <div class="column">
             <div class="gradient-card">
-                <div class="content">
-                    <h3 class="title subsection-title dark-indigo">Marketplace</h3>
-                    <p class="muted">Marketplaces have become common on the internet, yet a useful plug-and-play marketplace for blockchain solutions hasn’t been created. Connect your apps and automate processes in our marketplace in minutes. </p>
-                <a class="read-more-link "href="#" ><p class="read-more deep-lavender"><br>Read more →</p></a>
-                </div>
+              <div class="content">
+                  <h3 class="title subsection-title dark-indigo">Marketplace</h3>
+                  <p class="muted">Marketplaces have become common on the internet, yet a useful plug-and-play marketplace for blockchain solutions hasn’t been created. Connect your apps and automate processes in our marketplace in minutes. </p>
+              <a class="read-more-link "href="#" ><p class="read-more deep-lavender"><br>Read more →</p></a>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
     </div>
   </section>
@@ -228,5 +248,7 @@
   {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
+
+{# <script src="/js/ecosystem-circle.js"></script> #}
 
 {% endblock %}
