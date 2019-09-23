@@ -3126,9 +3126,15 @@ img.join-our-team.image {
 
 .column-left-text {
     margin-top: 30px;
-    margin-right: 100px;
     margin-bottom: 40px;
+    margin-right: 100px;
+    &.why-hybrid-blockchain {
+      @include responsive(touch) {
+        margin-right: 0px;
+      }
+    }
 }
+
 
 // style for ecosystem v page //
 $network-circles: 12;
@@ -3237,7 +3243,7 @@ $network-circles: 12;
   width: 75px;
   margin-bottom: 10px;
   padding-top: 5px;
-  
+
 }
 
 // style team section //
