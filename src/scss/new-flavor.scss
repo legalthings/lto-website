@@ -1202,6 +1202,8 @@ blockquote .author {
       }
     }
   }
+}
+
 .promo-padding {
     padding-top: 25px !important;
     padding-bottom: 25px !important;
@@ -1401,5 +1403,11 @@ blockquote .author {
       background: linear-gradient(286deg, #7cb7ff, #ba6df6);
       opacity: 0.5;
     }
+  }
+}
+
+.department-selected {
+  .contact-name {
+    font-weight: 600;
   }
 }
