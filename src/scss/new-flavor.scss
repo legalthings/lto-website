@@ -1215,6 +1215,147 @@ blockquote .author {
   }
 }
 
+.promo-padding {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+
+    @include responsive(phone) {
+        padding-top: 55px !important;
+        padding-bottom: 85px !important;
+    }
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
+    display: flex;
+    margin: 16px;
+    padding: 0px;
+
+    .vcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .vcard-image {
+        margin-top: 32px;
+        width: 194px;
+        height: 194px;
+    }
+
+    .vcard-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 72px;
+            background-color: #95A7BF;
+            right: 6px;
+            top: -3px;
+            position: relative;
+        }
+
+        &:after {
+            content: '';
+            height: 1px;
+            width: 72px;
+            background-color: #95A7BF;
+            left: 6px;
+            top: -3px;
+            position: relative;
+        }
+
+        img {
+            width: 24px;
+            height: auto;
+        }
+    }
+
+    .vcard-content {
+        padding: 0px 32px 32px 32px;
+    }
+
+    .vcard-description {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .vcard-form {
+        padding: 32px;
+
+        label {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 13px;
+            color: rgba(0, 0, 0, .7);
+            border-radius: 3px;
+            font-size: 18px;
+            width: 100%;
+            border: 1px solid #d6dcf2;
+        }
+
+        select {
+            height: 48px !important;
+            line-height: 20px !important;
+        }
+
+        textarea {
+            height: 160px;
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        button {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@include responsive(phone) {
+    .contact-form {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .vcard {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.vcard:after {
+    content: '';
+    background: -o-linear-gradient(top, #7cb7ff, #ba6df6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7cb7ff), to(#ba6df6));
+    background: linear-gradient(to bottom, #7cb7ff, #ba6df6);
+    width: 1px;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    left: 33%;
+    position: absolute;
+
+    @include responsive(phone) {
+        display: none;
+    }
+}
+
 .ecosystem-menu {
   height: 500px;
   display: -webkit-box;
@@ -1273,5 +1414,11 @@ blockquote .author {
       background: linear-gradient(286deg, #7cb7ff, #ba6df6);
       opacity: 0.5;
     }
+  }
+}
+
+.department-selected {
+  .contact-name {
+    font-weight: 600;
   }
 }
