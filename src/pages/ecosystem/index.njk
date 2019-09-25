@@ -56,13 +56,14 @@
         <div class="columns is-vcentered">
             <div class="column is-7">
                 <div class="ecosystem-menu">
+                <div class="ecomenu-connect"></div>
                 <div class="ecosystem-radial"></div>
                   <div class="center">Ecosystem V
-                    <div class="button" id="eco-m">Marketplace</div>
-                    <div class="button" id="eco-vc">Venture Capital</div>
-                    <div class="button" id="eco-hc">Human Capital</div>
-                    <div class="button" id="eco-r">Research</div>
-                    <div class="button" id="eco-p">Products</div>
+                    <div class="button" data-name="marketplace" id="eco-m">Marketplace</div>
+                    <div class="button" data-name="venture-capital" id="eco-vc">Venture<br>Capital</div>
+                    <div class="button" data-name="human-capital" id="eco-hc">Human<br>Capital</div>
+                    <div class="button" data-name="research" id="eco-r">Research</div>
+                    <div class="button" data-name="products" id="eco-p">Products</div>
                   </div>
                 </div>
             </div>
@@ -71,7 +72,7 @@
                 <div class="content">
                   <h3 class="title subsection-title ecomenu-header"></h3>
                   <p class="muted ecomenu-description"></p>
-                  <a class="read-more-link ecomenu-readmore"href="#" ></a>
+                  <a class="read-more-link ecomenu-readmore" href="#"></a>
                 </div>
             </div>
             </div>
@@ -81,26 +82,31 @@
       setTimeout(function() {
         const ecoMenu = [
           {
+            id: "marketplace",
             name: "Marketplace",
             description: "Marketplaces have become common on the internet, yet a useful plug-and-play marketplace for blockchain solutions hasn’t been created. Connect your apps and automate processes in our marketplace in minutes.",
             link: '/marketplace/'
           },
           {
+            id: "human-capital",
             name: "Human Capital",
             description: "Distributing knowledge and value of our decentralized employees will be a company focus. Human capital can significantly add to economic and network growth. Education and training are vital for the growth of our network. They increase vitality, profit and good habits when executed correctly.",
             link: null
           },
           {
+            id: "venture-capital",
             name: "Venture Capital",
             description: "Becoming part of the network as a software vendor or integrator allows you to benefit of the Ecosystem in whole new ways. Add value to your start up by adding blockchain to your stack, and have investors easily find you in the marketplace.",
             link: null
           },
           {
+            id: "research",
             name: "Research",
             description: "There’s still so much to learn about the emerging technology what we’re working on day after day. GDPR, security, scalability and governance are just some examples of subjects we’ll be diving in together with universities and researchers.",
             link: null
           },
           {
+            id: "products",
             name: "Products",
             description: "LTO Network aims to deliver our ecosystem participants with off-the-shelf products that can be directly incorporated in day-to-day operations. Don’t feel restricted by these, we know there’s always room for improvement, for you to add to!",
             link: null
@@ -113,15 +119,22 @@
         const radius = 180;
         let angle = 0;
 
-        const marketPlaceEl = document.getElementById('eco-m');
+        const regularOffset = 4.7;
+        const mobileOffset = 3.15;
+        let radialOffset = recalculateRadialOffset();
 
+        window.addEventListener('resize', () => {
+          radialOffset = recalculateRadialOffset();
+        });
+
+        const marketPlaceEl = document.getElementById('eco-m');
         const ecoMenuHeaderEl = document.getElementsByClassName('ecomenu-header')[0];
         const ecoMenuDescriptionEl = document.getElementsByClassName('ecomenu-description')[0];
         const ecoMenuReadMoreEl = document.getElementsByClassName('ecomenu-readmore')[0];
 
         buttons.forEach((button, i) => {
-          button.style.top = Math.sin(-Math.PI / 2 + i * increase - 4.7) * radius + 'px';
-          button.style.left = Math.cos(-Math.PI / 2 + i * increase - 4.7) * radius + 'px';
+          button.style.top = Math.sin(-Math.PI / 2 + i * increase - radialOffset) * radius + 'px';
+          button.style.left = Math.cos(-Math.PI / 2 + i * increase - radialOffset) * radius + 'px';
           button.addEventListener('click', move);
         });
 
@@ -129,8 +142,8 @@
 
         function move(e) {
           const n = buttons.indexOf(e.target);
-          const endAngle = (n % count) * increase + 4.7;
-          const currentItem = ecoMenu.find(_m => _m.name.toLowerCase() === e.target.innerText.toLowerCase());
+          const endAngle = (n % count) * increase + radialOffset;
+          const currentItem = ecoMenu.find(_m => _m.id.toLowerCase() === e.target.dataset.name.toLowerCase());
           turn();
 
           function turn() {
@@ -163,6 +176,10 @@
             ecoMenuReadMoreEl.src = '#';
             ecoMenuReadMoreEl.innerHTML = 'More info coming soon!';
           }
+        }
+
+        function recalculateRadialOffset() {
+          return window.innerWidth > 600 ? regularOffset : mobileOffset;
         }
       }, 35);
     </script>
