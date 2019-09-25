@@ -59,8 +59,8 @@
         bottom: boundsTop + elem.clientHeight,
       }
 
-      return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom)
-        || (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
+      return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
+        (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
     }
 
     return false;
@@ -83,8 +83,7 @@
 
       if (inViewport && isScrollingDown && publicCurrentTop < publicOriginalTop) {
         ballsComeBack();
-      }
-      else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen) {
+      } else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen) {
         ballsFlyAway()
       }
     };

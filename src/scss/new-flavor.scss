@@ -886,18 +886,16 @@ blockquote .author {
 }
 
 .public-chain {
-    background-image: url('/assets/public-chain.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     height: 600px;
     width: 660px;
-    right: 80px;
-    top: 0px;
+    right: 200px;
+    top: -420px;
+    overflow: hidden;
 
     @include responsive(desktop) {
         right: 600px;
-        top: -60px;
+        top: -350px;
     }
 
     @include responsive(phone) {
@@ -906,17 +904,16 @@ blockquote .author {
 }
 
 .private-chain {
-    background-image: url('/assets/private-chain.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     height: 600px;
     width: 700px;
-    top: 260px;
-    right: -20px;
+    top: 660px;
+    right: -50px;
+    overflow: hidden;
 
     @include responsive(desktop) {
         right: 400px;
+        top: 530px;
     }
 
     @include responsive(phone) {
