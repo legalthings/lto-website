@@ -1463,6 +1463,7 @@ blockquote .author {
       position: relative;
       transform: translateX(0px);
       opacity: 1;
+      z-index: 3;
     }
 
     &.is-exiting {
