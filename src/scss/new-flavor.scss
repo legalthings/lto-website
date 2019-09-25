@@ -982,8 +982,8 @@ blockquote .author {
 .extra-margin {
     margin-top: -105px !important;
 
-    @include responsive(phone) {
-        margin-top: 50px;
+     @include responsive(phone) {
+         margin-top: 50px;
     }
 }
 
@@ -1430,4 +1430,36 @@ blockquote .author {
 .use-case-arrow {
   display: flex;
   align-items: center;
+}
+
+.card-slider-section {
+  .columns-slider {
+    position: absolute;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 350ms ease-in-out;
+
+    &.is-visible {
+      position: relative;
+      transform: translateX(0px);
+      opacity: 1;
+    }
+
+    &.is-exiting {
+      position: relative;
+      opacity: 0;
+
+      &.left {
+        transform: translateX(-150px);
+      }
+
+      &.right {
+        transform: translateX(150px) !important;
+      }
+    }
+  }
+
+  .card-slider-action {
+    z-index: 10;
+  }
 }

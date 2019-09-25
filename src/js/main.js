@@ -59,8 +59,8 @@
         bottom: boundsTop + elem.clientHeight,
       }
 
-      return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom )
-        || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+      return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom)
+        || (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
     }
 
     return false;
@@ -84,19 +84,19 @@
       if (inViewport && isScrollingDown && publicCurrentTop < publicOriginalTop) {
         ballsComeBack();
       }
-      else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen){
+      else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen) {
         ballsFlyAway()
       }
     };
 
-    function ballsFlyAway () {
+    function ballsFlyAway() {
       publicCurrentTop -= ballVelocity;
       privateCurrentTop += ballVelocity;
       publicChain.style.top = publicCurrentTop.toString() + "px";
       privateChain.style.top = privateCurrentTop.toString() + "px";
     };
 
-    function ballsComeBack () {
+    function ballsComeBack() {
       publicCurrentTop += ballVelocity;
       privateCurrentTop -= ballVelocity;
       publicChain.style.top = publicCurrentTop.toString() + "px";
@@ -109,7 +109,7 @@
   };
 
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     let st = window.pageYOffset || document.documentElement.scrollTop;
 
     if (st > lastScrollTop) isScrollingDown = true;
@@ -121,4 +121,5 @@
   executeInQueue(doTransparentHeaderScrolling(), 20);
   executeInQueue(doParallaxScrolling(), 30);
   executeInQueue(bindLtoNodeEvents(), 30);
-})()
+  executeInQueue(bindCardSliderEvents(), 40);
+})();

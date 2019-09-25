@@ -91,6 +91,7 @@ gulp.task("compile-sass", () => {
         'is-active',
         'is-fixed-top',
         'is-transparent',
+        'is-exiting',
         'visible',
         'modal-backdrop',
         'inverted-mobile',
