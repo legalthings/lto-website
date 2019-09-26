@@ -91,10 +91,10 @@
           ecoMenuDescriptionEl.innerHTML = item.description;
 
           if (item.link) {
-            ecoMenuReadMoreEl.src = item.link;
+            ecoMenuReadMoreEl.href = item.link;
             ecoMenuReadMoreEl.innerHTML = 'Read more →';
           } else {
-            ecoMenuReadMoreEl.src = '#';
+            ecoMenuReadMoreEl.href = '#';
             ecoMenuReadMoreEl.innerHTML = 'More info coming soon!';
           }
         }
