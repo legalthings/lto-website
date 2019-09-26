@@ -1163,6 +1163,10 @@ blockquote .author {
                 &.invisible {
                     background: transparent !important;
                 }
+
+                &.fit {
+                    flex: 0 1 auto;
+                }
             }
         }
     }
