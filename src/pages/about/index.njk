@@ -6,7 +6,7 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/slider-image@3x.png')">
+  <section class="hero is-medium" style="background-image:url('/assets/hero/hero-about.png');background-position:center;">
     <div class="hero-body">
       <div class="container">
           <div class="columns">
@@ -15,8 +15,8 @@
           <p class="dark-indigo jobs-talent quote">“The most devoted and tech savvy bunch of whizzkids I have ever met”</p>
           <p class="dark-indigo jobs-talent end-quote">- Mike van der Bilt (TechStarter)</p>
         <div class="buttons btn-container">
-            <a href="#" class="button is-warning">Join the movement</a>
-            <a href="#" class="button">Learn more</a>
+            <a href="#talents" class="button is-warning">Join the movement</a>
+            <a href="#mission" class="button">Learn more</a>
         </div>
               </div>
           <div class="column video">
@@ -56,7 +56,7 @@
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
+<div class="section-container cutin-top-alt cutout-bottom" id="mission">
   <section class="section">
     <div class="container">
         <h4 class="dark-indigo has-text-centered">MISSION STATEMENT</h4>
@@ -77,7 +77,7 @@
   </section>
 </div>
 
-<div class="section-container cutoff-top cutout-bottom">
+<div class="section-container cutoff-top cutout-bottom-alt">
   <section class="section alt relative neg-m-top-m p-top-l" id="team">
     <div class="container z-index-4">
       <h2 class="has-text-centered section-title">Meet the team</h2>
@@ -150,20 +150,7 @@
             </li>
           </ul>
         </div>
-        <div class="team-member">
-          <div class="team-image">
-            <img src="/assets/team/ivan.png">
-          </div>
-          <span class="name">Ivan Golovko</span>
-          <span class="title">CMO</span>
-          <ul class="socials">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/ivangolovko/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="team-member">
           <div class="team-image">
             <img src="/assets/team/martijn.png">
@@ -173,6 +160,36 @@
           <ul class="socials">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+            <img src="/assets/team/rick_ros.png">
+          </div>
+          <span class="name">Rick Ros</span>
+          <span class="title">Head of Sales</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/rickros/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+            <img src="/assets/team/ivan.png">
+          </div>
+          <span class="name">Ivan Golovko</span>
+          <span class="title">CMO</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/ivangolovko/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -291,20 +308,6 @@
 
         <div class="team-member">
           <div class="team-image">
-            <img src="/assets/team/rick_ros.png">
-          </div>
-          <span class="name">Rick Ros</span>
-          <span class="title">Head of Sales</span>
-          <ul class="socials">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/rickros/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="team-member">
-          <div class="team-image">
             <img src="/assets/team/michael.png">
           </div>
           <span class="name">Michael Nieveld</span>
@@ -379,54 +382,167 @@
 </div>
 
 <div class="section-container cutout-bottom z-index-1">
-<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talent">
+<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talents">
     <div class="container">
-      <h2 class="has-text-centered section-title">We are looking for talents!</h2>
-        <h3 class="dark-indigo has-text-centered">Our fast growing team is always looking for fresh and enthusiastic talent.</h3>
-            <div class="columns is-multiline join-our-team-about">
+        <h2 class="has-text-centered section-title"> Timeline </h2>
+        <div class="timeline is-centered">
+        <header class="timeline-header">
+    <span class="tag">2015</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2015 - Q2</p>
+      <p class="heading-alt muted">LegalThings v1.0</p>
+        <p class="muted">The release of the first white label version of the LegalThings platform. This version introduced a document and form builder, a document management system, advanced user and permission management and digital signing.</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2016</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2016 - Q1</p>
+      <p class="heading-alt muted">LegalFlow v1.0</p>
+        <p class="muted">We created software for FIRM24 to run the procedures for incorporations. Other customers were also interested in these digitized procedures. We did a small pivot, changing the focus to digitizing the contracts as FSM (Finite State Machine), rather than just signing.</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2017</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2017 - Q3</p>
+      <p class="heading-alt muted">Hackathon winner by the Dutch Ministry of Justice</p>
+        <p class="muted">During the blockchain hackathon organized by the Dutch Ministry of Justice and Security, we demonstrated that a whole legal procedure can be digitized as an FSM and stored on the blockchain. This got us the 1st prize in the event which included the assignment to create the first digitized legal procedures for the Dutch legislative system on the blockchain.</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2018</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018- Q1</p>
+      <p class="heading-alt muted">PoC for the Dutch Ministry of Justice</p>
+        <p class="muted">We built a Proof of Concept of the new solution for the Ministry of Justice and Security, following up on the hackathon win of 2017.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018 - Q2</p>
+      <p class="heading-alt muted">BlockChaingers 'best code' prize</p>
+        <p class="muted">We attended the biggest hackathon together with the WAVES team and were awarded ‘the best code’ prize from BlockChaingers.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018 - Q2</p>
+      <p class="heading-alt muted">PoC for Waste Transportation tender launch</p>
+        <p class="muted">We launched the testnet solution with the Dutch and Belgian governments following up on the tender.</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2019</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q1</p>
+      <p class="heading-alt muted">Mainnet launch and crowd sale</p>
+        <p class="muted">We launched mainnet and closed the last round of token sale, raising 990,000 USD in the last round.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q3</p>
+      <p class="heading-alt muted">Layer 1 Open-Source</p>
+        <p class="muted">Open-source public chain code, modification of Waves/NXT.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q3</p>
+      <p class="heading-alt muted">Layer 2 Open-Source</p>
+      <p class="muted">Open-source the toolkit of Layer 2, unique FSM ad-hoc event chains.</p>
+    </div>
+  </div>
+  <header class="timeline-header">
+    <span class="tag">UPCOMING</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q4</p>
+      <p class="heading-alt muted">Marketplace Launch</p>
+      <p class="muted">Launch LTO Marketplace dedicated to connecting blockchain business-focused applications for companies and developers to use.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q4</p>
+      <p class="heading-alt muted">Proofi Release</p>
+      <p class="muted">Release Proofi, new SaaS product focused on re-shaping the world of signatures. Aimed at B2B, B2C, C2C or M2M.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - Q1</p>
+      <p class="heading-alt muted">LPOI Release</p>
+      <p class="muted">Pass the final testing stage and release Leased Proof of Importance, LTO Network's variation on Proof of Stake.</p>
+    </div>
+  </div>
+</div>
 
-      <div class="column is-4 join-our-team-about">
-        <h4 class="join-our-team-about column-title dark-indigo">Full Stack Developer</h4>
-        <p class="join-our-team-about column-text steel">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-        <a class="read-more-link" href="/jobs-talent/#fullstack" >
-          <p class="read-more deep-lavender"><br>Read more →</p>
-        </a>
-      </div>
+    </div>
+</section>
+</div>
 
-      <div class="column is-4 join-our-team-about">
-        <h4 class="join-our-team-about column-title dark-indigo">SR Front End Developer</h4>
-        <p class="join-our-team-about column-text steel">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-        <a class="read-more-link" href="/jobs-talent/#srfront" >
-          <p class="read-more deep-lavender"><br>Read more →</p>
-        </a>
-      </div>
-
-      <div class="column is-4 join-our-team-about">
-        <h4 class="join-our-team-about column-title dark-indigo">UI / UX Designer</h4>
-        <p class="join-our-team-about column-text steel">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-        <a class="read-more-link" href="/jobs-talent/#uiuxdesign" >
-          <p class="read-more deep-lavender"><br>Read more →</p>
-        </a>
-      </div>
-
-          <div class="column is-4 join-our-team-about">
-            <h4 class="join-our-team-about column-title dark-indigo">SEO Specialist</h4>
-            <p class="join-our-team-about column-text steel">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-            <a class="read-more-link" href="/jobs-talent/#seospec" >
-              <p class="read-more deep-lavender"><br>Read more →</p>
-            </a>
-          </div>
-
-          <div class="column is-4 join-our-team-about">
-            <h4 class="join-our-team-about column-title dark-indigo">Open lorem</h4>
-            <p class="join-our-team-about column-text steel">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-            <a class="read-more-link" href="/jobs-talent/#open" >
-              <p class="read-more deep-lavender"><br>Read more →</p>
-            </a>
-          </div>
-
-          <div class="column join-our-team-about-filler">
-          </div>
+<div class="section-container cutout-top-alt cutout-bottom-alt z-index-1">
+<section class="section alt relative neg-m-top-m p-top-l p-bottom-xxl" id="talents">
+    <div class="container">
+        <h2 class="has-text-centered section-title">The LTO Mentality</h2>
+        <div class="columns is-centered has-text-centered has-margin-top-40">
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><div class="livicon-evo" data-options="
+          name: rocket;
+          size: 80px;
+          tryToSharpen: true;
+          strokeColor: #804bc9"
+          style="visibility: visible; width: 76px;"></div></div>
+                <h2 class="dark-indigo">Community Love</h2>
+                <p class="muted">We believe that open-source is the new way to a successful business. With our community behind us we are light years faster than any other.</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><div class="livicon-evo" data-options="
+          name: stopwatch;
+          size: 80px;
+          tryToSharpen: true;
+          strokeColor: #804bc9"
+          style="visibility: visible; width: 76px;"></div></div>
+                <h2 class="dark-indigo">Get things done</h2>
+                <p class="muted">We are determined to reach our goals and work towards them with extreme attention to detail. Working smart is not that hard.</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><div class="livicon-evo" data-options="
+          name: wine-glass;
+          size: 80px;
+          tryToSharpen: true;
+          strokeColor: #804bc9"
+                                                                                      style="visibility: visible; width: 76px;"></div></div>
+                <h2 class="dark-indigo">Great rewards</h2>
+                <p class="muted">Working should be fun too. Try to beat us at a game of football or have a good glass of wine with us on a Friday afternoon.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -434,54 +550,8 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-    <div class="container">
-      <div class="columns">
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-1.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Developer area</h3>
-            <div class="card-description has-text-centered">
-              <p>Get to know the tech, set up a node and learn how to build your first Live Contract in the developer area!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-2.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Community area</h3>
-            <div class="card-description has-text-centered">
-              <p>Ready to put your marketing, design and development skills into practice? Join the community!</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-rock-image" src="/assets/rocks/card-rock-3.svg">
-          <div class="card-content">
-            <h3 class="accent-text has-text-centered">Explore use cases</h3>
-            <div class="card-description has-text-centered">
-              <p>Many organizations are already reaping the benefits from blockchain technology. Learn all about it our extensive use case section.</p>
-            </div>
-            <div class="card-action centered">
-              <a href="#" class="button is-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
+
 {% endblock %}

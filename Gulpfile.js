@@ -104,7 +104,11 @@ gulp.task("compile-sass", () => {
         'cutin-top',
         'cutin-top-alt',
         'flex-row',
-        'flex-column'
+        'flex-column',
+        'timeline',
+        'timeline-header',
+        'timeline-content',
+        'timeline-item'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))
