@@ -70,42 +70,45 @@
     const section = document.getElementById('why-hybrid-blockchain-section');
     const publicChain = document.getElementById('public-chain');
     const privateChain = document.getElementById('private-chain');
-    const publicOriginalTop = publicChain.offsetTop;
-    const privateOriginalTop = privateChain.offsetTop;
-    let publicCurrentTop = publicOriginalTop;
-    let privateCurrentTop = privateOriginalTop;
-    const ballVelocity = 1.5;
+    if (publicChain) {
+      const publicOriginalTop = publicChain.offsetTop;
+      const privateOriginalTop = privateChain.offsetTop;
+      let publicCurrentTop = publicOriginalTop;
+      let privateCurrentTop = privateOriginalTop;
+      const ballVelocity = 1.5;
 
-    function parallaxScroll() {
-      const inViewport = isInViewport(section);
-      const sectionBounds = section.getBoundingClientRect();
-      const isInMiddleOfScreen = (sectionBounds.top + sectionBounds.height) >= ((window.innerHeight / 2) + 55);
+      function parallaxScroll() {
+        const inViewport = isInViewport(section);
+        const sectionBounds = section.getBoundingClientRect();
+        const isInMiddleOfScreen = (sectionBounds.top + sectionBounds.height) >= ((window.innerHeight / 2) + 55);
 
-      if (inViewport && isScrollingDown && publicCurrentTop < publicOriginalTop) {
-        ballsComeBack();
-      }
-      else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen) {
-        ballsFlyAway()
-      }
-    };
+        if (inViewport && isScrollingDown && publicCurrentTop < publicOriginalTop) {
+          ballsComeBack();
+        }
+        else if (inViewport && !isScrollingDown && publicCurrentTop > -400 && isInMiddleOfScreen) {
+          ballsFlyAway()
+        }
+      };
 
-    function ballsFlyAway() {
-      publicCurrentTop -= ballVelocity;
-      privateCurrentTop += ballVelocity;
-      publicChain.style.top = publicCurrentTop.toString() + "px";
-      privateChain.style.top = privateCurrentTop.toString() + "px";
-    };
+      function ballsFlyAway() {
+        publicCurrentTop -= ballVelocity;
+        privateCurrentTop += ballVelocity;
+        publicChain.style.top = publicCurrentTop.toString() + "px";
+        privateChain.style.top = privateCurrentTop.toString() + "px";
+      };
 
-    function ballsComeBack() {
-      publicCurrentTop += ballVelocity;
-      privateCurrentTop -= ballVelocity;
-      publicChain.style.top = publicCurrentTop.toString() + "px";
-      privateChain.style.top = privateCurrentTop.toString() + "px";
-    };
+      function ballsComeBack() {
+        publicCurrentTop += ballVelocity;
+        privateCurrentTop -= ballVelocity;
+        publicChain.style.top = publicCurrentTop.toString() + "px";
+        privateChain.style.top = privateCurrentTop.toString() + "px";
+      };
 
 
-    parallaxScroll();
-    window.addEventListener('scroll', parallaxScroll);
+      parallaxScroll();
+      window.addEventListener('scroll', parallaxScroll);
+
+    }
   };
 
 
