@@ -886,18 +886,16 @@ blockquote .author {
 }
 
 .public-chain {
-    background-image: url('/assets/public-chain.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     height: 600px;
     width: 660px;
-    right: 80px;
-    top: 0px;
+    right: 200px;
+    top: -420px;
+    overflow: hidden;
 
     @include responsive(desktop) {
         right: 600px;
-        top: -60px;
+        top: -350px;
     }
 
     @include responsive(phone) {
@@ -906,17 +904,16 @@ blockquote .author {
 }
 
 .private-chain {
-    background-image: url('/assets/private-chain.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     height: 600px;
     width: 700px;
-    top: 260px;
-    right: -20px;
+    top: 660px;
+    right: -50px;
+    overflow: hidden;
 
     @include responsive(desktop) {
         right: 400px;
+        top: 530px;
     }
 
     @include responsive(phone) {
@@ -1662,8 +1659,7 @@ blockquote .author {
                 }
             }
 
-            &:first-child {
-            }
+            &:first-child {}
 
             &:last-child {
                 @include responsive(phone) {
@@ -1684,6 +1680,7 @@ blockquote .author {
 
                 // Helemaal linksonderin
                 &:last-child {
+
                     // border-bottom-left-radius: 5px;
                     @include responsive(phone) {
                         // border-left: none;
@@ -1707,6 +1704,7 @@ blockquote .author {
 
                 // Helemaal rechtsonderin
                 &:last-child {
+
                     // border-bottom-right-radius: 5px;
                     @include responsive(phone) {
                         // border-bottom-right-radius: 5px;
@@ -1714,5 +1712,43 @@ blockquote .author {
                 }
             }
         }
+    }
+}
+
+.public-chain-tech {
+    position: absolute;
+    height: 600px;
+    width: 660px;
+    right: 90px;
+    top: -310px;
+
+    overflow: hidden;
+
+    @include responsive(desktop) {
+        right: 510px;
+        top: -280px;
+    }
+
+    @include responsive(phone) {
+        display: none !important;
+    }
+}
+
+.private-chain-tech {
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    top: 420px;
+    right: -128px;
+
+    overflow: hidden;
+
+    @include responsive(desktop) {
+        top: 401px;
+        right: 342px;
+    }
+
+    @include responsive(phone) {
+        display: none !important;
     }
 }

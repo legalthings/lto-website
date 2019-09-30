@@ -15,10 +15,10 @@
   "author": "Sarfaraaz",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "browser-sync": "^2.26.7",
-    "critical": "^2.0.0-18",
+    "critical": "^2.0.0-20",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
