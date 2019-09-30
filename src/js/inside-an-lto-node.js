@@ -1,4 +1,4 @@
-let currentlyShown = document.getElementById("workflow-engine-content");
+let currentlyShown = document.getElementById("event-chain-service-content");
 
 function showCorrectText(id) {
     let contentId = id.slice(0, id.length-4) + "content";
