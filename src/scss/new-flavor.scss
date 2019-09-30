@@ -1659,8 +1659,7 @@ blockquote .author {
                 }
             }
 
-            &:first-child {
-            }
+            &:first-child {}
 
             &:last-child {
                 @include responsive(phone) {
@@ -1681,6 +1680,7 @@ blockquote .author {
 
                 // Helemaal linksonderin
                 &:last-child {
+
                     // border-bottom-left-radius: 5px;
                     @include responsive(phone) {
                         // border-left: none;
@@ -1704,6 +1704,7 @@ blockquote .author {
 
                 // Helemaal rechtsonderin
                 &:last-child {
+
                     // border-bottom-right-radius: 5px;
                     @include responsive(phone) {
                         // border-bottom-right-radius: 5px;
@@ -1711,5 +1712,43 @@ blockquote .author {
                 }
             }
         }
+    }
+}
+
+.public-chain-tech {
+    position: absolute;
+    height: 600px;
+    width: 660px;
+    right: 90px;
+    top: -310px;
+
+    overflow: hidden;
+
+    @include responsive(desktop) {
+        right: 510px;
+        top: -280px;
+    }
+
+    @include responsive(phone) {
+        display: none !important;
+    }
+}
+
+.private-chain-tech {
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    top: 420px;
+    right: -128px;
+
+    overflow: hidden;
+
+    @include responsive(desktop) {
+        top: 401px;
+        right: 342px;
+    }
+
+    @include responsive(phone) {
+        display: none !important;
     }
 }
