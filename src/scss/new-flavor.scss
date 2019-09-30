@@ -1191,6 +1191,10 @@ blockquote .author {
             position: absolute;
             left: -88px;
             top: 180px;
+
+            @include responsive(phone) {
+                display: none;
+            }
         }
     }
 
@@ -1751,4 +1755,19 @@ blockquote .author {
     @include responsive(phone) {
         display: none !important;
     }
+}
+
+
+.resources {
+  @include responsive(phone) {
+    .column {
+      padding: 1.25rem !important;
+    }
+
+    .sub-columns {
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
