@@ -1,301 +1,314 @@
 {% set title = 'LTO Network - Use case - Smart Certificates' %}
-{% set description = 'Blockchain validation and verification of certificates issued by NEN' %}
+{% set description = 'Instant verification of certificates on LTO Network ' %}
 
 {% extends "base.njk" %}
 
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/hero/hero-uc-certificates.png');">
-    <div class="hero-body">
-      <div class="container">
-          <div class=""><span class="tag is-rounded is-medium blue-grey"> SOLUTION </span></div>
-        <h1 class="primary-text">Instant verification of certificates on LTO Network</h1>
-          <h2 class="dark-indigo">NeN introduced smart certificates to facilitate 'on the spot' real time verification.</h2>
-      </div>
-    </div>
-  </section>
+    <section class="hero is-medium" style="background-image: url('/assets/hero/hero-uc-certificates.png');">
+        <div class="hero-body">
+            <div class="container">
+                <div class=""><span class="tag is-rounded is-medium blue-grey"> SOLUTION </span></div>
+                <h1 class="primary-text">Instant verification of certificates on LTO Network </h1>
+                <h2 class="dark-indigo">NeN introduced smart certificates to facilitate on the spot verification </h2>
+            </div>
+        </div>
+    </section>
 </div>
 
 <div class="section-container cutout-top">
-  <section class="section secondary no-padding">
-    <div class="promo-numbers c">
-      <div class="container use-cases">
-        <div class="item use-cases">
-            <img class="promo-client" src="/assets/use-cases/nen@2x.png">
+    <section class="section secondary promo-numbers-section">
+        <div class="promo-numbers c">
+            <div class="container use-cases">
+                <div class="item use-cases">
+                    <img class="promo-client" src="/assets/use-cases/nen@2x.png">
+                </div>
+                <div class="item use-cases">
+                    <p class="promo-head use-cases">Involved parties</p>
+                    <p class="promo-desc use-cases muted">NeN and ScanTrust.</p>
+                </div>
+            </div>
         </div>
-        <div class="item use-cases">
-            <p class="promo-head use-cases">Involved parties</p>
-          <p class="promo-desc use-cases muted">NeN, ScanTrust</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </div>
 
 <div class="section-container cutin-top-alt cutout-bottom">
     <section class="section">
         <div class="container">
-      <h2 class="has-text-centered section-title">Business challenges</h2>
-      <div class="columns">
-        <div class="column card">
-          <img class="card-image clip-a" src="/assets/polygons - 1.png">
-          <div class="card-content">
-            <h3 class="accent-text">Certificates are vulnerable to counterfeiting</h3>
-            <div class="card-description">
-              <p class="muted">It's easy to forge paper certificates. Furthermore, the certification processes can be complex and time-consuming, thus making it possible for criminals to engage in fraud.</p>
-            </div>
-          </div>
-        </div>
+            <h2 class="has-text-centered section-title">Business challenges</h2>
+            <div class="columns">
+                <div class="column card">
+                    <img class="card-image clip-a" src="/assets/polygons - 1.png">
+                    <div class="card-content">
+                        <h3 class="accent-text">Centralization</h3>
+                        <div class="card-description">
+                            <p class="muted">Registering standardization certificates happens in a system controlled by one agency. This system is often well protected, but a single source of truth makes them potentially vulnerable to security breaches.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="column card">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
-          <div class="card-content">
-            <h3 class="accent-text">Certificates validation is hard</h3>
-            <div class="card-description">
-              <p class="muted">Validation of certificates can be checked in the certification registration system. This centralized databases present a risk of losses or damages, resulting in heavy losses to the certificate owner. </p>
-            </div>
-          </div>
-        </div>
+                <div class="column card">
+                    <img class="card-image clip-b" src="/assets/polygons - 1.png">
+                    <div class="card-content">
+                        <h3 class="accent-text">Outside of NL</h3>
+                        <div class="card-description">
+                            <p class="muted">In some other jurisdictions, the protection of databases storing such sensitive standardization with industry best practices. Hence, multiple products or organizations can inadvertently or maliciously share standardization certificates.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="column card">
-          <img class="card-image clip-a" src="/assets/polygons - 1.png">
-          <div class="card-content">
-            <h3 class="accent-text">Collaboration with certifying parties</h3>
-            <div class="card-description">
-              <p class="muted">In certification registration process data needs to be shared with several organizations. As they are all isolated from each other, it is hard to effectively share data.</p>
+                <div class="column card">
+                    <img class="card-image clip-a" src="/assets/polygons - 1.png">
+                    <div class="card-content">
+                        <h3 class="accent-text">Blockchain itself</h3>
+                        <div class="card-description">
+                            <p class="muted">Blockchain technology itself is still a long way off from standardization as it is to be expected of a disruptive technology that is barely ten years old. A handful of them are fundamentally unique, but most of them are variants of the same idea. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
         </div>
     </section>
 </div>
 
 
 <div class="section-container">
-  <section class="section secondary">
-    <div class="container">
-      <h2 class="has-text-centered section-title">Solution overview</h2>
-      <div class="columns is-centered has-margin-top-40 inverted-mobile">
-          <div class="column is-half">
-          <h3 class="title subsection-title dark-indigo">'Live' certificates</h3>
-          <p class="muted">Updates and changes to the certificates are automatically linked to QR codes, which are re-recorded (hashed) on the blockchain platform. This information corresponds to NEN's Certificate Registration System.</p>
-        </div>
-        <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-          <div class="livicon-evo" style="position:relative; top:-5px; left:-4px;" data-options="
+    <section class="section secondary">
+        <div class="container">
+            <h2 class="has-text-centered section-title">Solution overview</h2>
+            <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">The system</h3>
+                    <p class="muted">Updates and changes to the certificates are automatically linked to QR codes, which are re-recorded (hashed) on the blockchain platform. This information corresponds to NEN's Certificate Registration System.</p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <div class="livicon-evo" style="position:relative; top:-5px; left:-4px;" data-options="
           name: anchor;
           size: 130px;
           tryToSharpen: true;
         style: filled;
         fillColor: #ffffff"></div>
-        </div>
-      </div>
+                </div>
+            </div>
 
-      <div class="columns is-centered has-margin-top-40">
-            <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-              <div class="livicon-evo" style="position:relative; top:-7px; left:-2px;" data-options="
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <div class="livicon-evo" style="position:relative; top:-7px; left:-2px;" data-options="
             name: users;
             size: 130px;
             tryToSharpen: true;
             style: filled;
             fillColor: #dde7f3"></div>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">Smart QR Codes</h3>
+                    <p class="muted">Using secure, uncopyable QR codes and blockchain technology, NeN is now powered with transparency into their supply chains and the ability to directly engage in meaningful, two-way conversations with their end-consumers.</p>
+                </div>
             </div>
-          <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Instant verification by anyone</h3>
-              <p class="muted">By comparing the QR code printed on the paper certificate to the digital certificate of which the data has been verified in the LTO Network blockchain parties can trust on the authenticity. Anyone with a smartphone is able to scan and verify it instantly. </p>
-        </div>
-      </div>
 
-      <div class="columns is-centered has-margin-top-40 inverted-mobile">
-        <div class="column is-half">
-          <h3 class="title subsection-title dark-indigo">Effective data sharing</h3>
-          <p class="muted">Data that is gathered by the involved parties is shared to the systems that are connected to LTO Network. Stakeholders can benefit from data re-use and reduction of manual process handling.</p>
-        </div>
-          <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-          <div class="livicon-evo" style="position:relative; top:-10px; left:-4px;" data-options="
+            <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">Organizations' own</h3>
+                    <p class="muted">Organizational certificates are now on various organizational systems, in inaccessible folders for some. In future white label environments, each organization will have its dashboard, with its data, to do their analysis on that data. </p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <div class="livicon-evo" style="position:relative; top:-10px; left:-4px;" data-options="
           name: desktop;
           size: 130px;
           tryToSharpen: true;
         style: filled;
         fillColor: #ffffff"></div>
+                </div>
+            </div>
+            <div class="btn-container has-text-centered has-margin-top-40">
+                <a href="/contact/" class="button is-primary">Book a demo</a>
+            </div>
         </div>
-      </div>
-        <div class="btn-container has-text-centered has-margin-top-40">
-        <a src="#" class="button is-primary">Book a demo</a>
-        </div>
-    </div>
-  </section>
+    </section>
 </div>
 
 
 <div class="section-container cutin-top-alt cutout-bottom">
     <section class="section">
-    <div class="container">
-      <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
-      <div class="columns is-centered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-           <img style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-          <img style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
-          <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
+        <div class="container">
+            <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+                    <img style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg">
+                    <img style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
+                    <img style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
+                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: coins;
           size: 90px;
           tryToSharpen: true;
           strokeColor: #ffffff;
           strokeWidth: 3px"></div>
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Cost savings</h3>
-          <p class="muted">Administrative tasks such as manual entering data into your system that receive by letter, fax or email belongs to the past. With the blockchain technology of LTO Network all parties are able to receive structured data into the systems they use to execute and administrate these processes. This reduces the administrative overhead with more then 30%.</p>
-        </div>
-      </div>
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">LTO Leads</h3>
+                    <p class="muted">The International Organization for Standardization (ISO), which develops and publishes International Standards says the first standards for Blockchain technology will be released in the next 18 months. LTO is actively involved in this group.</p>
+                </div>
+            </div>
 
-      <div class="columns is-centered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-           <img style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-          <img style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
-          <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+                    <img style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg">
+                    <img style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg">
+                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: diagram;
           size: 90px;
           tryToSharpen: true;
           strokeColor: #ffffff;
           strokeWidth: 3px"></div>
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Easy integration</h3>
-          <p class="muted">With LTO Network you don't have to change your entire IT infrastructure. You can use your existing systems and application to record any data entry, invoice, contract or other piece of data into the blockchain. The implementation of LTO Network is as simple as connecting an API.</p>
-        </div>
-      </div>
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">Hardcopy</h3>
+                    <p class="muted">Certificates are actually printed on badges and certificates that are used on the worksite. This means that the validity can be checked instantly by superiors and/or regulators. </p>
+                </div>
+            </div>
 
-      <div class="columns is-centered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-           <img style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-          <img style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
-          <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
+                    <img style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg">
+                    <img style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg">
+                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: balance;
           size: 90px;
           tryToSharpen: true;
           strokeColor: #ffffff;
           strokeWidth: 3px"></div>
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">Revocation</h3>
+                    <p class="muted">Since certificates are managed in the BettyBlocks application, run by NEN-partners, smart, decentralized certificates can be revoked with the click of a button. </p>
+                </div>
+            </div>
+
+            <div class="table-container is-centered has-margin-top-40">
+                <div class="table" id="results">
+                    <div class='theader'>
+                        <div class="table_header dark-indigo">Theme</div>
+                        <div class="table_header dark-indigo">LTO Network solution</div>
+                        <div class="table_header dark-indigo">Traditional solution</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Trust</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <p>The new solution allows for immediate, trusted checks on certificates by anyone with a smartphone.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <p>Paper-based certificates can't be validated on the spot, when necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Revocation</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <p>The revocation of a certificate is anchored on the blockchain, meaning that working with a revoked certificate becomes impossible.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <p>Having a certificate doesn't mean that it's still valid, and hasn't been revoked.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Costs and speed</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <p>LTO's blockchain is optimized for anchoring, making transactions near-instant and affordable.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <p>Traditional blockchains tend to be very slow and expensive to anchor this many transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="btn-container has-text-centered">
+                <a href="/contact/" class="button is-primary">
+                    Book a demo
+                </a>
+            </div>
         </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
-          <p class="muted">Demonstrating compliance is important in any industry. With LTO network you are able to record all data entries and steps in your business processes to safeguarding evidence and comply with regulation. Enabling one-click compliance reporting for both internal- as external communication on your business processes. </p>
-        </div>
-      </div>
-
-    <div class="columns is-centered has-margin-top-40">
-        <div class="column">
-<table class="table advantages">
-      <thead>
-        <tr>
-          <th class="table-icon"></td>
-          <th class="dark-indigo" colspan="2">Theme</th>
-          <th class="dark-indigo" colspan="2">LTO Network solution</th>
-          <th class="dark-indigo" colspan="2">Traditional solution</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <th class="table-icon"></td>
-          <th class="deep-lavender">Counterfeiting prevention</th>
-          <td class="table-icon"> <img class="table-checkmark" src="/assets/table icon - good.svg"> </td>
-          <td class="steel">The new solution allows for immediate, trusted checks on certificates by anyone with a smartphone.</td>
-          <td class="table-icon"> <img class="table-x" src="/assets/table icon - bad.svg"></td>
-          <td class="steel">Paper based certificates can’t be validated on the spot, when necessary.</td>
-        </tr>
-
-        <tr>
-          <th class="table-icon"></td>
-          <th class="deep-lavender">Easy revocation</th>
-          <td class="table-icon"> <img class="table-checkmark" src="/assets/table icon - good.svg"> </td>
-          <td class="steel">Revocation of a certificate is anchored on the blockchain, meaning that working with a revoked certificate becomes impossible.</td>
-          <td class="table-icon"> <img class="table-x" src="/assets/table icon - bad.svg"></td>
-          <td class="steel">Having a certificate doesn’t mean that its still valid, and hasn’t been revoked.</td>
-        </tr>
-
-
-        <tr>
-          <th class="table-icon"></td>
-          <th class="deep-lavender">Costs/speed of transactions</th>
-          <td class="table-icon"> <img class="table-checkmark" src="/assets/table icon - good.svg"> </td>
-          <td class="steel">LTO’s blockchain is optimized for anchoring, making transactions near instant and affordable.</td>
-          <td class="table-icon"> <img class="table-x" src="/assets/table icon - bad.svg"></td>
-          <td class="steel">Traditional blockchains tend to be very slow and expensive to anchor this many transactions.</td>
-        </tr>
-
-        <tr>
-        </tr>
-      </tbody>
-
-    </table>
-</div>
-</div>
-
-
-    <div class="btn-container has-text-centered">
-    <a href="#" class="button is-primary">
-      Book a demo
-    </a>
-</div>
-  </div>
-</section>
+    </section>
 </div>
 
 <div class="section-container cutout-bottom-alt">
-  <section class="section alt p-top-l">
-<div class="container">
-    <h2 class="section-title has-text-centered">“Prevention of damage to health is obviously preferable to monetary compensation for such damage once it has occurred.” To prevent is better than to cure. While it’s hard to determine what costs are saved, the fact that this mechanism will significantly limit workplace accidents is evident.</h2>
-        <div class="columns is-centered">
-            <div class="column is-three-fifths has-text-centered video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPtzmGf7gVo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="section p-top-xl p-bottom-xl alt">
+        <div class="container">
+            <!--
+           <div class="columns is-centered">
+                <div class="column">
+                 <div class="card">
+                    </div>
+               </div>
+            </div>
+-->
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="card">
+                        <div class="columns">
+                            <div class="column is-3 card-testimonial-img">
+                                <img class="" src="/assets/use-cases/om_testimonial.png" srcset="/assets/use-cases/om_testimonial@3x.png 3x, /assets/use-cases/om_testimonial@2x.png 2x">
+                            </div>
+                            <div class="column">
+                                <div class="content card-testimonial-content">
+                                    <p class="">Innovation is of paramount importance to NEN. This project shows constant improvements to our services concerning the application of standards, to remain relevant.</p>
+                                    <div class="author">Harmen Willemsen</div>
+                                    <div class="company">Senior Consultant of NeN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="btn-container has-text-centered has-margin-top-40">
-    <a href="https://about.v-id.org/ioetest" target="blank" class="button is-primary">Learn more</a>
-  </div>
-        </div>
-  </section>
+    </section>
 </div>
+
 
 <div class="section-container">
-  <section class="section relative tertiary p-top-l neg-m-top-m ecosystem-v">
-      <div class="section-body">
-        <div class="ecosystem-v"></div>
-        <div class="columns is-desktop">
-        <div class="column is-4 is-offset-8">
-            <h2 class="section-title">Ecosystem V</h2>
-            <div class="content">
-                <p class="muted">We amplify growth by sharing incentives on the same principles behind blockchain. We leverage our connections and those of other Ecosystem V members who benefit from continuous support and development through our community of hundreds of developers and ecosystem participants. </p>
-            </div>
-            <div class="btn-container">
-            <a href="#" class="button is-rounded is-primary main-button use-cases">Learn more</a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="section-container cutout-top cutout-bottom-alt">
-  <section class="section p-top-xl p-bottom-xl alt">
-  <div class="container">
-    <div class="columns is-centered">
-        <div class="column is-half">
-            <blockquote>Innovation is of paramount importance to NEN. This project shows that we are constantly working to improve our services with regard to the application of standards, so as to remain relevant.
-                <div class="author">Harmen Willemsen, Senior Consultant NEN</div>
-            </blockquote>
-        </div>
-        </div>
-      </div>
-  </section>
-</div>
-
-<div class="section-container">
-  <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
-  {% include "partials/bottom-nav.njk" %}
-  </section>
+    <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+        {% include "partials/bottom-nav.njk" %}
+    </section>
 </div>
 
 
