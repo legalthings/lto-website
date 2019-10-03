@@ -10,7 +10,61 @@
     <div class="hero-body">
       <h1 class="primary-text has-text-centered">Who do you want to contact?</h1>
       <div class="has-margin-top-40"></div>
-      {% include "partials/bottom-nav.njk" %}
+      <div class="container">
+      <div class="columns">
+          <div class="column card">
+              <img class="card-rock-image" src="/assets/cards/rick-ros.png" srcset="/assets/cards/rick-ros@3x.png 3x, /assets/cards/rick-ros@2x.png 2x">
+              <div class="card-content">
+                  <h3 class="accent-text has-text-centered">Software Vendors</h3>
+                  <div class="card-description has-text-centered">
+                      <p>Do you want to know more about our products, pricing and reseller options? Rick is here to help you out!</p>
+                  </div>
+                  <div class="card-action centered">
+                      <div class="btn-container">
+                          <a href="/contact/?department=software-vendors" class="button is-primary">
+                              Contact Rick
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="column card">
+              <img class="card-rock-image" src="/assets/cards/martijn-broersma.png" srcset="/assets/cards/martijn-broersma@3x.png 3x, /assets/cards/martijn-broersma@2x.png 2x">
+              <div class="card-content">
+                  <h3 class="accent-text has-text-centered">Business</h3>
+                  <div class="card-description has-text-centered">
+                      <p>Curious to learn how LTO Network can increase your process efficiency? Martijn is here to help you out!</p>
+                  </div>
+                  <div class="card-action centered">
+                      <div class="btn-container">
+                          <a href="/contact/?department=business" class="button is-primary">
+                              Contact Martijn
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="column card">
+              <img class="card-rock-image" src="/assets/cards/sven-stam.png" srcset="/assets/cards/sven-stam@3x.png 3x, /assets/cards/sven-stam@2x.png 2x">
+              <div class="card-content">
+                  <h3 class="accent-text has-text-centered">Developer</h3>
+                  <div class="card-description has-text-centered">
+                      <p>Are you a developers that wants to learn more about the tech and documentation? Sven speaks your language!</p>
+                  </div>
+                  <div class="card-action centered">
+                      <div class="btn-container">
+                          <a href="/contact/?department=developer" class="button is-primary">
+                              Contact Sven
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
     </div>
   </section>
 </div>
@@ -25,6 +79,7 @@
               <img class="vcard-image contact-image">
               <div class="vcard-content">
                 <h2 class="accent-text has-text-centered contact-name"></h2>
+                <p class="has-text-centered contact-description "></p>
                 <div class="vcard-icon">
                   <a class="contact-linkedin" href="" target="blank">
                     <img src="/assets/ico - linkedin.svg">
@@ -495,15 +550,15 @@
       <div class="container">
         <div class="item">
           <img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg">
-          <p class="promo-desc">Easy integration</p>
+          <p class="promo-desc">Safeguard your data</p>
         </div>
         <div class="item">
           <img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg">
-          <p class="promo-desc">Big tech community</p>
+          <p class="promo-desc">Create unparalleled efficiency</p>
         </div>
         <div class="item">
           <img class="marketplace promo-bar checkmark" src="/assets/table icon - good.svg">
-          <p class="promo-desc">GDPR Compliant</p>
+          <p class="promo-desc">Get immediate ROI</p>
         </div>
       </div>
     </div>
@@ -514,6 +569,7 @@
   const departmentList = {
     "software-vendors": {
       name: "Rick Ros",
+        description: "Do you want to know more about our products, pricing and reseller options? Rick is here to help you out!",
       image: "rick-ros",
       linkedin: "rickros",
       selected: 2,
@@ -521,6 +577,7 @@
     },
     "business": {
       name: "Martijn Broersma",
+        description: "Curious to learn how LTO Network can increase your process efficiency? Martijn is here to help you out!",
       image: "martijn-broersma",
       linkedin: "martijnbroersma",
       selected: 3,
@@ -528,6 +585,7 @@
     },
     "developer": {
       name: "Sven Stam",
+        description: "Are you a developers that wants to learn more about the tech and documentation? Sven speaks your language!",
       image: "sven-stam",
       linkedin: "svenstam",
       selected: 1,
@@ -558,6 +616,7 @@
     if (!dep) return;
 
     const contactName = document.getElementsByClassName('contact-name');
+    const contactDescription = document.getElementsByClassName('contact-description');
     const contactImage = document.getElementsByClassName('contact-image')[0];
     const contactLinkedIn = document.getElementsByClassName('contact-linkedin')[0];
     const contactFormSelectedType = document.querySelector('select[name="field[119]"]');
@@ -569,6 +628,10 @@
 
     for (let i = 0; i < contactName.length; i++) {
       contactName[i].innerHTML = dep.name;
+    }
+      
+      for (let i = 0; i < contactDescription.length; i++) {
+      contactDescription[i].innerHTML = dep.description;
     }
 
     contactImage.src = `/assets/cards/${dep.image}.png`;
