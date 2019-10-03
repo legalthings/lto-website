@@ -893,7 +893,7 @@ blockquote .author {
     position: absolute;
     height: 600px;
     width: 660px;
-    right: 200px;
+    right: 60px;
     top: -420px;
     overflow: hidden;
 
@@ -905,6 +905,11 @@ blockquote .author {
     @include responsive(phone) {
         display: none !important;
     }
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 .private-chain {
@@ -912,7 +917,7 @@ blockquote .author {
     height: 600px;
     width: 700px;
     top: 660px;
-    right: -50px;
+    right: -100px;
     overflow: hidden;
 
     @include responsive(desktop) {
@@ -922,6 +927,11 @@ blockquote .author {
 
     @include responsive(phone) {
         display: none !important;
+    }
+
+    img {
+        width: 80%;
+        height: 80%;
     }
 }
 
