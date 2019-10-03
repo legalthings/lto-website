@@ -1898,8 +1898,13 @@ blockquote .author {
 .hero-body {
     .video {
         iframe {
-            height: 13rem !important;
-            width: 30rem !important;
+            height: 16rem;
+            width: 30rem;
+
+            @include responsive(phone) {
+                height: 11rem;
+                width: 30rem;
+            }
         }
     }
 }
