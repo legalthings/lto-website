@@ -1732,17 +1732,20 @@ blockquote .author {
     height: 600px;
     width: 660px;
     right: 90px;
-    top: -310px;
-
-    overflow: hidden;
+    top: -240px;
 
     @include responsive(desktop) {
         right: 510px;
-        top: -280px;
+        top: -240px;
     }
 
     @include responsive(phone) {
         display: none !important;
+    }
+
+    img {
+        width: 80%;
+        height: 80%;
     }
 }
 
@@ -1752,21 +1755,29 @@ blockquote .author {
     width: 700px;
     top: 420px;
     right: -128px;
-
-    overflow: hidden;
+    background-size: 80% 80%;
 
     @include responsive(desktop) {
-        top: 401px;
+        top: 360px;
         right: 342px;
     }
 
     @include responsive(phone) {
         display: none !important;
     }
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 
 .resources {
+    .column {
+        background-color: white;
+    }
+
     @include responsive(phone) {
         .column {
             padding: 1.25rem !important;
@@ -1880,5 +1891,15 @@ blockquote .author {
             height: 13rem !important;
             width: 30rem !important;
         }
+    }
+}
+
+.functional-layers {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 30px;
+
+    @include responsive(phone) {
+        margin-top: 0px;
     }
 }
