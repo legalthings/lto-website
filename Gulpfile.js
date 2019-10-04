@@ -151,6 +151,7 @@ gulp.task("compile-vendor", () => {
     "src/vendor/LivIconsEvo/js/tools/verge.min.js",
     "src/vendor/LivIconsEvo/js/LivIconsEvo.defaults.js",
     "src/vendor/LivIconsEvo/js/LivIconsEvo.min.js",
+    "src/vendor/rellax.js"
     ])
     .pipe(gulpConcat("vendor.js"))
     .pipe(browserSync.reload({ stream: true }))

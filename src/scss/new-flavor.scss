@@ -2209,3 +2209,53 @@ blockquote .author {
     }
   }
 }
+
+.hero {
+  .overlay-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 900ms ease-in-out;
+    opacity: 1;
+
+    &.next {
+      z-index: 1;
+    }
+
+    &.current {
+      z-index: 2;
+    }
+
+    &.is-exiting {
+      opacity: 0;
+      mix-blend-mode: overlay;
+    }
+  }
+
+  .hero-body {
+    z-index: 5;
+  }
+
+  .primary-text {
+    transition: 500ms ease-in-out;
+    opacity: 1;
+
+    &.is-exiting {
+      opacity: 0;
+    }
+  }
+
+  .btn-container {
+    transition: 500ms ease-in-out;
+    opacity: 1;
+    transform: translateY(0px);
+
+    &.is-exiting {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  }
+}

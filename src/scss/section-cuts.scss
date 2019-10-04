@@ -37,7 +37,7 @@ $bottom-cuts: (
 .section-container {
   @each $class, $pol in $top-cuts {
     &#{$class} {
-      z-index: 1;
+      z-index: 5;
       margin-top: -$cut-size;
       filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.04));
     }
@@ -45,7 +45,7 @@ $bottom-cuts: (
 
   @each $class, $pol in $bottom-cuts {
     &#{$class} {
-      z-index: 2;
+      z-index: 6;
       margin-bottom: -$cut-size;
       filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.04));
     }
