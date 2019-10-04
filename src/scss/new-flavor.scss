@@ -2128,10 +2128,81 @@ blockquote .author {
   max-width: 920px;
   position: relative;
 
+  .company-rocks {
+    animation: levitate-a 7000ms ease-in-out infinite;
+
+    &:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    &:nth-child(2) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 400ms;
+    }
+
+    &:nth-child(3) {
+      animation: levitate-c 7965ms ease-in-out infinite;
+      animation-delay: 220ms;
+    }
+
+    &:nth-child(4) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 60ms;
+    }
+
+    &:nth-child(5) {
+      animation: levitate-c 7555ms ease-in-out infinite;
+      animation-delay: 10ms;
+    }
+
+    &:nth-child(6) {
+      animation: levitate-a 7965ms ease-in-out infinite;
+      animation-delay: 80ms;
+    }
+
+    &:nth-child(7) {
+      animation: levitate-d 7555ms ease-in-out infinite;
+      animation-delay: 140ms;
+    }
+
+    &:nth-child(8) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 320ms;
+    }
+
+    @keyframes levitate-a {
+      0% { transform: translateY(-13px) }
+      50% { transform: translateY(5px) }
+      100% { transform: translateY(-13px) }
+    }
+
+    @keyframes levitate-b {
+      0% { transform: translateY(0px) }
+      50% { transform: translateY(16px) }
+      100% { transform: translateY(0px) }
+    }
+
+    @keyframes levitate-c {
+      0% { transform: translateY(-14px) }
+      50% { transform: translateY(5px) }
+      100% { transform: translateY(-14px) }
+    }
+
+    @keyframes levitate-d {
+      0% { transform: translateY(-20px) }
+      50% { transform: translateY(12px) }
+      100% { transform: translateY(-20px) }
+    }
+  }
+
   @include responsive(phone) {
-    flex-direction: column;
-    max-width: 100%;
+    flex-direction: row;
+    max-width: 150%;
+    width: 130%;
+    margin-left: -45px;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 
     .company-rocks {
       margin-left: 0px !important;
