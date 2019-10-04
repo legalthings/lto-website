@@ -108,7 +108,8 @@ gulp.task("compile-sass", () => {
         'timeline',
         'timeline-header',
         'timeline-content',
-        'timeline-item'
+        'timeline-item',
+        'company-rocks'
       ]
     }))
     .pipe(gulpCleancss({ compatibility: 'ie8' }))

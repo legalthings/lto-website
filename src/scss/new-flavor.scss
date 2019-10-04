@@ -970,6 +970,187 @@ blockquote .author {
     }
 }
 
+.floating-rocks {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.container.floating-rocks {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.signrequest {
+    top: 0px;
+    left: 0px;
+    width: 14%;
+}
+
+.certik {
+    top: 0px;
+    left: 200px;
+    width: 20%;
+}
+
+.generali {
+    top: 0px;
+    left: 400px;
+    width: 16%;
+}
+
+.docker {
+    top: 0px;
+    left: 600px;
+    width: 14%;
+}
+
+.xurux {
+    top: 0px;
+    left: 800px;
+    width: 18%;
+}
+
+.axveco {
+    top: 0px;
+    left: 1000px;
+    width: 16%;
+}
+
+.stena {
+    top: 200px;
+    left: 40px;
+    width: 14%;
+}
+
+.cms {
+    top: 200px;
+    left: 240px;
+    width: 18%;
+}
+
+.bcg {
+    top: 200px;
+    left: 440px;
+    width: 14%;
+}
+
+.indaver {
+    top: 200px;
+    left: 640px;
+    width: 17%;
+}
+
+.firm24 {
+    top: 200px;
+    left: 840px;
+    width: 15%;
+}
+
+.inatba {
+    top: 200px;
+    left: 1040px;
+    width: 20%;
+}
+
+.v-id {
+    top: 400px;
+    left: 160px;
+    width: 19%;
+}
+
+.unchain {
+    top: 400px;
+    left: 360px;
+    width: 18%;
+}
+
+.capptions {
+    top: 400px;
+    left: 560px;
+    width: 20%;
+}
+
+.ibm {
+    top: 400px;
+    left: 760px;
+    width: 14%;
+}
+
+.moonwhale {
+    top: 400px;
+    left: 960px;
+    width: 17%;
+}
+
+.dbc {
+    top: 400px;
+    left: 1160px;
+    width: 15%;
+}
+
+.rijksoverheid {
+    top: 400px;
+    left: 1360px;
+    width: 18%;
+}
+
+.hh {
+    top: 600px;
+    left: 1100px;
+    width: 14%;
+}
+
+.techdata {
+    top: 600px;
+    left: 1160px;
+    width: 17%;
+}
+
+.tictag {
+    top: 600px;
+    left: 1220px;
+    width: 20%;
+}
+
+.nen {
+    top: 600px;
+    left: 1180px;
+    width: 15%;
+}
+
+.rock-1 {
+    width: 26px;
+    top: 237px;
+    left: 60px;
+}
+
+.rock-2 {
+    width: 26px;
+    top: 50px;
+    left: 210px;
+}
+
+.rock-3 {
+    width: 78px;
+    top: 220px;
+    left: 320px;
+}
+
+.rock-4 {
+    width: 36px;
+    top: 30px;
+    left: 460px;
+}
+
+.rock-5 {
+    width: 26px;
+    top: 160px;
+    left: 650px;
+}
 .bgVideo {
     margin-top: 20px;
     width: 100%;
@@ -1936,4 +2117,95 @@ blockquote .author {
     @include responsive(phone) {
         margin-top: 0px;
     }
+}
+
+.company-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 920px;
+  position: relative;
+
+  .company-rocks {
+    animation: levitate-a 7000ms ease-in-out infinite;
+
+    &:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    &:nth-child(2) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 400ms;
+    }
+
+    &:nth-child(3) {
+      animation: levitate-c 7965ms ease-in-out infinite;
+      animation-delay: 220ms;
+    }
+
+    &:nth-child(4) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 60ms;
+    }
+
+    &:nth-child(5) {
+      animation: levitate-c 7555ms ease-in-out infinite;
+      animation-delay: 10ms;
+    }
+
+    &:nth-child(6) {
+      animation: levitate-a 7965ms ease-in-out infinite;
+      animation-delay: 80ms;
+    }
+
+    &:nth-child(7) {
+      animation: levitate-d 7555ms ease-in-out infinite;
+      animation-delay: 140ms;
+    }
+
+    &:nth-child(8) {
+      animation: levitate-b 7555ms ease-in-out infinite;
+      animation-delay: 320ms;
+    }
+
+    @keyframes levitate-a {
+      0% { transform: translateY(-13px) }
+      50% { transform: translateY(5px) }
+      100% { transform: translateY(-13px) }
+    }
+
+    @keyframes levitate-b {
+      0% { transform: translateY(0px) }
+      50% { transform: translateY(16px) }
+      100% { transform: translateY(0px) }
+    }
+
+    @keyframes levitate-c {
+      0% { transform: translateY(-14px) }
+      50% { transform: translateY(5px) }
+      100% { transform: translateY(-14px) }
+    }
+
+    @keyframes levitate-d {
+      0% { transform: translateY(-20px) }
+      50% { transform: translateY(12px) }
+      100% { transform: translateY(-20px) }
+    }
+  }
+
+  @include responsive(phone) {
+    flex-direction: row;
+    max-width: 150%;
+    width: 130%;
+    margin-left: -45px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    .company-rocks {
+      margin-left: 0px !important;
+    }
+  }
 }
