@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="61" viewBox="0 0 56 61">
+  <defs>
+    <filter id="rock-4-a" width="188.9%" height="197.6%" x="-44.4%" y="-48.8%" filterUnits="objectBoundingBox">
+      <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.310907684   0 0 0 0 0.405301367   0 0 0 0 0.520493659  0 0 0 0.4 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#rock-4-a)" transform="rotate(-99 28.52 22.216)">
+    <polygon fill="#BFD0E6" points="4 36.782 30 41 22.68 29"/>
+    <polygon fill="#CBD8EA" points="4.856 27 4 36 23 28.779 11.164 27.756"/>
+    <polygon fill="#E5ECF4" points="0 13.017 10.966 15 22.651 13.905 30 0"/>
+    <polygon fill="#D5DFEB" points="4.769 27.264 11.033 28.07 23 29 0 13"/>
+    <polygon fill="#F4F7FB" points="30.38 0 23 14.004 35.81 21.745 45 26"/>
+    <polygon fill="#BFD0E6" points="34.731 28.113 30.38 41 45 25.773 35.81 21.598 23 14"/>
+    <polygon fill="#E5ECF4" points="10.045 21.436 23 29 23 13.874 11.135 14.952 0 13"/>
+    <polygon fill="#CBD8EA" points="23 29.197 30.549 41 35 28.114 23 14"/>
+  </g>
+</svg>

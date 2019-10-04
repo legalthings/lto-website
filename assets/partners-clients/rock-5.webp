@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <filter id="rock-5-a" width="300%" height="323.8%" x="-100%" y="-109.8%" filterUnits="objectBoundingBox">
+      <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.310907684   0 0 0 0 0.405301367   0 0 0 0 0.520493659  0 0 0 0.4 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#rock-5-a)" transform="rotate(50 6.835 20.257)">
+    <polygon fill="#BFD0E6" points="1.778 16.348 13.333 18.222 10.08 12.889"/>
+    <polygon fill="#CBD8EA" points="2.158 12 1.778 16 10.222 12.79 4.962 12.336"/>
+    <polygon fill="#E5ECF4" points="0 5.785 4.874 6.667 10.067 6.18 13.333 0"/>
+    <polygon fill="#D5DFEB" points="2.119 12.117 4.903 12.475 10.222 12.889 0 5.778"/>
+    <polygon fill="#F4F7FB" points="13.502 0 10.222 6.224 15.916 9.664 20 11.556"/>
+    <polygon fill="#BFD0E6" points="15.436 12.495 13.502 18.222 20 11.455 15.916 9.599 10.222 6.222"/>
+    <polygon fill="#E5ECF4" points="4.464 9.527 10.222 12.889 10.222 6.166 4.949 6.645 0 5.778"/>
+    <polygon fill="#CBD8EA" points="10.222 12.976 13.577 18.222 15.556 12.495 10.222 6.222"/>
+  </g>
+</svg>
