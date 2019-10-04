@@ -7,7 +7,11 @@
   function executeInQueue(_func, timeout) {
     if (!timeout) timeout = 10;
 
-    setTimeout(_func, timeout);
+    try {
+      setTimeout(_func, timeout);
+    } catch (ex) {
+      console.log(ex)
+    }
   }
 
   function bindMenuEvents() {
@@ -115,8 +119,25 @@
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   }, false);
 
+  function initiateRellax() {
+    const hasRellax = document.getElementsByClassName('rellax');
+
+    if (!hasRellax.length) return;
+
+    const rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: true
+    });
+  }
+
   executeInQueue(bindMenuEvents(), 10);
   executeInQueue(doTransparentHeaderScrolling(), 20);
+  executeInQueue(initiateRellax(), 25);
   executeInQueue(bindLtoNodeEvents(), 30);
   executeInQueue(bindCardSliderEvents(), 40);
+  executeInQueue(bindHeaderSlider(), 50);
 })();
