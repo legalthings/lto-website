@@ -11,7 +11,7 @@
       <div class="container">
         <h1 class="primary-text">Take a deep-dive and explore<br>LTO Network on a technical level</h1>
         <div class="buttons btn-container">
-          <a href="https://docs.ltonetwork.com" class="button"><p class="dark-indigo">Read documentation</p></a>
+          <a href="https://docs.ltonetwork.com" class="button"><p class="dark-indigo">Explore documentation</p></a>
         </div>
       </div>
     </div>
@@ -20,22 +20,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-    <div class="promo-numbers c">
-      <div class="container">
-        <div class="item">
-            <p class="promo-head deep-lavender">1M+</p>
-            <p class="promo-desc dark-indigo">easy integration</p>
-        </div>
-        <div class="item">
-          <p class="promo-head deep-lavender">30K+</p>
-          <p class="promo-desc dark-indigo">transactions per day</p>
-        </div>
-        <div class="item">
-          <p class="promo-head deep-lavender">100+</p>
-          <p class="promo-desc dark-indigo">LTO nodes</p>
-        </div>
-      </div>
-    </div>
+{% include "partials/promo-numbers-alt.njk" %}
   </section>
 </div>
 
@@ -187,13 +172,13 @@
             </div>
 
             <div class="content" id="proof-engine-content" style="display: none;">
-              <p class="tile-title is-size-4 title dark-indigo">Anchoring</p>
+              <p class="tile-title is-size-4 title dark-indigo">Anchoring Service</p>
               <div class="tile-content">
                <p class="muted">
                  This node connects the LTO platform to the LTO public blockchain that is responsible for securing data and events through anchoring.
                </p>
                 <ul class="muted is-size-6">
-                  <li>Use industry standard hashing (SHA2) and cryptography (ED25519) algorithms</li>
+                  <li>Use industry standard hashing (SHA2) and cryptography (ED25519) algorithms.</li>
                   <li>The NG protocol provides fast tx acknowledgement, typically within 3 seconds.</li>
                   <li>The public chain is optimized for storing hashes and doesn't provide general purpose functionality.</li>
                 </ul>
