@@ -53,7 +53,7 @@ $bottom-cuts: (
 
   @each $selector in selector-unify(to-string(map-keys($top-cuts), ","), to-string(map-keys($bottom-cuts), ',')) {
     &#{$selector} {
-      z-index: 3;
+      z-index: 7;
       filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
     }
   }
@@ -62,7 +62,7 @@ $bottom-cuts: (
     @each $class-bottom, $bottom in map-merge($bottom-cuts, ("": "100% 100%, 0% 100%")) {
       @if $class-top != $class-bottom {
         &#{$class-top}#{$class-bottom} section {
-          z-index: 4;
+          z-index: 8;
           clip-path: polygon(#{$top}, #{$bottom});
         }
       }
