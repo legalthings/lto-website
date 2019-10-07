@@ -23,30 +23,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-    <div class="promo-numbers c">
-      <div class="container">
-        <div class="item">
-          <p class="promo-head accent-text">1M+</p>
-          <p class="promo-desc">Active users</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">Top 20</p>
-          <p class="promo-desc">blockchains worldwide</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">30k+</p>
-          <p class="promo-desc">daily transactions</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">100+</p>
-          <p class="promo-desc">nodes</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">100+</p>
-          <p class="promo-desc">ecosystem partners</p>
-        </div>
-      </div>
-    </div>
+{% include "partials/promo-numbers.njk" %}
   </section>
 </div>
 
@@ -55,7 +32,7 @@
     <div class="container">
       <h2 class="has-text-centered section-title">Overview of use cases</h2>
       <div class="columns">
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-capptions.png">
           <div class="card-content">
             <h3 class="accent-text">Digital checklist & inspection application</h3>
@@ -70,7 +47,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-signrequest.png">
           <div class="card-content">
             <h3 class="accent-text">Digital signing with blockchain verification</h3>
@@ -85,7 +62,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-firm24.png">
           <div class="card-content">
             <h3 class="accent-text">Data sharing in notary procedures</h3>
@@ -102,7 +79,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-vaas.png">
           <div class="card-content">
             <h3 class="accent-text">Authenticity of artwork</h3>
@@ -117,7 +94,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-scantrust.png">
           <div class="card-content">
             <h3 class="accent-text">Smart QR-codes</h3>
@@ -132,7 +109,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-contractapp.png">
           <div class="card-content">
             <h3 class="accent-text">Contracts made easy</h3>
@@ -155,7 +132,7 @@
   <section class="section relative tertiary neg-m-top-m p-top-l">
     <div class="container z-index-4">
       <div class="columns">
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-tdm.png">
           <div class="card-content">
             <h3 class="accent-text">Trusted Document Management</h3>
@@ -170,7 +147,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-ilt.png">
           <div class="card-content">
             <h3 class="accent-text">International waste transportation</h3>
@@ -185,7 +162,7 @@
           </div>
         </div>
 
-                <div class="column card">
+                <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-lease.png">
           <div class="card-content">
             <h3 class="accent-text">Smart property lease agreements</h3>
@@ -202,7 +179,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-certificates.png">
           <div class="card-content">
             <h3 class="accent-text">Smart certificates on the blockchain</h3>
@@ -217,7 +194,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-a" src="/assets/use-cases/card-uc-cac.png">
           <div class="card-content">
             <h3 class="accent-text">Streamlining small criminal cases</h3>
@@ -232,12 +209,12 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card align">
           <img class="card-image clip-b" src="/assets/use-cases/card-uc-ioe.png">
           <div class="card-content">
             <h3 class="accent-text">The Internet of Environments</h3>
             <div class="card-description">
-              <p class="muted">Digitisation is key to drive the sustainability transformation forward. Data insights, combined and mined creatively, help us better understand our true impact on the environment.</p>
+              <p class="muted">Digitisation is key to drive the sustainability transformation forward. Data insights help us better understand our true impact on the environment.</p>
             </div>
             <div class="has-margin-top-20">
               <a href="/use-cases/internet-of-environments/" class="button is-primary">

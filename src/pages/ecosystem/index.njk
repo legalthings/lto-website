@@ -21,30 +21,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-    <div class="promo-numbers c">
-      <div class="container">
-        <div class="item">
-          <p class="promo-head accent-text">1M+</p>
-          <p class="promo-desc">Active users</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">Top 20</p>
-          <p class="promo-desc">blockchains worldwide</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">30k+</p>
-          <p class="promo-desc">daily transactions</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">100+</p>
-          <p class="promo-desc">nodes</p>
-        </div>
-        <div class="item">
-          <p class="promo-head accent-text">100+</p>
-          <p class="promo-desc">ecosystem partners</p>
-        </div>
-      </div>
-    </div>
+{% include "partials/promo-numbers.njk" %}
   </section>
 </div>
 
@@ -189,22 +166,22 @@
 <div class="section-container">
   <section class="section alt p-top-l p-bottom-l neg-m-top-m">
     <div class="section-body">
-  <div class="container is-vcentered">
+  <div class="container">
     <div class="columns">
     <div class="column is-5-desktop">
       <h2 class="section-title deep-lavender">The network effect</h2>
-        <div class="content">
-      <p class="column-left-text steel">
-          We don’t live with the illusion that we can make adoption happen by ourselves. It’s about the community as much as it’s about network users. Learn more about how you can contribute to the ecosystem.
-      </p>
+      <p class="muted">
+          We don’t live with the illusion that we can make adoption happen by ourselves. It’s about the community as much as it’s about network users. 
+        </p>
+        <p class="muted">
+          Get inspired through learning how other partners and clients contribute to Ecosystem V.
+        </p>
+        <div class="btn-container has-margin-top-40">
+        <a href="/partners-clients/" class="button is-primary">Learn more</a>
         </div>
-        <div class="btn-container">
-        <a href="#" class="button is-primary">Learn more</a>
         </div>
       </div>
-      <div class="column">
-      </div>
-      <div class="network-circle-container">
+      <div class="network-circle-container is-hidden-mobile">
       <div class="network-margin network-circle network-circle--solid network-circle--clock"></div>
       <div class="network-margin network-circle network-circle--counter"></div>
       <div class="network-margin network-circle network-circle--clock"></div>
@@ -218,7 +195,6 @@
       <div class="network-margin network-circle network-circle--solid circle--clock"></div>
       <div class="network-margin network-circle network-circle--solid circle--counter"></div>
 </div>
-    </div>
   </div>
       </div>
   </section>
@@ -288,7 +264,7 @@
   </div>
 
   <div class="btn-container has-text-centered has-margin-top-40">
-  <a src="#" class="button is-primary">Join Ecosystem V</a>
+  <a href="/contact/" class="button is-primary">Join Ecosystem V</a>
       </div>
 
 </div>
