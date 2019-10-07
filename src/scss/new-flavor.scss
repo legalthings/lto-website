@@ -421,11 +421,6 @@ p {
     margin: 16px;
     padding: 0px;
 
-    .align {
-        height: 100% !important;
-        justify-content: space-evenly !important;
-    }
-
     .card-image {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -2318,4 +2313,9 @@ blockquote .author {
 
 .no-overflow {
     overflow-x: hidden;
+}
+
+.align-evenly {
+    height: 100% !important;
+    justify-content: space-evenly !important;
 }
