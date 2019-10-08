@@ -61,11 +61,11 @@ function bindHeaderSlider() {
 
     setTimeout(() => {
       currentImage.classList.remove('is-exiting');
-      currentImage.style['background-image'] = nextImage.style['background-image'];
+      currentImage.src = nextImage.src;
     }, 1500);
 
     setTimeout(() => {
-      nextImage.style['background-image'] = `url('${sliderData[getNextSlide()].image}')`;
+      nextImage.src = sliderData[getNextSlide()].image;
     }, 2500);
   }
 }
