@@ -1453,6 +1453,10 @@ blockquote .author {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+
+        @include responsive(phone) {
+            flex: 1;
+        }
     }
 
     .vcard-image {
