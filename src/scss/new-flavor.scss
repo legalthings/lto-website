@@ -2111,7 +2111,7 @@ blockquote .author {
 
 .bottom-nav-video {
     position: absolute;
-    top: 0;
+    top: -50px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -2312,10 +2312,24 @@ blockquote .author {
 }
 
 .no-overflow {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.align-evenly {
-    height: 100% !important;
-    justify-content: space-evenly !important;
+@include responsive(laptop) {
+    .align-evenly {
+        height: 100% !important;
+        justify-content: space-evenly !important;
+    }
+}
+
+
+@include responsive(phone) {
+
+    #rc-imageselect,
+    .g-recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
 }

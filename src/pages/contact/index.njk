@@ -6,7 +6,7 @@
 {% block content %}
 
 <div class="section-container department-selection">
-  <section class="hero is-medium" style="background-image: url('/assets/slider-image-marketplace.svg')">
+  <section class="hero" style="background-image: url('/assets/slider-image-marketplace.svg')">
     <div class="hero-body">
       <h1 class="primary-text has-text-centered">Who do you want to contact?</h1>
       <div class="has-margin-top-40"></div>
@@ -70,12 +70,13 @@
 </div>
 
 <div class="section-container department-selected" style="display: none">
-    <section class="hero is-medium" style="background-image: url('/assets/slider-image-marketplace.svg'); background-size: cover;">
+    <section class="hero" style="background-image: url('/assets/slider-image-marketplace.svg'); background-size: cover;">
       <div class="hero-body">
         <h1 class="primary-text has-text-centered">Chat with <span class="contact-name"></span></h1>
+        <div class="has-margin-top-40"></div>
         <div class="container">
-          <div class="columns contact-form is-vcentered-mobile">
-            <div class="column is-one-third vcard">
+          <div class="columns contact-form is-vcentered-desktop">
+            <div class="column is-one-third-desktop vcard">
               <img class="vcard-image contact-image">
               <div class="vcard-content">
                 <h2 class="accent-text has-text-centered contact-name"></h2>
@@ -145,7 +146,7 @@
                     <div class="column">
                       <div class="_form_element _field73 _full_width " >
                         <label class="_form-label">
-                          Name company
+                          Company name
                         </label>
                         <div class="_field-wrapper">
                           <input type="text" name="field[73]" value="" placeholder="" />
@@ -196,7 +197,7 @@
                         <label class="_form-label">
                           Please verify your request*
                         </label>
-                        <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+                        <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
                         </div>
                       </div>
                     </div>
