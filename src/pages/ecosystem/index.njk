@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/slider-image-company-circles@2x.png')">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-ecosystem.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-ecosystem.png">
+    </picture>
     <div class="hero-body">
       <div class="container">
         <h1 class="primary-text">Participate in collective value creation<br>through the development of Ecosystem V.</h1>
@@ -282,7 +286,10 @@
               <div class="column is-5">
                   <div class="card testimonial-eco">
                   <div class="testimonial-logo">
-                      <img src="/assets/use-cases/capptions@2x.png">
+                     <picture>
+      <source type="image/webp" data-srcset="/assets/use-cases/capptions@2x.webp">
+                      <img src="/assets/use-cases/capptions@2x.png" class="lazy">
+                      </picture>
                   </div>
                   <div class="content">
                       <p class="muted">"We believe that a user should be educated on what blockchain is and how it adds value in day-to-day operations. By integrating LTO Network’s anchoring service across the Capptions platform, we are able to give blockchain a mobile face."
@@ -297,7 +304,10 @@
               <div class="column is-5">
                   <div class="card testimonial-eco">
                   <div class="testimonial-logo">
-                      <img src="/assets/use-cases/signrequest@2x.png">
+                     <picture>
+      <source type="image/webp" data-srcset="/assets/use-cases/signrequest@2x.webp">
+                      <img src="/assets/use-cases/signrequest@2x.png" class="lazy">
+                      </picture>
                   </div>
                   <div class="content">
                       <p class="muted">"We experimented with document time stamping through multiple blockchains. However if we wanted to include the blockchain timestamp proof in the log of the signed document we required instant verification. With LTO Network we can add instant immutability to the documents being signed on our platform."
@@ -315,7 +325,7 @@
 </div>
 
 <div class="section-container">
-  <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+  <section class="section alt has-bg-img">
   {% include "partials/bottom-nav.njk" %}
   </section>
 </div>

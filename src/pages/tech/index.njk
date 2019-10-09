@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/hero/hero-tech.png')">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-tech.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-tech.png">
+    </picture>
     <div class="hero-body">
       <div class="container">
         <h1 class="primary-text">Take a deep-dive and explore<br>LTO Network on a technical level</h1>
@@ -29,7 +33,10 @@
     <div class="container">
       <div class="columns is-vcentered inverted-mobile has-margin-top-40">
       <div class="column is-6">
-          <img src="/assets/functional-layers.png" class="functional-layers" alt="Functional Layers">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/functional-layers.webp">
+          <img src="/assets/functional-layers.png" class="functional-layers lazy" alt="Functional Layers">
+          </picture>
           </div>
        <div class="column is-5-desktop">
            <h2 class="section-title">Functional layers</h2>
@@ -50,8 +57,8 @@
 <div class="section-container cutout-bottom-alt" id="why-hybrid-blockchain-section">
   <section class="section alt p-top-l neg-m-top-m">
     <div class="section-body" style="position:relative;">
-      <div class="private-chain-tech rellax" data-rellax-speed="2"><img src="/assets/private-chain.svg" class="rellax"  data-rellax-speed="0" alt="LTO Network - Private Chain"></div>
-      <div class="public-chain-tech rellax" data-rellax-speed="-2"><img src="/assets/public-chain.svg" alt="LTO Network - Public Chain"></div>
+      <div class="private-chain-tech rellax" data-rellax-speed="2"><img src="/assets/private-chain.svg" class="lazy"  data-rellax-speed="0" alt="LTO Network - Private Chain"></div>
+      <div class="public-chain-tech rellax" data-rellax-speed="-2"><img src="/assets/public-chain.svg" class="lazy" alt="LTO Network - Public Chain"></div>
         <div class="container">
             <div class="columns">
                 <div class="column is-5-desktop">
@@ -377,7 +384,7 @@
 </div>
 
 <div class="section-container">
-  <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+  <section class="section alt has-bg-img">
   {% include "partials/bottom-nav.njk" %}
   </section>
 </div>

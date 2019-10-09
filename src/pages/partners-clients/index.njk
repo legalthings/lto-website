@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/hero/hero-partners-clients.png')">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-partners-clients.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-partners-clients.png">
+    </picture>
     <div class="hero-body">
       <div class="container">
         <h1 class="primary-text">Our partners & clients</h1>
@@ -28,7 +32,10 @@
       <h2 class="has-text-centered section-title">Independent Software Vendors</h2>
       <div class="columns">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Capptions@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Capptions@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Capptions@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Capptions</h3>
             <div class="card-description">
@@ -43,7 +50,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo SignRequest@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo SignRequest@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo SignRequest@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">SignRequest</h3>
             <div class="card-description">
@@ -58,7 +68,48 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo Firm24@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Scantrust@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Scantrust@2x.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">ScanTrust</h3>
+            <div class="card-description">
+              <p>ScanTrust  provides brands with smart packaging solutions for product authentication, supply chain traceability using our blockchain technology.</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/use-cases/track-trace-product-authentication/" class="button is-primary">
+                Explore this use case
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns has-margin-top-20">
+        <div class="column card">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo VV@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo VV@2x.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">Virtual Vaults</h3>
+            <div class="card-description">
+              <p>Virtual Vaults Provides a document management systems for deals and permanent secure storage. Adding blockchain provides authentication on everything that takes place in a DMS.</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/use-cases/trusted-document-management/" class="button is-primary">
+                Explore this use case
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Firm24@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Firm24@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Firm24</h3>
             <div class="card-description">
@@ -71,11 +122,12 @@
             </div>
           </div>
           </div>
-    </div>
-        
-    <div class="columns has-margin-top-20">
-        <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo V-ID@2x.png">
+          
+         <div class="column card">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo V-ID@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo V-ID@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">V-ID</h3>
             <div class="card-description">
@@ -88,9 +140,15 @@
             </div>
           </div>
         </div>
+    </div>
+        
+    <div class="columns has-margin-top-20">
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo TicTag@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo TicTag@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo TicTag@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">TicTag</h3>
             <div class="card-description">
@@ -105,7 +163,28 @@
         </div>    
     
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">Interested to join?</h3>
+            <div class="card-description">
+              <p>The LTO Network team is here to help you investigate how your organization could benefit from blockchain technology. Schedule a demo to learn more!</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/contact/" target="blank" class="button is-warning">
+                Schedule a call
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column card invisible is-hidden-mobile">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested to join?</h3>
             <div class="card-description">
@@ -153,7 +232,10 @@
         </div>
 
         <div class="column card invisible is-hidden-mobile">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
+          <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">You?</h3>
             <div class="card-description">
@@ -179,7 +261,10 @@
       <h2 class="has-text-centered section-title">System Integrators</h2>
       <div class="columns">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo BCG@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo BCG@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo BCG@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Boston Consulting Group</h3>
             <div class="card-description">
@@ -194,7 +279,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo Moonwhale@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Moonwhale@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Moonwhale@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Moonwhale</h3>
             <div class="card-description">
@@ -209,7 +297,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Axveco@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Axveco@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Axveco@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Axveco</h3>
             <div class="card-description">
@@ -226,7 +317,10 @@
 
       <div class="columns has-margin-top-20">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Xurux@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Xurux@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Xurux@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Xurux</h3>
             <div class="card-description">
@@ -241,7 +335,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
+          <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
             <div class="card-description">
@@ -256,7 +353,10 @@
         </div>
 
         <div class="column invisible is-hidden-mobile card">
-          <img class="card-image clip-a" src="/assets/polygons - 1.png">
+          <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
             <div class="card-description">
@@ -281,7 +381,10 @@
       <h2 class="has-text-centered section-title">Partners</h2>
       <div class="columns">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Tech Data@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Tech Data@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Tech Data@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">TechData</h3>
             <div class="card-description">
@@ -296,7 +399,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo IBM@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo IBM@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo IBM@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">IBM</h3>
             <div class="card-description">
@@ -311,7 +417,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Inatba@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Inatba@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Inatba@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">INATBA</h3>
             <div class="card-description">
@@ -328,9 +437,12 @@
 
       <div class="columns has-margin-top-20">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo ISO@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo ISO@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo ISO@2x.png">
+            </picture>
           <div class="card-content">
-            <h3 class="accent-text">ISO</h3>
+            <h3 class="accent-text">International Organization for Standardization</h3>
             <div class="card-description">
               <p>LTO Network is an active contributor to the ISO organization. Together we are developing the standards for blockchain technology on a global scale.</p>
             </div>
@@ -343,7 +455,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo DBC@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo DBC@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo DBC@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Dutch Blockchain Coalition</h3>
             <div class="card-description">
@@ -358,7 +473,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo HH@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo HH@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo HH@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">The Hague University</h3>
             <div class="card-description">
@@ -375,22 +493,10 @@
         
         <div class="columns has-margin-top-20">
         <div class="column card">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Docker@2x.png">
-          <div class="card-content">
-            <h3 class="accent-text">Docker</h3>
-            <div class="card-description">
-              <p>Docker is a leading platform for container software. LTO Network has integrations with several docker tools to deploy faster and manage applications secure.</p>
-            </div>
-            <div class="has-margin-top-20">
-              <a href="https://docker.com" target="blank" class="button is-primary">
-                Read more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo Certik@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Certik@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Certik@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Certik</h3>
             <div class="card-description">
@@ -405,7 +511,10 @@
         </div>
 
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/partners-clients/Logo CMS@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo CMS@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo CMS@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">CMS</h3>
             <div class="card-description">
@@ -418,11 +527,11 @@
             </div>
           </div>
         </div>
-      </div>
-        
-        <div class="columns has-margin-top-20">
         <div class="column card">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
+          <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
             <div class="card-description">
@@ -435,9 +544,33 @@
             </div>
           </div>
         </div>
+      </div>
+        
+<!--
+        <div class="columns has-margin-top-20">
+        <div class="column card invisible">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Docker@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Docker@2x.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">Docker</h3>
+            <div class="card-description">
+              <p>Docker is a leading platform for container software. LTO Network has integrations with several docker tools to deploy faster and manage applications secure.</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="https://docker.com" target="blank" class="button is-primary">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
         
         <div class="column card invisible">
-          <img class="card-image clip-a" src="/assets/partners-clients/Logo Unchain@2x.png">
+         <picture>
+      <source type="image/webp" data-srcset="/assets/partners-clients/Logo Unchain@2x.webp">
+          <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Unchain@2x.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Unchain</h3>
             <div class="card-description">
@@ -452,7 +585,10 @@
         </div>
 
         <div class="column card invisible is-hidden-mobile">
-          <img class="card-image clip-b" src="/assets/polygons - 1.png">
+          <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+            </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
             <div class="card-description">
@@ -466,13 +602,14 @@
           </div>
         </div>
       </div>
+-->
         
     </div>
   </section>
 </div>
 
 <div class="section-container">
-    <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+    <section class="section alt has-bg-img">
         {% include "partials/bottom-nav.njk" %}
     </section>
 </div>

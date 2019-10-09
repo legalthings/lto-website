@@ -7,7 +7,10 @@
 
 <div class="section-container">
     <section class="hero is-medium">
+       <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-community-mob.webp">
         <img class="bgVideo is-hidden-desktop" src="/assets/hero/hero-community-mob.png">
+        </picture>
         <video class="bgVideo is-hidden-mobile" autoplay muted loop poster="/assets/hero/hero-community.png">
             <source src="/assets/media/hero-community.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
@@ -27,7 +30,10 @@
             <h2 class="has-text-centered section-title">We have an awesome community!</h2>
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="column is-two-thirds">
-                    <img src="/assets/community/community-platform.png">
+                   <picture>
+      <source type="image/webp" data-srcset="/assets/community/community-platform.webp">
+                    <img src="/assets/community/community-platform.png" class="lazy">
+                    </picture>
                 </div>
                 <div class="column">
                     <h2 class="dark-indigo">Community Platform</h2>
@@ -49,7 +55,10 @@
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
-                                <img src="/assets/community/cryptocapitalist.png" alt="LTO Community Member">
+                               <picture>
+      <source type="image/webp" data-srcset="/assets/community/cryptocapitalist.webp">
+                                <img src="/assets/community/cryptocapitalist.png" class="lazy" alt="LTO Community Member">
+                                </picture>
                             </div>
                         </div>
 
@@ -66,7 +75,10 @@
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
-                                <img src="/assets/community/n0rthstar.png" alt="LTO Community Member">
+                               <picture>
+      <source type="image/webp" data-srcset="/assets/community/n0rthstar.webp">
+                                <img src="/assets/community/n0rthstar.png" class="lazy" alt="LTO Community Member">
+                                </picture>
                             </div>
                         </div>
 
@@ -82,11 +94,13 @@
             <div class="columns">
 
                 <div class="column membercard card">
-
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
-                                <img src="/assets/community/cryptoleee.png" alt="LTO Community Member">
+                               <picture>
+      <source type="image/webp" data-srcset="/assets/community/cryptoleee.webp">
+                                <img src="/assets/community/cryptoleee.png" class="lazy" alt="LTO Community Member">
+                                </picture>
                             </div>
                         </div>
 
@@ -103,7 +117,10 @@
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
-                                <img src="/assets/community/stefan0000.png" alt="LTO Community Member">
+                               <picture>
+      <source type="image/webp" data-srcset="/assets/community/stefan0000.webp">
+                                <img src="/assets/community/stefan0000.png" class="lazy" alt="LTO Community Member">
+                                </picture>
                             </div>
                         </div>
 
@@ -121,6 +138,7 @@
     </section>
 </div>
 
+<!--
 <div class="section-container cutout-bottom-alt">
     <section class="section alt p-top-l neg-m-top-m">
         <div class="section-body">
@@ -132,23 +150,23 @@
                         <div class="promo-numbers c">
                             <div class="container">
                                 <div class="item">
-                                    <p class="promo-head accent-text">$15.838.405</p>
+                                    <p class="promo-head accent-text">$</p>
                                     <p class="promo-desc">market capitalization</p>
                                 </div>
                                 <div class="item">
-                                    <p class="promo-head accent-text">$1.282.704</p>
+                                    <p class="promo-head accent-text">$</p>
                                     <p class="promo-desc">volume (24h)</p>
                                 </div>
                                 <div class="item">
-                                    <p class="promo-head accent-text">$0,085868</p>
+                                    <p class="promo-head accent-text">$</p>
                                     <p class="promo-desc">token price</p>
                                 </div>
                                 <div class="item">
-                                    <p class="promo-head accent-text">2.545</p>
+                                    <p class="promo-head accent-text">#</p>
                                     <p class="promo-desc">holders</p>
                                 </div>
                                 <div class="item">
-                                    <p class="promo-head accent-text">35.462.217 LTO</p>
+                                    <p class="promo-head accent-text"># LTO</p>
                                     <p class="promo-desc">staked tokens</p>
                                 </div>
                             </div>
@@ -160,6 +178,7 @@
         </div>
     </section>
 </div>
+-->
 
 <div class="section-container">
     <section class="section relative tertiary p-top-l neg-m-top-m">
@@ -171,7 +190,10 @@
                 <div class="column is-3">
                     <div class="column-img">
                         <a href="https://bitmax.io/#/trade/usdt/lto" target="blank">
+                           <picture>
+      <source type="image/webp" data-srcset="/assets/markets/bitmax@2x.webp">
                             <img src="/assets/markets/bitmax@2x.png">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -179,7 +201,10 @@
                 <div class="column is-3">
                     <div class="column-img">
                         <a href="https://www.binance.org/en/trade/LTO-BDF_BNB" target="blank">
+                           <picture>
+      <source type="image/webp" data-srcset="/assets/markets/binance-dex@2x.webp">
                             <img src="/assets/markets/binance-dex@2x.png">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -382,7 +407,7 @@
 </div>
 
 <div class="section-container">
-    <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+    <section class="section alt has-bg-img">
         {% include "partials/bottom-nav.njk" %}
     </section>
 </div>

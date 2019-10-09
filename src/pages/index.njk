@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium" style="background-image: url('/assets/hero/hero-home.png')">
+  <section class="hero is-medium">
+    <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-home.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-home.png">
+    </picture>
     <div class="hero-body">
       <div class="container">
         <h1 class="primary-text">The blockchain that saves € 7 million <br> in waste transportations</h1>
@@ -32,28 +36,28 @@
     <div class="container medium">
       <h2 class="has-text-centered section-title">How can LTO Network <br> help your business?</h2>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:70px;top:400px;left:-420px;" data-rellax-speed="4">
-        <img src="/assets/small-rock-1.svg">
+        <img class="lazy" data-src="/assets/small-rock-1.svg">
       </div>
 
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:840px;left:-270px;" data-rellax-speed="-2">
-        <img src="/assets/small-rock-4.svg">
+        <img class="lazy" data-src="/assets/small-rock-4.svg">
       </div>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:98px;top:870px;left:1000px;" data-rellax-speed="6">
-        <img src="/assets/small-rock-3.svg">
+        <img class="lazy" data-src="/assets/small-rock-3.svg">
       </div>
 
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:460px;left:950px;" data-rellax-speed="-4">
-        <img src="/assets/small-rock-5.svg">
+        <img class="lazy" data-src="/assets/small-rock-5.svg">
       </div>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:140px;left:1230px;" data-rellax-speed="2">
-        <img src="/assets/small-rock-4.svg">
+        <img class="lazy" data-src="/assets/small-rock-4.svg">
       </div>
 
 
       <div class="columns has-margin-top-40 normal-mobile">
-        <div class="icon-container column" style="left:-48px;width:280px;height:275px;background-image: url('/assets/rocks/rock-1.svg'); background-size: 100% 100%;">
-          <img style="position:absolute;width:28px;top:100px;left:-80px" src="/assets/small-rock-2.svg" class="rellax" data-rellax-speed="-1">
-          <img style="position:absolute;width:70px;top:0px;left:-50px" src="/assets/small-rock-1.svg" class="rellax" data-rellax-speed="-2">
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:-48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:28px;top:100px;left:-80px" class="lazy rellax" data-src="/assets/small-rock-2.svg" data-rellax-speed="-1">
+          <img style="position:absolute;width:70px;top:0px;left:-50px" class="lazy rellax" data-src="/assets/small-rock-1.svg" data-rellax-speed="-2">
           <div class="livicon-evo" data-options="
           name: rocket;
           size: 80px;
@@ -78,9 +82,9 @@
                 <p class="muted">Although automation made organizations become more efficient and productive, we're still only efficient in our own silo's. When organizations use LTO Network to collaborate on processes they benefit from data re-use and automation, without switching systems that are currently used in your organization.</p>
             </div>
         </div>
-        <div class="icon-container column" style="left:48px;width:280px;height:275px;background-image: url('/assets/rocks/rock-2.svg'); background-size: 100% 100%;">
-          <img style="position:absolute;width:98px;top:-60px;left:240px" src="/assets/small-rock-3.svg" class="rellax" data-rellax-speed="-1">
-          <img style="position:absolute;width:45px;top:100px;left:280px" src="/assets/small-rock-4.svg" class="rellax" data-rellax-speed="1">
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-2.svg')" style="left:48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/small-rock-3.svg" data-rellax-speed="-1">
+          <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax" data-src="/assets/small-rock-4.svg" data-rellax-speed="1">
           <div class="livicon-evo" data-options="
           name: diagram;
           size: 80px;
@@ -91,8 +95,8 @@
       </div>
 
       <div class="columns has-margin-top-40 normal-mobile">
-        <div class="icon-container column" style="left:-48px;width:280px;height:275px;background-image: url('/assets/rocks/rock-3.svg'); background-size: 100% 100%;">
-          <img style="position:absolute;width:45px;top:230px;left:-40px" src="/assets/small-rock-5.svg" class="rellax" data-rellax-speed="-1">
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-3.svg')"  style="left:-48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:45px;top:230px;left:-40px" class="lazy rellax" data-src="/assets/small-rock-5.svg" data-rellax-speed="-1">
           <div class="livicon-evo" data-options="
           name: legal;
           size: 80px;
@@ -119,20 +123,20 @@
         <h3 class="small-subtitle has-text-centered">Find out how other companies use LTO Network</h3>
       </div>
       <div class="container company-container">
-       <img class="company-rocks" style="position:absolute;width:60px;top:50px;left:2.5px"  src="/assets/small-rock-1.svg">
-       <img class="company-rocks" style="position:absolute;width:35px;top: 65px;left: 202.5px;"  src="/assets/small-rock-2.svg">
-        <img class="company-rocks" style="position:absolute;width:55px;top: 285px;left: 782.5px;" src="/assets/small-rock-3.svg">
-        <img class="company-rocks" style="position:absolute;width:45px;top: 285px;left: 462.5px;" src="/assets/small-rock-3.svg">
-        <img class="company-rocks" style="position:absolute;width:55px;top: 225px;left: 52.5px;" src="/assets/small-rock-4.svg">
-        <img class="company-rocks" style="position:absolute;width:75px;top:105px;left:622.5px" src="/assets/small-rock-5.svg">
-        <img class="company-rocks" style="width:105px;height:105px;margin-left:52.5px" src="/assets/partners-clients/floating rock - indaver.png">
-        <img class="company-rocks" style="width:190px;height:190px;margin-left:95.5px" src="/assets/partners-clients/floating rock - hh.png">
-        <img class="company-rocks" style="width:97px;height:97px;margin-left:49.5px" src="/assets/partners-clients/floating rock - docker.png">
-        <img class="company-rocks" style="width:173px;height:173px;margin-left:88px" src="/assets/partners-clients/floating rock - dbc.png">
-        <img class="company-rocks" style="width:168px;height:168px;margin-left:86px" src="/assets/partners-clients/floating rock - ibm.png">
-        <img class="company-rocks" style="width:90px;height:90px;margin-left:45px" src="/assets/partners-clients/floating rock - cms.png">
-        <img class="company-rocks" style="width:163px;height:163px;margin-left:82px" src="/assets/partners-clients/floating rock - rijksoverheid.png">
-        <img class="company-rocks" style="width:89px;height:89px;margin-left:45.5px" src="/assets/partners-clients/floating rock - nen.png">
+       <img class="company-rocks lazy" style="position:absolute;width:60px;top:50px;left:2.5px" data-src="/assets/small-rock-1.svg">
+       <img class="company-rocks lazy" style="position:absolute;width:35px;top: 65px;left: 202.5px;" data-src="/assets/small-rock-2.svg">
+        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 285px;left: 782.5px;" data-src="/assets/small-rock-3.svg">
+        <img class="company-rocks lazy" style="position:absolute;width:45px;top: 285px;left: 462.5px;" data-src="/assets/small-rock-3.svg">
+        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 225px;left: 52.5px;" data-src="/assets/small-rock-4.svg">
+        <img class="company-rocks lazy" style="position:absolute;width:75px;top:105px;left:622.5px" data-src="/assets/small-rock-5.svg">
+        <img class="company-rocks lazy" style="width:105px;height:105px;margin-left:52.5px" data-src="/assets/partners-clients/floating rock - indaver.png">
+        <img class="company-rocks lazy" style="width:190px;height:190px;margin-left:95.5px" data-src="/assets/partners-clients/floating rock - hh.png">
+        <img class="company-rocks lazy" style="width:97px;height:97px;margin-left:49.5px" data-src="/assets/partners-clients/floating rock - docker.png">
+        <img class="company-rocks lazy" style="width:173px;height:173px;margin-left:88px" data-src="/assets/partners-clients/floating rock - dbc.png">
+        <img class="company-rocks lazy" style="width:168px;height:168px;margin-left:86px" data-src="/assets/partners-clients/floating rock - ibm.png">
+        <img class="company-rocks lazy" style="width:90px;height:90px;margin-left:45px" data-src="/assets/partners-clients/floating rock - cms.png">
+        <img class="company-rocks lazy" style="width:163px;height:163px;margin-left:82px" data-src="/assets/partners-clients/floating rock - rijksoverheid.png">
+        <img class="company-rocks lazy" style="width:89px;height:89px;margin-left:45.5px" data-src="/assets/partners-clients/floating rock - nen.png">
       </div>
         <div class="btn-container has-text-centered has-margin-top-40">
       <a href="/partners-clients/" class="button is-primary">Our partners & clients</a>
@@ -144,8 +148,8 @@
 <div class="section-container cutout-bottom-alt z-index-1 no-overflow">
   <section class="section tertiary p-top-l p-bottom-l neg-m-top-m" style="">
     <div class="section-body" style="position:relative;">
-     <div class="private-chain rellax" data-rellax-speed="2"><img src="/assets/private-chain.svg" class="rellax"  data-rellax-speed="0"></div>
-      <div class="public-chain rellax" data-rellax-speed="-2"><img src="/assets/public-chain.svg"></div>
+     <div class="private-chain rellax" data-rellax-speed="2"><img class="lazy" data-src="/assets/private-chain.svg"></div>
+      <div class="public-chain rellax" data-rellax-speed="-2"><img class="lazy" data-src="/assets/public-chain.svg"></div>
         <div class="container">
             <div class="columns has-text-centered-mobile">
                 <div class="column is-5-desktop">
@@ -182,7 +186,10 @@
         </a>
         <div class="columns is-multiline columns-slider is-visible is-centered">
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-capptions.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-capptions.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Digital checklist & inspection application</h3>
@@ -197,7 +204,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-b" src="/assets/use-cases/card-uc-signrequest.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-signrequest.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-signrequest.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Digital signing with blockchain verification</h3>
@@ -212,7 +222,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-b" src="/assets/use-cases/card-uc-firm24.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-firm24.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Data sharing in notary procedures</h3>
@@ -230,7 +243,10 @@
 
         <div class="columns columns-slider is-centered">
           <div class="column card align-evenly">
-            <img class="card-image clip-b" src="/assets/use-cases/card-uc-vaas.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-vaas.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Authenticity of artwork</h3>
@@ -245,7 +261,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-contractapp.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-contractapp.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-contractapp.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Contracts made easy</h3>
@@ -260,7 +279,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-ilt.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ilt.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-ilt.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">International waste transportation</h3>
@@ -278,7 +300,10 @@
 
         <div class="columns columns-slider is-centered">
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-lease.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-lease.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Smart property lease agreements</h3>
@@ -293,7 +318,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-certificates.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-certificates.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-certificates.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Smart certificates on the blockchain</h3>
@@ -308,7 +336,10 @@
             </div>
           </div>
           <div class="column card align-evenly">
-            <img class="card-image clip-a" src="/assets/use-cases/card-uc-cac.png">
+            <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/card-uc-cac.webp">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png">
+            </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">Streamlining small criminal cases</h3>
@@ -340,7 +371,7 @@
 </div>
 
 <div class="section-container">
-  <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+  <section class="section alt has-bg-img">
   {% include "partials/bottom-nav.njk" %}
   </section>
 </div>
