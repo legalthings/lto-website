@@ -476,7 +476,7 @@ p {
 
 .columns {
     &.inverted-mobile {
-        @include responsive(touch) {
+        @include responsive(phone) {
             display: flex;
             flex-direction: column-reverse;
 
@@ -487,13 +487,13 @@ p {
     }
 
     &.normal-mobile {
-        @include responsive(touch) {
+        @include responsive(phone) {
             display: flex;
             flex-direction: column;
 
-            .column {
-                flex: 1 1 auto;
-            }
+            //            .column {
+            //                flex: 1 1 auto;
+            //            }
         }
     }
 }

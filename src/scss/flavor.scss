@@ -41,12 +41,14 @@ section.focus {
         align-content: center;
         display: flex;
     }
+
     i,
     svg,
     img {
         margin-right: 8px;
         line-height: 2;
     }
+
     line-height: 2;
 }
 
@@ -61,6 +63,7 @@ section.focus {
     .btn-container {
         margin-top: 32px;
     }
+
     .main-button {
         margin-right: 16px;
     }
@@ -256,28 +259,34 @@ section.focus {
     position: absolute;
     right: 0px;
     bottom: 0px;
+
     .slider-control {
         position: relative;
         width: 405px;
         height: 240px;
         background-image: url('/assets/slider_control_grey_shade.svg');
+
         > div {
             position: absolute;
         }
+
         .slider-control-arrows-div {
             z-index: 5;
             right: 8px;
             top: 64px;
         }
+
         .slider-control-arrow {
             margin: 8px;
         }
+
         .slider-control-counter {
             font-family: 'IBM Plex Sans';
             font-size: 15px;
             left: 215px;
             top: 95px;
         }
+
         .slider-control-bar {
             left: 215px;
             top: 125px;
@@ -286,10 +295,12 @@ section.focus {
             width: 56%;
             height: auto;
         }
+
         .slider-control-upper-bar {
             background-color: #17054b;
             height: 10px;
         }
+
         .slider-control-lower-bar {
             height: 3px;
             background-color: #d2c8da;
@@ -458,10 +469,12 @@ section.focus {
 .insights-content-container {
     display: flex;
     align-items: center;
+
     .insights-image-container {
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
     }
+
     @include responsive(phone) {
         display: block;
     }
@@ -483,6 +496,7 @@ section.focus {
     box-shadow: 0 34px 42px -12px #00000033, 0 12px 14px -10px #00000026;
     background-color: white;
     z-index: 1;
+
     @include responsive(phone) {
         width: 100%;
         margin: 0px;
@@ -629,9 +643,11 @@ img.insights-image {
         align-items: center;
         justify-content: center;
     }
+
     .three-areas.main-content-block {
         height: 358px;
     }
+
     .three-areas-icon-div {
         display: flex;
         flex-direction: column;
@@ -639,12 +655,14 @@ img.insights-image {
         justify-content: center;
         width: 100%;
     }
+
     .three-areas-column-title {
         width: 270px;
         font-family: 'IBM Plex Sans';
         font-size: 1.6rem;
         text-align: center;
     }
+
     .three-areas-short-text {
         font-family: 'IBM Plex Sans';
         font-size: 1rem;
@@ -673,23 +691,28 @@ img.insights-image {
         align-items: center;
         justify-content: center;
     }
+
     .three-areas-icon-div {
         display: flex;
         justify-content: flex-start;
         width: 100%;
     }
+
     .three-areas.rock-image {
         width: 85px;
         height: 85px;
     }
+
     .three-areas-column-title {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
+
     .three-areas.main-content-block {
         margin-bottom: 23px;
     }
+
     .three-areas-column-title {
         font-family: 'IBM Plex Sans';
         font-size: 22px;
@@ -699,6 +722,7 @@ img.insights-image {
         line-height: normal;
         letter-spacing: normal;
     }
+
     .three-areas-short-text {
         font-family: 'IBM Plex Sans';
         font-size: 17px;
@@ -760,8 +784,10 @@ img.insights-image {
 .index-container {
     display: flex;
     flex-direction: column;
+
     .columns {
         margin-bottom: 32px !important;
+
         &:last-child {
             margin-bottom: 0px;
         }
@@ -825,29 +851,33 @@ img.insights-image {
         align-self: center;
         flex-direction: row;
     }
+
     .rock-icon.container.left-side {
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
     }
+
     .rock-icon.container.right-side {
         justify-content: flex-start;
     }
+
     .rock-icon-text.left-side {
         justify-content: flex-end;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
-  .wide-screen-floating-rocks {
-    display: none;
-  }
+    .wide-screen-floating-rocks {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .column.rock-icon-text {
         justify-content: center;
     }
+
     .rock-icon.container {
         height: fit-content;
         position: relative;
@@ -856,16 +886,19 @@ img.insights-image {
         align-self: center;
         flex-direction: row;
     }
+
     .community.rock-icons.columns {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .workflow-engine.rock-icons.columns {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .wide-screen-floating-rocks {
-      display: none;
+        display: none;
     }
 }
 
@@ -1626,8 +1659,8 @@ img.rock-thumbs-up {
 }
 
 .table.advantages {
-//    width: 75%;
-//    align-self: center;
+    //    width: 75%;
+    //    align-self: center;
     margin-top: 4rem;
 }
 
@@ -1902,8 +1935,7 @@ p.business-case-block-text {
 }
 
 // Style for products block
-.products.container {
-}
+.products.container {}
 
 .products.section-title {
     font-family: 'IBM Plex Sans';
@@ -2794,6 +2826,10 @@ img.join-our-team.image {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
+
+    @include responsive(phone) {
+        flex: 1;
+    }
 }
 
 .resources.sub-column.image {
@@ -2802,15 +2838,15 @@ img.join-our-team.image {
 }
 
 .resources.livicon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 129px;
-  height: 129px;
-  border: 3px solid #ba6df6;
-  border-radius: 70px;
-  padding-top: 10px;
-  padding-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 129px;
+    height: 129px;
+    border: 3px solid #ba6df6;
+    border-radius: 70px;
+    padding-top: 10px;
+    padding-left: 2px;
 }
 
 
@@ -3124,16 +3160,18 @@ img.join-our-team.image {
     margin-top: 30px;
     margin-bottom: 40px;
     margin-right: 100px;
+
     &.why-hybrid-blockchain {
-      @include responsive(touch) {
-        margin-right: 0px;
-      }
+        @include responsive(touch) {
+            margin-right: 0px;
+        }
     }
 }
 
 
 // style for ecosystem v page //
 $network-circles: 12;
+
 .network-margin {
     margin-left: 600px;
     z-index: 1;
@@ -3153,12 +3191,15 @@ $network-circles: 12;
     left: calc(50% - 12.5px);
     border-radius: 50%;
     overflow: hidden;
+
     &--solid {
         border-style: solid;
     }
+
     &--counter {
         animation-direction: reverse;
     }
+
     @for $i from 1 to $network-circles {
         &:nth-of-type(#{$i}) {
             animation-duration: calc(30s * #{$i});
@@ -3177,6 +3218,7 @@ $network-circles: 12;
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -3216,29 +3258,31 @@ $network-circles: 12;
 .video {
     height: 16rem;
     width: 30rem;
+
     iframe {
         height: 16rem;
         width: 30rem;
         border-radius: 24px;
     }
 }
-  @include responsive(phone) {
-      .video {
-          height: auto;
-          width: auto;
-      }
+
+@include responsive(phone) {
+    .video {
+        height: auto;
+        width: auto;
+    }
 }
 
 .ecosystem.livicon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #ba6df6;
-  border-radius: 50px;
-  height: 75px;
-  width: 75px;
-  margin-bottom: 10px;
-  padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ba6df6;
+    border-radius: 50px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    padding-top: 5px;
 
 }
 
@@ -3251,6 +3295,7 @@ $network-circles: 12;
         align-items: center;
         justify-content: center;
     }
+
     .team-member {
         width: 175px;
         margin: 16px;
@@ -3258,12 +3303,14 @@ $network-circles: 12;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         .name {
             font-weight: 600;
             margin-top: 16px;
             font-size: 16px;
             color: #313a66;
         }
+
         .title {
             font-size: 14px;
             font-weight: 500;
@@ -3271,17 +3318,22 @@ $network-circles: 12;
             margin: 0px;
             text-transform: uppercase;
         }
+
         .socials {
             margin-top: 8px;
             opacity: 0.8;
+
             li {
                 display: inline-block;
                 margin-left: 4px;
+
                 &:first-child {
                     margin-left: 0px;
                 }
+
                 a {
                     color: black;
+
                     &:hover {
                         color: rgba(0, 0, 0, 0.7);
                     }
@@ -3289,9 +3341,11 @@ $network-circles: 12;
             }
         }
     }
+
     .team-image {
         width: 125px;
         height: 125px;
+
         > img {
             width: 100%;
             filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
