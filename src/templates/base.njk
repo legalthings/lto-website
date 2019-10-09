@@ -3,30 +3,32 @@
 
 {% set title = title %}
 {% set description = description %}
+{% set currentUrl = currentUrl %}
 {% set canonical = canonical %}
 {% set ogTitle = ogTitle %}
 {% set ogDescription = ogDescription %}
 {% set ogUrl = ogUrl %}
 
 <head>
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="all">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
 
-  <title>{{ title }}</title>
-  <link rel="canonical" href="/" />
+    <title>{{ title }}</title>
+  <link rel="canonical" href="https://www.ltonetwork.com{{ currentUrl }}" />
   <link rel="icon" href="/assets/favicon.png" sizes="32x32"/>
-  <meta name="description" content="Next Web Starter"/>
   <meta property="og:locale" content="nl_NL" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ ogTitle }}" />
-  <meta property="og:description" content="{{ ogDescription }}" />
-  <meta property="og:url" content="/" />
-  <meta property="og:site_name" content="NextWebStarter" />
+  <meta name="type" property="og:type" content="website" />
+  <meta name="title" property="og:title" content="{{ title }}" />
+  <meta name="description" property="og:description" content="{{ description }}"/>
+  <meta name="image" property="og:image" content="https://www.ltonetwork.com{{ image }}" />
+  <meta name="url" property="og:url" content="https://www.ltonetwork.com{{ currentUrl }}" />
+  <meta name="site_name" property="og:site_name" content="LTO Network" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="{{ ogDescription }}" />
   <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="https://www.ltonetwork.com{{ image }}" />
 
   <link rel="stylesheet" href="/css/main.css">
 
