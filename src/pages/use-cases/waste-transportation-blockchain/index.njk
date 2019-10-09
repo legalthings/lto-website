@@ -8,7 +8,11 @@
 {% block content %}
 
 <div class="section-container">
-    <section class="hero is-medium" style="background-image: url('/assets/hero/hero-uc-ilt.png');">
+    <section class="hero is-medium">
+       <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-ilt.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-ilt.png">
+    </picture>
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-vcentered">
@@ -31,7 +35,7 @@
         <div class="promo-numbers c use-cases">
             <div class="container use-cases">
                 <div class="item use-cases">
-                    <img class="promo-client" src="/assets/use-cases/ilt.svg">
+                    <img class="promo-client lazy" src="/assets/use-cases/ilt.svg">
                 </div>
                 <div class="item use-cases">
                     <p class="promo-head use-cases">Involved parties</p>
@@ -48,7 +52,10 @@
             <h2 class="has-text-centered section-title">Business challenges</h2>
             <div class="columns">
                 <div class="column card">
-                    <img class="card-image clip-a" src="/assets/polygons - 1.png">
+                   <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
+                    </picture>
                     <div class="card-content">
                         <h3 class="dark-indigo">Numerous stakeholders</h3>
                         <div class="card-description">
@@ -58,7 +65,10 @@
                 </div>
 
                 <div class="column card">
-                    <img class="card-image clip-b" src="/assets/polygons - 1.png">
+                     <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+                    <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+                    </picture>
                     <div class="card-content">
                         <h3 class="dark-indigo">EU regulation</h3>
                         <div class="card-description">
@@ -68,7 +78,10 @@
                 </div>
 
                 <div class="column card">
-                    <img class="card-image clip-a" src="/assets/polygons - 1.png">
+                   <picture>
+      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
+                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
+                    </picture>
                     <div class="card-content">
                         <h3 class="dark-indigo">Manual handling</h3>
                         <div class="card-description">
@@ -144,10 +157,10 @@
         <div class="container">
             <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
             <div class="columns is-centered is-vcentered has-margin-top-40">
-                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-                    <img style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg">
-                    <img style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-                    <img style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
                     <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: coins;
           size: 90px;
@@ -162,9 +175,9 @@
             </div>
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
-                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-                    <img style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg">
-                    <img style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg">
                     <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: diagram;
           size: 90px;
@@ -179,9 +192,9 @@
             </div>
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
-                <div class="icon-container advantages column is-one-quarter" style="left:48px;height:250px;background-image: url('/assets/rocks/rock-1.svg')">
-                    <img style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg">
-                    <img style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg">
                     <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
           name: balance;
           size: 90px;
@@ -210,14 +223,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
                                 <p>Using LTO Network to collaborate on multi-stakeholder processes benefits from data re-use, real-time status updates, and notifications.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
                                 <p>Collaboration on a process that runs between multiple parties is hard to automate as communication happens via email, phone, and letters which produces unstructured data.</p>
                             </div>
                         </div>
@@ -233,14 +246,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
                                 <p>Using blockchain technology of LTO Network organizations can share the data in a GDPR compliant way and the data can be trusted as it is immutable and signed by the party that submitted the data.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
                                 <p>Relying on the system that is managed by your counter-party does not provide a level playing field. Parties don't want to share more data than strictly required to complete the process.</p>
                             </div>
                         </div>
@@ -253,14 +266,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
                                 <p>By easily connecting APIs of your existing applications to the LTO Network Node, you and every other stakeholder involved can participate in the workflow while keeping existing IT in place.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
                                 <p>'Traditional' blockchain solutions require extensive and costly IT overhauls due to existing (legacy) systems.</p>
                             </div>
                         </div>
@@ -285,7 +298,10 @@
                     <div class="card">
                         <div class="columns">
                             <div class="column is-3 card-testimonial-img">
-                                <img class="" src="/assets/use-cases/ilt_testimonial.png" srcset="/assets/use-cases/ilt_testimonial@3x.png 3x, /assets/use-cases/ilt_testimonial@2x.png 2x">
+                               <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/ilt_testimonial.webp">
+                                <img class="lazy" src="/assets/use-cases/ilt_testimonial.png" srcset="/assets/use-cases/ilt_testimonial@3x.png 3x, /assets/use-cases/ilt_testimonial@2x.png 2x">
+                                </picture>
                             </div>
                             <div class="column">
                                 <div class="content card-testimonial-content">
@@ -304,7 +320,7 @@
 
 
 <div class="section-container">
-    <section class="section alt has-bg-img" style="background-image: url('/assets/bot-image@3x.png')">
+    <section class="section alt has-bg-img">
         {% include "partials/bottom-nav.njk" %}
     </section>
 </div>
