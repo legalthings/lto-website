@@ -144,14 +144,6 @@ gulp.task("compile-sass", () => {
 gulp.task("compile-vendor", () => {
   return gulp.src([
     "./node_modules/vanilla-lazyload/dist/lazyload.min.js",
-    "src/vendor/LivIconsEvo/js/jquery-3.3.1.min.js",
-    "src/vendor/LivIconsEvo/js/tools/snap.svg-min.js",
-    "src/vendor/LivIconsEvo/js/tools/TweenMax.min.js",
-    "src/vendor/LivIconsEvo/js/tools/DrawSVGPlugin.min.js",
-    "src/vendor/LivIconsEvo/js/tools/MorphSVGPlugin.min.js",
-    "src/vendor/LivIconsEvo/js/tools/verge.min.js",
-    "src/vendor/LivIconsEvo/js/LivIconsEvo.defaults.js",
-    "src/vendor/LivIconsEvo/js/LivIconsEvo.min.js",
     "src/vendor/rellax.js"
     ])
     .pipe(gulpConcat("vendor.js"))

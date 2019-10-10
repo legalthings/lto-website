@@ -13,7 +13,7 @@ function bindHeaderSlider() {
   const sliderData = [
     {
       image: '/assets/hero/hero-uc-ilt.png',
-      title: 'The blockchain that saves €7 million<br>in waste transportations',
+      title: 'Saving $7 million annually in process efficiency<br>for the Dutch Ministry of Infrastructure',
       href: '/use-cases/waste-transportation-blockchain/'
     },
     {
@@ -32,7 +32,7 @@ function bindHeaderSlider() {
 
   setInterval(() => {
     nextSlide()
-  }, 6000);
+  }, 4500);
 
   function nextSlide() {
     if (currentSlide >= sliderData.length - 1) currentSlide = 0;
