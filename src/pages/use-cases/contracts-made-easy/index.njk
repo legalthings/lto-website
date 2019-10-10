@@ -1,5 +1,6 @@
 {% set title = 'LTO Network - Use case - The Contract App' %}
 {% set description = 'Contracts made easy' %}
+{% set currentUrl = '/sitemap/' %}
 
 {% extends "base.njk" %}
 
@@ -11,7 +12,7 @@
     <section class="hero is-medium">
        <picture>
       <source type="image/webp" data-srcset="/assets/hero/hero-uc-contractapp.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-contractapp.png">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-contractapp.png" alt="LTO Network - Contracts made easy">
     </picture>
         <div class="hero-body">
             <div class="container">
@@ -30,7 +31,7 @@
                 <div class="item use-cases">
                    <picture>
       <source type="image/webp" data-srcset="/assets/use-cases/quislex@2x.webp">
-                    <img class="promo-client lazy" src="/assets/use-cases/quislex@2x.png">
+                    <img class="promo-client lazy" data-src="/assets/use-cases/quislex@2x.png" alt="Quislex">
                     </picture>
                 </div>
                 <div class="item use-cases">
@@ -49,9 +50,9 @@
             <div class="columns">
                 <div class="column card">
                    <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Legal automation</h3>
                         <div class="card-description">
@@ -62,9 +63,9 @@
 
                 <div class="column card">
                    <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Time consuming</h3>
                         <div class="card-description">
@@ -75,9 +76,9 @@
 
                 <div class="column card">
                    <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Confusion</h3>
                         <div class="card-description">
@@ -101,23 +102,13 @@
                 </div>
                 <div class="column is-1"></div>
                 <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-5px; left:-4px;" data-options="
-          name: briefcase;
-          size: 130px;
-          tryToSharpen: true;
-        style: filled;
-        fillColor: #ffffff"></div>
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/briefcase-purple.svg" alt="Tamperproof QR codes">
                 </div>
             </div>
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-3px; left:-12px;" data-options="
-              name: notebook;
-              size: 130px;
-              tryToSharpen: true;
-              style: filled;
-              fillColor: #ffffff"></div>
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="Effective collaboration">
                 </div>
                 <div class="column is-1"></div>
                 <div class="column is-half">
@@ -134,12 +125,7 @@
                 </div>
                 <div class="column is-1"></div>
                 <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-7px; left:-2px;" data-options="
-            name: users;
-            size: 130px;
-            tryToSharpen: true;
-            style: filled;
-            fillColor: #dde7f3"></div>
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/users-purple.svg" alt="Data sharing">
                 </div>
             </div>
             <div class="btn-container has-text-centered has-margin-top-40">
@@ -157,15 +143,10 @@
             <h2 class="has-text-centered is-vcentered section-title">Advantages using LTO Network</h2>
             <div class="columns is-centered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: coins;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Cost savings</h3>
@@ -175,14 +156,9 @@
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: diagram;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Easy integration</h3>
@@ -192,14 +168,9 @@
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: balance;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
@@ -222,14 +193,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>The new solution allows for immediate, trusted checks on certificates by anyone with a smartphone.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Paper-based certificates can't be validated on the spot, when necessary.</p>
                             </div>
                         </div>
@@ -245,14 +216,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>Integrated eSignature functionality.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Tracking down hand signatures delays execution.</p>
                             </div>
                         </div>
@@ -265,14 +236,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>LTO's blockchain is optimized for anchoring, making transactions near-instant and affordable.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Traditional blockchains tend to be very slow and expensive.</p>
                             </div>
                         </div>
@@ -295,7 +266,7 @@
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-half">
-                    <video controls width="100%" class="card">
+                    <video controls width="100%" class="card" alt="Contractapp Video">
                         <source src="https://thecontract.app/wp-content/uploads/2019/05/theContractApp-Final-052719-1.mp4" type="video/mp4">
                         Sorry, your browser doesn't support embedded videos.
                     </video>

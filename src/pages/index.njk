@@ -1,5 +1,6 @@
 {% set title = 'LTO Network' %}
 {% set description = 'A simple route to blockchain adoption in business and enterprise' %}
+{% set currentUrl = '/sitemap/' %}
 
 {% extends "base.njk" %}
 
@@ -9,11 +10,11 @@
   <section class="hero is-medium">
     <picture>
       <source type="image/webp" data-srcset="/assets/hero/hero-home.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-home.png">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-home.png" alt="LTO Network - Home Hero">
     </picture>
     <div class="hero-body">
       <div class="container">
-        <h1 class="primary-text">The blockchain that saves € 7 million <br> in waste transportations</h1>
+        <h1 class="primary-text">Saving $7 million annually in process efficiency<br>for the Dutch Ministry of Infrastructure</h1>
         <div class="buttons btn-container">
           <a href="/use-cases/waste-transportation-blockchain/" class="button is-warning"><p class="dark-indigo">Explore this use case</p></a>
           <a href="/use-cases/#overview" class="button">More use cases</a>
@@ -36,35 +37,29 @@
     <div class="container medium">
       <h2 class="has-text-centered section-title">How can LTO Network <br> help your business?</h2>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:70px;top:400px;left:-420px;" data-rellax-speed="4">
-        <img class="lazy" data-src="/assets/small-rock-1.svg">
+        <img class="lazy" data-src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
       </div>
 
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:840px;left:-270px;" data-rellax-speed="-2">
-        <img class="lazy" data-src="/assets/small-rock-4.svg">
+        <img class="lazy" data-src="/assets/small-rock-4.svg" alt="LTO Network - Rock">
       </div>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:98px;top:870px;left:1000px;" data-rellax-speed="6">
-        <img class="lazy" data-src="/assets/small-rock-3.svg">
+        <img class="lazy" data-src="/assets/small-rock-3.svg" alt="LTO Network - Rock">
       </div>
 
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:460px;left:950px;" data-rellax-speed="-4">
-        <img class="lazy" data-src="/assets/small-rock-5.svg">
+        <img class="lazy" data-src="/assets/small-rock-5.svg" alt="LTO Network - Rock">
       </div>
       <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:140px;left:1230px;" data-rellax-speed="2">
-        <img class="lazy" data-src="/assets/small-rock-4.svg">
+        <img class="lazy" data-src="/assets/small-rock-4.svg" alt="LTO Network - Rock">
       </div>
 
 
       <div class="columns has-margin-top-40">
-        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:-48px;width:280px;height:275px; background-size: 100% 100% !important;">
-          <img style="position:absolute;width:28px;top:100px;left:-80px" class="lazy rellax" data-src="/assets/small-rock-2.svg" data-rellax-speed="-1">
-          <img style="position:absolute;width:70px;top:0px;left:-50px" class="lazy rellax" data-src="/assets/small-rock-1.svg" data-rellax-speed="-2">
-          <div class="livicon-evo" data-options="
-          name: rocket;
-          size: 80px;
-          tryToSharpen: true;
-          animated: false;
-          strokeColor: #ffffff";
-          style="position:absolute;top:86px;left:93px;"></div>
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:-48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:28px;top:100px;left:-80px" class="lazy rellax" data-src="/assets/small-rock-2.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
+          <img style="position:absolute;width:70px;top:0px;left:-50px" class="lazy rellax" data-src="/assets/small-rock-1.svg" data-rellax-speed="-2" alt="LTO Network - Rock">
+          <img style="width:80px; position:absolute;top:86px;left:93px;" class="lazy" data-src="/assets/icons/rocket.svg" alt="LTO Network - ICON">
         </div>
         <div class="column is-two-thirds">
           <h3 class="title subsection-title">Cost-efficiency</h3>
@@ -83,29 +78,17 @@
                 <p class="muted">Although automation made organizations become more efficient and productive, we're still only efficient in our own silo's. When organizations use LTO Network to collaborate on processes they benefit from data re-use and automation, without switching systems that are currently used in your organization.</p>
             </div>
         </div>
-        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-2.svg')" style="left:48px;width:280px;height:275px; background-size: 100% 100% !important;">
-          <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/small-rock-3.svg" data-rellax-speed="-1">
-          <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax" data-src="/assets/small-rock-4.svg" data-rellax-speed="1">
-          <div class="livicon-evo" data-options="
-          name: diagram;
-          size: 80px;
-          tryToSharpen: true;
-          animated: false;
-          strokeColor: #ffffff"
-          style="position:absolute;top:98px;left:91px;"></div>
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-2.svg')" style="left:48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/small-rock-3.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
+          <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax" data-src="/assets/small-rock-4.svg" data-rellax-speed="1" alt="LTO Network - Rock">
+          <img style="width:80px; position:absolute;top:98px;left:91px;" class="lazy" data-src="/assets/icons/diagram.svg" alt="LTO Network - ICON">
         </div>
       </div>
 
       <div class="columns has-margin-top-40">
-        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-3.svg')"  style="left:-48px;width:280px;height:275px; background-size: 100% 100% !important;">
-          <img style="position:absolute;width:45px;top:230px;left:-40px" class="lazy rellax" data-src="/assets/small-rock-5.svg" data-rellax-speed="-1">
-          <div class="livicon-evo" data-options="
-          name: legal;
-          size: 80px;
-          tryToSharpen: true;    
-          animated: false;  
-          strokeColor: #ffffff"
-          style="position:absolute;top:90px;left:88px;"></div>
+        <div class="icon-container column lazy" data-bg="url('/assets/rocks/rock-3.svg')"  style="left:-48px;width:280px;height:275px; background-size: 100% 100%;">
+          <img style="position:absolute;width:45px;top:230px;left:-40px" class="lazy rellax" data-src="/assets/small-rock-5.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
+          <img style="width:80px;position:absolute;top:90px;left:88px;" class="lazy" data-src="/assets/icons/legal.svg" alt="LTO Network - ICON">
         </div>
         <div class="column is-two-thirds">
           <h3 class="title subsection-title">Compliance</h3>
@@ -126,20 +109,20 @@
         <h3 class="small-subtitle has-text-centered">Find out how other companies use LTO Network</h3>
       </div>
       <div class="container company-container">
-       <img class="company-rocks lazy" style="position:absolute;width:60px;top:50px;left:2.5px" data-src="/assets/small-rock-1.svg">
-       <img class="company-rocks lazy" style="position:absolute;width:35px;top: 65px;left: 202.5px;" data-src="/assets/small-rock-2.svg">
-        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 285px;left: 782.5px;" data-src="/assets/small-rock-3.svg">
-        <img class="company-rocks lazy" style="position:absolute;width:45px;top: 285px;left: 462.5px;" data-src="/assets/small-rock-3.svg">
-        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 225px;left: 52.5px;" data-src="/assets/small-rock-4.svg">
-        <img class="company-rocks lazy" style="position:absolute;width:75px;top:105px;left:622.5px" data-src="/assets/small-rock-5.svg">
-        <img class="company-rocks lazy" style="width:105px;height:105px;margin-left:52.5px" data-src="/assets/partners-clients/floating rock - indaver.png">
-        <img class="company-rocks lazy" style="width:190px;height:190px;margin-left:95.5px" data-src="/assets/partners-clients/floating rock - hh.png">
-        <img class="company-rocks lazy" style="width:97px;height:97px;margin-left:49.5px" data-src="/assets/partners-clients/floating rock - xurux.png">
-        <img class="company-rocks lazy" style="width:173px;height:173px;margin-left:88px" data-src="/assets/partners-clients/floating rock - dbc.png">
-        <img class="company-rocks lazy" style="width:168px;height:168px;margin-left:86px" data-src="/assets/partners-clients/floating rock - ibm.png">
-        <img class="company-rocks lazy" style="width:90px;height:90px;margin-left:45px" data-src="/assets/partners-clients/floating rock - cms.png">
-        <img class="company-rocks lazy" style="width:163px;height:163px;margin-left:82px" data-src="/assets/partners-clients/floating rock - rijksoverheid.png">
-        <img class="company-rocks lazy" style="width:89px;height:89px;margin-left:45.5px" data-src="/assets/partners-clients/floating rock - nen.png">
+       <img class="company-rocks lazy" style="position:absolute;width:60px;top:50px;left:2.5px" data-src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+       <img class="company-rocks lazy" style="position:absolute;width:35px;top: 65px;left: 202.5px;" data-src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 285px;left: 782.5px;" data-src="/assets/small-rock-3.svg" alt="LTO Network - Rock">
+        <img class="company-rocks lazy" style="position:absolute;width:45px;top: 285px;left: 462.5px;" data-src="/assets/small-rock-3.svg" alt="LTO Network - Rock">
+        <img class="company-rocks lazy" style="position:absolute;width:55px;top: 225px;left: 52.5px;" data-src="/assets/small-rock-4.svg" alt="LTO Network - Rock">
+        <img class="company-rocks lazy" style="position:absolute;width:75px;top:105px;left:622.5px" data-src="/assets/small-rock-5.svg" alt="LTO Network - Rock">
+        <img class="company-rocks lazy" style="width:105px;height:105px;margin-left:52.5px" data-src="/assets/partners-clients/floating rock - indaver.png" alt="LTO Network - Indaver">
+        <img class="company-rocks lazy" style="width:190px;height:190px;margin-left:95.5px" data-src="/assets/partners-clients/floating rock - hh.png" alt="LTO Network - The Hague University">
+        <img class="company-rocks lazy" style="width:97px;height:97px;margin-left:49.5px" data-src="/assets/partners-clients/floating rock - xurux.png" alt="LTO Network - Xurux">
+        <img class="company-rocks lazy" style="width:173px;height:173px;margin-left:88px" data-src="/assets/partners-clients/floating rock - dbc.png" alt="LTO Network - Dutch Blockchain Coalition">
+        <img class="company-rocks lazy" style="width:168px;height:168px;margin-left:86px" data-src="/assets/partners-clients/floating rock - ibm.png" alt="LTO Network - IBM Watson">
+        <img class="company-rocks lazy" style="width:90px;height:90px;margin-left:45px" data-src="/assets/partners-clients/floating rock - cms.png" alt="LTO Network - CMS">
+        <img class="company-rocks lazy" style="width:163px;height:163px;margin-left:82px" data-src="/assets/partners-clients/floating rock - rijksoverheid.png" alt="LTO Network - Rijksoverheid">
+        <img class="company-rocks lazy" style="width:89px;height:89px;margin-left:45.5px" data-src="/assets/partners-clients/floating rock - nen.png" alt="LTO Network - NeN">
       </div>
         <div class="btn-container has-text-centered has-margin-top-40">
       <a href="/partners-clients/" class="button is-primary">Our partners & clients</a>
@@ -151,8 +134,8 @@
 <div class="section-container cutout-bottom-alt z-index-1 no-overflow">
   <section class="section tertiary p-top-l p-bottom-l neg-m-top-m" style="">
     <div class="section-body" style="position:relative;">
-     <div class="private-chain rellax" data-rellax-speed="2"><img class="lazy" data-src="/assets/private-chain.svg"></div>
-      <div class="public-chain rellax" data-rellax-speed="-2"><img class="lazy" data-src="/assets/public-chain.svg"></div>
+     <div class="private-chain rellax" data-rellax-speed="2"><img class="lazy" data-src="/assets/private-chain.svg" alt="LTO Network - Private Chain"></div>
+      <div class="public-chain rellax" data-rellax-speed="-2"><img class="lazy" data-src="/assets/public-chain.svg" alt="LTO Network - Public Chain"></div>
         <div class="container">
             <div class="columns has-text-centered-mobile">
                 <div class="column is-5-desktop">
@@ -181,18 +164,13 @@
       <h3 class="small-subtitle has-text-centered">Solutions built on LTO Network</h3>
       <div class="columns-container">
         <a class="use-case-arrow card-slider-action prev is-hidden-mobile">
-          <div class="livicon-evo" data-options="
-          name: arrow-left;
-          size: 50px;
-          tryToSharpen: true;
-          animated: false;
-          strokeColor: #17054b"></div>
+          <img style="width: 120px;" class="lazy" data-src="/assets/LivIconsEvo/svg/arrow-left.svg" alt="LTO Network - ICON">
         </a>
         <div class="columns is-multiline columns-slider is-visible is-centered">
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-capptions.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png" alt="LTO Network - Use case - Capptions">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -210,7 +188,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-signrequest.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-signrequest.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-signrequest.png" alt="LTO Network - Use case - SignRequest">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -228,7 +206,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-firm24.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png" alt="LTO Network - Use case - Firm24">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -249,7 +227,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-vaas.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png" alt="LTO Network - Use case - V-ID">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -267,7 +245,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-contractapp.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-contractapp.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-contractapp.png" alt="LTO Network - Use case - Quislex">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -285,7 +263,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ilt.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-ilt.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-ilt.png" alt="LTO Network - Use case - ILT">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -306,7 +284,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-lease.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png" alt="LTO Network - Use case - CMS">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -324,7 +302,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-certificates.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-certificates.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-certificates.png" alt="LTO Network - Use case - NeN">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -342,7 +320,7 @@
           <div class="column card align-evenly">
             <picture>
               <source type="image/webp" data-srcset="/assets/use-cases/card-uc-cac.webp">
-              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png">
+              <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png" alt="LTO Network - Use case - District Attorney">
             </picture>
             <div class="card-content-uc">
               {# <span class="card-meta">30% time savings</span> #}
@@ -359,12 +337,7 @@
           </div>
         </div>
         <a class="use-case-arrow card-slider-action next is-hidden-mobile">
-          <div class="livicon-evo" data-options="
-          name: arrow-right;
-          size: 50px;
-          tryToSharpen: true;
-          animated: false;
-          strokeColor: #17054b"></div>
+          <img style="width: 120px;" class="lazy" data-src="/assets/LivIconsEvo/svg/arrow-right.svg" alt="LTO Network - ICON">
         </a>
       </div>
       <div class="btn-container has-text-centered has-margin-top-40">

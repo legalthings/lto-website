@@ -1,5 +1,6 @@
 {% set title = 'LTO Network - Community' %}
 {% set description = 'Every stakeholder benefits from collective value creation through development of Ecosystem V' %}
+{% set currentUrl = '/sitemap/' %}
 
 {% extends "base.njk" %}
 
@@ -9,9 +10,9 @@
     <section class="hero is-medium">
        <picture>
       <source type="image/webp" data-srcset="/assets/hero/hero-community-mob.webp">
-        <img class="bgVideo is-hidden-desktop" src="/assets/hero/hero-community-mob.png">
+        <img class="bgVideo is-hidden-desktop" src="/assets/hero/hero-community-mob.png" alt="LTO Network - Hero Community">
         </picture>
-        <video class="bgVideo is-hidden-mobile" autoplay muted loop poster="/assets/hero/hero-community.png">
+        <video class="bgVideo is-hidden-mobile" autoplay muted loop poster="/assets/hero/hero-community.png" alt="LTO Network - Community Video">
             <source src="/assets/media/hero-community.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -32,7 +33,7 @@
                 <div class="column is-two-thirds">
                    <picture>
       <source type="image/webp" data-srcset="/assets/community/community-platform.webp">
-                    <img src="/assets/community/community-platform.png" class="lazy">
+                    <img src="/assets/community/community-platform.png" class="lazy" alt="LTO Network - Community Platform">
                     </picture>
                 </div>
                 <div class="column">
@@ -180,7 +181,7 @@
                         <a href="https://bitmax.io/#/trade/usdt/lto" target="blank">
                            <picture>
       <source type="image/webp" data-srcset="/assets/markets/bitmax@2x.webp">
-                            <img src="/assets/markets/bitmax@2x.png">
+                            <img src="/assets/markets/bitmax@2x.png" alt="Bitmax">
                             </picture>
                         </a>
                     </div>
@@ -191,7 +192,7 @@
                         <a href="https://www.binance.org/en/trade/LTO-BDF_BNB" target="blank">
                            <picture>
       <source type="image/webp" data-srcset="/assets/markets/binance-dex@2x.webp">
-                            <img src="/assets/markets/binance-dex@2x.png">
+                            <img src="/assets/markets/binance-dex@2x.png" alt="Binance DEX">
                             </picture>
                         </a>
                     </div>
@@ -223,10 +224,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: compass;
-              size: 85px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/compass.svg" alt="LTO Network - Mainnet Explorer">
                                 </div>
                             </div>
 
@@ -243,10 +241,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: coins;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/coins.svg" alt="LTO Network - Online Wallet">
                                 </div>
                             </div>
 
@@ -266,10 +261,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: globe;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/globe.svg" alt="LTO Network - Network Statistics">
                                 </div>
                             </div>
 
@@ -286,10 +278,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: wrench;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/wrench.svg" alt="LTO Network - Earn LTO">
                                 </div>
                             </div>
 
@@ -309,10 +298,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: servers;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/balance.svg" alt="LTO Network - Token Bridge">
                                 </div>
                             </div>
 
@@ -329,10 +315,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: servers;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/servers.svg" alt="LTO Network - Run a Node">
                                 </div>
                             </div>
 
@@ -353,10 +336,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: calculator;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/calculator.svg" alt="LTO Network - Staking Calculator">
                                 </div>
                             </div>
 
@@ -373,10 +353,7 @@
                         <div class="columns resources sub-columns">
                             <div class="resources column image sub-column">
                                 <div class="resources livicon-container">
-                                    <div class="livicon-evo" data-options="
-              name: notebook;
-              size: 75px;
-              tryToSharpen: true"></div>
+                                    <img class="lazy" data-src="/assets/icons/notebook.svg" alt="LTO Network - Whitepapers">
                                 </div>
                             </div>
 

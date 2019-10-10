@@ -1,5 +1,6 @@
 {% set title = 'LTO Network - Use case - Trusted document management' %}
 {% set description = 'Deposit crucial contracts, intellectual property and certificates' %}
+{% set currentUrl = '/sitemap/' %}
 
 {% extends "base.njk" %}
 
@@ -9,7 +10,7 @@
     <section class="hero is-medium">
        <picture>
       <source type="image/webp" data-srcset="/assets/hero/hero-uc-tdm.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-tdm.png">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-tdm.png" alt="Trusted Document Management">
     </picture>
         <div class="hero-body">
             <div class="container">
@@ -28,7 +29,7 @@
                 <div class="item use-cases">
                    <picture>
       <source type="image/webp" data-srcset="/assets/use-cases/virtualvaults_logo@2x.webp">
-                    <img class="promo-client lazy" src="/assets/use-cases/virtualvaults_logo@2x.png">
+                    <img class="promo-client lazy" data-src="/assets/use-cases/virtualvaults_logo@2x.png" alt="Virtual Vaults">
                     </picture>
                 </div>
                 <div class="item use-cases">
@@ -47,9 +48,9 @@
             <div class="columns">
                 <div class="column card">
                     <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Evidence of date and time</h3>
                         <div class="card-description">
@@ -60,9 +61,9 @@
 
                 <div class="column card">
                     <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Document authenticity</h3>
                         <div class="card-description">
@@ -73,9 +74,9 @@
 
                 <div class="column card">
                    <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-                    <img class="card-image clip-a lazy" src="/assets/polygons - 1.png">
-                    </picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
                     <div class="card-content">
                         <h3 class="accent-text">Document verification</h3>
                         <div class="card-description">
@@ -100,23 +101,13 @@
                 </div>
                 <div class="column is-1"></div>
                 <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-5px; left:-4px;" data-options="
-          name: check-alt;
-          size: 130px;
-          tryToSharpen: true;
-        style: filled;
-        fillColor: #ffffff"></div>
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/check-alt-purple.svg" alt="LTO Network - Immutable files">
                 </div>
             </div>
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-2px; left:-5px;" data-options="
-              name: desktop;
-              size: 130px;
-              tryToSharpen: true;
-              style: filled;
-              fillColor: #ffffff"></div>
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/desktop-purple.svg" alt="LTO Network - Verifiable timestamp">
                 </div>
                 <div class="column is-1"></div>
                 <div class="column is-half">
@@ -132,12 +123,7 @@
                 </div>
                 <div class="column is-1"></div>
                 <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-                    <div class="livicon-evo" style="position:relative; top:-10px; left:-4px;" data-options="
-          name: dashboard;
-          size: 130px;
-          tryToSharpen: true;
-        style: filled;
-        fillColor: #ffffff"></div>
+                   <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/dashboard-purple.svg" alt="LTO Network - No need for third party verification">
                 </div>
             </div>
             <div class="btn-container has-text-centered has-margin-top-40">
@@ -154,15 +140,10 @@
             <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: shield;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/shield.svg" alt="LTO Network - Protection against claims">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Protection against claims</h3>
@@ -172,14 +153,9 @@
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: diagram;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Easy integration</h3>
@@ -189,14 +165,9 @@
             
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg">
-                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg">
-                    <div class="livicon-evo" style="position:relative; top:0px; left:73px;" data-options="
-          name: legal;
-          size: 90px;
-          tryToSharpen: true;
-          strokeColor: #ffffff;
-          strokeWidth: 3px"></div>
+                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/legal.svg" alt="LTO Network - Data governance">
                 </div>
                 <div class="column is-two-thirds">
                     <h3 class="title subsection-title dark-indigo">Data governance</h3>
@@ -219,14 +190,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>In Virtual Vaults documents are saved securely, and hashed for proving its existence at a certain moment.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Physical and centralized storage is prone to file losses, hacks and manipulation.</p>
                             </div>
                         </div>
@@ -242,14 +213,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>Blockchain technology ensures immutable and authentic document records.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Identification of counterfeited paper documents is time consuming costly.</p>
                             </div>
                         </div>
@@ -262,14 +233,14 @@
                         <div class="table_small">
                             <div class="table_cell dark-indigo">LTO Network solution</div>
                             <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - good.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
                                 <p>Creating an audit trail of document sharing and version control allows for independent verification of the documents.</p>
                             </div>
                         </div>
                         <div class="table_small">
                             <div class="table_cell dark-indigo">Traditional solution</div>
                             <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" src="/assets/table icon - bad.svg"></div>
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
                                 <p>Sharing documents in a secure way is complex and inefficient.</p>
                             </div>
                         </div>
@@ -296,8 +267,8 @@
                         <div class="columns">
                             <div class="column is-3 card-testimonial-img">
                                <picture>
-              <source type="image/webp" data-srcset="/assets/use-cases/vv_testimonial.webp">
-                                <img class="lazy" src="/assets/use-cases/vv_testimonial.png" srcset="/assets/use-cases/vv_testimonial@3x.png 3x, /assets/use-cases/vv_testimonial@2x.png 2x">
+              <source type="image/webp" data-srcset="/assets/use-cases/vv_testimonial@2x.webp">
+                                <img class="lazy" data-src="/assets/use-cases/vv_testimonial@2x.png">
                                 </picture>
                             </div>
                             <div class="column">
