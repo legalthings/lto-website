@@ -1,0 +1,311 @@
+{% set title = 'LTO Network - Use cases' %}
+{% set description = 'Products and solutions built on LTO Network blockchain' %}
+{% set currentUrl = '/sitemap/' %}
+{% set locale = 'cn' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<div class="section-container">
+  <section class="hero is-medium use-case-header">
+    <img class="overlay-image current" src="/assets/hero/hero-uc-ilt.png">
+    <img class="overlay-image next" src="/assets/hero/hero-uc-scantrust.png">
+    <div class="hero-body">
+      <div class="container">
+        <h1 id="hero-title" class="primary-text">每年节省逾700万=欧元废物运输费用的区块链</h1>
+        <div class="buttons btn-container">
+          <a href="/cn/use-cases/waste-transportation-blockchain/" class="explore button is-warning"><p class="dark-indigo">探索这个用例</p></a>
+          <a href="#overview" class="button">更多用例</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutout-top">
+  <section class="section secondary no-padding">
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
+  </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom">
+  <section class="section" id="overview">
+    <div class="container">
+      <h2 class="has-text-centered section-title">案例概述</h2>
+      <div class="columns">
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-capptions.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">数字清单和检查应用</h3>
+            <div class="card-description">
+              <p class="muted">为数据输入提供不变的证据,并针对机场，油站和危险品等重要地点创建检查报告。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/digital-checklist-inspection-reports/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-signrequest.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-signrequest.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">使用区块链验证码的电子签名</h3>
+            <div class="card-description">
+              <p class="muted">保障文件内容不被篡改，并提供文件签名的特定日期和时间的证明。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/digital-signing-blockchain-verification/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-firm24.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">公证程序中的数据共享</h3>
+            <div class="card-description">
+              <p class="muted">公证程序严重依赖纸质程序。 LTO 通过有效且安全地共享数据，使合并程序更加有效。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/data-sharing-in-notary-procedures/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns has-margin-top-20">
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-vaas.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">艺术品的真实性</h3>
+            <div class="card-description">
+              <p class="muted">通过区块链验证艺术品，可以更好地保护对象，并可以更轻松，更快速地建立真实性。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/authenticity-art-objects/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-contractapp.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-contractapp.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">合同变得容易</h3>
+            <div class="card-description">
+              <p class="muted">只需以智能手机上的形式回答一些问题，即可收到一份经过充分谈判和执行的合同，该合同也可以在区块链上进行哈希处理。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/contracts-made-easy/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+<!--
+        <div class="column card align-evenly invisible">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-scantrust.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-scantrust.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">Smart QR-codes</h3>
+            <div class="card-description">
+              <p class="muted">Enabling brands with smart packaging solutions for product authentication, supply chain traceability using blockchain technology of LTO Network.</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/use-cases/track-trace-product-authentication/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+-->
+     <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png">
+         </picture>
+          <div class="card-content">
+            <h3 class="accent-text">在这里展示您的案例？</h3>
+            <div class="card-description">
+              <p class="muted">LTO团队在这里可以帮助您调查组织如何从区块链技术中受益。 预约样版以了解更多信息！</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/contact/" class="button is-warning">
+               预约样版
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutoff-top cutout-bottom">
+  <section class="section relative tertiary neg-m-top-m p-top-l">
+    <div class="container z-index-4">
+      <div class="columns">
+       <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ioe.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-ioe.png">
+           </picture>
+          <div class="card-content">
+            <h3 class="accent-text">环境互联网</h3>
+            <div class="card-description">
+              <p class="muted">数字化是推动可持续发展转型的关键。数据洞察能帮助我们更好地了解我们对环境的真正影响。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/internet-of-environments/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ilt.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-ilt.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">国际废物运输</h3>
+            <div class="card-description">
+              <p class="muted">通过LTO将废物运输过程的所有利益相关者联系在一起，每年可节省超过700万欧元。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/waste-transportation-blockchain/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-lease.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">智能物业租赁协议</h3>
+            <div class="card-description">
+              <p class="muted">法律文件曾经是静态纸。实时合同，为房地产行业提供实现自动化和效率提高的新途径。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/smart-property-lease-agreements/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns has-margin-top-20">
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-certificates.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-certificates.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">区块链上的智能证书</h3>
+            <div class="card-description">
+              <p class="muted">NEN引入了一种验证证书的新方法。无需使用监管机构进行随机检查，拥有智能手机的每个人都可以
+验证证书。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/smart-certificates-blockchain/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/card-uc-cac.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">简化小型刑事案件</h3>
+            <div class="card-description">
+              <p class="muted">借助LTO，可以通过连接数据孤岛并实现有效的业务流程共享来实现诸如入店行窃之类的多方利益相关者流程的自动化。</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/use-cases/criminal-cases-blockchain/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+
+<!--
+        <div class="column card align-evenly invisible">
+          <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-tdm.png">
+          <div class="card-content">
+            <h3 class="accent-text">Trusted Document Management</h3>
+            <div class="card-description">
+              <p class="muted">By combining document management system with our blockchain technology we provide a independintly verifyable audit trail.</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/use-cases/trusted-document-management/" class="button is-primary">
+                探索这个案例
+              </a>
+            </div>
+          </div>
+        </div>
+-->
+        <div class="column card align-evenly">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">在这里展示您的案例？</h3>
+            <div class="card-description">
+              <p class="muted">LTO团队在这里可以帮助您调查组织如何从区块链技术中受益。 预约样版以了解更多信息！</p>
+            </div>
+            <div class="has-margin-top-20">
+              <a href="/cn/contact/" class="button is-warning">
+                预约样版
+              </a>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="section-container">
+  <section class="section alt has-bg-img">
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+  </section>
+</div>
+{% endblock %}

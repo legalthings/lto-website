@@ -1,0 +1,320 @@
+{% set title = 'LTO Network - Ecosystem V' %}
+{% set description = 'Every stakeholder benefits from collective value creation through development of Ecosystem V' %}
+{% set currentUrl = '/sitemap/' %}
+{% set locale = 'cn' %}
+
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<div class="section-container">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-ecosystem.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-ecosystem.png" alt="LTO Network - Hero Ecosystem V">
+    </picture>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="primary-text">通过V生态系统的发展参与集体价值创造。</h1>
+        <div class="buttons btn-container">
+          <a href="/cn/contact/" class="button is-warning"><p class="dark-indigo">加入V生态系统</p></a>
+          <a href="#ecosystem" class="button">进一步了解</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutout-top">
+  <section class="section secondary no-padding">
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
+  </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom">
+  <section class="section" id="ecosystem">
+  <div class="container">
+    <h2 class="section-title deep-lavender has-text-centered">生态系统概述</h2>
+    <h3 class="dark-indigo has-text-centered">通过开发V生态系统，每个利益相关者都将从集体价值创造中受益</h3>
+        <div class="columns is-vcentered">
+            <div class="column is-7">
+                <div class="ecosystem-menu">
+                <div class="ecomenu-connect"></div>
+                <div class="ecosystem-radial"></div>
+                  <div class="center">Ecosystem V
+                    <div class="button" data-name="marketplace" id="eco-m">市场</div>
+                    <div class="button" data-name="venture-capital" id="eco-vc">风险投资</div>
+                    <div class="button" data-name="human-capital" id="eco-hc">人力资本</div>
+                    <div class="button" data-name="research" id="eco-r">研究</div>
+                    <div class="button" data-name="products" id="eco-p">产品展示</div>
+                  </div>
+                </div>
+            </div>
+            <div class="column">
+            <div class="gradient-card">
+                <div class="content">
+                  <h3 class="title subsection-title ecomenu-header"></h3>
+                  <p class="muted ecomenu-description"></p>
+                  <a class="read-more-link ecomenu-readmore" href="#"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      setTimeout(function() {
+        const ecoMenu = [
+          {
+            id: "marketplace",
+            name: "市场",
+            description: "市场已经在网络上变得很普遍，但是尚未建立有用的即插即用的区块链解决方案市场。 在几分钟内连接您的应用程序并在我们的市场中形成自动化流程。",
+            link: null
+          },
+          {
+            id: "human-capital",
+            name: "人力资本",
+            description: "向分散的员工传播知识和价值观是公司关注的焦点。 人力资本可以极大地促进经济和网络的增长。 教育和培训对于我们网络的发展至关重要。 如果正确执行，它们可以增加活力，收益和良好习惯。",
+            link: null
+          },
+          {
+            id: "venture-capital",
+            name: "风险投资",
+            description: "作为软件供应商或集成商成为网络的一部分，可以使您以全新的方式从生态系统中受益。 通过将区块链添加到您的堆栈中来为您的创业公司增加价值，并使投资者轻松地在市场上找到您。",
+            link: null
+          },
+          {
+            id: "research",
+            name: "研究",
+            description: "我们每天都在研究新兴技术，还有很多东西x要学习。 GDPR，安全性，可扩展性和治理只是我们将与大学和研究人员一起探讨的主题的一些示例。",
+            link: null
+          },
+          {
+            id: "products",
+            name: "产品展示",
+            description: "LTO 旨在为我们的生态系统参与者提供可以直接整合到日常运营中的现成产品。 但请不要被这些限制所束缚，我们知道总有改进的余地，任您添加所需！",
+            link: null
+          }
+        ];
+
+        const buttons = Array.from(document.querySelectorAll('.ecosystem-menu .button'));
+        const count = buttons.length;
+        const increase = Math.PI * 2 / buttons.length;
+        const radius = 180;
+        let angle = 0;
+
+        const regularOffset = 4.7;
+        const mobileOffset = 3.15;
+        let radialOffset = recalculateRadialOffset();
+
+        window.addEventListener('resize', () => {
+          radialOffset = recalculateRadialOffset();
+        });
+
+        const marketPlaceEl = document.getElementById('eco-m');
+        const ecoMenuHeaderEl = document.getElementsByClassName('ecomenu-header')[0];
+        const ecoMenuDescriptionEl = document.getElementsByClassName('ecomenu-description')[0];
+        const ecoMenuReadMoreEl = document.getElementsByClassName('ecomenu-readmore')[0];
+
+        buttons.forEach((button, i) => {
+          button.style.top = Math.sin(-Math.PI / 2 + i * increase - radialOffset) * radius + 'px';
+          button.style.left = Math.cos(-Math.PI / 2 + i * increase - radialOffset) * radius + 'px';
+          button.addEventListener('click', move);
+        });
+
+        setCurrentItem(ecoMenu[0]);
+
+        function move(e) {
+          const n = buttons.indexOf(e.target);
+          const endAngle = (n % count) * increase + radialOffset;
+          const currentItem = ecoMenu.find(_m => _m.id.toLowerCase() === e.target.dataset.name.toLowerCase());
+          turn();
+
+          function turn() {
+            if (Math.abs(endAngle - angle) > 1/8) {
+              const sign = endAngle > angle ? 1 : -1;
+              angle = angle + sign/8;
+              setTimeout(turn, 20);
+            } else {
+              angle = endAngle;
+              setCurrentItem(currentItem);
+            }
+
+            buttons.forEach((button, i) => {
+              button.style.top = Math.sin(-Math.PI / 2 + i * increase - angle) * radius + 'px';
+              button.style.left = Math.cos(-Math.PI / 2 + i * increase - angle) * radius + 'px';
+            })
+          }
+        }
+
+        function setCurrentItem(item) {
+          if (!item) return;
+
+          ecoMenuHeaderEl.innerHTML = item.name;
+          ecoMenuDescriptionEl.innerHTML = item.description;
+
+          if (item.link) {
+            ecoMenuReadMoreEl.href = item.link;
+            ecoMenuReadMoreEl.innerHTML = '更多...';
+          } else {
+            ecoMenuReadMoreEl.href = '#';
+            ecoMenuReadMoreEl.innerHTML = 'More info coming soon!';
+          }
+        }
+
+        function recalculateRadialOffset() {
+          return window.innerWidth > 600 ? regularOffset : mobileOffset;
+        }
+      }, 35);
+    </script>
+  </section>
+</div>
+
+<div class="section-container">
+  <section class="section alt p-top-l p-bottom-l neg-m-top-m">
+    <div class="section-body">
+  <div class="container">
+    <div class="columns">
+    <div class="column is-5-desktop">
+      <h2 class="section-title deep-lavender">网络效应</h2>
+      <p class="muted">
+         我们不抱有实现自我被采用的幻想。它与社区有关，与网络用户有关。 详细了解如何为生态系统做出贡献。
+        <div class="btn-container has-margin-top-40">
+        <a href="/cn/partners-clients/" class="button is-primary">进一步了解</a>
+        </div>
+        </div>
+      </div>
+      <div class="network-circle-container is-hidden-mobile">
+      <div class="network-margin network-circle network-circle--solid network-circle--clock"></div>
+      <div class="network-margin network-circle network-circle--counter"></div>
+      <div class="network-margin network-circle network-circle--clock"></div>
+      <div class="network-margin network-circle network-circle--solid circle--counter"></div>
+      <div class="network-margin network-circle network-circle--clock"></div>
+      <div class="network-margin network-circle network-circle--counter"></div>
+      <div class="network-margin network-circle network-circle--solid circle--clock"></div>
+      <div class="network-margin network-circle network-circle--counter"></div>
+      <div class="network-margin network-circle network-circle--clock"></div>
+      <div class="network-margin network-circle network-circle--counter"></div>
+      <div class="network-margin network-circle network-circle--solid circle--clock"></div>
+      <div class="network-margin network-circle network-circle--solid circle--counter"></div>
+</div>
+  </div>
+      </div>
+  </section>
+</div>
+
+<div class="section-container cutout-top-alt">
+  <section class="section p-top-l neg-m-top-m">
+ <div class="container">
+      <h2 class="deep-lavender has-text-centered">加入LTO的V生态系统的优势</h2>
+
+  <div class="columns is-centered has-margin-top-40">
+
+    <div class="column is-4">
+      <div class="ecosystem livicon-container">
+        <img class="lazy" data-src="/assets/icons/diagram-purple.svg" alt="LTO Network - Distributed incentives">
+      </div>
+        <h3 class="title is-6 dark-indigo has-margin-top-20">分布式激励</h3>
+        <div class="content steel">
+        <p>与传统的SaaS模型不同，由于分布式激励措施（LTOde燃料），我们在所涉及的项目之间不存在自相残杀。 持有LTO并以适当方式认为对生态系统做出贡献的每个人都可以享受网络价值和社区发展的好处。</p>
+        </div>
+    </div>
+
+    <div class="column is-4">
+      <div class="ecosystem livicon-container">
+        <img class="lazy" data-src="/assets/icons/box-purple.svg" alt="LTO Network - Access to resources">
+      </div>
+        <h3 class="title is-6 dark-indigo has-margin-top-20">获取资源</h3>
+        <div class="content steel">
+        <p>生态系统由公司，初创公司，开发人员，营销人员和其他有才能的成员组成。 作为生态系统的一部分，意味着可以获取开发人员的资源，建议和机会。 您甚至可以找到您的新想法和新团队！</p>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="columns is-centered">
+      <div class="column is-4">
+        <div class="ecosystem livicon-container">
+          <img class="lazy" data-src="/assets/icons/user-purple.svg" alt="LTO Network - Retaining identity">
+        </div>
+        <h3 class="title is-6 dark-indigo has-margin-top-20">保留身份</h3>
+        <div class="content steel">
+        <p>LTO不会进行任何收购或教养。 每个团队，项目，公司-都可以继续做他们认为对整个生态系统有益的事情。 我们不要求您做什么，而是选择如何塑造未来！</p>
+        </div>
+      </div>
+
+    <div class="column is-4">
+      <div class="ecosystem livicon-container">
+        <img class="lazy" data-src="/assets/icons/lab-purple.svg" alt="LTO Network - Testing & training">
+      </div>
+        <h3 class="title is-6 dark-indigo has-margin-top-20">测试与培训</h3>
+        <div class="content steel">
+        <p>如果您开始在LTO构建或集成现有的应用程序，社区将引领您fang'x。 您可以在市场上使用不同的工具和产品来找到最适合您的解决方案的产品。</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="btn-container has-text-centered has-margin-top-40">
+  <a href="/cn/contact/" class="button is-primary">Join Ecosystem V</a>
+      </div>
+
+</div>
+  </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom-alt">
+  <section class="section p-top-xl p-bottom-xxl alt">
+    <div class="section-body">
+      <div class="container">
+        <h2 class="section-title has-text-centered">
+          感言
+        </h2>
+          <div class="columns is-centered">
+              <div class="column is-5">
+                  <div class="card testimonial-eco">
+                  <div class="testimonial-logo">
+                     <picture>
+      <source type="image/webp" data-srcset="/assets/use-cases/capptions@2x.webp">
+                      <img src="/assets/use-cases/capptions@2x.png" class="lazy" alt="LTO Network - Testimonial - Capptions">
+                      </picture>
+                  </div>
+                  <div class="content">
+                      <p class="muted">我们认为应该引导用户了解什么是区块链及其如何在日常运营中增加价值。 通过在Capptions平台上集成LTO的锚定服务，我们可以使区块链具有移动性。
+                      </p>
+                  </div>
+                      <div class="btn-container has-text-centered">
+                          <a href="/cn/use-cases/digital-checklist-inspection-reports/" class="button is-primary">关于此案例</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="column is-1 is-hidden-mobile"></div>
+              <div class="column is-5">
+                  <div class="card testimonial-eco">
+                  <div class="testimonial-logo">
+                     <picture>
+      <source type="image/webp" data-srcset="/assets/use-cases/signrequest@2x.webp">
+                      <img src="/assets/use-cases/signrequest@2x.png" class="lazy" alt="LTO Network - Testimonial - SignRequest">
+                      </picture>
+                  </div>
+                  <div class="content">
+                      <p class="muted">我们尝试通过多个区块链进行文档时间戳记。 但是，如果我们想在签名文档的日志中包含区块链时间戳证明，则需要立即进行验证。 借助LTO，我们可以为在我们平台上签名的文档添加即时不变性。
+                      </p>
+                  </div>
+                      <div class="btn-container has-text-centered">
+                          <a href="/cn/use-cases/digital-signing-blockchain-verification/" class="button is-primary">关于此案例</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+</div>
+
+<div class="section-container">
+  <section class="section alt has-bg-img">
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+  </section>
+</div>
+
+{% endblock %}

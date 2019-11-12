@@ -640,6 +640,31 @@ p {
         transition: 321ms ease-out;
         letter-spacing: normal;
 
+        &.language {
+            padding: .5rem .75rem;
+            position: relative;
+            transition: 321ms ease-out;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            img {
+                height: 1.4rem !important;
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+
+            @include responsive(phone) {
+                padding: 20px;
+                width: 100%;
+            }
+        }
+
         &.navbar-item {
             @include responsive(phone) {
                 padding: 20px;

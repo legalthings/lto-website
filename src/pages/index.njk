@@ -26,7 +26,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-{% include "partials/promo-numbers.njk" %}
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
@@ -269,7 +269,7 @@
               {# <span class="card-meta">30% time savings</span> #}
               <h3 class="primary-text">International waste transportation</h3>
               <div class="card-description muted">
-                <p>Connecting all stakeholders of the waste transportation process together through LTO Network saves more than EUR 7M on an annual basis.p>
+                  <p>Connecting all stakeholders of the waste transportation process together through LTO Network saves more than EUR 7M on an annual basis.</p>
               </div>
               <div class="card-action">
                 <a href="/use-cases/waste-transportation-blockchain/">
@@ -350,7 +350,7 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img">
-  {% include "partials/bottom-nav.njk" %}
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
   </section>
 </div>
 
