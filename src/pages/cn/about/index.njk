@@ -1,0 +1,595 @@
+{% set title = 'LTO Network - About' %}
+{% set description = 'Making blockchain integration easy in every organization' %}
+{% set currentUrl = '/sitemap/' %}
+{% set locale = 'cn' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<div class="section-container">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-about.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-about.png" alt="LTO Network - Hero About">
+    </picture>
+    <div class="hero-body">
+      <div class="container">
+          <div class="columns is-vcentered">
+              <div class="column">
+        <h1 class="primary-text">关于LTO</h1>
+          <p class="dark-indigo jobs-talent quote">“我见过的最专注，最精通技术的神童。”</p>
+          <p class="dark-indigo jobs-talent end-quote">- Sandor Klein (Sysdig副总裁</p>
+              </div>
+          <div class="column video is-centered">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D1CDJEahhjY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutout-top">
+  <section class="section secondary no-padding">
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
+  </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom" id="mission">
+  <section class="section">
+    <div class="container">
+        <h4 class="dark-indigo has-text-centered">任务说明</h4>
+      <h2 class="has-text-centered section-title">使每个组织的区块链集成变得容易</h2>
+      <div class="columns is-centered">
+          <div class="column is-4">
+              <p class="muted">
+                  LTO团队的任务是创建和维护一个完全分散的，高效的区块链基础架构，该基础架构可直接应用并旨在为组织创造价值。
+              </p>
+          </div>
+          <div class="column is-4">
+              <p class="muted">
+                  任何需要生产就绪型区块链的公司都可以使用LTO，该区块链允许对数字资产进行数字验证，并可以通过使用分散式工作流程进行协作。
+              </p>
+          </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutoff-top cutout-bottom-alt">
+  <section class="section alt relative neg-m-top-m p-top-l" id="team">
+    <div class="container z-index-4">
+      <h2 class="has-text-centered section-title">认识团队</h2>
+        <h3 class="dark-indigo has-text-centered">了解只有一个目标的摇滚明星：LTO在全球的采用。</h3>
+
+        <div class="team-container has-text-centered">
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/rick.webp">
+            <img src="/assets/team/rick.png" class="lazy" alt="Rick Schmitz">
+              </picture>
+          </div>
+          <span class="name">Rick Schmitz</span>
+          <span class="title">首席执行官</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/rschmitz/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/mig.webp">
+            <img src="/assets/team/mig.png" class="lazy" alt="Martijn Migchelsen">
+              </picture>
+          </div>
+          <span class="name">Martijn Migchelsen</span>
+          <span class="title">首席财务官</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/migchelsen/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/arnold.webp">
+            <img src="/assets/team/arnold.png" class="lazy" alt="Arnold Daniels">
+              </picture>
+          </div>
+          <span class="name">Arnold Daniels</span>
+          <span class="title">系统架构导师</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/jasny" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/sven.webp">
+            <img src="/assets/team/sven.png" class="lazy" alt="Sven Stam">
+              </picture>
+          </div>
+          <span class="name">Sven Stam</span>
+          <span class="title">首席技术官</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/svenstam/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/sven4ask" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/martijn.webp">
+            <img src="/assets/team/martijn.png" class="lazy" alt="Martijn Broersma">
+              </picture>
+          </div>
+          <span class="name">Martijn Broersma</span>
+          <span class="title">首席运营官</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/rick_ros.webp">
+            <img src="/assets/team/rick_ros.png" class="lazy" alt="Rick Ros">
+              </picture>
+          </div>
+          <span class="name">Rick Ros</span>
+          <span class="title">销售负责人</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/rickros/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/ivan.webp">
+            <img src="/assets/team/ivan.png" class="lazy" alt="Ivan Golovko">
+              </picture>
+          </div>
+          <span class="name">Ivan Golovko</span>
+          <span class="title">首席营销官</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/ivangolovko/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/jelle.webp">
+            <img src="/assets/team/jelle.png" class="lazy" alt="Jelle Bets">
+              </picture>
+          </div>
+          <span class="name">Jelle Bets</span>
+          <span class="title">生态系统-欧洲</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jelle-bets/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/jiang_jie_hu.webp">
+            <img src="/assets/team/jiang_jie_hu.png" class="lazy" alt="Jiang Jie Hu">
+              </picture>
+          </div>
+          <span class="name">Jiang Jie Hu</span>
+          <span class="title">生态系统-亚洲</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jiang-jie-hu/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/moosh.webp">
+            <img src="/assets/team/moosh.png" class="lazy" alt="Moesjarraf Jahangier">
+              </picture>
+          </div>
+          <span class="name">Moesjarraf Jahangier</span>
+          <span class="title">资深后端开发人员</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/moesjarraf" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/yevhen.webp">
+            <img src="/assets/team/yevhen.png" class="lazy" alt="Yevhen Horbachov">
+              </picture>
+          </div>
+          <span class="name">Yevhen Horbachov</span>
+          <span class="title">领军前端开发人员</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/KillaBee1985" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/sarf.webp">
+            <img src="/assets/team/sarf.png" class="lazy" alt="Sarfaraaz Jahangier">
+              </picture>
+          </div>
+          <span class="name">Sarfaraaz Jahangier</span>
+          <span class="title">资深全栈开发人员</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/Sarfaraaz" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/mitchel.webp">
+            <img src="/assets/team/mitchel.png" class="lazy" alt="Mitchel Kerckhaert">
+              </picture>
+          </div>
+          <span class="name">Mitchel Kerckhaert</span>
+          <span class="title">开发人员</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/MitchelKerckhaert" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/jurre.webp">
+            <img src="/assets/team/jurre.png" class="lazy" alt="Jurre Wolsink">
+              </picture>
+          </div>
+          <span class="name">Jurre Wolsink</span>
+          <span class="title">开发人员</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/jurrew27" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/benjamin.webp">
+            <img src="/assets/team/benjamin.png" class="lazy" alt="Benjamin Roeloffs Valk">
+              </picture>
+          </div>
+          <span class="name">Benjamin Roeloffs Valk</span>
+          <span class="title">设计师</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/benjamin-roeloffs-valk-35ab70120/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/michael.webp">
+            <img src="/assets/team/michael.png" class="lazy" alt="Michael Nieveld">
+              </picture>
+          </div>
+          <span class="name">Michael Nieveld</span>
+          <span class="title">法律与税务</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/michael-nieveld-7b52551a/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/maurits.webp">
+            <img src="/assets/team/maurits.png" class="lazy" alt="Maurits Wismeijer">
+              </picture>
+          </div>
+          <span class="name">Maurits Wismeijer</span>
+          <span class="title">法律</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/maurits-wismeijer-268529174/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/lisa_kate.webp">
+            <img src="/assets/team/lisa_kate.png" class="lazy" alt="Lise Kate Palmer">
+              </picture>
+          </div>
+          <span class="name">Lisa Kate Palmer</span>
+          <span class="title">代理商</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/mies.webp">
+            <img src="/assets/team/mies.png" class="lazy" alt="Mies Rijperman">
+            </picture>
+          </div>
+          <span class="name">Mies Rijperman</span>
+          <span class="title">代理商</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/miesrijperman/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </section>
+</div>
+
+<div class="section-container cutout-bottom z-index-1">
+<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talents">
+    <div class="container">
+        <h2 class="has-text-centered section-title"> 时间线 </h2>
+        <div class="timeline is-centered">
+        <header class="timeline-header">
+    <span class="tag">2015</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2015 - 第2季度</p>
+      <p class="heading-alt muted">LegalThings v1.0</p>
+        <p class="muted">发布了LegalThings平台的第一个白标版本。 此版本引入了文档和表单构建器，文档管理系统，高级用户和权限管理以及数字签名。</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2016</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2016 - 第1季度</p>
+      <p class="heading-alt muted">LegalFlow v1.0</p>
+        <p class="muted">我们为FIRM24创建了用于运行公司注册程序的软件。 其他客户也对这些数字化程序感兴趣。 我们做了一个小的支点，将重点转移到将合同数字化为FSM（有限状态机），而不仅仅是签署。</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2017</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2017 -第3季度</p>
+      <p class="heading-alt muted">荷兰司法部的黑客马拉松冠军</p>
+        <p class="muted">在荷兰司法和安全部组织的区块链黑客马拉松中，我们证明了整个法律程序都可以数字化为FSM，并存储在区块链上。 这使我们获得了活动的一等奖，其中包括为区块链上的荷兰立法系统创建第一个数字化法律程序的任务。</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2018</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018 -第1季度</p>
+      <p class="heading-alt muted">荷兰司法部的概念验证（PoC）</p>
+        <p class="muted">在2017年黑客马拉松获胜之后，我们为司法和安全部构建了新解决方案的概念验证。.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018 -第2季度</p>
+      <p class="heading-alt muted">BlockChaingers“最佳代码”奖</p>
+        <p class="muted">我们与WAVES团队一起参加了最大的黑客马拉松，并被BlockChaingers授予了“最佳代码”奖。</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2018 - 第2季度</p>
+      <p class="heading-alt muted">废物运输招标启动的概念验证</p>
+        <p class="muted">我们在招标后与荷兰和比利时政府启动了测试网解决方案。</p>
+    </div>
+  </div>
+    <header class="timeline-header">
+    <span class="tag">2019</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - 第1季度</p>
+      <p class="heading-alt muted">主网启动和人群销售</p>
+        <p class="muted">我们启动了主网并结束了上一轮代币销售，在上一轮筹集了990,000美元。</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - 第3季度</p>
+      <p class="heading-alt muted">第1层 开源</p>
+        <p class="muted">开源公共链代码，对Waves / NXT的修改。</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - 第3季度</p>
+      <p class="heading-alt muted">第2层 开源</p>
+      <p class="muted">开源第2层工具包，独特的FSM临时事件链。</p>
+    </div>
+  </div>
+  <header class="timeline-header">
+    <span class="tag">即将来临</span>
+  </header>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 -第4季度</p>
+      <p class="heading-alt muted">市场启动</p>
+      <p class="muted">推出LTO市场，致力于连接以区块链业务为中心的应用程序，供公司和开发人员使用。</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - 第4季度</p>
+      <p class="heading-alt muted">Proofi发布</p>
+      <p class="muted">发布Proofi，一种新的SaaS产品，致力于重塑签名世界。 瞄准B2B，B2C，C2C或M2M。</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - 第1季度</p>
+      <p class="heading-alt muted">LPOI发布</p>
+      <p class="muted">通过最后的测试阶段，并发布租赁的重要性证明，即LTO的权益证明的变体。</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+</section>
+</div>
+
+<div class="section-container cutout-top-alt cutout-bottom-alt z-index-1">
+<section class="section alt relative neg-m-top-m p-top-l p-bottom-xxl" id="talents">
+    <div class="container">
+        <h2 class="has-text-centered section-title">LTO思维</h2>
+        <div class="columns is-centered has-text-centered has-margin-top-40">
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><img class="lazy" data-src="/assets/icons/rocket-purple.svg" alt="LTO Network - ICON"></div>
+                <h2 class="dark-indigo">社区之爱</h2>
+                <p class="muted">我们相信，开源的心态是成功开展业务的新途径。 在我们的社区支持下，我们可以比任何其他公司更快地成长。</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><img class="lazy" data-src="/assets/icons/stopwatch-purple.svg" alt="LTO Network - ICON"></div>
+                <h2 class="dark-indigo">把事情做完</h2>
+                <p class="muted">我们决心实现我们的目标，并特别关注细节，朝着这些目标努力。 聪明地工作并不难。</p>
+            </div>
+            <div class="column"></div>
+            <div class="column is-3">
+                <div class="icon-container" style="margin: 0 auto; width: 76px;"><img class="lazy" data-src="/assets/icons/wineglass-purple.svg" alt="LTO Network - ICON"></div>
+                <h2 class="dark-indigo">丰厚的回报</h2>
+                <p class="muted">工作也应该很有趣。 尝试在足球比赛中击败我们，或者在星期五下午与我们一起喝一杯美酒。</p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<div class="section-container">
+  <section class="section alt has-bg-img">
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+  </section>
+</div>
+
+{% endblock %}

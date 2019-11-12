@@ -31,7 +31,7 @@
 
 <div class="section-container cutout-top">
   <section class="section secondary no-padding">
-{% include "partials/promo-numbers.njk" %}
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
@@ -195,6 +195,42 @@
             </li>
           </ul>
         </div>
+        
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/jelle.webp">
+            <img src="/assets/team/jelle.png" class="lazy" alt="Jelle Bets">
+              </picture>
+          </div>
+          <span class="name">Jelle Bets</span>
+          <span class="title">Ecosystem V - Europe</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jelle-bets/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="team-member">
+          <div class="team-image">
+           <picture>
+      <source type="image/webp" data-srcset="/assets/team/jiang_jie_hu.webp">
+            <img src="/assets/team/jiang_jie_hu.png" class="lazy" alt="Jiang Jie Hu">
+              </picture>
+          </div>
+          <span class="name">Jiang Jie Hu</span>
+          <span class="title">Ecosystem V - Asia</span>
+          <ul class="socials">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jiang-jie-hu/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div class="team-member">
           <div class="team-image">
@@ -313,7 +349,7 @@
             <img src="/assets/team/benjamin.png" class="lazy" alt="Benjamin Roeloffs Valk">
               </picture>
           </div>
-          <span class="name">Benjamin Roeloffs Valk</span>
+          <span class="name">Benjamin Valk</span>
           <span class="title">JR Frontend Developer / Designer</span>
           <ul class="socials">
             <li class="linkedin">
@@ -392,24 +428,6 @@
             </li>
           </ul>
         </div>
-        <div class="team-member">
-          <div class="team-image">
-           <picture>
-      <source type="image/webp" data-srcset="/assets/team/isa.webp">
-            <img src="/assets/team/isa.png" class="lazy" alt="Isa Branco">
-              </picture>
-          </div>
-          <span class="name">Isa Branco</span>
-          <span class="title">Agent</span>
-          <ul class="socials">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/isa-branco-0866b757/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
       </div>
       </div>
   </section>
@@ -569,7 +587,7 @@
 
 <div class="section-container">
   <section class="section alt has-bg-img">
-  {% include "partials/bottom-nav.njk" %}
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
   </section>
 </div>
 

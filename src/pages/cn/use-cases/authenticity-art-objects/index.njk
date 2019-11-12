@@ -1,0 +1,303 @@
+{% set title = 'LTO Network - Use case - Authenticity of artwork' %}
+{% set description = 'Certification of artwork battling Counterfeiting' %}
+{% set currentUrl = '/sitemap/' %}
+{% set locale = 'cn' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<div class="section-container">
+  <section class="hero is-medium">
+   <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas.png" alt="LTO Network - Authenticity of artwork">
+    </picture>
+    <div class="hero-body">
+      <div class="container">
+         <div class="columns is-vcentered">
+                    <div class="column is-two-thirds">
+          <div class=""><span class="tag is-rounded is-medium blue-grey"> 用例 </span></div>
+        <h1 class="primary-text">艺术品的真实性</h1>
+          <h2 class="dark-indigo">打击假冒艺术品的证明。</h2>
+             </div>
+          <div class="column video is-centered">
+                        <iframe class="card" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zs17a4cDcU4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutout-top">
+  <section class="section secondary promo-numbers-section">
+    <div class="promo-numbers c use-cases">
+      <div class="container use-cases">
+        <div class="item use-cases">
+           <picture>
+            <source type="image/webp" data-srcset="/assets/use-cases/v-id@2x.webp">
+            <img class="promo-client lazy" data-src="/assets/use-cases/v-id@2x.png" alt="V-ID">
+            </picture>
+        </div>
+        <div class="item use-cases">
+            <p class="promo-head use-cases">参与方</p>
+          <p class="promo-desc use-cases muted">V-ID有30多家企业客户使用与LTO集成的认证平台。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom">
+    <section class="section">
+        <div class="container">
+      <h2 class="has-text-centered section-title">商业挑战</h2>
+      <div class="columns">
+        <div class="column card">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">原创性证明</h3>
+            <div class="card-description">
+              <p class="muted">购买艺术品时，您想知道它是真实的交易。 证书可以帮助艺术收藏家证明其原始。 通常，这是通过认证完成的，但也可以伪造。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-b lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">伪造证书</h3>
+            <div class="card-description">
+              <p class="muted">纸质证书容易伪造。 回溯购买或更改艺术品的唯一标识符对于当今的软件工具来说可谓小菜一碟。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column card">
+         <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+          <div class="card-content">
+            <h3 class="accent-text">证书验证</h3>
+            <div class="card-description">
+              <p class="muted">转让艺术品时，购买者必须能够独立验证此证书。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container">
+  <section class="section secondary">
+    <div class="container">
+      <h2 class="has-text-centered section-title">解决方案概述</h2>
+      <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+          <div class="column is-half">
+          <h3 class="title subsection-title dark-indigo">不可更改的艺术品证书</h3>
+          <p class="muted">证书发行新艺术品后，可以通过“散列”将其表示为数字指纹。 存储此证书的哈希值发生在连接到区块链的所有系统中。 拥有证书的任何人都可以通过对其进行哈希处理并将其与区块链版本进行比较来进行验证。</p>
+        </div>
+        <div class="column is-1"></div>
+        <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+         <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable art certificates">
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered has-margin-top-40">
+            <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+             <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp">
+            </div>
+          <div class="column is-1"></div>
+          <div class="column is-half">
+        <h3 class="title subsection-title dark-indigo">可验证的时间戳</h3>
+          <p class="muted">不仅证书的哈希（指纹）存储在区块链上，而且证书的时间戳也存储在区块链上。 通过使证书可验证且可独立审核，它们变得更有价值。 创建带有时间戳记的艺术品的便携式证明，无论是您设计的作品还是伦勃朗的画作。</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+        <div class="column is-half">
+          <h3 class="title subsection-title dark-indigo">无需第三方验证</h3>
+          <p class="muted">使用基于开放标准的LTO网络，任何一方都可以独立验证文档的真实性和时间戳，而不必依赖受信任的第三方。</p>
+        </div>
+         <div class="column is-1"></div>
+          <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
+           <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
+        </div>
+      </div>
+        <div class="btn-container has-text-centered has-margin-top-40">
+        <a href="/cn/contact/" class="button is-primary">预约样版</a>
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="section-container cutin-top-alt cutout-bottom">
+    <section class="section">
+    <div class="container">
+      <h2 class="has-text-centered section-title">使用LTO的优势</h2>
+      <div class="columns is-centered is-vcentered has-margin-top-40">
+        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+           <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
+        </div>
+        <div class="column is-two-thirds">
+          <h3 class="title subsection-title dark-indigo">节约成本</h3>
+          <p class="muted">诸如手动将数据输入到系统中（通过信件，传真或电子邮件接收）之类的管理任务已经过时。 借助LTO的区块链技术，所有参与方都可以将结构化数据收集到他们用来执行和管理这些流程的系统中。 LTO 将管理开销降低了30％以上。</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered has-margin-top-40">
+        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+          <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
+        </div>
+        <div class="column is-two-thirds">
+          <h3 class="title subsection-title dark-indigo">易于集成</h3>
+          <p class="muted">使用LTO，您无需更改整个IT基础架构。您可以使用现有的系统和应用程序来管理，记录并与LTO交流。实现与LTO的he'z的就像连接API一样简单。</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered has-margin-top-40">
+        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
+           <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
+        </div>
+        <div class="column is-two-thirds">
+          <h3 class="title subsection-title dark-indigo">设计合规</h3>
+          <p class="muted">证明合规性对任何行业都至关重要。借助LTO，您可以记录业务流程中的所有数据条目和步骤，以保护证据并遵守法规。LTO可以为您的业务流程内部和外部通信提供一键式合规性报告。</p>
+        </div>
+      </div>
+
+    <div class="table-container is-centered has-margin-top-40">
+                <div class="table" id="results">
+                    <div class='theader'>
+                        <div class="table_header dark-indigo">主题</div>
+                        <div class="table_header dark-indigo">LTO解决方案</div>
+                        <div class="table_header dark-indigo">传统解决方案</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">主题</div>
+                            <div class="table_cell deep-lavender">证书真实性</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO解决方案</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO解决方案"></div>
+                                <p>通过在LTO区块链上锚定艺术品证书，购买者可以相信艺术品是原始艺术品。</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">传统解决方案</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="传统解决方案"></div>
+                                <p>然而使用当今的软件工具，很容易伪造艺术品证书。</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">主题</div>
+                            <div class="table_cell deep-lavender">可独立验证</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO解决方案</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO解决方案"></div>
+                                <p>使用链接到LTO区块链的独立验证工具（例如V-ID），任何一方都可以检查证书的真实性。</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">传统解决方案</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="传统解决方案"></div>
+                                <p>验证证书的真实性需要第三方的帮助，这既耗时又昂贵。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">主题</div>
+                            <div class="table_cell deep-lavender">成本与速度</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO解决方案</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO解决方案"></div>
+                                <p>LTO的区块链针对锚定进行了优化，使得交易成本降低并以近乎即时的速度进行。</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">传统解决方案</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="传统解决方案"></div>
+                                <p>使用传统的区块链速度锚定交易通常速度十分缓慢并且收费昂贵。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="btn-container has-text-centered has-margin-top-40">
+                <a href="/cn/contact/" class="button is-primary" target="blank">
+                    预约样版
+                </a>
+            </div>
+        </div>
+</section>
+</div>
+
+
+<div class="section-container cutout-bottom-alt">
+    <section class="section p-top-xl p-bottom-xl alt">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="card">
+                        <div class="columns">
+                            <div class="column is-3 card-testimonial-img">
+                               <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/v-id_testimonial@2x.webp">
+                                <img class="lazy" data-src="/assets/use-cases/v-id_testimonial@2x.png" alt="V-ID Testimonial">
+                                </picture>
+                            </div>
+                            <div class="column">
+                                <div class="content card-testimonial-content">
+                                    <p class="">我们在本周建立了合作伙伴关系，为公司和政府推出了可立即使用且符合GDPR要求的区块链解决方案。目标实现各行各业的组织的实际适用性，节省成本并进一步将荷兰发展成为欧洲区块链应用知识中心。</p>
+                                    <div class="author">Marnix van den Berg</div>
+                                    <div class="company">V-ID的首席执行官</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container">
+  <section class="section alt has-bg-img">
+  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+  </section>
+</div>
+
+{% endblock %}

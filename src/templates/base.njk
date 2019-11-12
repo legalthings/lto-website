@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 
 {% set title = title %}
 {% set description = description %}
@@ -8,8 +7,17 @@
 {% set ogTitle = ogTitle %}
 {% set ogDescription = ogDescription %}
 {% set ogUrl = ogUrl %}
+{% set locale = locale | default('en') %}
 
+<html lang="{{locale}}">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+
+  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  
   <meta name="robots" content="all">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +26,7 @@
     <title>{{ title }}</title>
   <link rel="canonical" href="https://www.ltonetwork.com{{ currentUrl }}" />
   <link rel="icon" href="/assets/favicon.png" sizes="32x32"/>
+  <meta property="locale" content="{{ locale }}" />
   <meta property="og:locale" content="nl_NL" />
   <meta name="type" property="og:type" content="website" />
   <meta name="title" property="og:title" content="{{ title }}" />
@@ -45,12 +54,12 @@
 
 
 <body>
-  {% include "partials/navigation.njk" %}
+  {% include "partials/" ~ locale ~ "/navigation.njk" %}
 
   {% block content %}{% endblock %}
 
 
-  {% include "partials/footer.njk" %}
+  {% include "partials/" ~ locale ~ "/footer.njk" %}
 
   <script>window.lazyLoadOptions = { elements_selector: ".lazy" };</script>
 
