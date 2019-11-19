@@ -39,7 +39,7 @@
         "ttf2woff2": "^3.0.0"
     },
     "dependencies": {
-        "bulma": "^0.7.5",
+        "bulma": "^0.8.0",
         "bulma-helpers": "^0.3.8",
         "bulma-timeline": "^3.0.4",
         "vanilla-lazyload": "^12.3.0"
