@@ -1,0 +1,300 @@
+{% set title = 'LTO Network - Use case - ILT' %}
+{% set description = 'International waste transportation & permit issuance' %}
+{% set currentUrl = '/use-cases/waste-transportation-blockchain/' %}
+{% set locale = 'tr' %}
+
+{% extends "base.njk" %}
+
+
+
+{% block content %}
+
+<div class="section-container">
+    <section class="hero is-medium">
+       <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-ilt.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-ilt.png" alt="Streamlining international waste transportations">
+    </picture>
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-two-thirds">
+                        <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
+                        <h1 class="primary-text">Streamlining international waste transportations</h1>
+                        <h2 class="dark-indigo">How the Ministry of ILT saved EUR 7M by sharing data and business logic with competitors and governments.</h2>
+                    </div>
+                    <div class="column video">
+                        <iframe class="card" width="560" height="315" src="https://www.youtube.com/embed/Gz1FR5Fro40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container cutout-top">
+    <section class="section secondary no-padding">
+        <div class="promo-numbers c use-cases">
+            <div class="container use-cases">
+                <div class="item use-cases">
+                    <img class="promo-client lazy" data-src="/assets/use-cases/ilt.svg" alt="ILT">
+                </div>
+                <div class="item use-cases">
+                    <p class="promo-head use-cases">Involved parties</p>
+                    <p class="promo-desc use-cases muted">Stakeholders in the waste management value chain in Europe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container cutin-top-alt cutout-bottom">
+    <section class="section">
+        <div class="container">
+            <h2 class="has-text-centered section-title">Business challenges</h2>
+            <div class="columns">
+                <div class="column card">
+                   <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+                    <div class="card-content">
+                        <h3 class="dark-indigo">Numerous stakeholders</h3>
+                        <div class="card-description">
+                            <p class="muted">Currently, multiple different government bodies supervise and authorize the export, import, and transportation of company waste throughout the European Union.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column card">
+                     <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-b lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+                    <div class="card-content">
+                        <h3 class="dark-indigo">EU regulation</h3>
+                        <div class="card-description">
+                            <p class="muted">The EU supervises various aspects of these processes such as granting permits, notifying involved parties of waste transports, and scheduling random sample checks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column card">
+                   <picture>
+            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
+          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
+            </picture>
+                    <div class="card-content">
+                        <h3 class="dark-indigo">Manual handling</h3>
+                        <div class="card-description">
+                            <p class="muted">Execution of steps in the process happens on paper forms in multiple languages. Even the fax machine was still used to update the OVAM in Belgium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container">
+    <section class="section secondary">
+        <div class="container">
+            <h2 class="has-text-centered section-title">Solution overview</h2>
+            <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">Automated permit check</h3>
+                    <p class="muted">By implementing LTO Network into the system to issue and verify the permits, approval of the transportation request happens automatically. Sharing data happens directly with the waste processor and authorities in case of cross-border transportation.</p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/check-alt-purple.svg" alt="LTO Network - Automated permit check"> 
+                </div>
+            </div>
+
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/diagram-purple.svg" alt="LTO Network - Data re-use<">
+                </div>
+                <div class="column is-1"></div>
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">Data re-use</h3>
+                    <p class="muted">The transportation companies can use their smartphones to show their transportation documentation to the authorities in case of a random check. The inspectorate can derive the data directly from the LTO Network blockchain.</p>
+                </div>
+            </div>
+
+            <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+                <div class="column is-half">
+                    <h3 class="title subsection-title dark-indigo">Connecting systems</h3>
+                    <p class="muted">By digitizing the protocol that already existed on paper into a 'Live Contract' parties were able to connect their existing systems to LTO Network to communicate and share data and notifications in real-time.</p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+                    <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/link-purple.svg" alt="LTO Network - Connecting systems">
+                </div>
+            </div>
+            <div class="btn-container has-text-centered has-margin-top-40">
+                <a href="/contact/" class="button is-primary">Book a demo</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container cutout-top-alt cutout-bottom-alt">
+    <section class="section">
+        <div class="container">
+            <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Reduction of manual process handling">
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">Reduction of manual process handling</h3>
+                    <p class="muted">Administrative tasks such as manually entering data into your system that are received by letter, fax, or email belongs to the past. Using LTO Network's blockchain technology, all parties now collect structured data. They now benefit from data re-use and automated status updates which reduces manual handling by more than 30%.</p>
+                </div>
+            </div>
+
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Cost savings">
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">Cost savings</h3>
+                    <p class="muted">Parties that collaborate using LTO Network can keep using their system to participate in the process while benefiting from data being re-used, automated checks and verification, and real-time status updates. By enabling LTO Network, you can realize up to a 50% reduction on administrative overhead.</p>
+                </div>
+            </div>
+
+            <div class="columns is-centered is-vcentered has-margin-top-40">
+                <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Build-in compliance with the privacy- and GDPR laws">
+                </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title subsection-title dark-indigo">Build-in compliance with the privacy- and GDPR laws</h3>
+                    <p class="muted">GDPR makes it difficult to use new technology such as blockchain. With LTO Network, we have built-in privacy by design. Every party involved 'signs' a transaction, whether that's a step in a workflow or an upload of a new document. A 'live Contract' is structured in such a way that it can delete the data automatically after a specific step executes, or if the process is older then, for instance, 24 months.</p>
+                </div>
+            </div>
+
+            <div class="table-container is-centered has-margin-top-40">
+                <div class="table" id="results">
+                    <div class='theader'>
+                        <div class="table_header dark-indigo">Theme</div>
+                        <div class="table_header dark-indigo">LTO Network solution</div>
+                        <div class="table_header dark-indigo">Traditional solution</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Automation</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+                                <p>Using LTO Network to collaborate on multi-stakeholder processes benefits from data re-use, real-time status updates, and notifications.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+                                <p>Collaboration on a process that runs between multiple parties is hard to automate as communication happens via email, phone, and letters which produces unstructured data.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Data sharing</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+                                <p>Using blockchain technology of LTO Network organizations can share the data in a GDPR compliant way and the data can be trusted as it is immutable and signed by the party that submitted the data.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+                                <p>Relying on the system that is managed by your counter-party does not provide a level playing field. Parties don't want to share more data than strictly required to complete the process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Theme</div>
+                            <div class="table_cell deep-lavender">Existing systems</div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">LTO Network solution</div>
+                            <div class="table_cell steel mobile-green">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+                                <p>By easily connecting APIs of your existing applications to the LTO Network Node, you and every other stakeholder involved can participate in the workflow while keeping existing IT in place.</p>
+                            </div>
+                        </div>
+                        <div class="table_small">
+                            <div class="table_cell dark-indigo">Traditional solution</div>
+                            <div class="table_cell steel mobile-red">
+                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+                                <p>'Traditional' blockchain solutions require extensive and costly IT overhauls due to existing (legacy) systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container has-text-centered">
+                <a href="/contact/" class="button is-primary">
+                    Book a demo
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container cutout-bottom-alt">
+    <section class="section p-top-xl p-bottom-xl alt">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="card">
+                        <div class="columns">
+                            <div class="column is-3 card-testimonial-img">
+                               <picture>
+              <source type="image/webp" data-srcset="/assets/use-cases/ilt_testimonial@2x.webp">
+                                <img class="lazy" data-src="/assets/use-cases/ilt_testimonial@2x.png">
+                                </picture>
+                            </div>
+                            <div class="column">
+                                <div class="content card-testimonial-content">
+                                    <p class="">With LTO we eliminate so much administrative overhead to manage the permits and processes that relate to international waste transportations. Eventually, paper documents cease to exist. Stakeholders are able to validate and verify the process and data themselves, without relying on us. </p>
+                                    <div class="author">Ben Zwartveld</div>
+                                    <div class="company">Enterprise Architect of ILT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="section-container">
+    <section class="section alt has-bg-img">
+        {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+    </section>
+</div>
+
+{% endblock %}
