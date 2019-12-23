@@ -7,40 +7,40 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
-   <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas.png" alt="LTO Network - Authenticity of artwork">
+  <section class="hero is-fullheight">
+    <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas@2x.jpg" alt="LTO Network - Authenticity of artwork">
     </picture>
     <div class="hero-body">
       <div class="container">
-         <div class="columns is-vcentered">
-                    <div class="column is-two-thirds">
-          <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
-        <h1 class="primary-text">Authenticity of artwork</h1>
-          <h2 class="dark-indigo">Certification of artwork battling Counterfeiting.</h2>
-             </div>
-          <div class="column video is-centered">
-                        <iframe class="card" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zs17a4cDcU4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+        <div class="columns is-vcentered">
+          <div class="column is-two-thirds">
+            <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
+            <h1 class="primary-text">Authenticity of artwork</h1>
+            <h2 class="dark-indigo">Certification of artwork battling Counterfeiting.</h2>
           </div>
+          <div class="column video is-centered">
+            <iframe class="card" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zs17a4cDcU4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary promo-numbers-section">
     <div class="promo-numbers c use-cases">
       <div class="container use-cases">
         <div class="item use-cases">
-           <picture>
+          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/v-id@2x.webp">
             <img class="promo-client lazy" data-src="/assets/use-cases/v-id@2x.png" alt="V-ID">
-            </picture>
+          </picture>
         </div>
         <div class="item use-cases">
-            <p class="promo-head use-cases">Involved parties</p>
+          <p class="promo-head use-cases">Involved parties</p>
           <p class="promo-desc use-cases muted">V-ID has 30+ enterprise clients that use the certification platform integrated with LTO Network.</p>
         </div>
       </div>
@@ -48,255 +48,235 @@
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
-        <div class="container">
-      <h2 class="has-text-centered section-title">Business challenges</h2>
-      <div class="columns">
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
-            <h3 class="accent-text">Proof of originality</h3>
-            <div class="card-description">
-              <p class="muted">When purchasing an art object, you want to know it is the real deal. A certificate helps art collectors, proving it's the original. Often this is done through certification, yet these can be forged as well.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-b lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
-            <h3 class="accent-text">Counterfeiting certificates</h3>
-            <div class="card-description">
-              <p class="muted">Paper-based certificates are easy to counterfeit. Backdating a purchase or changing the unique identifier of an art object is a piece of cake with today's software tools.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
-            <h3 class="accent-text">Validation of the certificate</h3>
-            <div class="card-description">
-              <p class="muted">When transferring a piece of art - the purchaser must be able to validate whether this certificate independently.</p>
-            </div>
+<section class="section is-medium">
+  <div class="container">
+    <h2 class="has-text-centered section-title">Business challenges</h2>
+    <div class="columns">
+      <div class="column card uc">
+        <div class="card-content bc">
+          <h3 class="accent-text">Proof of originality</h3>
+          <div class="card-description">
+            <p class="muted">When purchasing an art object, you want to know it is the real deal. A certificate helps art collectors, proving it's the original. Often this is done through certification, yet these can be forged as well.</p>
           </div>
         </div>
       </div>
-        </div>
-    </section>
-</div>
 
-<div class="section-container">
-  <section class="section secondary">
-    <div class="container">
-      <h2 class="has-text-centered section-title">Solution overview</h2>
-      <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
-          <div class="column is-half">
-          <h3 class="title subsection-title dark-indigo">Immutable art certificates</h3>
-          <p class="muted">The certificate can be represented as a digital fingerprint by 'hashing' it when it's issued with a new piece of art. Storing the hash of this certificate happens in all systems connected to the blockchain. Anyone with the certificate can verify it by hashing it and comparing it against the blockchain version.</p>
-        </div>
-        <div class="column is-1"></div>
-        <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-         <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable art certificates">
+      <div class="column card uc">
+        <div class="card-content bc">
+          <h3 class="accent-text">Counterfeiting certificates</h3>
+          <div class="card-description">
+            <p class="muted">Paper-based certificates are easy to counterfeit. Backdating a purchase or changing the unique identifier of an art object is a piece of cake with today's software tools.</p>
+          </div>
         </div>
       </div>
 
-      <div class="columns is-centered is-vcentered has-margin-top-40">
-            <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-             <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp">
-            </div>
-          <div class="column is-1"></div>
-          <div class="column is-half">
+      <div class="column card uc">
+        <div class="card-content bc">
+          <h3 class="accent-text">Validation of the certificate</h3>
+          <div class="card-description">
+            <p class="muted">When transferring a piece of art - the purchaser must be able to validate whether this certificate independently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium secondary">
+  <div class="container">
+    <h2 class="has-text-centered section-title">Solution overview</h2>
+    <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+      <div class="column is-half has-text-right">
+        <h3 class="title subsection-title dark-indigo">Immutable art certificates</h3>
+        <p class="muted">The certificate can be represented as a digital fingerprint by 'hashing' it when it's issued with a new piece of art. Storing the hash of this certificate happens in all systems connected to the blockchain. Anyone with the certificate can verify it by hashing it and comparing it against the blockchain version.</p>
+      </div>
+      <div class="column is-1"></div>
+      <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable art certificates">
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered has-margin-top-40">
+      <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp">
+      </div>
+      <div class="column is-1"></div>
+      <div class="column is-half has-text-left">
         <h3 class="title subsection-title dark-indigo">Verifiable timestamp</h3>
-          <p class="muted">Not only the certificate's hash (fingerprint) is stored on the blockchain, but also the timestamp of the certificate. By making certificates verifiable and independently audit-able, they become more valuable. Creating a portable proof of your timestamped artwork, whether it's a design you made or a Rembrandt painting.</p>
-        </div>
+        <p class="muted">Not only the certificate's hash (fingerprint) is stored on the blockchain, but also the timestamp of the certificate. By making certificates verifiable and independently audit-able, they become more valuable. Creating a portable proof of your timestamped artwork, whether it's a design you made or a Rembrandt painting.</p>
       </div>
+    </div>
 
-      <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
-        <div class="column is-half">
-          <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
-          <p class="muted">With LTO Network, based on open standards, any party can independently verify the authenticity- and timestamp of the certificate, without having to rely on a trusted third party.</p>
+    <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
+      <div class="column is-half has-text-right">
+        <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
+        <p class="muted">With LTO Network, based on open standards, any party can independently verify the authenticity- and timestamp of the certificate, without having to rely on a trusted third party.</p>
+      </div>
+      <div class="column is-1"></div>
+      <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
+      </div>
+    </div>
+    <div class="btn-container has-text-centered has-margin-top-40">
+      <a href="/contact/" class="button is-primary">Book a demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+    <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
+    <div class="columns is-centered is-vcentered has-margin-top-40">
+      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+        <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
+      </div>
+      <div class="column is-two-thirds">
+        <h3 class="title subsection-title dark-indigo">Cost savings</h3>
+        <p class="muted">Administrative tasks such as manual entering data into your system that receive by letter, fax, or email belongs to the past. With the blockchain technology of LTO Network, all parties can collect structured data into the systems they use to execute and administrate these processes. Working this way reduces the administrative overhead with more than 30%.</p>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered has-margin-top-40">
+      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+        <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
+      </div>
+      <div class="column is-two-thirds">
+        <h3 class="title subsection-title dark-indigo">Easy integration</h3>
+        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and application to record any art certificate, invoice, contract, or other pieces of data into the blockchain. The implementation of LTO Network is as simple as connecting an API.</p>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered has-margin-top-40">
+      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
+        <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
+      </div>
+      <div class="column is-two-thirds">
+        <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
+        <p class="muted">Demonstrating compliance is vital in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguarding evidence and comply with regulation. Enabling one-click compliance reporting for both internal- as external communication on your business processes.</p>
+      </div>
+    </div>
+
+    <div class="table-container is-centered has-margin-top-40">
+      <div class="table" id="results">
+        <div class='theader'>
+          <div class="table_header dark-indigo">Theme</div>
+          <div class="table_header dark-indigo">LTO Network solution</div>
+          <div class="table_header dark-indigo">Traditional solution</div>
         </div>
-         <div class="column is-1"></div>
-          <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
-           <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
+        <div class="table_row">
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Theme</div>
+            <div class="table_cell deep-lavender">Certificate authenticity</div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">LTO Network solution</div>
+            <div class="table_cell steel mobile-green">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+              <p>By anchoring the art Certificate on the LTO Network blockchain, purchasers can trust a piece of art is the original.</p>
+            </div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Traditional solution</div>
+            <div class="table_cell steel mobile-red">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+              <p>With today's software tools, it's pretty easy to counterfeit art certificates.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="table_row">
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Theme</div>
+            <div class="table_cell deep-lavender">Independently verifiable</div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">LTO Network solution</div>
+            <div class="table_cell steel mobile-green">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+              <p>With independent validation tools like V-ID linked to the LTO Network blockchain, any party can check for the authenticity of a certificate.</p>
+            </div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Traditional solution</div>
+            <div class="table_cell steel mobile-red">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+              <p>Checking the authenticity of a certificate requires the need of a third party which is time-consuming and costly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="table_row">
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Theme</div>
+            <div class="table_cell deep-lavender">Costs and speed</div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">LTO Network solution</div>
+            <div class="table_cell steel mobile-green">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
+              <p>The blockchain of LTO Network is optimized for anchoring, making transactions near-instant and affordable.</p>
+            </div>
+          </div>
+          <div class="table_small">
+            <div class="table_cell dark-indigo">Traditional solution</div>
+            <div class="table_cell steel mobile-red">
+              <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
+              <p>Traditional blockchains tend to be very slow and expensive to anchor transactions.</p>
+            </div>
+          </div>
         </div>
       </div>
-        <div class="btn-container has-text-centered has-margin-top-40">
-        <a href="/contact/" class="button is-primary">Book a demo</a>
+    </div>
+
+    <div class="btn-container has-text-centered has-margin-top-40">
+      <a href="/contact/" class="button is-primary" target="blank">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<div class="section-container cutout-bottom-alt">
+  <section class="section is-medium secondary">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="card uc">
+            <div class="columns">
+              <div class="column is-3 card-testimonial-img">
+                <picture>
+                  <source type="image/webp" data-srcset="/assets/use-cases/v-id_testimonial@2x.webp">
+                  <img class="lazy" data-src="/assets/use-cases/v-id_testimonial@2x.png" alt="V-ID Testimonial">
+                </picture>
+              </div>
+              <div class="column">
+                <div class="content card-testimonial-content">
+                  <p class="">We entered into a partnership this week by rolling out an immediately applicable, GDPR-compliant blockchain solution for companies and governments. Additional objectives in this regard are the practical applicability for organizations from every sector, achieving cost savings and further developing the Netherlands as a European knowledge center for blockchain applications.</p>
+                  <div class="author">Marnix van den Berg</div>
+                  <div class="company">CEO of V-ID</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
 </div>
 
-
-
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
-    <div class="container">
-      <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
-      <div class="columns is-centered is-vcentered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-           <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
-          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Cost savings</h3>
-          <p class="muted">Administrative tasks such as manual entering data into your system that receive by letter, fax, or email belongs to the past. With the blockchain technology of LTO Network, all parties can collect structured data into the systems they use to execute and administrate these processes. Working this way reduces the administrative overhead with more than 30%.</p>
-        </div>
-      </div>
-
-      <div class="columns is-centered is-vcentered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-          <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
-          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Easy integration</h3>
-          <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and application to record any art certificate, invoice, contract, or other pieces of data into the blockchain. The implementation of LTO Network is as simple as connecting an API.</p>
-        </div>
-      </div>
-
-      <div class="columns is-centered is-vcentered has-margin-top-40">
-        <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
-           <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
-          <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
-        </div>
-        <div class="column is-two-thirds">
-          <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
-          <p class="muted">Demonstrating compliance is vital in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguarding evidence and comply with regulation. Enabling one-click compliance reporting for both internal- as external communication on your business processes.</p>
-        </div>
-      </div>
-
-    <div class="table-container is-centered has-margin-top-40">
-                <div class="table" id="results">
-                    <div class='theader'>
-                        <div class="table_header dark-indigo">Theme</div>
-                        <div class="table_header dark-indigo">LTO Network solution</div>
-                        <div class="table_header dark-indigo">Traditional solution</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Theme</div>
-                            <div class="table_cell deep-lavender">Certificate authenticity</div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">LTO Network solution</div>
-                            <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-                                <p>By anchoring the art Certificate on the LTO Network blockchain, purchasers can trust a piece of art is the original.</p>
-                            </div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Traditional solution</div>
-                            <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-                                <p>With today's software tools, it's pretty easy to counterfeit art certificates.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="table_row">
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Theme</div>
-                            <div class="table_cell deep-lavender">Independently verifiable</div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">LTO Network solution</div>
-                            <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-                                <p>With independent validation tools like V-ID linked to the LTO Network blockchain, any party can check for the authenticity of a certificate.</p>
-                            </div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Traditional solution</div>
-                            <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-                                <p>Checking the authenticity of a certificate requires the need of a third party which is time-consuming and costly.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Theme</div>
-                            <div class="table_cell deep-lavender">Costs and speed</div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">LTO Network solution</div>
-                            <div class="table_cell steel mobile-green">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-                                <p>The blockchain of LTO Network is optimized for anchoring, making transactions near-instant and affordable.</p>
-                            </div>
-                        </div>
-                        <div class="table_small">
-                            <div class="table_cell dark-indigo">Traditional solution</div>
-                            <div class="table_cell steel mobile-red">
-                                <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-                                <p>Traditional blockchains tend to be very slow and expensive to anchor transactions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    <div class="btn-container has-text-centered has-margin-top-40">
-                <a href="/contact/" class="button is-primary" target="blank">
-                    Book a demo
-                </a>
-            </div>
-        </div>
-</section>
-</div>
-
-
-<div class="section-container cutout-bottom-alt">
-    <section class="section p-top-xl p-bottom-xl alt">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="card">
-                        <div class="columns">
-                            <div class="column is-3 card-testimonial-img">
-                               <picture>
-              <source type="image/webp" data-srcset="/assets/use-cases/v-id_testimonial@2x.webp">
-                                <img class="lazy" data-src="/assets/use-cases/v-id_testimonial@2x.png" alt="V-ID Testimonial">
-                                </picture>
-                            </div>
-                            <div class="column">
-                                <div class="content card-testimonial-content">
-                                    <p class="">We entered into a partnership this week by rolling out an immediately applicable, GDPR-compliant blockchain solution for companies and governments. Additional objectives in this regard are the practical applicability for organizations from every sector, achieving cost savings and further developing the Netherlands as a European knowledge center for blockchain applications.</p>
-                                    <div class="author">Marnix van den Berg</div>
-                                    <div class="company">CEO of V-ID</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
 <div class="section-container">
-    <section class="section alt has-bg-img">
-        {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
-    </section>
+  <section class="section alt has-bg-img">
+    {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+  </section>
 </div>
 
 {% endblock %}

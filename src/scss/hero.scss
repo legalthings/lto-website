@@ -1,0 +1,25 @@
+@import 'partials/_variables';
+@import 'partials/typeface';
+@import 'partials/mixins/_media-queries';
+
+.hero {
+  &.is-fullheight {
+    min-height: 88vh;
+
+    @include responsive(phone) {
+      min-height: 84vh;
+//      max-width: 100vw;
+//      overflow: hidden !important;
+    }
+
+    @include responsive(touch) {
+      min-height: 92vh;
+    }
+  }
+
+  h1 {
+    &.title {
+      line-height: normal;
+    }
+  }
+}

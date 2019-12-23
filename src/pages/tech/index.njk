@@ -7,30 +7,34 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-tech.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-tech.png" alt="LTO Network - Hero Tech">
+      <source type="image/webp" data-srcset="/assets/hero/hero-tech@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-tech@2x.jpg" alt="LTO Network - Hero Tech">
     </picture>
     <div class="hero-body">
       <div class="container">
-        <h1 class="primary-text">Take a deep-dive and explore<br>LTO Network on a technical level</h1>
-        <div class="buttons btn-container">
-          <a href="https://docs.ltonetwork.com" class="button"><p class="dark-indigo">Explore documentation</p></a>
+       <div class="columns">
+         <div class="column is-two-thirds">
+        <h1 class="title">Take a deep-dive and explore <br><span class="accent">LTO Network</span> on a technical level</h1>
+        <div class="buttons">
+          <a href="https://docs.ltonetwork.com" class="button is-warning"><p class="dark-indigo">Explore documentation</p></a>
+          <a href="https://t.me/LTOtech" class="button" target="_blank">Join Tech Chat</a>
+        </div>
+         </div>
         </div>
       </div>
     </div>
   </section>
 </div>
 
-<div class="section-container cutout-top">
-  <section class="section secondary no-padding">
+<div class="section-container cutout-top cutout-bottom-alt">
+  <section class="section secondary">
 {% include "partials/" ~ locale ~ "/promo-numbers-alt.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-  <section class="section">
+  <section class="section is-medium">
     <div class="container">
       <div class="columns is-vcentered inverted-mobile has-margin-top-40">
       <div class="column is-6">
@@ -53,10 +57,8 @@
       </div>
     </div>
   </section>
-</div>
 
-<div class="section-container cutout-bottom-alt" id="why-hybrid-blockchain-section">
-  <section class="section alt p-top-l neg-m-top-m">
+  <section class="section is-medium alt">
     <div class="section-body" style="position:relative;">
       <div class="private-chain-tech rellax" data-rellax-speed="2"><img src="/assets/private-chain.svg" class="lazy"  data-rellax-speed="0" alt="LTO Network - Private Chain"></div>
       <div class="public-chain-tech rellax" data-rellax-speed="-2"><img src="/assets/public-chain.svg" class="lazy" alt="LTO Network - Public Chain"></div>
@@ -76,10 +78,8 @@
         </div>
     </div>
   </section>
-</div>
-
-<div class="section-container">
-  <section class="section relative tertiary p-top-l neg-m-top-m">
+  
+<section class="section is-medium relative">
            <div class="section-body">
            <div class="container">
             <h2 class="section-title has-text-centered">
@@ -199,171 +199,14 @@
         </div>
       </div>
   </section>
-</div>
 
-<div class="section-container cutout-top cutout-bottom-alt">
-  <section class="section p-top-xl p-bottom-xl alt">
-            <div class="section-body">
-            <div class="container">
-                <h2 class="section-title has-text-centered">Resources</h2>
-                <h3 class="dark-indigo has-text-centered">Everything you need to know</h3>
-                <div class="columns is-centered resources main-columns">
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/compass-purple.svg" alt="LTO Network - Mainnet Explorer">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Mainnet Explorer</h4>
-                                <p class="resources column-description steel">Check blocks, transactions, and wallet balances with the official LTO Network mainnet explorer.</p>
-                                <a href="https://explorer.lto.network" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/coins-purple.svg" alt="LTO Network - Online Wallet">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Online Wallet</h4>
-                                <p class="resources column-description steel">Access mainnet and bridge swaps: we do not save your keys, so make sure to secure your seed phrase.</p>
-                                <a href="https://wallet.lto.network" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="columns is-centered resources main-columns">
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/globe-purple.svg" alt="LTO Network - Network Statistics">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Network Statistics</h4>
-                                <p class="resources column-description steel">Compare transactions activity, see the list of nodes and verify generators.</p>
-                                <a href="https://www.lto.tools" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/wrench-purple.svg" alt="LTO Network - Earn LTO">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Earn LTO</h4>
-                                <p class="resources column-description steel">Submit your work and get rewarded. You can also check the activity of other community members.</p>
-                                <a href="https://community.lto.network" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="columns is-centered resources main-columns">
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/balance-purple.svg" alt="LTO Network - Token Bridge">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Token Bridge</h4>
-                                <p class="resources column-description steel">LTO token exists on 3 blockchains, and you need to use the wallet bridge if you want to swap.</p>
-                                <a href="https://blog.lto.network" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/servers-purple.svg" alt="LTO Network - Run a Node">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Run a Node</h4>
-                                <p class="resources column-description steel">You can run a node on your local machine, in a cloud, or lease your tokens. Check the full guide.</p>
-                                <a href="https://blog.lto.network/staking-and-leasing-lto-network-node-guide/" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="columns is-centered resources main-columns">
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/calculator-purple.svg" alt="LTO Network - Staking Calculator">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Staking Calculator</h4>
-                                <p class="resources column-description steel">By staking or leasing your LTO tokens, you can help secure the network and share the non-inflationary reward fees.</p>
-                                <a href="https://ltonode.com/roi-calculator/" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column resources main-column">
-
-                        <div class="columns resources sub-columns">
-                            <div class="resources column image sub-column">
-                                <div class="resources livicon-container">
-                                    <img class="lazy" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - Whitepapers">
-                                </div>
-                            </div>
-
-                            <div class="resources column text sub-column is-two-thirds">
-                                <h4 class="resources column-title dark-indigo">Whitepapers</h4>
-                                <p class="resources column-description steel">Read three primary papers about our vision for blockchain adoption, LTO token economics, and technical overview.</p>
-                                <a href="https://blog.lto.network/lto-network-sources/" class="resources read-more deep-lavender">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<div class="section-container cutout-bottom">
+  <section class="section is-medium alt">
+  {% include "partials/en/resources.njk" %}
   </section>
 </div>
 
-<div class="section-container">
-  <section class="section alt has-bg-img">
-  {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
-  </section>
-</div>
+
+
 
 {% endblock %}

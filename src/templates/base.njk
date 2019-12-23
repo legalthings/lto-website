@@ -11,27 +11,30 @@
 {% set image = "/assets/meta/meta-home.png" %}
 
 <html lang="{{locale}}">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://ajax.googleapis.com">
 
-  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/Fira_Sans/FiraSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  
+<head>
+  <link rel="preconnect" href="/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/main.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/css/main.css">
+  </noscript>
+
   <meta name="robots" content="all">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
 
-    <title>{{ title }}</title>
+  <title>{{ title }}</title>
   <link rel="canonical" href="https://www.ltonetwork.com{{ currentUrl }}" />
-  <link rel="icon" href="/assets/favicon.png" sizes="32x32"/>
+  <link rel="icon" href="/assets/favicon.png" sizes="32x32" />
   <meta property="locale" content="{{ locale }}" />
   <meta property="og:locale" content="nl_NL" />
   <meta name="type" property="og:type" content="website" />
   <meta name="title" property="og:title" content="{{ title }}" />
-  <meta name="description" property="og:description" content="{{ description }}"/>
+  <meta name="description" property="og:description" content="{{ description }}" />
   <meta name="image" property="og:image" content="https://www.ltonetwork.com{{ image }}" />
   <meta name="url" property="og:url" content="https://www.ltonetwork.com{{ currentUrl }}" />
   <meta name="site_name" property="og:site_name" content="LTO Network" />
@@ -39,18 +42,6 @@
   <meta name="twitter:title" content="{{ title }}" />
   <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="https://www.ltonetwork.com{{ image }}" />
-
-  <link rel="stylesheet" href="/css/main.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-62115237-2');
-  </script>
 </head>
 
 
@@ -62,7 +53,12 @@
 
   {% include "partials/" ~ locale ~ "/footer.njk" %}
 
-  <script>window.lazyLoadOptions = { elements_selector: ".lazy" };</script>
+  <script>
+    window.lazyLoadOptions = {
+      elements_selector: ".lazy"
+    };
+
+  </script>
 
   <script defer src="/js/vendor.js"></script>
   <script defer src="/js/main.js"></script>
@@ -70,6 +66,7 @@
     _linkedin_partner_id = "1417473";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
   </script>
   <script type="text/javascript">
     (function() {
@@ -80,6 +77,21 @@
       b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
       s.parentNode.insertBefore(b, s);
     })();
+
   </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1417473&fmt=gif" /> </noscript>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-62115237-2');
+
+  </script>
 </body>
+
 </html>

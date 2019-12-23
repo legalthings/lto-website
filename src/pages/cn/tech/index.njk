@@ -8,10 +8,10 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-tech.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-tech.png" alt="LTO Network - Hero Tech">
+      <source type="image/webp" data-srcset="/assets/hero/hero-tech@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-tech@2x.jpg" alt="LTO Network - Hero Tech">
     </picture>
     <div class="hero-body">
       <div class="container">
@@ -24,14 +24,13 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
-  <section class="section secondary no-padding">
+<div class="section-container cutout-top cutout-bottom-alt">
+  <section class="section secondary">
 {% include "partials/" ~ locale ~ "/promo-numbers-alt.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-  <section class="section">
+  <section class="section is-medium">
     <div class="container">
       <div class="columns is-vcentered inverted-mobile has-margin-top-40">
       <div class="column is-6">
@@ -54,10 +53,8 @@
       </div>
     </div>
   </section>
-</div>
 
-<div class="section-container cutout-bottom-alt" id="why-hybrid-blockchain-section">
-  <section class="section alt p-top-l neg-m-top-m">
+  <section class="section is-medium alt">
     <div class="section-body" style="position:relative;">
       <div class="private-chain-tech rellax" data-rellax-speed="2"><img src="/assets/private-chain.svg" class="lazy"  data-rellax-speed="0" alt="LTO Network - Private Chain"></div>
       <div class="public-chain-tech rellax" data-rellax-speed="-2"><img src="/assets/public-chain.svg" class="lazy" alt="LTO Network - Public Chain"></div>
@@ -77,10 +74,8 @@
         </div>
     </div>
   </section>
-</div>
-
-<div class="section-container">
-  <section class="section relative tertiary p-top-l neg-m-top-m">
+  
+<section class="section is-medium relative">
            <div class="section-body">
            <div class="container">
             <h2 class="section-title has-text-centered">
@@ -200,10 +195,9 @@
         </div>
       </div>
   </section>
-</div>
 
-<div class="section-container cutout-top cutout-bottom-alt">
-  <section class="section p-top-xl p-bottom-xl alt">
+<div class="section-container cutout-bottom">
+  <section class="section is-medium alt">
             <div class="section-body">
             <div class="container">
                 <h2 class="section-title has-text-centered">资源资源</h2>

@@ -1,6 +1,6 @@
 {% set title = 'LTO Network - Use case - Digital checklist & inspection application' %}
 {% set description = 'Inspection reports & data entries in the Capptions application are stored on the LTO Network blockchain to provide immutable evidence' %}
-{% set currentUrl = '/sitemap/' %}
+{% set currentUrl = '/cn/use-cases/digital-checklist-inspection-reports/' %}
 {% set locale = 'cn' %}
 
 {% extends "base.njk" %}
@@ -10,23 +10,27 @@
 {% block content %}
 
 <div class="section-container">
-    <section class="hero is-medium">
-       <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-capptions.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-capptions.png" alt="Digital checklist & inspection application">
+  <section class="hero is-fullheight">
+    <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-capptions@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-capptions@2x.jpg" alt="Digital checklist & inspection application">
     </picture>
-        <div class="hero-body">
-            <div class="container">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-thirds">
                 <div class=""><span class="tag is-rounded is-medium blue-grey"> 用例 </span></div>
                 <h1 class="primary-text">数字清单和检查应用</h1>
                 <h2 class="dark-indigo">Capptions应用程序中的检验报告和数据条目存储在LTO区块链上，以提供不可变的证据。</h2>
             </div>
         </div>
+      </div>
+    </div>
     </section>
 </div>
 
-<div class="section-container cutout-top">
-    <section class="section secondary promo-numbers-section">
+<div class="section-container cutout-top cutout-bottom-alt">
+  <section class="section secondary promo-numbers-section">
         <div class="promo-numbers c use-cases">
             <div class="container use-cases">
                 <div class="item use-cases">
@@ -44,17 +48,12 @@
     </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
+<section class="section is-medium">
         <div class="container">
             <h2 class="has-text-centered section-title">商业挑战</h2>
             <div class="columns">
-                <div class="column card">
-                    <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-                    <div class="card-content">
+                <div class="column card uc">
+                    <div class="card-content bc">
                         <h3 class="accent-text">PDF极易伪造</h3>
                         <div class="card-description">
                             <p class="muted">纸质报告和清单很容易伪造。 在检查过程中拍摄的PDF或图片的内容可以随后更改。</p>
@@ -62,12 +61,8 @@
                     </div>
                 </div>
 
-                <div class="column card">
-                    <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-b lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-                    <div class="card-content">
+                <div class="column card uc">
+                    <div class="card-content bc">
                         <h3 class="accent-text">信息可以轻松修改</h3>
                         <div class="card-description">
                             <p class="muted">检查期间收集的数据将集中存储。 如果出现任何问题，此数据可能会被篡改，从而降低每个定义的数据的可靠性。</p>
@@ -75,12 +70,8 @@
                     </div>
                 </div>
 
-                <div class="column card">
-                    <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-                    <div class="card-content">
+                <div class="column card uc">
+                    <div class="card-content bc">
                         <h3 class="accent-text">隔离信息源</h3>
                         <div class="card-description">
                             <p class="muted">在检查过程中，需要在内部和外部共享数据。 由于各方彼此隔离，因此很难有效共享数据。</p>
@@ -89,11 +80,9 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+</section>
 
-<div class="section-container">
-    <section class="section secondary">
+<section class="section secondary">
         <div class="container">
             <h2 class="has-text-centered section-title">解决方案概述</h2>
             <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
@@ -132,20 +121,16 @@
                 <a href="/cn/contact/" class="button is-primary">预约样版</a>
             </div>
         </div>
-    </section>
-</div>
+</section>
 
-
-
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
+<section class="section is-medium">
         <div class="container">
             <h2 class="has-text-centered section-title">使用LTO的优势</h2>
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
                     <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
                 </div>
                 <div class="column is-two-thirds">
@@ -156,8 +141,8 @@
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
                     <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
                 </div>
                 <div class="column is-two-thirds">
@@ -168,8 +153,8 @@
 
             <div class="columns is-centered is-vcentered has-margin-top-40">
                 <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')"  style="left:48px;height:250px;">
-                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
                     <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
                 </div>
                 <div class="column is-two-thirds">
@@ -257,16 +242,14 @@
                 </a>
             </div>
         </div>
-    </section>
-</div>
-
+</section>
 
 <div class="section-container cutout-bottom-alt">
-    <section class="section p-top-xl p-bottom-xl alt">
+  <section class="section is-medium secondary">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column">
-                    <div class="card">
+                    <div class="card uc">
                         <div class="columns">
                             <div class="column is-3 card-testimonial-img">
                                <picture>

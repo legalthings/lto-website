@@ -7,18 +7,20 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-about.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-about.png" alt="LTO Network - Hero About">
+      <source type="image/webp" data-srcset="/assets/hero/hero-about@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-about@2x.jpg" alt="LTO Network - Hero About">
     </picture>
     <div class="hero-body">
       <div class="container">
           <div class="columns is-vcentered">
               <div class="column">
-        <h1 class="primary-text">About LTO Network</h1>
+        <h1 class="title">About LTO Network</h1>
+         <div class="content">
           <p class="dark-indigo jobs-talent quote">“The most devoted and tech savvy bunch of whizzkids I have ever met”</p>
           <p class="dark-indigo jobs-talent end-quote">- Sandor Klein (VP of Sysdig)</p>
+                </div>
               </div>
           <div class="column video is-centered">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D1CDJEahhjY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -29,14 +31,14 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
-  <section class="section secondary no-padding">
+<div class="section-container cutout-top cutout-bottom-alt">
+  <section class="section secondary">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom" id="mission">
-  <section class="section">
+
+<section class="section is-medium">
     <div class="container">
         <h4 class="dark-indigo has-text-centered">MISSION STATEMENT</h4>
       <h2 class="has-text-centered section-title">Making blockchain integration easy in every organization</h2>
@@ -53,11 +55,9 @@
           </div>
       </div>
     </div>
-  </section>
-</div>
+</section>
 
-<div class="section-container cutoff-top cutout-bottom-alt">
-  <section class="section alt relative neg-m-top-m p-top-l" id="team">
+<section class="section is-medium alt relative" id="team">
     <div class="container z-index-4">
       <h2 class="has-text-centered section-title">Meet the team</h2>
         <h3 class="dark-indigo has-text-centered">Get to know the rock stars who only have one goal in mind: the global adoption of LTO Network.</h3>
@@ -430,11 +430,9 @@
         </div>
       </div>
       </div>
-  </section>
-</div>
+</section>
 
-<div class="section-container cutout-bottom z-index-1">
-<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talents">
+<section class="section is-medium tertiary relative" id="timeline">
     <div class="container">
         <h2 class="has-text-centered section-title"> Timeline </h2>
         <div class="timeline is-centered">
@@ -467,7 +465,7 @@
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2017 - Q3</p>
-      <p class="heading-alt muted">Hackathon winner by the Dutch Ministry of Justice</p>
+      <p class="heading-alt muted"><a href="https://www.bitcoinwednesday.com/speakers/legally-binding-smart-contracts-legalthings-daniels-schmitz/">Hackathon winner by the Dutch Ministry of Justice</a></p>
         <p class="muted">During the blockchain hackathon organized by the Dutch Ministry of Justice and Security, we demonstrated that a whole legal procedure can be digitized as an FSM and stored on the blockchain. This got us the 1st prize in the event which included the assignment to create the first digitized legal procedures for the Dutch legislative system on the blockchain.</p>
     </div>
   </div>
@@ -486,7 +484,7 @@
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2018 - Q2</p>
-      <p class="heading-alt muted">BlockChaingers 'best code' prize</p>
+      <p class="heading-alt muted"><a href="https://blog.wavesplatform.com/waves-april-review-10d6439f887">BlockChaingers 'best code' prize</a></p>
         <p class="muted">We attended the biggest hackathon together with the WAVES team and were awarded ‘the best code’ prize from BlockChaingers.</p>
     </div>
   </div>
@@ -505,7 +503,7 @@
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2019 - Q1</p>
-      <p class="heading-alt muted">Mainnet launch and crowd sale</p>
+      <p class="heading-alt muted"><a href="https://medium.com/ltonetwork/mainnet-is-live-wallet-release-2ee895af615">Mainnet launch and crowd sale</a></p>
         <p class="muted">We launched mainnet and closed the last round of token sale, raising 990,000 USD in the last round.</p>
     </div>
   </div>
@@ -513,7 +511,7 @@
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2019 - Q3</p>
-      <p class="heading-alt muted">Layer 1 Open-Source</p>
+      <p class="heading-alt muted"><a href="https://github.com/ltonetwork/lto-public-chain">Layer 1 Open-Source</a></p>
         <p class="muted">Open-source public chain code, modification of Waves/NXT.</p>
     </div>
   </div>
@@ -521,8 +519,16 @@
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2019 - Q3</p>
-      <p class="heading-alt muted">Layer 2 Open-Source</p>
+      <p class="heading-alt muted"><a href="https://github.com/ltonetwork/event-chain">Layer 2 Open-Source</a></p>
       <p class="muted">Open-source the toolkit of Layer 2, unique FSM ad-hoc event chains.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-primary">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2019 - Q4</p>
+      <p class="heading-alt muted"><a href="https://blog.lto.network/proofi-beta-launch-your-online-signature-for-email/">Proofi beta launch</a></p>
+      <p class="muted">Released the beta of Proofi starting with online signatures for emails with Gmail integration.</p>
     </div>
   </div>
   <header class="timeline-header">
@@ -531,23 +537,47 @@
   <div class="timeline-item is-primary">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <p class="heading">2019 - Q4</p>
-      <p class="heading-alt muted">Marketplace Launch</p>
-      <p class="muted">Launch LTO Marketplace dedicated to connecting blockchain business-focused applications for companies and developers to use.</p>
-    </div>
-  </div>
-  <div class="timeline-item is-danger">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <p class="heading">2019 - Q4</p>
-      <p class="heading-alt muted">Proofi Release</p>
-      <p class="muted">Release Proofi, new SaaS product focused on re-shaping the world of signatures. Aimed at B2B, B2C, C2C or M2M.</p>
+      <p class="heading">2020 - Q1</p>
+      <p class="heading-alt muted"><a href="https://www.youtube.com/watch?v=AzpLPuEowdE">Marketplace Launch</a></p>
+      <p class="muted">Improving the Integrator Portal and including live use cases for clients to learn from.</p>
     </div>
   </div>
   <div class="timeline-item is-danger">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <p class="heading">2020 - Q1</p>
+      <p class="heading-alt muted">Association TXs</p>
+      <p class="muted">New transaction type on mainnet which will serve for SSI on-chain.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - Q1-Q2</p>
+      <p class="heading-alt muted">Proofi Release</p>
+      <p class="muted">Launching Proofi app, with improved KYC, platform integrations, and API documentation for developers.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - Q2</p>
+      <p class="heading-alt muted">Sponsored Accounts</p>
+      <p class="muted">Allows the parties to use mainnet without the need to buy tokens themselves as tx fees are provided by third-parties that can charge in fiat.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - Q2</p>
+      <p class="heading-alt muted">LetsFlow Release</p>
+      <p class="muted">Workflow Engine tooling to deploy MVPs of centralized and decentralized use cases, creating adoption for Live Contracts.</p>
+    </div>
+  </div>
+  <div class="timeline-item is-danger">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <p class="heading">2020 - Q4</p>
       <p class="heading-alt muted">LPOI Release</p>
       <p class="muted">Pass the final testing stage and release Leased Proof of Importance, LTO Network's variation on Proof of Stake.</p>
     </div>
@@ -556,10 +586,9 @@
 
     </div>
 </section>
-</div>
 
-<div class="section-container cutout-top-alt cutout-bottom-alt z-index-1">
-<section class="section alt relative neg-m-top-m p-top-l p-bottom-xxl" id="talents">
+<div class="section-container cutout-bottom-alt">
+<section class="section is-medium alt" id="ourmentality">
     <div class="container">
         <h2 class="has-text-centered section-title">The LTO Mentality</h2>
         <div class="columns is-centered has-text-centered has-margin-top-40">
