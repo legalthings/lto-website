@@ -1,13 +1,1 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.5'}" preserveAspectRatio="xMinYMin meet" style="left: 0px; top: 0px;"><g class="lievo-setrotation"><g class="lievo-setsharp"><g class="lievo-setflip"><g class="lievo-main">
-		<g class="lievo-filledicon lievo-lineicon">
-			<g>
-				<path fill="none" stroke="#804bc9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M30,7c-5,5.5-8.83,5.97-15,6c-1.1,0.01-2,0.92-2,2.03V37c0,7.14,6.91,9.78,17,16c9.44-5.82,17-8.77,17-16V15.03c0-1.1-0.9-2.02-2-2.03C38.83,12.97,35,12.5,30,7z" style=""></path>
-				<path class="lievo-altstroke" fill="none" stroke="#804bc9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M30,15.37c3.54,2.53,7.54,3.29,11,3.52V37c0,2.66-3.68,4.69-10.99,9C21.93,41.21,19,39.58,19,37V18.89C22.46,18.65,26.46,17.89,30,15.37z" style=""></path>
-			</g>
-			<path class="lievo-savelinecap lievo-likestroke" fill="#804bc9" stroke="#804bc9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M83.09,13.67L80,13.87L78,14l1.81-0.89l2.76-1.37L83.09,13.67z M82.83,12.71l45.4-12.16" style=""></path>
-		</g>
-
-		
-	<rect x="-19" y="-19" width="4" height="4" fill="none" stroke="#804bc9" style="stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; opacity: 0;" class="lievo-checkshift lievo-donotdraw lievo-nohoverstroke lievo-nohovercolor"></rect></g></g></g></g>
-	
-<desc>LivIcons Evolution</desc><defs></defs></svg>
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g stroke="#804bc9" stroke-width="2"><g stroke-linecap="square"><path d="m30 7c-5 5.5-8.83 5.97-15 6-1.1.01-2 .92-2 2.03v21.97c0 7.14 6.91 9.78 17 16 9.44-5.82 17-8.77 17-16v-21.97c0-1.1-.9-2.02-2-2.03-6.17-.03-10-.5-15-6z" fill="none" stroke-miterlimit="2"/><path d="m30 15.37c3.54 2.53 7.54 3.29 11 3.52v18.11c0 2.66-3.68 4.69-10.99 9-8.08-4.79-11.01-6.42-11.01-9v-18.11c3.46-.24 7.46-1 11-3.52z" fill="none" stroke-miterlimit="2"/><path d="m83.09 13.67-3.09.2-2 .13 1.81-.89 2.76-1.37zm-.26-.96 45.4-12.16" fill="#804bc9" stroke-miterlimit="10"/></g><path d="m-19-19h4v4h-4z" fill="none" opacity="0" stroke-linejoin="round"/></g></svg>
