@@ -9,10 +9,10 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-ecosystem.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-ecosystem.png" alt="LTO Network - Hero Ecosystem V">
+<!--      <source type="image/webp" data-srcset="/assets/hero/hero-home-white.webp">-->
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-home-white.svg" alt="LTO Network - Hero Ecosystem V">
     </picture>
     <div class="hero-body">
       <div class="container">
@@ -26,14 +26,13 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary no-padding">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-  <section class="section" id="ecosystem">
+  <section class="section is-medium" id="ecosystem">
   <div class="container">
     <h2 class="section-title deep-lavender has-text-centered">生态系统概述</h2>
     <h3 class="dark-indigo has-text-centered">通过开发V生态系统，每个利益相关者都将从集体价值创造中受益</h3>
@@ -168,10 +167,8 @@
       }, 35);
     </script>
   </section>
-</div>
 
-<div class="section-container">
-  <section class="section alt p-top-l p-bottom-l neg-m-top-m">
+  <section class="section is-medium alt">
     <div class="section-body">
   <div class="container">
     <div class="columns">
@@ -185,26 +182,27 @@
         </div>
       </div>
       <div class="network-circle-container is-hidden-mobile">
-      <div class="network-margin network-circle network-circle--solid network-circle--clock"></div>
+      <div class="network-margin network-circle network-circle--solid network-circle--clock"><img src="/assets/logo/logo-only-gradient.svg"></div>
       <div class="network-margin network-circle network-circle--counter"></div>
       <div class="network-margin network-circle network-circle--clock"></div>
       <div class="network-margin network-circle network-circle--solid circle--counter"></div>
       <div class="network-margin network-circle network-circle--clock"></div>
       <div class="network-margin network-circle network-circle--counter"></div>
+<!--
       <div class="network-margin network-circle network-circle--solid circle--clock"></div>
       <div class="network-margin network-circle network-circle--counter"></div>
       <div class="network-margin network-circle network-circle--clock"></div>
       <div class="network-margin network-circle network-circle--counter"></div>
       <div class="network-margin network-circle network-circle--solid circle--clock"></div>
       <div class="network-margin network-circle network-circle--solid circle--counter"></div>
+-->
 </div>
   </div>
       </div>
   </section>
-</div>
 
-<div class="section-container cutout-top-alt">
-  <section class="section p-top-l neg-m-top-m">
+
+<section class="section is-medium">
  <div class="container">
       <h2 class="deep-lavender has-text-centered">加入LTO的V生态系统的优势</h2>
 
@@ -259,11 +257,10 @@
       </div>
 
 </div>
-  </section>
-</div>
+</section>
 
-<div class="section-container cutin-top-alt cutout-bottom-alt">
-  <section class="section p-top-xl p-bottom-xxl alt">
+<div class="section-container cutout-bottom-alt">
+  <section class="section is-medium alt">
     <div class="section-body">
       <div class="container">
         <h2 class="section-title has-text-centered">
@@ -271,7 +268,7 @@
         </h2>
           <div class="columns is-centered">
               <div class="column is-5">
-                  <div class="card testimonial-eco">
+                  <div class="card uc testimonial-eco">
                   <div class="testimonial-logo">
                      <picture>
       <source type="image/webp" data-srcset="/assets/use-cases/capptions@2x.webp">
@@ -289,7 +286,7 @@
               </div>
               <div class="column is-1 is-hidden-mobile"></div>
               <div class="column is-5">
-                  <div class="card testimonial-eco">
+                  <div class="card uc testimonial-eco">
                   <div class="testimonial-logo">
                      <picture>
       <source type="image/webp" data-srcset="/assets/use-cases/signrequest@2x.webp">

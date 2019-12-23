@@ -1,6 +1,6 @@
 {% set title = 'LTO Network - Use case - Authenticity of artwork' %}
 {% set description = 'Certification of artwork battling Counterfeiting' %}
-{% set currentUrl = '/sitemap/' %}
+{% set currentUrl = '/cn/use-cases/authenticity-art-objects/' %}
 {% set locale = 'cn' %}
 
 {% extends "base.njk" %}
@@ -8,10 +8,10 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
-   <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas.png" alt="LTO Network - Authenticity of artwork">
+  <section class="hero is-fullheight">
+    <picture>
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas@2x.jpg" alt="LTO Network - Authenticity of artwork">
     </picture>
     <div class="hero-body">
       <div class="container">
@@ -30,7 +30,7 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary promo-numbers-section">
     <div class="promo-numbers c use-cases">
       <div class="container use-cases">
@@ -49,17 +49,12 @@
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
-        <div class="container">
+<section class="section is-medium">
+  <div class="container">
       <h2 class="has-text-centered section-title">商业挑战</h2>
       <div class="columns">
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
+        <div class="column card uc">
+          <div class="card-content bc">
             <h3 class="accent-text">原创性证明</h3>
             <div class="card-description">
               <p class="muted">购买艺术品时，您想知道它是真实的交易。 证书可以帮助艺术收藏家证明其原始。 通常，这是通过认证完成的，但也可以伪造。</p>
@@ -67,12 +62,8 @@
           </div>
         </div>
 
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-b lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
+        <div class="column card uc">
+          <div class="card-content bc">
             <h3 class="accent-text">伪造证书</h3>
             <div class="card-description">
               <p class="muted">纸质证书容易伪造。 回溯购买或更改艺术品的唯一标识符对于当今的软件工具来说可谓小菜一碟。</p>
@@ -80,12 +71,8 @@
           </div>
         </div>
 
-        <div class="column card">
-         <picture>
-            <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
-          <img class="card-image clip-a lazy"  data-src="/assets/polygons@2x.png" alt="LTO Network - Business Challenge">
-            </picture>
-          <div class="card-content">
+        <div class="column card uc">
+          <div class="card-content bc">
             <h3 class="accent-text">证书验证</h3>
             <div class="card-description">
               <p class="muted">转让艺术品时，购买者必须能够独立验证此证书。</p>
@@ -94,12 +81,10 @@
         </div>
       </div>
         </div>
-    </section>
-</div>
+</section>
 
-<div class="section-container">
-  <section class="section secondary">
-    <div class="container">
+<section class="section is-medium secondary">
+  <div class="container">
       <h2 class="has-text-centered section-title">解决方案概述</h2>
       <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
           <div class="column is-half">
@@ -137,20 +122,16 @@
         <a href="/cn/contact/" class="button is-primary">预约样版</a>
         </div>
     </div>
-  </section>
-</div>
+</section>
 
-
-
-<div class="section-container cutin-top-alt cutout-bottom">
-    <section class="section">
-    <div class="container">
+<section class="section is-medium">
+  <div class="container">
       <h2 class="has-text-centered section-title">使用LTO的优势</h2>
       <div class="columns is-centered is-vcentered has-margin-top-40">
         <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-           <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+           <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
           <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
         </div>
         <div class="column is-two-thirds">
@@ -161,8 +142,8 @@
 
       <div class="columns is-centered is-vcentered has-margin-top-40">
         <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
-          <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+          <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
           <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
         </div>
         <div class="column is-two-thirds">
@@ -173,8 +154,8 @@
 
       <div class="columns is-centered is-vcentered has-margin-top-40">
         <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
-           <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/small-rock-2.svg" alt="LTO Network - Rock">
-                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/small-rock-1.svg" alt="LTO Network - Rock">
+           <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
+                    <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
           <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
         </div>
         <div class="column is-two-thirds">
@@ -263,15 +244,14 @@
             </div>
         </div>
 </section>
-</div>
 
 
 <div class="section-container cutout-bottom-alt">
-    <section class="section p-top-xl p-bottom-xl alt">
+  <section class="section is-medium secondary">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column">
-                    <div class="card">
+                    <div class="card uc">
                         <div class="columns">
                             <div class="column is-3 card-testimonial-img">
                                <picture>

@@ -8,9 +8,9 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium use-case-header">
-    <img class="overlay-image current" src="/assets/hero/hero-uc-ilt.png">
-    <img class="overlay-image next" src="/assets/hero/hero-uc-scantrust.png">
+  <section class="hero is-fullheight use-case-header">
+    <img class="overlay-image current" src="/assets/hero/hero-uc-ilt@2x.jpg">
+    <img class="overlay-image next" src="/assets/hero/hero-uc-scantrust@2x.jpg">
     <div class="hero-body">
       <div class="container">
         <h1 id="hero-title" class="primary-text">每年节省逾700万=欧元废物运输费用的区块链</h1>
@@ -23,18 +23,17 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary no-padding">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-  <section class="section" id="overview">
+<section class="section is-medium" id="overview">
     <div class="container">
       <h2 class="has-text-centered section-title">案例概述</h2>
       <div class="columns">
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-capptions.webp">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png">
@@ -52,7 +51,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-signrequest.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-signrequest.png">
@@ -70,7 +69,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-firm24.webp">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png">
@@ -90,7 +89,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-vaas.webp">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png">
@@ -108,7 +107,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-contractapp.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-contractapp.png">
@@ -127,7 +126,7 @@
         </div>
 
 <!--
-        <div class="column card align-evenly invisible">
+        <div class="column card uc align-evenly invisible">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-scantrust.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-scantrust.png">
@@ -145,7 +144,7 @@
           </div>
         </div>
 -->
-     <div class="column card align-evenly">
+     <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
           <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png">
@@ -165,13 +164,12 @@
       </div>
     </div>
   </section>
-</div>
 
-<div class="section-container cutoff-top cutout-bottom">
-  <section class="section relative tertiary neg-m-top-m p-top-l">
+<div class="section-container cutout-bottom">
+  <section class="section is-medium relative alt">
     <div class="container z-index-4">
       <div class="columns">
-       <div class="column card align-evenly">
+       <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ioe.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-ioe.png">
@@ -189,7 +187,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ilt.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-ilt.png">
@@ -207,7 +205,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-lease.webp">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png">
@@ -227,7 +225,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-certificates.webp">
           <img class="card-image clip-b lazy" data-src="/assets/use-cases/card-uc-certificates.png">
@@ -246,7 +244,7 @@
           </div>
         </div>
 
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/use-cases/card-uc-cac.webp">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png">
@@ -265,7 +263,7 @@
         </div>
 
 <!--
-        <div class="column card align-evenly invisible">
+        <div class="column card uc align-evenly invisible">
           <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-tdm.png">
           <div class="card-content">
             <h3 class="accent-text">Trusted Document Management</h3>
@@ -280,7 +278,7 @@
           </div>
         </div>
 -->
-        <div class="column card align-evenly">
+        <div class="column card uc align-evenly">
          <picture>
             <source type="image/webp" data-srcset="/assets/polygons@2x.webp">
           <img class="card-image clip-a lazy" data-src="/assets/polygons@2x.png">

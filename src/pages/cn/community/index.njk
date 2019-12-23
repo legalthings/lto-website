@@ -1,4 +1,4 @@
-{% set title = 'LTO Network - Community' %}
+{% set title = 'LTO Network - Staking' %}
 {% set description = 'Every stakeholder benefits from collective value creation through development of Ecosystem V' %}
 {% set currentUrl = '/cn/community/' %}
 {% set locale = 'cn' %}
@@ -8,31 +8,30 @@
 {% block content %}
 
 <div class="section-container">
-    <section class="hero is-medium">
+    <section class="hero is-fullheight">
        <picture>
       <source type="image/webp" data-srcset="/assets/hero/hero-community-mob.webp">
-        <img class="bgVideo is-hidden-desktop" src="/assets/hero/hero-community-mob.png" alt="LTO Network - Hero Community">
+        <img class="bgVideo lazy is-hidden-desktop" data-src="/assets/hero/hero-community-mob.png" alt="LTO Network - Hero Community">
         </picture>
         <video class="bgVideo is-hidden-mobile" autoplay muted loop poster="/assets/hero/hero-community.png" alt="LTO Network - Community Video">
             <source src="/assets/media/hero-community.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
 
-        <div class="section-container cutout-top">
+ <div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary no-padding">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
-    </section>
+</section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom extra-margin">
-    <section class="section" id="ecosystem">
+    <section class="section is-medium" id="ecosystem">
         <div class="container">
             <h2 class="has-text-centered section-title">我们有一个很棒的社区！</h2>
             <div class="columns is-centered has-margin-top-40">
 
-                <div class="column membercard card">
+                <div class="column membercard card uc">
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
@@ -48,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="column membercard card">
+                <div class="column membercard card uc">
 
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
@@ -68,7 +67,7 @@
             </div>
             <div class="columns is-centered">
 
-                <div class="column membercard card">
+                <div class="column membercard card uc">
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
                             <div class="member-image">
@@ -84,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="column membercard card">
+                <div class="column membercard card uc">
 
                     <div class="columns is-vcentered">
                         <div class="column is-centered">
@@ -106,7 +105,6 @@
 
         </div>
     </section>
-</div>
 
 <!--
 <div class="section-container cutout-bottom-alt">
@@ -150,19 +148,18 @@
 </div>
 -->
 
-<div class="section-container">
-    <section class="section relative tertiary p-top-l neg-m-top-m">
+    <section class="section is-medium relative tertiary">
         <div class="container">
             <h2 class="deep-lavender has-text-centered">官方市场</h2>
 
-            <div class="columns is-centered has-text-centered">
+           <div class="columns is-centered has-text-centered">
 
                 <div class="column is-3">
                     <div class="column-img">
                         <a href="https://bitmax.io/#/trade/usdt/lto" target="blank">
                            <picture>
-      <source type="image/webp" data-srcset="/assets/markets/bitmax@2x.webp">
-                            <img src="/assets/markets/bitmax@2x.png" alt="Bitmax">
+                              <source type="image/webp" data-srcset="/assets/markets/bitmax@2x.webp">
+                            <img class="lazy" data-src="/assets/markets/bitmax@2x.png" alt="Bitmax">
                             </picture>
                         </a>
                     </div>
@@ -172,8 +169,8 @@
                     <div class="column-img">
                         <a href="https://www.binance.org/en/trade/LTO-BDF_BNB" target="blank">
                            <picture>
-      <source type="image/webp" data-srcset="/assets/markets/binance-dex@2x.webp">
-                            <img src="/assets/markets/binance-dex@2x.png" alt="Binance DEX">
+                              <source type="image/webp" data-srcset="/assets/markets/binance-dex@2x.webp">
+                            <img class="lazy" data-src="/assets/markets/binance-dex@2x.png" alt="Binance DEX">
                             </picture>
                         </a>
                     </div>
@@ -191,10 +188,9 @@
 
         </div>
     </section>
-</div>
 
-<div class="section-container cutout-top-alt cutout-bottom-alt">
-    <section class="section p-top-xl p-bottom-xl alt">
+<div class="section-container cutout-bottom-alt">
+    <section class="section is-medium alt">
         <div class="section-body">
             <div class="container">
                 <h2 class="section-title has-text-centered">资源资源</h2>

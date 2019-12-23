@@ -69,7 +69,9 @@ const htmlMinOptions = {
 
 const imageminOptions = {
   progressive: true,
-  svgoPlugins: [{ removeViewBox: false }],
+  svgoPlugins: [{
+    removeViewBox: false
+  }],
   use: [imageminPngQuant()]
 };
 
@@ -113,7 +115,9 @@ gulp.task("compile-sass", () => {
         'company-rocks'
       ]
     }))
-    .pipe(gulpCleancss({ compatibility: 'ie8' }))
+    .pipe(gulpCleancss({
+      compatibility: 'ie8'
+    }))
     .pipe(gulp.dest(`${distDirectory}/css`))
     .pipe(browserSync.stream());
 });
@@ -147,7 +151,9 @@ gulp.task("compile-vendor", () => {
     "src/vendor/rellax.js"
     ])
     .pipe(gulpConcat("vendor.js"))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
     .pipe(gulp.dest(`${distDirectory}/js`));
 });
 
@@ -165,7 +171,9 @@ gulp.task("compile-scripts", () => {
       presets: ['@babel/env']
     }))
     .pipe(gulpUglify())
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
     .pipe(gulp.dest(`${distDirectory}/js`));
 });
 
@@ -176,7 +184,9 @@ gulp.task("compile-scripts", () => {
 
 gulp.task("compile-nunjucks", () => {
   return gulp.src(nunjucksPages)
-    .pipe(gulpNunjucksRender({ path: nunjucksTemplates }))
+    .pipe(gulpNunjucksRender({
+      path: nunjucksTemplates
+    }))
     .pipe(gulpHtmlmin(htmlMinOptions))
     .pipe(gulp.dest(distDirectory))
 });
@@ -199,15 +209,15 @@ gulp.task("optimize-images", () => {
 
 gulp.task("copy-images", () => {
   return gulp
-      .src(imageDirectory)
-      .pipe(
-          gulpRename(function(path) {
-              path.dirname = path.dirname.toLowerCase()
-              path.basename = path.basename.toLowerCase()
-              path.extname = path.extname.toLowerCase()
-          })
-      )
-      .pipe(gulp.dest(`${distDirectory}/assets`))
+    .src(imageDirectory)
+    .pipe(
+      gulpRename(function (path) {
+        path.dirname = path.dirname.toLowerCase()
+        path.basename = path.basename.toLowerCase()
+        path.extname = path.extname.toLowerCase()
+      })
+    )
+    .pipe(gulp.dest(`${distDirectory}/assets`))
 })
 
 
@@ -217,15 +227,15 @@ gulp.task("copy-images", () => {
 
 gulp.task("copy-media", () => {
   return gulp
-      .src(videoDirectory)
-      .pipe(
-          gulpRename(function(path) {
-              path.dirname = path.dirname.toLowerCase()
-              path.basename = path.basename.toLowerCase()
-              path.extname = path.extname.toLowerCase()
-          })
-      )
-      .pipe(gulp.dest(`${distDirectory}/assets/media`))
+    .src(videoDirectory)
+    .pipe(
+      gulpRename(function (path) {
+        path.dirname = path.dirname.toLowerCase()
+        path.basename = path.basename.toLowerCase()
+        path.extname = path.extname.toLowerCase()
+      })
+    )
+    .pipe(gulp.dest(`${distDirectory}/assets/media`))
 })
 
 
@@ -235,8 +245,8 @@ gulp.task("copy-media", () => {
 
 gulp.task("copy-documents", () => {
   return gulp
-      .src(documentsDirectory)
-      .pipe(gulp.dest(`${distDirectory}/documents`))
+    .src(documentsDirectory)
+    .pipe(gulp.dest(`${distDirectory}/documents`))
 })
 
 
@@ -244,18 +254,18 @@ gulp.task("copy-documents", () => {
 // Copy livicons assets
 // -----------------------------------------------------------------------------
 
-gulp.task("copy-livicons-assets", () => {
-  return gulp
-      .src(livIconsImages)
-      .pipe(
-          gulpRename(function(path) {
-              path.dirname = path.dirname.toLowerCase()
-              path.basename = path.basename.toLowerCase()
-              path.extname = path.extname.toLowerCase()
-          })
-      )
-      .pipe(gulp.dest(`${distDirectory}/assets/LivIconsEvo/svg/`))
-})
+//gulp.task("copy-livicons-assets", () => {
+//  return gulp
+//      .src(livIconsImages)
+//      .pipe(
+//          gulpRename(function(path) {
+//              path.dirname = path.dirname.toLowerCase()
+//              path.basename = path.basename.toLowerCase()
+//              path.extname = path.extname.toLowerCase()
+//          })
+//      )
+//      .pipe(gulp.dest(`${distDirectory}/assets/LivIconsEvo/svg/`))
+//})
 
 
 // -----------------------------------------------------------------------------
@@ -275,9 +285,15 @@ gulp.task("compile-fonts", () => {
 // -----------------------------------------------------------------------------
 
 gulp.task("generate-webp", () => {
-  return gulp.src(imageDirectory, { nodir: true })
-    .pipe(gulpImagemin([imageminWebp({ quality: 75 })]))
-    .pipe(gulpRename({ extname: '.webp' }))
+  return gulp.src(imageDirectory, {
+      nodir: true
+    })
+    .pipe(gulpImagemin([imageminWebp({
+      quality: 75
+    })]))
+    .pipe(gulpRename({
+      extname: '.webp'
+    }))
     .pipe(gulp.dest(`${distDirectory}/assets`));
 });
 
@@ -289,7 +305,9 @@ gulp.task("generate-webp", () => {
 gulp.task("copy-resources", () => {
   return gulp.src([
     "src/assets/**/*.xml"
-  ], { nodir: true })
+  ], {
+      nodir: true
+    })
     .pipe(gulp.dest(`${distDirectory}/assets`));
 });
 
@@ -302,7 +320,9 @@ gulp.task("copy-meta", () => {
   return gulp.src([
     "src/robots.txt",
     "src/sitemap_index.xml"
-  ], { nodir: true })
+  ], {
+      nodir: true
+    })
     .pipe(gulp.dest(`${distDirectory}/`));
 });
 
@@ -311,12 +331,12 @@ gulp.task("copy-meta", () => {
 // Browsersync
 // -----------------------------------------------------------------------------
 
-gulp.task("browser-sync", function() {
-	browserSync.init({
-		server: {
-			baseDir: distDirectory
-		},
-	})
+gulp.task("browser-sync", function () {
+  browserSync.init({
+    server: {
+      baseDir: distDirectory
+    },
+  })
 });
 
 
@@ -351,23 +371,22 @@ gulp.task("watch", () => {
 gulp.task("critical", () => {
   return gulp
     .src("dist/**/*.html")
-    .pipe(critical(
-      {
-        base: distDirectory,
-        inline: true,
-        minify: true,
-        css: ["dist/css/main.css"],
-        dimensions: [
-          {
-            height: 667,
-            width: 375,
+    .pipe(critical({
+      base: distDirectory,
+      inline: true,
+      minify: true,
+      css: ["dist/css/main.css"],
+      dimensions: [
+        {
+          height: 667,
+          width: 375,
           },
-          {
-            height: 800,
-            width: 1280,
+        {
+          height: 800,
+          width: 1280,
           },
         ]
-      }))
+    }))
     .on("error", (err) => {
       log.error(err.message);
     })
@@ -379,8 +398,8 @@ gulp.task("critical", () => {
 // Task
 // -----------------------------------------------------------------------------
 
-gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-media", "copy-documents", "copy-livicons-assets", "copy-resources"));
-gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "copy-media", "copy-documents", "copy-livicons-assets", "compile-fonts", "copy-resources"));
+gulp.task("build-fast", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "copy-images", "copy-media", "copy-documents", "copy-resources"));
+gulp.task("build", gulp.parallel("compile-sass", "compile-nunjucks", "compile-vendor", "compile-scripts", "optimize-images", "generate-webp", "copy-media", "compile-fonts", "copy-resources"));
 
 gulp.task("build-prod-fast", gulp.series("clean:dist", "build-fast", "critical"));
 gulp.task("build-prod", gulp.series("clean:dist", "build", "critical"));

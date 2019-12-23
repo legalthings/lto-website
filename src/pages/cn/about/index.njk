@@ -8,10 +8,10 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-about.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-about.png" alt="LTO Network - Hero About">
+      <source type="image/webp" data-srcset="/assets/hero/hero-about@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-about@2x.jpg" alt="LTO Network - Hero About">
     </picture>
     <div class="hero-body">
       <div class="container">
@@ -30,14 +30,14 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary no-padding">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom" id="mission">
-  <section class="section">
+
+  <section class="section is-medium" id="mission">
     <div class="container">
         <h4 class="dark-indigo has-text-centered">任务说明</h4>
       <h2 class="has-text-centered section-title">使每个组织的区块链集成变得容易</h2>
@@ -55,10 +55,8 @@
       </div>
     </div>
   </section>
-</div>
 
-<div class="section-container cutoff-top cutout-bottom-alt">
-  <section class="section alt relative neg-m-top-m p-top-l" id="team">
+  <section class="section is-medium alt relative" id="team">
     <div class="container z-index-4">
       <h2 class="has-text-centered section-title">认识团队</h2>
         <h3 class="dark-indigo has-text-centered">了解只有一个目标的摇滚明星：LTO在全球的采用。</h3>
@@ -432,10 +430,8 @@
       </div>
       </div>
   </section>
-</div>
-
-<div class="section-container cutout-bottom z-index-1">
-<section class="section tertiary relative neg-m-top-m p-top-l p-bottom-xl" id="talents">
+  
+<section class="section is-medium tertiary relative" id="talents">
     <div class="container">
         <h2 class="has-text-centered section-title"> 时间线 </h2>
         <div class="timeline is-centered">
@@ -557,10 +553,9 @@
 
     </div>
 </section>
-</div>
 
-<div class="section-container cutout-top-alt cutout-bottom-alt z-index-1">
-<section class="section alt relative neg-m-top-m p-top-l p-bottom-xxl" id="talents">
+<div class="section-container cutout-bottom z-index-1">
+<section class="section is-medium alt relative" id="talents">
     <div class="container">
         <h2 class="has-text-centered section-title">LTO思维</h2>
         <div class="columns is-centered has-text-centered has-margin-top-40">

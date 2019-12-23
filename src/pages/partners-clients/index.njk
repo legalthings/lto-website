@@ -7,10 +7,10 @@
 {% block content %}
 
 <div class="section-container">
-  <section class="hero is-medium">
+  <section class="hero is-fullheight">
    <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-partners-clients.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-partners-clients.png" alt="LTO Network - Hero Partners & Clients">
+      <source type="image/webp" data-srcset="/assets/hero/hero-partners-clients@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-partners-clients@2x.jpg" alt="LTO Network - Hero Partners & Clients">
     </picture>
     <div class="hero-body">
       <div class="container">
@@ -21,18 +21,17 @@
   </section>
 </div>
 
-<div class="section-container cutout-top">
+<div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary no-padding">
 {% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
   </section>
 </div>
 
-<div class="section-container cutin-top-alt cutout-bottom">
-  <section class="section">
+<section class="section is-medium">
     <div class="container">
       <h2 class="has-text-centered section-title">Independent Software Vendors</h2>
       <div class="columns">
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Capptions@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Capptions@2x.png" alt="LTO Network - Capptions">
@@ -50,7 +49,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo SignRequest@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo SignRequest@2x.png" alt="LTO Network - SignRequest">
@@ -68,7 +67,7 @@
           </div>
         </div>
         
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Firm24@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Firm24@2x.png" alt="LTO Network - Firm24">
@@ -89,7 +88,7 @@
 
       <div class="columns has-margin-top-20">
           
-         <div class="column card">
+         <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo V-ID@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo V-ID@2x.png" alt="LTO Network - V-ID">
@@ -107,7 +106,7 @@
           </div>
         </div>
         
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo TicTag@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo TicTag@2x.png" alt="LTO Network - TicTag">
@@ -125,10 +124,10 @@
           </div>
         </div>    
     
-        <div class="column card">
+        <div class="column card uc">
          <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png" alt="LTO Network - Your use case?">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png" alt="LTO Network - Your use case?">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested to join?</h3>
@@ -147,7 +146,7 @@
 <!--
     <div class="columns has-margin-top-20">
         
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo VV@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo VV@2x.png">
@@ -165,7 +164,7 @@
           </div>
         </div>
         
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Scantrust@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Scantrust@2x.png">
@@ -183,10 +182,10 @@
           </div>
         </div>
         
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
          <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested to join?</h3>
@@ -205,7 +204,7 @@
         
 <!--
     <div class="columns has-margin-top-20">
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
           <img class="card-image clip-a" src="/assets/partners-clients/Logo Scantrust@2x.png">
           <div class="card-content">
             <h3 class="accent-text">ScanTrust</h3>
@@ -220,7 +219,7 @@
           </div>
         </div>
 
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
           <img class="card-image clip-a" src="/assets/partners-clients/Logo VV@2x.png">
           <div class="card-content">
             <h3 class="accent-text">Virtual Vaults</h3>
@@ -235,10 +234,10 @@
           </div>
         </div>
 
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
           <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">You?</h3>
@@ -257,14 +256,12 @@
         
     </div>
   </section>
-</div>
 
-<div class="section-container cutoff-top cutout-bottom">
-  <section class="section relative tertiary neg-m-top-m p-top-l">
+  <section class="section is-medium relative tertiary">
     <div class="container z-index-2">
       <h2 class="has-text-centered section-title">System Integrators</h2>
       <div class="columns">
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo BCG@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo BCG@2x.png" alt="LTO Network - Boston Consulting Group">
@@ -282,7 +279,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Moonwhale@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Moonwhale@2x.png" alt="LTO Network - MoonWhale">
@@ -300,7 +297,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Axveco@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Axveco@2x.png" alt="LTO Network - Axveco">
@@ -320,7 +317,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Xurux@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Xurux@2x.png" alt="LTO Network - Xurux">
@@ -338,10 +335,10 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
           <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png" alt="LTO Network - Your use case?">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png" alt="LTO Network - Your use case?">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
@@ -358,8 +355,8 @@
 
         <div class="column invisible is-hidden-mobile card">
           <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
@@ -377,14 +374,13 @@
         
     </div>
   </section>
-</div>
-
-<div class="section-container cutout-top cutout-bottom-alt">
-  <section class="section alt p-top-xl neg-m-top-m p-bottom-xl">
+  
+<div class="section-container cutout-bottom-alt">
+  <section class="section is-medium alt">
     <div class="container">
       <h2 class="has-text-centered section-title">Partners</h2>
       <div class="columns">
-       <div class="column card">
+       <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo CMS@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo CMS@2x.png" alt="LTO Network - CMS">
@@ -402,7 +398,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo IBM@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo IBM@2x.png" alt="LTO Network - IBM">
@@ -420,7 +416,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Inatba@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Inatba@2x.png" alt="LTO Network - Inatba">
@@ -440,7 +436,7 @@
       </div>
 
       <div class="columns has-margin-top-20">
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo ISO@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo ISO@2x.png" alt="LTO Network - International Organization for Standardization">
@@ -458,7 +454,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo DBC@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo DBC@2x.png" alt="LTO Network - Dutch Blockchain Coalition">
@@ -476,7 +472,7 @@
           </div>
         </div>
 
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo HH@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo HH@2x.png" alt="LTO Network - The Hague University">
@@ -496,7 +492,7 @@
       </div>
         
         <div class="columns has-margin-top-20">
-        <div class="column card">
+        <div class="column card uc">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Certik@2x.webp">
           <img class="card-image clip-b lazy" src="/assets/partners-clients/Logo Certik@2x.png" alt="LTO Network - Certik">
@@ -513,10 +509,10 @@
             </div>
           </div>
         </div>
-        <div class="column card">
+        <div class="column card uc">
           <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png" alt="LTO Network - Your use case?">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png" alt="LTO Network - Your use case?">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
@@ -531,7 +527,7 @@
           </div>
         </div>
         
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Tech Data@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Tech Data@2x.png" alt="LTO Network - TechData">
@@ -553,7 +549,7 @@
         
 <!--
         <div class="columns has-margin-top-20">
-        <div class="column card invisible">
+        <div class="column card uc invisible">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Docker@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Docker@2x.png">
@@ -571,7 +567,7 @@
           </div>
         </div>
         
-        <div class="column card invisible">
+        <div class="column card uc invisible">
          <picture>
       <source type="image/webp" data-srcset="/assets/partners-clients/Logo Unchain@2x.webp">
           <img class="card-image clip-a lazy" src="/assets/partners-clients/Logo Unchain@2x.png">
@@ -589,10 +585,10 @@
           </div>
         </div>
 
-        <div class="column card invisible is-hidden-mobile">
+        <div class="column card uc invisible is-hidden-mobile">
           <picture>
-      <source type="image/webp" data-srcset="/assets/polygons - 1.webp">
-          <img class="card-image clip-b lazy" src="/assets/polygons - 1.png">
+      <source type="image/webp" data-srcset="/assets/use-cases/polygons@2x.webp">
+          <img class="card-image clip-b lazy" src="/assets/use-cases/polygons@2x.png">
             </picture>
           <div class="card-content">
             <h3 class="accent-text">Interested?</h3>
