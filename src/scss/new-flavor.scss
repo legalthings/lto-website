@@ -1077,12 +1077,12 @@ blockquote .author {
 
   @include responsive(laptop) {
     right: 70px;
-    top: -760px;
+    top: -310px;
   }
 
   @include responsive(desktop) {
     right: 600px;
-    top: -570px;
+    top: -260px;
   }
 
   img {
@@ -1103,7 +1103,7 @@ blockquote .author {
 
   @include responsive(laptop) {
     right: -40px;
-    top: 930px;
+    top: 770px;
   }
 
   @include responsive(desktop) {
@@ -2456,7 +2456,7 @@ blockquote .author {
 
     @include responsive(desktop) {
       height: 88vh !important;
-       min-width: 100% !important;
+      min-width: 100% !important;
     }
 
     @include responsive(laptop) {
@@ -2973,5 +2973,48 @@ $network-circles: 12;
 .wide-screen-floating-rocks {
   @include responsive(phone) {
     display: none;
+  }
+}
+
+.rock-1 {
+  top: 0px;
+  left: -48px;
+  width: 280px;
+  height: 275px;
+  background-image: url('/assets/rocks/rock-1.svg');
+  background-size: 100% 100%;
+}
+
+.rock-2 {
+  top: 0px;
+  left: 48px;
+  width: 280px;
+  height: 275px;
+  background-image: url('/assets/rocks/rock-2.svg');
+  background-size: 100% 100%;
+}
+
+.rock-3 {
+  top: 0px;
+  left: -48px;
+  width: 280px;
+  height: 275px;
+  background-image: url('/assets/rocks/rock-3.svg');
+  background-size: 100% 100%;
+}
+
+// Show supported rocks for Firefox
+
+@-moz-document url-prefix() {
+  .rock-1 {
+    background-image: url('/assets/rocks/rock-1.png');
+  }
+
+  .rock-2 {
+    background-image: url('/assets/rocks/rock-2.png');
+  }
+  
+  .rock-3 {
+    background-image: url('/assets/rocks/rock-3.png');
   }
 }
