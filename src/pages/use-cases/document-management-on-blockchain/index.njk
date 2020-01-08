@@ -1,6 +1,7 @@
-{% set title = 'LTO Network - Use case - Legal Live Contracts' %}
-{% set description = 'Decentralized commercial lease agreements' %}
-{% set currentUrl = '/use-cases/smart-property-lease-agreements/' %}
+{% set title = 'LTO Network - Use case - Document Management on Blockchain (VirtualVaults)' %}
+{% set description = 'Document management systems can be used for any type of document. Adding blockchain helps with authenticating everything that takes place in a DMS.' %}
+{% set currentUrl = '/use-cases/document-management-on-blockchain/' %}
+{% set locale = 'en' %}
 
 {% extends "base.njk" %}
 
@@ -9,16 +10,16 @@
 <div class="section-container">
   <section class="hero is-fullheight">
     <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-lease@2x.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-lease@2x.jpg" alt="Decentralized commercial lease agreements">
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-tdm@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-tdm@2x.jpg" alt="Document Management on Blockchain (VirtualVaults)">
     </picture>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-two-thirds">
             <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
-            <h1 class="primary-text">Decentralized commercial lease agreements</h1>
-            <h2 class="dark-indigo">Legal documents are still static pieces of paper. Live Contracts achieve unique automation and efficiency.</h2>
+            <h1 class="primary-text">Document Management on Blockchain</h1>
+            <h2 class="dark-indigo">Document management systems can be used for any type of document. Adding blockchain helps with authenticating everything that takes place in a DMS.</h2>
           </div>
         </div>
       </div>
@@ -28,22 +29,23 @@
 
 <div class="section-container cutout-top cutout-bottom-alt">
   <section class="section secondary promo-numbers-section">
-    <div class="promo-numbers c">
+    <div class="promo-numbers c use-cases">
       <div class="container use-cases">
         <div class="item use-cases">
           <picture>
-            <source type="image/webp" data-srcset="/assets/use-cases/cms@2x.webp">
-            <img class="promo-client lazy" data-src="/assets/use-cases/cms@2x.png" alt="CMS">
+            <source type="image/webp" data-srcset="/assets/use-cases/virtualvaults_logo@2x.webp">
+            <img class="promo-client lazy" data-src="/assets/use-cases/virtualvaults_logo@2x.png" alt="Virtual Vaults">
           </picture>
         </div>
         <div class="item use-cases">
           <p class="promo-head use-cases">Involved parties</p>
-          <p class="promo-desc use-cases muted">CMS Law and MSeven Real Estate.</p>
+          <p class="promo-desc use-cases muted">Enterprise clients</p>
         </div>
       </div>
     </div>
   </section>
 </div>
+
 
 <section class="section is-medium">
   <div class="container">
@@ -51,27 +53,27 @@
     <div class="columns">
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Process automation</h3>
+          <h3 class="accent-text">Evidence of date and time</h3>
           <div class="card-description">
-            <p class="muted">Paper lease contracts have been used for ages to formalize a rent. However, paper-based agreements are tough to automate.</p>
+            <p class="muted">In case there is a dispute about when and at what the exact time a document was uploaded, you need to be able to verify this reliably.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">High stakes</h3>
+          <h3 class="accent-text">Document authenticity</h3>
           <div class="card-description">
-            <p class="muted">Commercial lease agreements involve many parties, such as maintenance, tenants, landlords, asset managers, asset owners, and more. With big money involved, there's a continuous need for verifying each other's data on its validity.</p>
+            <p class="muted">In case there is a dispute about which document and it's content was uploaded, you need to be able to validate which one is the original one.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Payment cycles</h3>
+          <h3 class="accent-text">Document verification</h3>
           <div class="card-description">
-            <p class="muted">On complex real estate agreements, that often have various companies in a building, payments differ on a month to month basis due to ad hoc maintenance and more, resulting in complex payment procedures.</p>
+            <p class="muted">Documents that are shared and used by multiple parties need to be trusted by everyone involved, and independently verifiable.</p>
           </div>
         </div>
       </div>
@@ -82,36 +84,36 @@
 <section class="section is-medium secondary">
   <div class="container">
     <h2 class="has-text-centered section-title">Solution overview</h2>
-    <div class="columns is-centered has-margin-top-40 inverted-mobile">
+    <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Distributed data processing</h3>
-        <p class="muted">By utilizing blockchain technology, each party will have control over its data and will be able to verify the actions of others, making cooperation secure, yet efficient. </p>
+        <h3 class="title subsection-title dark-indigo">Immutable files</h3>
+        <p class="muted">A document can be represented as a digital fingerprint by 'hashing' the document. LTO Network stores the hash of this document through a with LTO Network connected systems Anyone with access to the data can verify the document by hashing it and comparing it against the stored version.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/diagram-purple.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/check-alt-purple.svg" alt="LTO Network - Immutable files">
       </div>
     </div>
 
-    <div class="columns is-centered has-margin-top-40">
+    <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/legal-purple.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/desktop-purple.svg" alt="LTO Network - Verifiable timestamp">
       </div>
       <div class="column is-1"></div>
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Automated compliance</h3>
-        <p class="muted">Save up to 40% on administrative overhead by reducing bureaucracy within the organization. The LTO platform creates automated audit trails and orchestrated tasks. The actors can check their status without relying on a central organization. </p>
+        <h3 class="title subsection-title dark-indigo">Verifiable timestamp</h3>
+        <p class="muted">Not only the hashed document (fingerprint) is stored on the blockchain but also the timestamp of the document. By making documents verifiable and independently auditable, they become more valuable. LTO Network creates portable proof of your timestamped claims. These blockchain-based verifications can be shared and transferred to other parties.</p>
       </div>
     </div>
 
-    <div class="columns is-centered has-margin-top-40 inverted-mobile">
+    <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Use of Mobile apps</h3>
-        <p class="muted">Service and maintenance heavily relies on applications nowadays. By linking these apps -such as Capptions- to the contract, on-the-floor operations, and the captured data is pushed right to the agreement, optimizing payments. </p>
+        <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
+        <p class="muted">Using the on open standards-based LTO Network is, any party can independently verify the authenticity and timestamp of the document, without having to rely on a trusted third party.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/smartphone-purple.svg" alt="LTO Network - Rock">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/dashboard-purple.svg" alt="LTO Network - No need for third party verification">
       </div>
     </div>
     <div class="btn-container has-text-centered has-margin-top-40">
@@ -120,44 +122,43 @@
   </div>
 </section>
 
-
 <section class="section is-medium">
   <div class="container">
     <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
-    <div class="columns is-centered has-margin-top-40">
+    <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
         <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/building.svg" alt="LTO Network - The building passport">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/shield.svg" alt="LTO Network - Protection against claims">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">The building passport</h3>
-        <p class="muted">Especially new buildings can start 'the right way' by creating a building passport. When selling a building, a complete and trusted set of data is transferred. Transferring buildings with LTO Network assures a full, trusted collection of data when switching owners.</p>
+        <h3 class="title subsection-title dark-indigo">Protection against claims</h3>
+        <p class="muted">The evidence that a document has been uploaded by a person in the data room or other document management system is indisputable. This protects your organization against potential claims.</p>
       </div>
     </div>
 
-    <div class="columns is-centered has-margin-top-40">
+    <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
         <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Ease of integration">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Ease of integration</h3>
-        <p class="muted">LTO Network is a fully decentralized and highly efficient blockchain infrastructure that is easy to integrate into existing (legacy) systems, mobile applications, and IoT devices. LTO Network is production-ready for instant efficiency upgrades.</p>
+        <h3 class="title subsection-title dark-indigo">Easy integration</h3>
+        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and applications to administer, record, and communicate with LTO Network. The implementation of LTO Network is as simple as connecting an API.</p>
       </div>
     </div>
 
-    <div class="columns is-centered has-margin-top-40">
+    <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
         <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Liquidity">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/legal.svg" alt="LTO Network - Data governance">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Liquidity</h3>
-        <p class="muted">Liquidity improvement, making fewer write-offs on tenants who go bankrupt. Through Live Contracts, service charges can be debited directly instead of months after the close of the year through smart payments. </p>
+        <h3 class="title subsection-title dark-indigo">Data governance</h3>
+        <p class="muted">Documents uploaded and the blockchain receipt with the details of the upload can never be altered. Therefore, you have a foolproof record of everything that goes in and out of your dataroom. LTO Network combined with Virtual Vaults makes it easy to manage who has access and whether documents where viewed, downloaded or removed.</p>
       </div>
     </div>
 
@@ -171,20 +172,20 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Data sharing</div>
+            <div class="table_cell deep-lavender">Security</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>LTO Networks distributed data processing allows for unparalleled efficient data exchange between stakeholders.</p>
+              <p>In Virtual Vaults documents are saved securely, and hashed for proving its existence at a certain moment.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>We are sharing unstructured data between participants on a contract through ancient communication methods.</p>
+              <p>Physical and centralized storage is prone to file losses, hacks and manipulation.</p>
             </div>
           </div>
         </div>
@@ -194,51 +195,49 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Automation</div>
+            <div class="table_cell deep-lavender">Counterfeiting</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>Live Contracts portray a legal document as a set of business rules and data that allow automation.</p>
+              <p>Blockchain technology ensures immutable and authentic document records.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Static pieces of paper are impossible to automate. Smart contracts don't work out for these documents.</p>
+              <p>Identification of counterfeited paper documents is time consuming costly.</p>
             </div>
           </div>
         </div>
-
-
-
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Existing systems</div>
+            <div class="table_cell deep-lavender">Sharing</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>By merely linking API's to a Live Contract, stakeholders can participate in workflow while keeping existing IT in place.</p>
+              <p>Creating an audit trail of document sharing and version control allows for independent verification of the documents.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>'Traditional' blockchain solutions require extensive and expensive IT overhauls due to existing (legacy) systems.</p>
+              <p>Sharing documents in a secure way is complex and inefficient.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
     <div class="btn-container has-text-centered">
-      <a href="/contact/" class="button is-primary">
+      <a href="/contact/" class="button is-primary is-rounded main-button book-demo advantages">
         Book a demo
       </a>
     </div>
@@ -254,15 +253,15 @@
             <div class="columns">
               <div class="column is-3 card-testimonial-img">
                 <picture>
-                  <source type="image/webp" data-srcset="/assets/use-cases/m7_testimonial@2x.webp">
-                  <img class="lazy" data-src="/assets/use-cases/m7_testimonial@2x.png">
+                  <source type="image/webp" data-srcset="/assets/use-cases/vv_testimonial@2x.webp">
+                  <img class="lazy" data-src="/assets/use-cases/vv_testimonial@2x.png">
                 </picture>
               </div>
               <div class="column">
                 <div class="content card-testimonial-content">
-                  <p class="">LTO’s GDPR and privacy compliance characteristics make it a fresh breath of air in a clouded and hyped blockchain landscape. We’re looking forward to exploring other solutions with LTO in the future!</p>
-                  <div class="author">Niels Bruijninckx</div>
-                  <div class="company">Senior Manager of M7 Real Estate</div>
+                  <p class="">By implementing LTO Network into Virtual Vaults, new product opportunities arise. It prevents potential disputes about the discussion whether a file was uploaded in a M&A deal or you can prove that IP actually belongs to your organization instead of the one filing for a patent.</p>
+                  <div class="author">Jeroen Kruithof</div>
+                  <div class="company">CEO of Virtual Vaults</div>
                 </div>
               </div>
             </div>
@@ -272,6 +271,7 @@
     </div>
   </section>
 </div>
+
 
 <div class="section-container">
   <section class="section alt has-bg-img">

@@ -85,6 +85,16 @@ h3 {
 .button {
   font-weight: 500 !important;
   padding: 1.5em 2em !important;
+
+  &.is-ghost {
+    background: transparent;
+    border: 1px solid #17054b;
+    color: #17054b;
+    //    &:hover {
+    //      transition: 1s ease-out;
+    //      box-shadow: 0 16px 16px -8px rgba(0, 0, 0, 0.27);
+    //    }
+  }
 }
 
 .primary-text {
@@ -744,6 +754,11 @@ h3 {
 
 .muted {
   color: $muted-text;
+
+  strong {
+    font-weight: bold;
+    color: $muted-text !important;
+  }
 }
 
 .z-index-4 {
@@ -1119,8 +1134,9 @@ blockquote .author {
 .tag {
   font-size: 12px;
   font-weight: 500;
-  padding: 8px 16px 8px 16px;
+  padding: 10px 18px 10px 18px;
   color: #95a7bf !important;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
 }
 
 .hero-body h2 {
@@ -1316,18 +1332,30 @@ blockquote .author {
   width: 26px;
   top: 237px;
   left: 60px;
+
+  @include responsive (phone) {
+    margin: auto;
+  }
 }
 
 .rock-2 {
   width: 26px;
   top: 50px;
   left: 210px;
+
+  @include responsive (phone) {
+    margin: auto;
+  }
 }
 
 .rock-3 {
   width: 78px;
   top: 220px;
   left: 320px;
+
+  @include responsive (phone) {
+    margin: auto;
+  }
 }
 
 .rock-4 {
@@ -1650,6 +1678,7 @@ blockquote .author {
     align-items: center;
     justify-content: center;
     width: auto;
+    margin-top: 20px;
 
     &::before {
       content: '';
@@ -2452,7 +2481,7 @@ blockquote .author {
     height: 88vh;
     background-size: cover;
     transition: 900ms ease-in-out;
-    opacity: 1;
+    opacity: .7;
 
     @include responsive(desktop) {
       height: 88vh !important;
@@ -2463,6 +2492,7 @@ blockquote .author {
       height: 88vh;
       width: auto !important;
       max-width: 120% !important;
+      opacity: .5;
     }
 
     @include responsive(phone) {
@@ -2470,6 +2500,7 @@ blockquote .author {
       width: 100%;
       background-size: cover;
       object-fit: cover;
+      opacity: 0.2;
     }
 
     &.next {
@@ -2483,6 +2514,22 @@ blockquote .author {
     &.is-exiting {
       opacity: 0;
       mix-blend-mode: overlay;
+    }
+
+    &.no-opacity {
+      opacity: 1 !important;
+    }
+
+    &.home {
+      @include responsive(desktop) {
+        right: -18px !important;
+      }
+    }
+
+    &.ecosystem-v {
+      @include responsive(desktop) {
+        right: -18px !important;
+      }
     }
   }
 
@@ -3013,8 +3060,29 @@ $network-circles: 12;
   .rock-2 {
     background-image: url('/assets/rocks/rock-2.png');
   }
-  
+
   .rock-3 {
     background-image: url('/assets/rocks/rock-3.png');
+  }
+}
+
+.card {
+  border-radius: 24px;
+
+  .card-image {
+    .why-lto {
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+  }
+
+  .image {
+    &.product {
+      padding: 40px;
+    }
+  }
+
+  .card-content {
+    padding-top: 0;
   }
 }

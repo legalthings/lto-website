@@ -1,26 +1,25 @@
-{% set title = 'LTO Network - Use case - Digital signing with blockchain verification' %}
-{% set description = 'Immutability of important documents is guaranteed' %}
-{% set currentUrl = '/use-cases/digital-signing-blockchain-verification/' %}
+{% set title = 'LTO Network - Use case - Judicial cases on Blockchain (OM)' %}
+{% set description = 'Blockchain has opened up countless opportunities for organizations to collaborate smarter and transparent. When novel technologies are combined, actual efficiency surfaces.' %}
+{% set currentUrl = '/use-cases/judicial-cases-on-blockchain/' %}
+{% set locale = 'en' %}
 
 {% extends "base.njk" %}
-
-
 
 {% block content %}
 
 <div class="section-container">
   <section class="hero is-fullheight">
     <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-signrequest@2x.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-signrequest@2x.jpg" alt="Digital signing with blockchain verification">
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-cac@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-cac@2x.jpg" alt="Judicial cases on Blockchain (OM)">
     </picture>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-two-thirds">
             <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
-            <h1 class="primary-text">Digital signing with blockchain verification</h1>
-            <h2 class="dark-indigo">Providing immutable evidence by publishing the timestamped evidence on digitally signed documents.</h2>
+            <h1 class="primary-text">Judicial cases on Blockchain</h1>
+            <h2 class="dark-indigo">Blockchain has opened up countless opportunities for organizations to collaborate smarter and transparent. When novel technologies are combined, actual efficiency surfaces.</h2>
           </div>
         </div>
       </div>
@@ -34,13 +33,13 @@
       <div class="container use-cases">
         <div class="item use-cases">
           <picture>
-            <source type="image/webp" data-srcset="/assets/use-cases/signrequest@2x.webp">
-            <img class="promo-client lazy" data-src="/assets/use-cases/signrequest@2x.png">
+            <source type="image/webp" data-srcset="/assets/use-cases/om@2x.webp">
+            <img class="promo-client lazy" data-src="/assets/use-cases/om@2x.png" alt="Openbaar Ministerie">
           </picture>
         </div>
         <div class="item use-cases">
           <p class="promo-head use-cases">Involved parties</p>
-          <p class="promo-desc use-cases muted">Over 1 million business documents are signed every year through the SignRequest app.</p>
+          <p class="promo-desc use-cases muted">Police and District Attorneys.</p>
         </div>
       </div>
     </div>
@@ -53,27 +52,27 @@
     <div class="columns">
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Evidence of date and time</h3>
+          <h3 class="accent-text">Many stakeholders</h3>
           <div class="card-description">
-            <p class="muted">In case there ever is a dispute about the exact time a document was signed, you need to be able to verify this reliably.</p>
+            <p class="muted">At the moment, multiple different government bodies take part in this repetitive process, working with unstructured data. </p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Document authenticity</h3>
+          <h3 class="accent-text">Lots of paperwork</h3>
           <div class="card-description">
-            <p class="muted">In case there ever is a dispute about which version of a contract was agreed and signed, you need to be able to validate which one is the original one.</p>
+            <p class="muted">With many stakeholders that produce unstructured data, much paperwork is created on these repetitive processes using faxes, email, and phone calls.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Document verification</h3>
+          <h3 class="accent-text">Existing systems</h3>
           <div class="card-description">
-            <p class="muted">Documents that are shared and used by multiple parties need to be trusted by everyone involved, and independently verifiable.</p>
+            <p class="muted">We use tailored IT-systems on these processes in an organization, and replacing them would be a massive burden with associated costs. </p>
           </div>
         </div>
       </div>
@@ -81,39 +80,40 @@
   </div>
 </section>
 
+
 <section class="section is-medium secondary">
   <div class="container">
     <h2 class="has-text-centered section-title">Solution overview</h2>
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Immutable PDF's</h3>
-        <p class="muted">The document can be represented as a digital fingerprint by 'hashing' the document. LTO Network stores the hash of this document through a with LTO Network connected systems Anyone with access to the data can verify the document by hashing it and comparing it against the stored version.</p>
+        <h3 class="title subsection-title dark-indigo">The Process</h3>
+        <p class="muted">These processes are incredibly cumbersome and provided a lot of unstructured data, even through using ancient fax machines. LTO Networks' distributed business logic allows for all government bodies to trust the validity of the data.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable PDF's">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/diagram-purple.svg" alt="LTO Network - The Process">
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp ">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/link-purple.svg" alt="LTO Network - Data sharing">
       </div>
       <div class="column is-1"></div>
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Verifiable timestamp </h3>
-        <p class="muted">Not only the hashed document (fingerprint) is stored on the blockchain but also the timestamp of the document. By making documents verifiable and independently auditable, they become more valuable. LTO Network creates portable proof of your timestamped claims. These blockchain-based verifications can be shared and transferred to other parties.</p>
+        <h3 class="title subsection-title dark-indigo">Data sharing</h3>
+        <p class="muted">with LTO Network's distributed data processing, data is exchanged over linked (legacy) systems that run at the stakeholders' offices. The implementation of blockchain shouldn't require the replacement of otherwise-working systems for the sake of it. </p>
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
-        <p class="muted">Using the on open standards-based LTO Network is, any party can independently verify the authenticity and timestamp of the document, without having to rely on a trusted third party.</p>
+        <h3 class="title subsection-title dark-indigo">Citizen engagement</h3>
+        <p class="muted">Based on the state of the workflow, citizens (victims, perpetrators), can receive filtered information about the process through their (mobile) DigiD app, eliminating the need for status update calls with the Districts Attorney's office.</p>
       </div>
       <div class="column is-1"></div>
-      <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
+      <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/desktop-purple.svg" alt="LTO Network - Citizen engagement">
       </div>
     </div>
     <div class="btn-container has-text-centered has-margin-top-40">
@@ -130,23 +130,23 @@
         <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Decentralized workflows">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Cost savings</h3>
-        <p class="muted">Administrative tasks such as manually entering data into your system, which in turn was received by letter, fax, or email, belongs to the past. With LTO Networks' blockchain technology, all parties can collect structured data into the systems they use to execute and administer these processes. By doing so, LTO Network reduces the administrative overhead with more than 30%.</p>
+        <h3 class="title subsection-title dark-indigo">Decentralized workflows</h3>
+        <p class="muted">Using LTO Network's technology, we run small criminal cases' paperwork on the blockchain, based on the predefined logic at the core of each process. All parties involved can participate in the process using their systems, as process data is automatically exchanged between these systems.</p>
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40">
-      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
         <img class="lazy" style="position:absolute;width:30px;top: 100px;left: -90px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:50px;top: 200px;left: 230px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/diagram.svg" alt="LTO Network - Easy integration">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/dropper.svg" alt="LTO Network - Adding AI">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Easy integration</h3>
-        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and applications to administer, record, and communicate with LTO Network. The implementation of LTO Network is as simple as connecting an API. </p>
+        <h3 class="title subsection-title dark-indigo">Adding AI</h3>
+        <p class="muted">IBM Watson will further reduce the manual labor required in a ZSM-process, using a cognitive computing system to instantly understand questions and respond with the correct answers and verdicts, based on the input of stakeholders.</p>
       </div>
     </div>
 
@@ -154,11 +154,11 @@
       <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
         <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Meaningful tasks">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
-        <p class="muted">Demonstrating compliance is essential in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguard evidence and comply with regulations. LTO Network enables one-click compliance reporting for both internal and external communication on your business processes.</p>
+        <h3 class="title subsection-title dark-indigo">Meaningful tasks</h3>
+        <p class="muted">Since LTO Network takes away a significant part of the administrative burdens, this way of working frees up knowledge and expertise for other essential functions that cannot be performed without human assistance (yet).</p>
       </div>
     </div>
 
@@ -172,20 +172,20 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Document Security</div>
+            <div class="table_cell deep-lavender">Streamlining operations</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>Anchoring the signed PDF on the LTO Network blockchain guarantees document immutability to all parties involved.</p>
+              <p>Decentralized workflows notify stakeholders in their systems about tasks for them to complete.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>With professional PDF-hackers around, certainty on signed documents cannot be taken for granted.</p>
+              <p>Notifications on to-be-fulfilled tasks are delivered manually.</p>
             </div>
           </div>
         </div>
@@ -195,40 +195,40 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Document Verification</div>
+            <div class="table_cell deep-lavender">Data sharing</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>With pre-integrated and independent validation tools linked to the blockchain, any party can independently verify the authenticity of a document.</p>
+              <p>LTO Networks distributed data processing allows for unparalleled efficient data exchange between stakeholders.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Verifying the authenticity of a document requires the need of a third party which is time-consuming and costly.</p>
+              <p>Unstructured data is shared between participants on a contract through ancient communication methods, causing lots of data re-entry.</p>
             </div>
           </div>
         </div>
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Costs and Speed</div>
+            <div class="table_cell deep-lavender">Use of AI</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>The blockchain of LTO Network is optimized for anchoring, making transactions affordable and occurring at near-instant speed.</p>
+              <p>Integrating Watson and feeding it data from the workflow can be quickly done using decentralized workflows.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Traditional blockchains tend to be very slow. Anchoring transactions on them is expensive.</p>
+              <p>Traditional blockchains are often incompatible with tools like IBM Watson.</p>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@
 
 
     <div class="btn-container has-text-centered">
-      <a href="https://help.signrequest.com/hc/en-us/articles/360020499014-SignRequest-and-the-LTO-Network-Blockchain" class="button is-primary" target="blank">
+      <a href="https://medium.com/ltonetwork/ibm-watson-lto-network-to-speed-up-small-criminal-cases-by-400-22ddc80b9178" target="blank" class="button is-primary">
         Learn more
       </a>
     </div>
@@ -253,15 +253,15 @@
             <div class="columns">
               <div class="column is-3 card-testimonial-img">
                 <picture>
-                  <source type="image/webp" data-srcset="/assets/use-cases/signrequest_testimonial@2x.webp">
-                  <img class="lazy" data-src="/assets/use-cases/signrequest_testimonial@2x.png">
+                  <source type="image/webp" data-srcset="/assets/use-cases/om_testimonial@2x.webp">
+                  <img class="lazy" data-src="/assets/use-cases/om_testimonial@2x.png">
                 </picture>
               </div>
               <div class="column">
                 <div class="content card-testimonial-content">
-                  <p class="">Using the blockchain for Proof-of-Existence of electronic signatures makes sense and is already happening. When we researched blockchain platforms, LTO Network stood out in terms of speed, set-up, and capabilities. We can include the blockchain transaction identifier directly into our signing logs which that circulate upon signing, without the need to wait minutes for confirmations. Moreover, the potential for creating decentralized workflows pushed us over the edge and made us add the LTO Network solution as an option to our users.</p>
-                  <div class="author">Michael Krens</div>
-                  <div class="company">CTO of SignRequest</div>
+                  <p class="">Innovation is of paramount importance to DA. This project shows that we are constantly working to improve our services concerning the application of standards.</p>
+                  <div class="author">Sanne Giphart</div>
+                  <div class="company">Head of Innovation of Dutch Districts Attorney's office</div>
                 </div>
               </div>
             </div>
@@ -271,6 +271,7 @@
     </div>
   </section>
 </div>
+
 
 <div class="section-container">
   <section class="section alt has-bg-img">

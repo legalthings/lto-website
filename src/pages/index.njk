@@ -1,6 +1,7 @@
-{% set title = 'LTO Network' %}
-{% set description = 'A simple route to blockchain adoption in business and enterprise' %}
+{% set title = 'LTO Network - Hybrid Blockchain' %}
+{% set description = 'The new standard for data security and inter-organizational collaboration using a Hybrid Blockchain.' %}
 {% set currentUrl = '/' %}
+{% set locale = 'en' %}
 
 {% extends "base.njk" %}
 
@@ -10,18 +11,23 @@
   <section class="hero is-fullheight">
     <picture>
 <!--      <source type="image/webp" data-srcset="/assets/hero/hero-home-white.webp">-->
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-home-white.svg" alt="LTO Network - Hero Home">
+      <img class="overlay-image home lazy" data-src="/assets/hero/hero-home-white.svg" alt="LTO Network - Hero Home">
     </picture>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-two-thirds">
-            <h1 class="title">Using <span class="accent">Hybrid Blockchain</span> and <span class="accent">Live Contracts</span> to help organizations break out of data silos.</h1>
+            <h1 class="title">The new standard for data security and collaboration using <br> <span class="accent">Hybrid Blockchain</span>.</h1>
             <div class="buttons">
-              <a href="/partners-clients/" class="button is-warning">
-                <p class="dark-indigo">See The List of Clients</p>
+             <a href="/use-cases/" class="button is-warning">
+                <p class="dark-indigo">Explore Live Use Cases</p>
               </a>
-              <a href="https://blog.ltonetwork.com/staking-and-leasing-lto-network-node-guide/" class="button">Join Staking</a>
+              <a href="/partners-clients/" class="button is-ghost">Partners & Clients</a>
+            </div>
+            <div class="gdpr">
+            <picture>
+              <img data-src="/assets/gdpr-compliant.svg" alt="GDPR Compliant" class="lazy">
+            </picture>
             </div>
           </div>
         </div>
@@ -37,80 +43,40 @@
 </div>
 
 <section class="section is-medium">
-  <div class="container">
-    <h2 class="title is-4 has-text-centered">Our product suite</h2>
-
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:70px;top:200px;left:-420px;" data-rellax-speed="4">
-      <img class="lazy" data-src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-    </div>
-
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:640px;left:-270px;" data-rellax-speed="-2">
-      <img class="lazy" data-src="/assets/rocks/small-rock-4.svg" alt="LTO Network - Rock">
-    </div>
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:98px;top:670px;left:1360px;" data-rellax-speed="6">
-      <img class="lazy" data-src="/assets/rocks/small-rock-3.svg" alt="LTO Network - Rock">
-    </div>
-
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:260px;left:1150px;" data-rellax-speed="-4">
-      <img class="lazy" data-src="/assets/rocks/small-rock-5.svg" alt="LTO Network - Rock">
-    </div>
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:40px;left:1230px;" data-rellax-speed="2">
-      <img class="lazy" data-src="/assets/rocks/small-rock-4.svg" alt="LTO Network - Rock">
-    </div>
-
-    <div class="columns is-centered  is-vcentered has-margin-top-40 inverted-mobile">
-      <div class="column is-one-third">
-        <div class="content">
-          <h3 class="subtitle">Fillthedoc</h3>
-          <p class="muted">Contract automation for professionals. Fillthedoc is a powerful tool to fetch data from multiple systems and processes into one - or more documents. <a href="https://fillthedoc.com/">Check it out and use today</a>!</p>
-        </div>
+ <div class="container">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h2 class="title is-4">About <strong>LTO Network</strong></h2>
+      <div class="content">
+        <p class="muted">Organizations explore blockchain for the cost-savings and efficiency that can be gained through trustless collaboration. The same way we did in 2017, as a B2B software company ourselves.</p>
+        <p class="muted">As we experienced, smart contracts had severe limitations when it came to daily business operations. That's why we built LTO Network. <strong>A platform for optimized timestamping and efficient collaboration using Live Contracts.</strong></p>
+        <p class="muted">Our goal is to help you succeed with blockchain. Watch the platform video and get in touch with us today to see LTO Network can add security and value to your organization!</p>
       </div>
-      <div class="column is-centered is-3">
-        <img style="position:absolute;width:45px;top:230px;left:-40px" class="lazy rellax wide-screen-floating-rocks" data-src="/assets/rocks/small-rock-5.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
-        <picture>
-          <img class="lazy productlogo" data-src="/assets/logo/logo-fillthedoc.svg" alt="Fillthedoc logo">
-        </picture>
+      <div class="btn-container">
+      <a href="/contact/" class="button is-primary">Get in touch!</a>
       </div>
     </div>
-
-    <div class="columns is-centered is-vcentered has-margin-top-40">
-      <div class="column is-3">
-        <picture>
-          <img class="lazy productlogo" data-src="/assets/logo/logo-proofi.svg" alt="Proofi logo">
-        </picture>
-        <img style="position:absolute;width:28px;top:100px;left:-80px" class="lazy rellax wide-screen-floating-rocks" data-src="/assets/rocks/small-rock-2.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
-        <img style="position:absolute;width:70px;top:0px;left:-50px" class="lazy rellax wide-screen-floating-rocks" data-src="/assets/rocks/small-rock-1.svg" data-rellax-speed="-2" alt="LTO Network - Rock">
-      </div>
-      <div class="column is-one-third">
-        <div class="content">
-          <h3 class="subtitle">Proofi</h3>
-          <p class="muted">90% of all cyber crimes begins with an email, acted on by a human. It's time for a trusted digital transaction tool. Free to use, for everyone online. It's time for Proofi. <a href="https://proofi.com/">Learn about Proofi Beta</a>.</p>
-        </div>
+    <div class="column is-1"></div>
+    <div class="column">
+     <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio why-lto" width="640" height="360" src="https://www.youtube.com/embed/Obj9GhhgE8M" frameborder="0" allowfullscreen></iframe>
+          </figure>
+         </div>
+        <footer class="card-footer">
+        <a href="/use-cases/" class="card-footer-item">Explore our use cases →</a>
+       </footer>
       </div>
     </div>
-
-    <div class="columns is-centered  is-vcentered has-margin-top-40 inverted-mobile">
-      <div class="column is-one-third">
-        <div class="content">
-          <h3 class="subtitle">LetsFlow</h3>
-          <p class="muted">LetsFlow allows developers to automate processes using the tools we know and love. The focus is on integrations for both third party services and your own proprietary applications. <a href="https://letsflow.io/">Coming out in Q2 2020</a>.</p>
-        </div>
-      </div>
-      <div class="column is-3">
-        <!--         <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/rocks/small-rock-3.svg" data-rellax-speed="-1" alt="LTO Network - Rock">-->
-        <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax wide-screen-floating-rocks" data-src="/assets/rocks/small-rock-4.svg" data-rellax-speed="1" alt="LTO Network - Rock">
-        <picture>
-          <img class="lazy productlogo" data-src="/assets/logo/logo-letsflow.svg" alt="LetsFlow">
-        </picture>
-      </div>
-    </div>
-
   </div>
+   
+ </div>
 </section>
 
 <section class="section is-medium alt">
   <div class="container medium">
-    <h2 class="title is-4 has-text-centered">How can LTO Network <br> help your business?</h2>
+    <h2 class="title is-4 has-text-centered">The 4 Pillars of <strong>LTO Network</strong></h2>
 
     <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:70px;top:400px;left:-420px;" data-rellax-speed="4">
       <img class="lazy" data-src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
@@ -126,52 +92,94 @@
     <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:460px;left:950px;" data-rellax-speed="-4">
       <img class="lazy" data-src="/assets/rocks/small-rock-5.svg" alt="LTO Network - Rock">
     </div>
-    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:140px;left:1230px;" data-rellax-speed="2">
+    <div class="wide-screen-floating-rocks rellax" style="position:absolute;width:45px;top:140px;left:930px;" data-rellax-speed="2">
       <img class="lazy" data-src="/assets/rocks/small-rock-4.svg" alt="LTO Network - Rock">
     </div>
 
 
     <div class="columns has-margin-top-40">
+      
        <div class="icon-container column rock-1 lazy">
         <img style="position:absolute;width:28px;top:100px;left:-80px" class="lazy rellax" data-src="/assets/rocks/small-rock-2.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
         <img style="position:absolute;width:70px;top:0px;left:-50px" class="lazy rellax" data-src="/assets/rocks/small-rock-1.svg" data-rellax-speed="-2" alt="LTO Network - Rock">
-        <img style="width:80px; position:absolute;top:86px;left:93px;" class="lazy" data-src="/assets/icons/rocket.svg" alt="LTO Network - ICON">
+        <img style="width:80px; position:absolute;top:86px;left:93px;" class="lazy" data-src="/assets/icons/shield.svg" alt="Security">
       </div>
+      
       <div class="column is-two-thirds">
-        <h3 class="subtitle">Cost-efficiency</h3>
+       
+        <h3 class="subtitle">Security</h3>
         <div class="content">
-          <p class="muted">LTO Network can be used by organizations that are seeking cost reduction on repetitive operational processes. By eliminating paperwork and streamlining collaboration on processes between multiple parties - administrative overhead can be reduced significantly.</p>
+          <p class="muted">If proof becomes important, it’s often already too late. Protect and secure your systems, personnel and clients through fast and immutable timestamps.</p>
+          <a href="/use-cases/certificates-on-blockchain/"><p class="accent-text">Learn how the Dutch Standardization body -NEN- secures their certificates on LTO Network &#8594;</p></a>
         </div>
+        
       </div>
+      
     </div>
 
-
-
     <div class="columns has-margin-top-40 inverted-mobile">
+     
       <div class="column is-two-thirds">
-        <h3 class="subtitle">Automation</h3>
+       
+        <h3 class="subtitle">Cost-efficiency</h3>
         <div class="content">
-          <p class="muted">Although automation made organizations become more efficient and productive, we're still only efficient in our own silo's. When organizations use LTO Network to collaborate on processes they benefit from data re-use and automation, without switching systems that are currently used in your organization.</p>
+          <p class="muted">Through digitizing paperwork and streamlining collaboration on processes between multiple parties - administrative overhead can be reduced significantly.</p>
+          <a href="/use-cases/waste-transport-on-blockchain/"><p class="accent-text">Learn how the Dutch ministry of transport saved €7M on a pilot using Live Contracts &#8594;</p></a>
         </div>
+        
       </div>
+      
        <div class="icon-container column rock-2 lazy">
+       
         <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/rocks/small-rock-3.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
         <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax" data-src="/assets/rocks/small-rock-4.svg" data-rellax-speed="1" alt="LTO Network - Rock">
-        <img style="width:80px; position:absolute;top:98px;left:91px;" class="lazy" data-src="/assets/icons/diagram.svg" alt="LTO Network - ICON">
+        <img style="width:80px; position:absolute;top:98px;left:91px;" class="lazy" data-src="/assets/icons/diagram.svg" alt="Cost-efficiency">
+        
       </div>
+      
     </div>
 
     <div class="columns has-margin-top-40">
+     
       <div class="icon-container column rock-3 lazy">
+       
         <img style="position:absolute;width:45px;top:230px;left:-40px" class="lazy rellax" data-src="/assets/rocks/small-rock-5.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
-        <img style="width:80px;position:absolute;top:90px;left:88px;" class="lazy" data-src="/assets/icons/legal.svg" alt="LTO Network - ICON">
+        <img style="width:80px;position:absolute;top:90px;left:88px;" class="lazy" data-src="/assets/icons/legal.svg" alt="Automation">
+        
       </div>
+      
       <div class="column is-two-thirds">
+       
+        <h3 class="subtitle">Automation</h3>
+        <div class="content">
+          <p class="muted">LTO Network uniquely allows for data re-usage and automation without switching systems that are currently used in your organization. Simply link the API to minimize the transition efforts.</p>
+          <a href="/use-cases/judicial-cases-on-blockchain/"><p class="accent-text">Learn how criminal justice can be sped up by 400% with LTO Network, while retaining legacy systems &#8594;</p></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="columns has-margin-top-40 inverted-mobile">
+     
+      <div class="column is-two-thirds">
+       
         <h3 class="subtitle">Compliance</h3>
         <div class="content">
-          <p class="muted">Demonstrating compliance is essential in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguard evidence and comply with regulations. LTO Network is also compatible with GDPR regulation.</p>
+          <p class="muted">Many projects have failed due to GDPR-incompliance. With LTO Network, your data is never on the blockchain. You’re responsible for your data and the blockchain is only there to verify it. The way it should be.</p>
+          <a href="/use-cases/inspection-reports-on-blockchain/"><p class="accent-text">Learn how Capptions’ important inspection reports can be verified without data on-chain &#8594;</p></a>
         </div>
+        
       </div>
+      
+       <div class="icon-container column rock-2 lazy">
+       
+        <img style="position:absolute;width:98px;top:-60px;left:240px" class="lazy rellax" data-src="/assets/rocks/small-rock-3.svg" data-rellax-speed="-1" alt="LTO Network - Rock">
+        <img style="position:absolute;width:45px;top:100px;left:280px" class="lazy rellax" data-src="/assets/rocks/small-rock-4.svg" data-rellax-speed="1" alt="LTO Network - Rock">
+        <img style="width:80px; position:absolute;top:98px;left:91px;" class="lazy" data-src="/assets/icons/diagram.svg" alt="Compliance">
+        
+      </div>
+      
     </div>
 
   </div>
@@ -183,7 +191,7 @@
     <div class="container">
       <div class="columns has-text-centered-mobile">
         <div class="column is-5-desktop">
-          <h2 class="section-title deep-lavender">Why a hybrid blockchain?</h2>
+          <h2 class="title is-4">Tech: <strong>Hybrid Blockchain</strong></h2>
           <div class="content">
             <p class="muted">Businesses are drawn to blockchain by the potential cost-savings that be gained through trustless collaboration. Unfortunately, privacy constraints prevent wide-spread adoption of public blockchains.</p>
             <p class="muted">Consortium chains provide an alternative, but these re-introduce most of the issues blockchain tries to solve, including network authority, memberships, conflicts of interest, and high setup costs.</p>
@@ -191,202 +199,86 @@
             <p class="muted"><em>Together, we can break the blockchain barriers and reach the next level of efficiency.</em></p>
           </div>
           <div class="btn-container">
-            <a href="/tech/" class="button is-primary" alt="Learn more">Learn more</a>
+            <a href="/tech/" class="button is-primary" alt="Tech deep dive">Take a tech deep dive</a>
           </div>
         </div>
       </div>
     </div>
 </section>
 
-<div class="section-container cutout-bottom">
-  <section class="section is-medium alt card-slider-section">
-    <div class="section-body">
-      <div class="container">
-        <h2 class="section-title has-text-centered">Use cases</h2>
-        <h3 class="small-subtitle has-text-centered">Solutions built on LTO Network</h3>
-        <div class="columns-container">
-          <a class="use-case-arrow card-slider-action prev is-hidden-mobile">
-            <img style="width: 60px; margin-right: 6px" class="lazy" data-src="/assets/icons/arrow-left.svg" alt="Left">
-          </a>
-          <div class="columns is-multiline columns-slider is-visible is-centered">
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-capptions.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-capptions.png" alt="LTO Network - Use case - Capptions">
-              </picture>
-              <div class="card-content-uc">
-<!--                <span class="card-meta">30% time savings</span>-->
-                <h3 class="primary-text">Digital checklist & inspection application</h3>
-                <div class="card-description muted">
-                  <p>Providing immutable evidence to data entries and creation of inspection reports on vital locations like airports, oil terminals and dangerous goods.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/digital-checklist-inspection-reports/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-signrequest.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-signrequest.png" alt="LTO Network - Use case - SignRequest">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Digital signing with blockchain verification</h3>
-                <div class="card-description muted">
-                  <p>Providing assurance that document contents have not been tampered with and providing proof of the specific date and time a document was signed.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/digital-signing-blockchain-verification/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-firm24.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-firm24.png" alt="LTO Network - Use case - Firm24">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Data sharing in notary procedures</h3>
-                <div class="card-description muted">
-                  <p>Notary procedures heavily rely on paper based processes. LTO Network makes incorporation procesures more efficient by sharing data efficiently and secure.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/data-sharing-in-notary-procedures/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns columns-slider is-centered">
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-vaas.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-vaas.png" alt="LTO Network - Use case - V-ID">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Authenticity of artwork</h3>
-                <div class="card-description muted">
-                  <p>By validating works of art via blockchain, objects are better protected and the authenticity can be established easier and faster.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/authenticity-art-objects/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-contractapp.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-contractapp.png" alt="LTO Network - Use case - Quislex">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Contracts made easy</h3>
-                <div class="card-description muted">
-                  <p>Receive a fully negotiated and executed contract that also gets hashed on a blockchain by just answering a few questions in a form on your smartphone.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/contracts-made-easy/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-ilt.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-ilt.png" alt="LTO Network - Use case - ILT">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">International waste transportation</h3>
-                <div class="card-description muted">
-                  <p>Connecting all stakeholders of the waste transportation process together through LTO Network saves more than EUR 7M on an annual basis.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/waste-transportation-blockchain/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns columns-slider is-centered">
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-lease.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-lease.png" alt="LTO Network - Use case - CMS">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Smart property lease agreements</h3>
-                <div class="card-description muted">
-                  <p>Legal documents used to be static pieces of paper. Through Live Contracts, a new way of automation and efficiency can be achieved in the real estate industry.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/smart-property-lease-agreements/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-certificates.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-certificates.png" alt="LTO Network - Use case - NeN">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Smart certificates on the blockchain</h3>
-                <div class="card-description muted">
-                  <p>NEN introduced a new way to validate certificates. Instead of using regulators to do random checks, everyone with a smart phone can validate a certificate.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/smart-certificates-blockchain/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="column card uc">
-              <picture>
-                <source type="image/webp" data-srcset="/assets/use-cases/card-uc-cac.webp">
-                <img class="card-image clip-a lazy" data-src="/assets/use-cases/card-uc-cac.png" alt="LTO Network - Use case - District Attorney">
-              </picture>
-              <div class="card-content-uc">
-                {# <span class="card-meta">30% time savings</span> #}
-                <h3 class="primary-text">Streamlining small criminal cases</h3>
-                <div class="card-description muted">
-                  <p>With LTO Network a multi-stakeholder process can be automated by connecting data silo's and enabling effective sharing of business processes.</p>
-                </div>
-                <div class="card-action">
-                  <a href="/use-cases/criminal-cases-blockchain/">
-                    <p class="deep-lavender">Read more →</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="use-case-arrow card-slider-action next is-hidden-mobile">
-            <img style="width: 60px; margin-left: 6px;" class="lazy" data-src="/assets/icons/arrow-right.svg" alt="Right">
-          </a>
-        </div>
-        <div class="content has-text-centered has-margin-top-40">
-          <a href="/use-cases/" class="button is-primary">More use cases</a>
+<div class="section-container cutout-bottom-alt">
+  <section class="section is-medium secondary">
+    <div class="container">
+    <h2 class="title is-4 has-text-centered">Our product suite</h2>
+    <div class="columns is-centered">
+    <div class="column is-two-thirds-desktop">
+    <h3 class="small-subtitle muted has-text-centered">Having working solutions and integrations really differentiate LTO Network from many other blockchain companies and communities. Next to that, we also build our own products on LTO Network. Learn more about them below!</h3>
+    </div>
+    </div>
+    
+    <div class="columns has-margin-top-40">
+      <div class="column">
+     <div class="card">
+        <div class="card-image">
+          <figure class="image product">
+            <picture>
+          <img class="lazy productlogo" data-src="/assets/logo/logo-fillthedoc.svg" alt="Fillthedoc logo">
+          </picture>
+          </figure>
+         </div>
+         <div class="card-content">
+         <div class="content muted">
+<!--           <h3 class="subtitle is-4">Fillthedoc</h3>-->
+           Contract automation for professionals. Fillthedoc is a powerful tool to fetch data from multiple systems and processes into one - or more documents.
+         </div>
+         </div>
+        <footer class="card-footer">
+        <a href="https://fillthedoc.com/" class="card-footer-item">Check it out and use today →</a>
+       </footer>
         </div>
       </div>
+      <div class="column">
+     <div class="card">
+        <div class="card-image">
+          <figure class="image product">
+            <picture>
+          <img class="lazy productlogo" data-src="/assets/logo/logo-proofi.svg" alt="Proofi logo">
+        </picture>
+          </figure>
+         </div>
+         <div class="card-content">
+         <div class="content muted">
+<!--           <h3 class="subtitle is-4">Proofi</h3>-->
+           90% of all cyber crimes begins with an email, acted on by a human. It's time for a trusted digital transaction tool. Free to use, for everyone online. It's time for Proofi.
+         </div>
+         </div>
+        <footer class="card-footer">
+        <a href="https://proofi.com/" class="card-footer-item">Learn about Proofi Beta →</a>
+       </footer>
+        </div>
+        </div>
+      <div class="column">
+     <div class="card">
+        <div class="card-image">
+          <figure class="image product">
+            <picture>
+          <img class="lazy productlogo" data-src="/assets/logo/logo-letsflow.svg" alt="LetsFlow">
+        </picture>
+          </figure>
+         </div>
+         <div class="card-content">
+         <div class="content muted">
+<!--           <h3 class="subtitle is-4">LetsFlow</h3>-->
+           LetsFlow allows developers to automate processes using the tools we know and love. The focus is on integrations for both third party services and your own proprietary applications.
+         </div>
+         </div>
+        <footer class="card-footer">
+        <a href="https://letsflow.io/" class="card-footer-item">Coming out in Q2 2020 →</a>
+       </footer>
+        </div>
     </div>
+      </div>
+      </div>
   </section>
 </div>
 

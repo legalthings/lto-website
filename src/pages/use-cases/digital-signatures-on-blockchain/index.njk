@@ -1,26 +1,25 @@
-{% set title = 'LTO Network - Use case - The Contract App' %}
-{% set description = 'Contracts made easy' %}
-{% set currentUrl = '/use-cases/contracts-made-easy/' %}
+{% set title = 'LTO Network - Use case - Digital Signatures on Blockchain (SignRequest)' %}
+{% set description = 'Immutability of important documents is guaranteed' %}
+{% set currentUrl = '/use-cases/digital-signatures-on-blockchain/' %}
+{% set locale = 'en' %}
 
 {% extends "base.njk" %}
-
-
 
 {% block content %}
 
 <div class="section-container">
   <section class="hero is-fullheight">
     <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-contractapp@2x.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-contractapp@2x.jpg" alt="LTO Network - Contracts made easy">
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-signrequest@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-signrequest@2x.jpg" alt="Digital Signatures on Blockchain (SignRequest)">
     </picture>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-two-thirds">
             <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
-            <h1 class="primary-text">Contracts made easy</h1>
-            <h2 class="dark-indigo">Receive a fully negotiated and executed contract that also gets hashed on a blockchain by just answering a few questions in a form on your smartphone.</h2>
+            <h1 class="primary-text">Digital Signatures on Blockchain</h1>
+            <h2 class="dark-indigo">Providing immutable evidence by publishing the timestamped evidence on digitally signed documents.</h2>
           </div>
         </div>
       </div>
@@ -34,19 +33,18 @@
       <div class="container use-cases">
         <div class="item use-cases">
           <picture>
-            <source type="image/webp" data-srcset="/assets/use-cases/quislex@2x.webp">
-            <img class="promo-client lazy" data-src="/assets/use-cases/quislex@2x.png" alt="Quislex">
+            <source type="image/webp" data-srcset="/assets/use-cases/signrequest@2x.webp">
+            <img class="promo-client lazy" data-src="/assets/use-cases/signrequest@2x.png">
           </picture>
         </div>
         <div class="item use-cases">
           <p class="promo-head use-cases">Involved parties</p>
-          <p class="promo-desc use-cases muted">QuisLex, DocJuris, JotForm, WebMerge, SignRequest and TheContractApp.</p>
+          <p class="promo-desc use-cases muted">Over 1 million business documents are signed every year through the SignRequest app.</p>
         </div>
       </div>
     </div>
   </section>
 </div>
-
 
 <section class="section is-medium">
   <div class="container">
@@ -54,27 +52,27 @@
     <div class="columns">
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Legal automation</h3>
+          <h3 class="accent-text">Evidence of date and time</h3>
           <div class="card-description">
-            <p class="muted">It's difficult for computers to understand any natural language. This shortcoming means that doing automation based on (paper) contracts is almost impossible. </p>
+            <p class="muted">In case there ever is a dispute about the exact time a document was signed, you need to be able to verify this reliably.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Time consuming</h3>
+          <h3 class="accent-text">Document authenticity</h3>
           <div class="card-description">
-            <p class="muted">Negotiations about contracts, including NDA's, often take lots of time and cost much money. You also have to wait for comments from legal teams, and the average person has trouble understanding the difficult language in legal contracts. </p>
+            <p class="muted">In case there ever is a dispute about which version of a contract was agreed and signed, you need to be able to validate which one is the original one.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Confusion</h3>
+          <h3 class="accent-text">Document verification</h3>
           <div class="card-description">
-            <p class="muted">Contracts are often sent back and forth. This way of working allows for the possibility of different parties having different versions of the contract. </p>
+            <p class="muted">Documents that are shared and used by multiple parties need to be trusted by everyone involved, and independently verifiable.</p>
           </div>
         </div>
       </div>
@@ -87,35 +85,34 @@
     <h2 class="has-text-centered section-title">Solution overview</h2>
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Tamperproof QR codes</h3>
-        <p class="muted">Transforming standard contracts to data points and process steps, understandable to both humans and machines to enable automation for both contracting parties. The first contracts that are automated are NDA's. </p>
+        <h3 class="title subsection-title dark-indigo">Immutable PDF's</h3>
+        <p class="muted">The document can be represented as a digital fingerprint by 'hashing' the document. LTO Network stores the hash of this document through a with LTO Network connected systems Anyone with access to the data can verify the document by hashing it and comparing it against the stored version.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/briefcase-purple.svg" alt="Tamperproof QR codes">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable PDF's">
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="Effective collaboration">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp ">
       </div>
       <div class="column is-1"></div>
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Effective collaboration</h3>
-        <p class="muted">Allowing two parties to "pre-negotiate" their contract by aligning on mutually agreeable positions before generation of a contract, avoiding the time spent exchanging drafts back and forth but addressing the reality faced by all companies who do not have the bargaining leverage to force terms on a counterparty.
-        </p>
+        <h3 class="title subsection-title dark-indigo">Verifiable timestamp </h3>
+        <p class="muted">Not only the hashed document (fingerprint) is stored on the blockchain but also the timestamp of the document. By making documents verifiable and independently auditable, they become more valuable. LTO Network creates portable proof of your timestamped claims. These blockchain-based verifications can be shared and transferred to other parties.</p>
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
       <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Data sharing</h3>
-        <p class="muted">After a document is signed in theContractApp, participants receive an indisputable Proof of Existence (PoE) by securing a hash on the LTO Network public blockchain. By having this PoE placed on signed documents, third parties can independently check the authenticity of the document by uploading the document for instant validation.</p>
+        <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
+        <p class="muted">Using the on open standards-based LTO Network is, any party can independently verify the authenticity and timestamp of the document, without having to rely on a trusted third party.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/users-purple.svg" alt="Data sharing">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
       </div>
     </div>
     <div class="btn-container has-text-centered has-margin-top-40">
@@ -124,12 +121,10 @@
   </div>
 </section>
 
-
-
 <section class="section is-medium">
   <div class="container">
-    <h2 class="has-text-centered is-vcentered section-title">Advantages using LTO Network</h2>
-    <div class="columns is-centered has-margin-top-40">
+    <h2 class="has-text-centered section-title">Advantages using LTO Network</h2>
+    <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
         <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
@@ -138,7 +133,7 @@
       </div>
       <div class="column is-two-thirds">
         <h3 class="title subsection-title dark-indigo">Cost savings</h3>
-        <p class="muted">Full automation of legal contracts and processes drastically increases convenience and the overall experience of a deal with all parties involved.</p>
+        <p class="muted">Administrative tasks such as manually entering data into your system, which in turn was received by letter, fax, or email, belongs to the past. With LTO Networks' blockchain technology, all parties can collect structured data into the systems they use to execute and administer these processes. By doing so, LTO Network reduces the administrative overhead with more than 30%.</p>
       </div>
     </div>
 
@@ -150,7 +145,7 @@
       </div>
       <div class="column is-two-thirds">
         <h3 class="title subsection-title dark-indigo">Easy integration</h3>
-        <p class="muted">Automating the processes significantly decreases the time from initiation to final contract, saving time and money.</p>
+        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and applications to administer, record, and communicate with LTO Network. The implementation of LTO Network is as simple as connecting an API. </p>
       </div>
     </div>
 
@@ -162,7 +157,7 @@
       </div>
       <div class="column is-two-thirds">
         <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
-        <p class="muted">Get a Proof of Existence (PoE) by securing a hash on the LTO Network public blockchain creates an indisputable proof of the final version, without the need of any paper.</p>
+        <p class="muted">Demonstrating compliance is essential in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguard evidence and comply with regulations. LTO Network enables one-click compliance reporting for both internal and external communication on your business processes.</p>
       </div>
     </div>
 
@@ -176,20 +171,20 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Trust</div>
+            <div class="table_cell deep-lavender">Document Security</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>The new solution allows for immediate, trusted checks on certificates by anyone with a smartphone.</p>
+              <p>Anchoring the signed PDF on the LTO Network blockchain guarantees document immutability to all parties involved.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Paper-based certificates can't be validated on the spot, when necessary.</p>
+              <p>With professional PDF-hackers around, certainty on signed documents cannot be taken for granted.</p>
             </div>
           </div>
         </div>
@@ -199,40 +194,40 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Signatures</div>
+            <div class="table_cell deep-lavender">Document Verification</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>Integrated eSignature functionality.</p>
+              <p>With pre-integrated and independent validation tools linked to the blockchain, any party can independently verify the authenticity of a document.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Tracking down hand signatures delays execution.</p>
+              <p>Verifying the authenticity of a document requires the need of a third party which is time-consuming and costly.</p>
             </div>
           </div>
         </div>
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Costs and speed</div>
+            <div class="table_cell deep-lavender">Costs and Speed</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>LTO's blockchain is optimized for anchoring, making transactions near-instant and affordable.</p>
+              <p>The blockchain of LTO Network is optimized for anchoring, making transactions affordable and occurring at near-instant speed.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Traditional blockchains tend to be very slow and expensive.</p>
+              <p>Traditional blockchains tend to be very slow. Anchoring transactions on them is expensive.</p>
             </div>
           </div>
         </div>
@@ -240,9 +235,9 @@
     </div>
 
 
-    <div class="btn-container has-text-centered has-margin-top-40">
-      <a href="/contact/" class="button is-primary">
-        Book a demo
+    <div class="btn-container has-text-centered">
+      <a href="https://help.signrequest.com/hc/en-us/articles/360020499014-SignRequest-and-the-LTO-Network-Blockchain" class="button is-primary" target="blank">
+        Learn more
       </a>
     </div>
   </div>
@@ -252,11 +247,24 @@
   <section class="section is-medium secondary">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column is-half">
-          <video controls width="100%" class="card uc" alt="Contractapp Video">
-            <source src="https://thecontract.app/wp-content/uploads/2019/05/theContractApp-Final-052719-1.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
+        <div class="column">
+          <div class="card uc">
+            <div class="columns">
+              <div class="column is-3 card-testimonial-img">
+                <picture>
+                  <source type="image/webp" data-srcset="/assets/use-cases/signrequest_testimonial@2x.webp">
+                  <img class="lazy" data-src="/assets/use-cases/signrequest_testimonial@2x.png">
+                </picture>
+              </div>
+              <div class="column">
+                <div class="content card-testimonial-content">
+                  <p class="">Using the blockchain for Proof-of-Existence of electronic signatures makes sense and is already happening. When we researched blockchain platforms, LTO Network stood out in terms of speed, set-up, and capabilities. We can include the blockchain transaction identifier directly into our signing logs which that circulate upon signing, without the need to wait minutes for confirmations. Moreover, the potential for creating decentralized workflows pushed us over the edge and made us add the LTO Network solution as an option to our users.</p>
+                  <div class="author">Michael Krens</div>
+                  <div class="company">CTO of SignRequest</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
