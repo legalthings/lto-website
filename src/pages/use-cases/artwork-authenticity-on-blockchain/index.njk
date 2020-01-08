@@ -1,6 +1,7 @@
-{% set title = 'LTO Network - Use case - Trusted document management' %}
-{% set description = 'Deposit crucial contracts, intellectual property and certificates' %}
-{% set currentUrl = '/use-cases/trusted-document-management/' %}
+{% set title = 'LTO Network - Use case - Artwork Authenticity on Blockchain (V-ID)' %}
+{% set description = 'Certification of artwork battling Counterfeiting.' %}
+{% set currentUrl = '/use-cases/artwork-authenticity-on-blockchain/' %}
+{% set locale = 'en' %}
 
 {% extends "base.njk" %}
 
@@ -9,16 +10,19 @@
 <div class="section-container">
   <section class="hero is-fullheight">
     <picture>
-      <source type="image/webp" data-srcset="/assets/hero/hero-uc-tdm@2x.webp">
-      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-tdm@2x.jpg" alt="Trusted Document Management">
+      <source type="image/webp" data-srcset="/assets/hero/hero-uc-vaas@2x.webp">
+      <img class="overlay-image lazy" data-src="/assets/hero/hero-uc-vaas@2x.jpg" alt="Artwork Authenticity on Blockchain (V-ID)">
     </picture>
     <div class="hero-body">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column is-two-thirds">
             <div class=""><span class="tag is-rounded is-medium blue-grey"> USE CASE </span></div>
-            <h1 class="primary-text">Trusted Document Management</h1>
-            <h2 class="dark-indigo">Document management systems can be used for any type of document. Adding blockchain helps with authenticating everything that takes place in a DMS.</h2>
+            <h1 class="primary-text">Artwork Authenticity on Blockchain</h1>
+            <h2 class="dark-indigo">Certification of artwork battling Counterfeiting.</h2>
+          </div>
+          <div class="column video is-centered">
+            <iframe class="card" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zs17a4cDcU4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -32,19 +36,18 @@
       <div class="container use-cases">
         <div class="item use-cases">
           <picture>
-            <source type="image/webp" data-srcset="/assets/use-cases/virtualvaults_logo@2x.webp">
-            <img class="promo-client lazy" data-src="/assets/use-cases/virtualvaults_logo@2x.png" alt="Virtual Vaults">
+            <source type="image/webp" data-srcset="/assets/use-cases/v-id@2x.webp">
+            <img class="promo-client lazy" data-src="/assets/use-cases/v-id@2x.png" alt="V-ID">
           </picture>
         </div>
         <div class="item use-cases">
           <p class="promo-head use-cases">Involved parties</p>
-          <p class="promo-desc use-cases muted">Enterprise clients</p>
+          <p class="promo-desc use-cases muted">V-ID has 30+ enterprise clients that use the certification platform integrated with LTO Network.</p>
         </div>
       </div>
     </div>
   </section>
 </div>
-
 
 <section class="section is-medium">
   <div class="container">
@@ -52,27 +55,27 @@
     <div class="columns">
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Evidence of date and time</h3>
+          <h3 class="accent-text">Proof of originality</h3>
           <div class="card-description">
-            <p class="muted">In case there is a dispute about when and at what the exact time a document was uploaded, you need to be able to verify this reliably.</p>
+            <p class="muted">When purchasing an art object, you want to know it is the real deal. A certificate helps art collectors, proving it's the original. Often this is done through certification, yet these can be forged as well.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Document authenticity</h3>
+          <h3 class="accent-text">Counterfeiting certificates</h3>
           <div class="card-description">
-            <p class="muted">In case there is a dispute about which document and it's content was uploaded, you need to be able to validate which one is the original one.</p>
+            <p class="muted">Paper-based certificates are easy to counterfeit. Backdating a purchase or changing the unique identifier of an art object is a piece of cake with today's software tools.</p>
           </div>
         </div>
       </div>
 
       <div class="column card uc">
         <div class="card-content bc">
-          <h3 class="accent-text">Document verification</h3>
+          <h3 class="accent-text">Validation of the certificate</h3>
           <div class="card-description">
-            <p class="muted">Documents that are shared and used by multiple parties need to be trusted by everyone involved, and independently verifiable.</p>
+            <p class="muted">When transferring a piece of art - the purchaser must be able to validate whether this certificate independently.</p>
           </div>
         </div>
       </div>
@@ -84,35 +87,35 @@
   <div class="container">
     <h2 class="has-text-centered section-title">Solution overview</h2>
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
-      <div class="column is-half">
-        <h3 class="title subsection-title dark-indigo">Immutable files</h3>
-        <p class="muted">A document can be represented as a digital fingerprint by 'hashing' the document. LTO Network stores the hash of this document through a with LTO Network connected systems Anyone with access to the data can verify the document by hashing it and comparing it against the stored version.</p>
+      <div class="column is-half has-text-right">
+        <h3 class="title subsection-title dark-indigo">Immutable art certificates</h3>
+        <p class="muted">The certificate can be represented as a digital fingerprint by 'hashing' it when it's issued with a new piece of art. Storing the hash of this certificate happens in all systems connected to the blockchain. Anyone with the certificate can verify it by hashing it and comparing it against the blockchain version.</p>
       </div>
       <div class="column is-1"></div>
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/check-alt-purple.svg" alt="LTO Network - Immutable files">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/save-purple.svg" alt="LTO Network - Immutable art certificates">
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40">
       <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/desktop-purple.svg" alt="LTO Network - Verifiable timestamp">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/clock-purple.svg" alt="LTO Network - Verifiable timestamp">
       </div>
       <div class="column is-1"></div>
-      <div class="column is-half">
+      <div class="column is-half has-text-left">
         <h3 class="title subsection-title dark-indigo">Verifiable timestamp</h3>
-        <p class="muted">Not only the hashed document (fingerprint) is stored on the blockchain but also the timestamp of the document. By making documents verifiable and independently auditable, they become more valuable. LTO Network creates portable proof of your timestamped claims. These blockchain-based verifications can be shared and transferred to other parties.</p>
+        <p class="muted">Not only the certificate's hash (fingerprint) is stored on the blockchain, but also the timestamp of the certificate. By making certificates verifiable and independently audit-able, they become more valuable. Creating a portable proof of your timestamped artwork, whether it's a design you made or a Rembrandt painting.</p>
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40 inverted-mobile">
-      <div class="column is-half">
+      <div class="column is-half has-text-right">
         <h3 class="title subsection-title dark-indigo">No need for third party verification</h3>
-        <p class="muted">Using the on open standards-based LTO Network is, any party can independently verify the authenticity and timestamp of the document, without having to rely on a trusted third party.</p>
+        <p class="muted">With LTO Network, based on open standards, any party can independently verify the authenticity- and timestamp of the certificate, without having to rely on a trusted third party.</p>
       </div>
       <div class="column is-1"></div>
-      <div class="icon-container solutions column is-centered" style="left:48px; align-self:center;">
-        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/dashboard-purple.svg" alt="LTO Network - No need for third party verification">
+      <div class="icon-container solutions column is-centered" style="left:48px;align-self:center;">
+        <img class="lazy" style="width:130px;position:relative;" data-src="/assets/icons/notebook-purple.svg" alt="LTO Network - No need for third party verification">
       </div>
     </div>
     <div class="btn-container has-text-centered has-margin-top-40">
@@ -129,11 +132,11 @@
         <img class="lazy" style="position:absolute;width:30px;top: 200px;left: 210px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:30px;top:-30px;left:150px" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width:50px;top:0px;left:-30px" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/shield.svg" alt="LTO Network - Protection against claims">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/coins.svg" alt="LTO Network - Cost savings">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Protection against claims</h3>
-        <p class="muted">The evidence that a document has been uploaded by a person in the data room or other document management system is indisputable. This protects your organization against potential claims.</p>
+        <h3 class="title subsection-title dark-indigo">Cost savings</h3>
+        <p class="muted">Administrative tasks such as manual entering data into your system that receive by letter, fax, or email belongs to the past. With the blockchain technology of LTO Network, all parties can collect structured data into the systems they use to execute and administrate these processes. Working this way reduces the administrative overhead with more than 30%.</p>
       </div>
     </div>
 
@@ -145,19 +148,19 @@
       </div>
       <div class="column is-two-thirds">
         <h3 class="title subsection-title dark-indigo">Easy integration</h3>
-        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and applications to administer, record, and communicate with LTO Network. The implementation of LTO Network is as simple as connecting an API.</p>
+        <p class="muted">With LTO Network, you don't have to change your entire IT infrastructure. You can use your existing systems and application to record any art certificate, invoice, contract, or other pieces of data into the blockchain. The implementation of LTO Network is as simple as connecting an API.</p>
       </div>
     </div>
 
     <div class="columns is-centered is-vcentered has-margin-top-40">
-      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;">
+      <div class="icon-container advantages column is-one-quarter lazy" data-bg="url('/assets/rocks/rock-1.svg')" style="left:48px;height:250px;)">
         <img class="lazy" style="position:absolute;width:30px;top: 230px;left: 200px;" src="/assets/rocks/small-rock-2.svg" alt="LTO Network - Rock">
         <img class="lazy" style="position:absolute;width: 70px;top: 9px;left: -100px;" src="/assets/rocks/small-rock-1.svg" alt="LTO Network - Rock">
-        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/legal.svg" alt="LTO Network - Data governance">
+        <img class="lazy" style="width:90px;position:relative; top:0px; left:73px;" data-src="/assets/icons/balance.svg" alt="LTO Network - Compliant by design">
       </div>
       <div class="column is-two-thirds">
-        <h3 class="title subsection-title dark-indigo">Data governance</h3>
-        <p class="muted">Documents uploaded and the blockchain receipt with the details of the upload can never be altered. Therefore, you have a foolproof record of everything that goes in and out of your dataroom. LTO Network combined with Virtual Vaults makes it easy to manage who has access and whether documents where viewed, downloaded or removed.</p>
+        <h3 class="title subsection-title dark-indigo">Compliant by design</h3>
+        <p class="muted">Demonstrating compliance is vital in any industry. Using LTO Network, you can record all data entries and steps in your business processes to safeguarding evidence and comply with regulation. Enabling one-click compliance reporting for both internal- as external communication on your business processes.</p>
       </div>
     </div>
 
@@ -171,20 +174,20 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Security</div>
+            <div class="table_cell deep-lavender">Certificate authenticity</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>In Virtual Vaults documents are saved securely, and hashed for proving its existence at a certain moment.</p>
+              <p>By anchoring the art Certificate on the LTO Network blockchain, purchasers can trust a piece of art is the original.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Physical and centralized storage is prone to file losses, hacks and manipulation.</p>
+              <p>With today's software tools, it's pretty easy to counterfeit art certificates.</p>
             </div>
           </div>
         </div>
@@ -194,54 +197,54 @@
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Counterfeiting</div>
+            <div class="table_cell deep-lavender">Independently verifiable</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>Blockchain technology ensures immutable and authentic document records.</p>
+              <p>With independent validation tools like V-ID linked to the LTO Network blockchain, any party can check for the authenticity of a certificate.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Identification of counterfeited paper documents is time consuming costly.</p>
+              <p>Checking the authenticity of a certificate requires the need of a third party which is time-consuming and costly.</p>
             </div>
           </div>
         </div>
         <div class="table_row">
           <div class="table_small">
             <div class="table_cell dark-indigo">Theme</div>
-            <div class="table_cell deep-lavender">Sharing</div>
+            <div class="table_cell deep-lavender">Costs and speed</div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">LTO Network solution</div>
             <div class="table_cell steel mobile-green">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - good.svg" alt="LTO Network solution"></div>
-              <p>Creating an audit trail of document sharing and version control allows for independent verification of the documents.</p>
+              <p>The blockchain of LTO Network is optimized for anchoring, making transactions near-instant and affordable.</p>
             </div>
           </div>
           <div class="table_small">
             <div class="table_cell dark-indigo">Traditional solution</div>
             <div class="table_cell steel mobile-red">
               <div class="table_icon is-hidden-mobile"> <img class="lazy" data-src="/assets/table icon - bad.svg" alt="Traditional solution"></div>
-              <p>Sharing documents in a secure way is complex and inefficient.</p>
+              <p>Traditional blockchains tend to be very slow and expensive to anchor transactions.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="btn-container has-text-centered">
-      <a href="/contact/" class="button is-primary is-rounded main-button book-demo advantages">
+    <div class="btn-container has-text-centered has-margin-top-40">
+      <a href="/contact/" class="button is-primary" target="blank">
         Book a demo
       </a>
     </div>
   </div>
 </section>
+
 
 <div class="section-container cutout-bottom-alt">
   <section class="section is-medium secondary">
@@ -252,15 +255,15 @@
             <div class="columns">
               <div class="column is-3 card-testimonial-img">
                 <picture>
-                  <source type="image/webp" data-srcset="/assets/use-cases/vv_testimonial@2x.webp">
-                  <img class="lazy" data-src="/assets/use-cases/vv_testimonial@2x.png">
+                  <source type="image/webp" data-srcset="/assets/use-cases/v-id_testimonial@2x.webp">
+                  <img class="lazy" data-src="/assets/use-cases/v-id_testimonial@2x.png" alt="V-ID Testimonial">
                 </picture>
               </div>
               <div class="column">
                 <div class="content card-testimonial-content">
-                  <p class="">By implementing LTO Network into Virtual Vaults, new product opportunities arise. It prevents potential disputes about the discussion whether a file was uploaded in a M&A deal or you can prove that IP actually belongs to your organization instead of the one filing for a patent.</p>
-                  <div class="author">Jeroen Kruithof</div>
-                  <div class="company">CEO of Virtual Vaults</div>
+                  <p class="">We entered into a partnership this week by rolling out an immediately applicable, GDPR-compliant blockchain solution for companies and governments. Additional objectives in this regard are the practical applicability for organizations from every sector, achieving cost savings and further developing the Netherlands as a European knowledge center for blockchain applications.</p>
+                  <div class="author">Marnix van den Berg</div>
+                  <div class="company">CEO of V-ID</div>
                 </div>
               </div>
             </div>
@@ -270,7 +273,6 @@
     </div>
   </section>
 </div>
-
 
 <div class="section-container">
   <section class="section alt has-bg-img">

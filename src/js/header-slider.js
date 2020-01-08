@@ -13,18 +13,18 @@ function bindHeaderSlider() {
   const sliderData = [
     {
       image: '/assets/hero/hero-uc-ilt@2x.jpg',
-      title: 'Saving $7 million annually in process efficiency for the Dutch Ministry of Infrastructure',
-      href: '/use-cases/waste-transportation-blockchain/'
+      title: 'Saving $7 million annually in process efficiency for the Dutch Ministry of Infrastructure.',
+      href: '/use-cases/waste-transport-on-blockchain/'
     },
     {
       image: '/assets/hero/hero-uc-scantrust@2x.jpg',
-      title: 'The revival of QR-Codes with Blockchain for product authentication and supply chain traceability',
-      href: '/use-cases/track-trace-product-authentication/'
+      title: 'The revival of QR-Codes with Blockchain for product authentication and supply chain traceability.',
+      href: '/use-cases/supply-chain-on-blockchain/'
     },
     {
       image: '/assets/hero/hero-uc-lease@2x.jpg',
-      title: 'Instant verification of certificates on LTO Network for the Real Estate industry',
-      href: '/use-cases/smart-property-lease-agreements/'
+      title: 'Instant verification of certificates on LTO Network for the Real Estate industry.',
+      href: '/use-cases/lease-agreements-on-blockchain/'
     }
   ]
 
