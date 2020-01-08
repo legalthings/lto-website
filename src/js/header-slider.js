@@ -32,7 +32,7 @@ function bindHeaderSlider() {
 
   setInterval(() => {
     nextSlide()
-  }, 4500);
+  }, 6000);
 
   function nextSlide() {
     if (currentSlide >= sliderData.length - 1) currentSlide = 0;

@@ -1134,8 +1134,9 @@ blockquote .author {
 .tag {
   font-size: 12px;
   font-weight: 500;
-  padding: 8px 16px 8px 16px;
+  padding: 10px 18px 10px 18px;
   color: #95a7bf !important;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
 }
 
 .hero-body h2 {
