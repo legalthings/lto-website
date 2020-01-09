@@ -1,0 +1,242 @@
+{% set title = 'LTO Network - Staking' %}
+{% set description = 'Staking rewards are non-inflationary on LTO Network. Set up a node and become a validator on the network.' %}
+{% set currentUrl = '/staking/' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<div class="section-container">
+    <section class="hero is-fullheight">
+       <picture>
+        <source type="image/webp" data-srcset="/assets/hero/hero-community-mob.webp">
+        <img class="bgVideo lazy is-hidden-desktop" data-src="/assets/hero/hero-community-mob.png" alt="LTO Network - Hero Community">
+        </picture>
+        <video class="bgVideo is-hidden-mobile" autoplay muted loop poster="/assets/hero/hero-community.png" alt="LTO Network - Community Video">
+            <source src="/assets/media/hero-community.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="section-container cutout-top cutout-bottom-alt">
+  <section class="section secondary no-padding">
+{% include "partials/" ~ locale ~ "/promo-numbers.njk" %}
+  </section>
+</div>
+    </section>
+</div>
+
+<section class="section is-medium">
+ <div class="container">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h2 class="title is-4">Staking on <strong>LTO Network</strong></h2>
+      <div class="content">
+        <p class="muted">LTO Network’s public blockchain is PoS based - Fair Leased Proof of Stake. Anyone can become a validator on mainnet and share the <strong>non-inflationary network rewards</strong>, supporting the next wave of adoption!</p>
+        <p class="muted">You can set up your own node or lease to a community node. Your APR depends on your stake share and the transactions in the network.</p>
+        <p><a href="https://www.stakingrewards.com/asset/lto-network/calculate" target="_blank" class="">Check out the calculator</a></p>
+      </div>
+    </div>
+    <div class="column is-1"></div>
+    <div class="column">
+     <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+           <picture>
+            <source type="image/webp" data-srcset="/assets/media/staking-guide.webp">
+            <img src="/assets/media/staking-guide.png" class="has-ratio lazy staking-guide" alt="Staking Guide">
+            </picture>
+          </figure>
+         </div>
+        <footer class="card-footer">
+        <a href="https://blog.ltonetwork.com/staking-and-leasing-lto-network-node-guide/" class="card-footer-item">Read more about staking →</a>
+       </footer>
+      </div>
+    </div>
+  </div>
+   
+ </div>
+</section>
+   
+<section class="section is-medium alt" id="ecosystem">
+        <div class="container">
+            <h2 class="section-title has-text-centered">We have an awesome community!</h2>
+          <h3 class="dark-indigo has-text-centered">Join one of our Telegram chats</h3>
+            
+            <div class="columns is-centered has-text-centered">
+              <div class="column card uc">
+              <a href="https://t.me/LTOnetwork">
+               <div class="content">
+               <div class="chat-img">
+               <picture>
+               <source type="image/webp" data-srcset="/assets/chats/general-chat.webp">
+                <img class="lazy" data-src="/assets/chats/general-chat.jpg" alt="">
+               </picture>
+                 </div>
+                 <p class="subtitle dark-indigo">General chat</p>
+               </div>
+               </a>
+              </div>
+              <div class="column card uc">
+              <a href="https://t.me/LTOBusiness">
+               <div class="content">
+               <div class="chat-img">
+                <picture>
+                <source type="image/webp" data-srcset="/assets/chats/business-chat.webp">
+                <img class="lazy" data-src="/assets/chats/business-chat.jpg" alt="">
+               </picture>
+                 </div>
+                 <p class="subtitle dark-indigo">Business chat</p>
+               </div>
+               </a>
+              </div>
+              <div class="column card uc">
+              <a href="https://t.me/LTOTech">
+              <div class="content">
+               <div class="chat-img">
+                <picture>
+                <source type="image/webp" data-srcset="/assets/chats/tech-chat.webp">
+                <img class="lazy" data-src="/assets/chats/tech-chat.jpg" alt="">
+               </picture>
+                 </div>
+                 <p class="subtitle dark-indigo">Tech chat</p>
+               </div>
+               </a>
+              </div>
+              <div class="column card uc">
+              <a href="https://t.me/LTOMarketing">
+              <div class="content">
+               <div class="chat-img">
+                <picture>
+                <source type="image/webp" data-srcset="/assets/chats/marketing-chat.webp">
+                <img class="lazy" data-src="/assets/chats/marketing-chat.jpg" alt="">
+               </picture>
+                 </div>
+                 <p class="subtitle dark-indigo">Marketing chat</p>
+               </div>
+               </a>
+              </div>
+            </div>
+          </div>
+</section>
+         
+<section class="section is-medium tertiary">
+           <div class="container">      
+            <h2 class="has-text-centered section-title">Don't just take our word for it</h2>
+            <div class="columns is-centered has-margin-top-40">
+
+                <div class="column membercard card uc">
+                    <div class="columns is-vcentered">
+                        <div class="column is-centered">
+                            <div class="member-image">
+                                <img src="/assets/community/cryptocapitalist.png" class="lazy" alt="LTO Community Member">
+                            </div>
+                        </div>
+
+                        <div class="column is-two-thirds">
+                            <h4 class="column-title dark-indigo">@Cryptocapitalist</h4>
+                            <p class="muted">“It's hard to see startups, where hard work, knowledge, and community merge that well. LTO is the revolution of decentralized management of workflow and data.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column membercard card uc">
+
+                    <div class="columns is-vcentered">
+                        <div class="column is-centered">
+                            <div class="member-image">
+                                <img src="/assets/community/n0rthstar.png" class="lazy" alt="LTO Community Member">
+                            </div>
+                        </div>
+
+                        <div class="column is-two-thirds">
+                            <h4 class="column-title dark-indigo">@N0rthstar</h4>
+                            <p class="muted">"LTO Network's adoption strategy is refreshing and exciting to see in the world of blockchain. A beast in the making that provides true value for all parties involved."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="columns is-centered">
+
+                <div class="column membercard card uc">
+                    <div class="columns is-vcentered">
+                        <div class="column is-centered">
+                            <div class="member-image">
+                                <img src="/assets/community/cryptoleee.png" class="lazy" alt="LTO Community Member">
+                            </div>
+                        </div>
+
+                        <div class="column is-two-thirds">
+                            <h4 class="column-title dark-indigo">@Cryptoleee</h4>
+                            <p class="muted">"LTO Network is one of the most hard working blockchain start ups I've seen. And keeping the community in loop of it all. Really impressed!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column membercard card uc">
+
+                    <div class="columns is-vcentered">
+                        <div class="column is-centered">
+                            <div class="member-image">
+                                <img src="/assets/community/stefan0000.png" class="lazy" alt="LTO Community Member">
+                            </div>
+                        </div>
+
+                        <div class="column is-two-thirds">
+                            <h4 class="column-title dark-indigo">@Stefan0000</h4>
+                            <p class="muted">“I love how the LTO Community stimulates engagement and contributions by rewarding individual members by providing recognition, affiliation and rewarding achievements. An amazing way to keep members involved.”</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section is-medium">
+        <div class="container">
+            <h2 class="deep-lavender has-text-centered">Official markets</h2>
+
+            <div class="columns is-centered has-text-centered">
+
+                <div class="column is-3">
+                    <div class="column-img">
+                        <a href="https://bitmax.io/#/trade/usdt/lto" target="blank">
+                           <picture>
+                              <source type="image/webp" data-srcset="/assets/markets/bitmax@2x.webp">
+                            <img class="lazy" data-src="/assets/markets/bitmax@2x.png" alt="Bitmax">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column is-3">
+                    <div class="column-img">
+                        <a href="https://www.binance.org/en/trade/LTO-BDF_BNB" target="blank">
+                           <picture>
+                              <source type="image/webp" data-srcset="/assets/markets/binance-dex@2x.webp">
+                            <img class="lazy" data-src="/assets/markets/binance-dex@2x.png" alt="Binance DEX">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<div class="section-container cutout-bottom-alt">
+    <section class="section is-medium secondary">
+  {% include "partials/en/resources.njk" %}
+    </section>
+</div>
+
+<div class="section-container">
+    <section class="section alt has-bg-img">
+        {% include "partials/" ~ locale ~ "/bottom-nav.njk" %}
+    </section>
+</div>
+
+
+{% endblock %}

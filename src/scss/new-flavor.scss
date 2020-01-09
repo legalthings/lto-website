@@ -13,6 +13,11 @@ body {
   font-size: 18px;
 }
 
+::selection {
+  color: white;
+  background: $primary-color;
+}
+
 section {
   background-color: transparent;
 }
@@ -1136,7 +1141,7 @@ blockquote .author {
   font-weight: 500;
   padding: 10px 18px 10px 18px;
   color: #95a7bf !important;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
 }
 
 .hero-body h2 {
@@ -1915,7 +1920,7 @@ blockquote .author {
 
 .timeline {
   .timeline-item:before {
-    background-color: #ba6df6 !important;
+    background-color: #17054b !important;
   }
 
   .heading {
@@ -1924,6 +1929,11 @@ blockquote .author {
 
   .heading-alt {
     font-weight: 500 !important;
+    
+    a {
+      color: #ba6df6;
+      cursor: pointer;
+    }
   }
 
   .timeline-marker {
@@ -2775,6 +2785,7 @@ span {
 .resources.column-title {
   font-family: 'IBM Plex Sans';
   font-size: 28px;
+  font-weight: 400;
   margin-bottom: 7px;
 }
 
@@ -3066,11 +3077,26 @@ $network-circles: 12;
   }
 }
 
+a {
+  &.resources {
+    color: #75828f !important;
+  }
+}
+
 .card {
   border-radius: 24px;
+  
+  &.mentality {
+    height: 100%;
+  }
 
   .card-image {
     .why-lto {
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    
+    .staking-guide {
       border-top-left-radius: 24px;
       border-top-right-radius: 24px;
     }
@@ -3083,6 +3109,30 @@ $network-circles: 12;
   }
 
   .card-content {
-    padding-top: 0;
+    &.product {
+      padding-top: 0;
+    }
+  }
+
+  .media {
+    &.is-vcentered {
+      align-items: center;
+    }
+
+    .media-content {
+      p {
+        &.resources {
+          font-size: 28px;
+          color: $primary-color;
+          font-weight: 400;
+        }
+      }
+    }
+    
+    .content {
+      &.resources {
+        color: #75828f !important;
+      }
+    }
   }
 }
