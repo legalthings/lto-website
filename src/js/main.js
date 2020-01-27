@@ -79,6 +79,36 @@
       horizontal: false
     });
   }
+  
+  function handleCookieMessage() {
+  const lsCookieNotification = localStorage.getItem('lto-cookie-notification');
+  const lsCookieConsent = localStorage.getItem('lto-cookie-consent');
+
+  if (lsCookieNotification || lsCookieConsent === 'yes') {
+    initializeTracking();
+    return
+  }
+
+  if (!lsCookieNotification && !lsCookieConsent) {
+    const cookieNotification = document.getElementsByClassName('lto-cookie-notification')[0];
+    cookieNotification.classList.add('visible');
+
+    document.addEventListener('click', (e) => {
+      if (e.target.id === 'cookie-statement' || (window.location.href.includes('cookie-statement') &&
+          !e.target.offsetParent.classList.contains('lto-cookie-notification'))) {
+        return
+      }
+
+      if (e.target.id === 'cookies-no-consent') {
+        localStorage.setItem('lto-cookie-consent', 'no');
+      } else {
+        localStorage.setItem('lto-cookie-consent', 'yes');
+        initializeTracking();
+      }
+      cookieNotification.classList.remove('visible');
+    });
+  }
+}
 
   executeInQueue(bindMenuEvents(), 10);
   executeInQueue(doTransparentHeaderScrolling(), 20);
@@ -86,4 +116,5 @@
   executeInQueue(bindLtoNodeEvents(), 30);
   executeInQueue(bindCardSliderEvents(), 40);
   executeInQueue(bindHeaderSlider(), 50);
+  executeInQueue(handleCookieMessage(), 60);
 })();

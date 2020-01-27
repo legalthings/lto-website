@@ -66,17 +66,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     window.lazyLoadOptions = {
       elements_selector: ".lazy"
     };
-
   </script>
+  
+  {% include "partials/cookie-notification.njk" %}
 
   <script defer src="/js/vendor.js"></script>
   <script defer src="/js/main.js"></script>
+  
   <script type="text/javascript">
     _linkedin_partner_id = "1417473";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
 
   </script>
+  
   <script type="text/javascript">
     (function() {
       var s = document.getElementsByTagName("script")[0];
