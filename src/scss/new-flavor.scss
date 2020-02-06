@@ -3203,3 +3203,11 @@ a {
   }
 }
 
+
+.page-404 {
+@include responsive (phone) {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+
