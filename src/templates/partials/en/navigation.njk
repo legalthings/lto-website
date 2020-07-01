@@ -1,6 +1,6 @@
 {% block navigation %}
 
-<nav class="navbar is-fixed-top is-transparent" role="navigation" id="navbar">
+<nav class="navbar is-fixed-top is-transparent {{ navFlavor }}" role="navigation" id="navbar">
   <div class="navbar-container container">
     <div class="navbar-brand">
       <a class="logo" href="/">
@@ -25,9 +25,6 @@
         <a class="navbar-item dark-indigo" href="/tech/">
           TECH
         </a>
-        <a class="navbar-item dark-indigo" href="/ecosystem/">
-          ECOSYSTEM V
-        </a>
         <a class="navbar-item dark-indigo" href="/staking/">
           STAKING
         </a>
@@ -37,11 +34,8 @@
         <a class="navbar-item dark-indigo" href="/about/">
           ABOUT
         </a>
-        <a class="navbar-item dark-indigo" href="https://explorer.lto.network/">
-        EXPLORER
-        </a>
-        <a class="button is-small is-ghost is-rounded" href="/contact/">
-        CONTACT US
+        <a class="button is-small is-rounded" href="https://explorer.lto.network/" target="_blank">
+          EXPLORER
         </a>
         <a class="language" href="/cn/">
         <picture><img class="lazy" data-src="/assets/icons/cn.svg" alt="Chinese website"></picture>
