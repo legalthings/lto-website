@@ -75,6 +75,12 @@ h3 {
   font-weight: 300;
 }
 
+p.is-large {
+  @include responsive(laptop) {
+    font-size: 1.5rem;
+  }
+}
+
 //p {
 //  margin-bottom: 16px;
 //
@@ -203,6 +209,17 @@ h3 {
 
   .hero-content {
     max-width: 550px;
+  }
+
+  @include responsive(laptop) {
+    h1.title {
+      font-size: 72px!important;
+      margin-bottom: 3rem;
+    }
+  
+    .buttons .button {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -631,6 +648,10 @@ h3 {
     .card-action {
       display: flex;
       margin-top: 16px;
+
+      &.bc {
+        margin-top: 42px;      
+      }
 
       &.centered {
         justify-content: center;
@@ -1185,6 +1206,15 @@ blockquote .author {
 
   @include responsive(phone) {
     max-width: 100vw !important;
+  }
+}
+
+.rock-1, .rock-2, .rock-3, .rock-4 {
+  .rellax {
+    z-index: -1;
+  }
+  @include responsive(phone) {
+    display: none !important;
   }
 }
 
@@ -2571,7 +2601,7 @@ blockquote .author {
     &.ecosystem {
       background-image: url('/assets/hero/hero-home-white.svg');
       position: relative;
-      background-position: top right;
+      background-position: 30% 0;
       background-size: cover;
       background-repeat: no-repeat;
     }
