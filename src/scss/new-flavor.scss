@@ -810,7 +810,7 @@ p.is-large {
     background-color: transparent !important;
     box-shadow: none;
   }
-
+  
   .logo {
     display: flex;
     align-items: center;
@@ -935,6 +935,10 @@ p.is-large {
         width: 0%;
       }
     }
+  }
+
+  &.is-inverted.is-transparent a:not(.button) {
+    color: #fff;
   }
 
   .navbar-menu {
