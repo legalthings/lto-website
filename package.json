@@ -17,7 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.10",
     "caniuse-lite": "^1.0.30001016",
     "critical": "^2.0.0-23",
     "del": "^4.1.1",
