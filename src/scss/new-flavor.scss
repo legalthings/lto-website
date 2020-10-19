@@ -1028,7 +1028,9 @@ p.is-large {
       display: flex;
     }
 
-    .social-media-container {      
+    .social-media-container {
+      justify-content: flex-end;
+
       a {
         margin: 8px;
         width: 21px;
