@@ -1963,7 +1963,7 @@ blockquote .author {
     font-weight: 500 !important;
 
     a {
-      color: #ba6df6;
+      color: inherit;
       cursor: pointer;
     }
   }
@@ -2356,8 +2356,8 @@ blockquote .author {
       width: 30rem;
 
       @include responsive(phone) {
-        height: 11rem;
-        width: 30rem;
+        width: calc(100vw - 60px);
+        height: calc((100vw - 60px) * 315 / 560);
       }
     }
   }
