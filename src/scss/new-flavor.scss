@@ -106,6 +106,16 @@ p.is-large {
     //      box-shadow: 0 16px 16px -8px rgba(0, 0, 0, 0.27);
     //    }
   }
+
+  &.is-small {
+    border-radius: 22px;
+  }
+}
+
+.is-hidden-phone {
+  @include responsive(phone) {
+    display: none !important;
+  }
 }
 
 .primary-text {
@@ -706,6 +716,11 @@ p.is-large {
   }
 }
 
+.is-bottom-aligned {
+  position: absolute;
+  bottom: 0;
+}
+
 .companies-ico-container {
   @include responsive(phone) {
     margin-left: -90%;
@@ -1052,6 +1067,87 @@ p.is-large {
   @include responsive(phone) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+#highlights {
+  max-height: 800px;
+  color: #fff;
+
+  picture img {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    padding: 1.5rem;
+    height: 100%;
+
+    @include responsive(nonTouch) {
+      padding: 50px 0;
+    }
+
+    h2 {
+      color: #fff !important;
+      font-size: 32px !important;
+      font-weight: 700 !important;
+      line-height: 125%;
+    }
+
+    .date {
+      font-size: 13px;
+      line-height: 180%;
+    }
+
+    .logo {
+      width: 250px;
+    }
+
+    > .is-bottom-aligned {
+      bottom: 35px;
+      align-items: flex-end;
+      width: calc(100% - 25px);
+    }
+
+    .button {
+      padding: 1.5em !important;
+    }
+
+    .button:last-child {
+      margin-right: 0;
+    }
+
+    @include responsive(phone) {
+      h2 {
+        font-size: 18px !important;
+      }
+      .date {
+        font-size: 11px;
+      }
+      .logo {
+        width: 150px;
+      }
+
+      .button {
+        font-size: 14px;
+        border-radius: 24px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1410px) {
+      .button {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
   }
 }
 
